@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="image-slider">
+    <div>
+        <img src="http://csssecrets.io/images/adamcatlace-before.jpg" alt="Before" />
+    </div>
+    <img src="http://csssecrets.io/images/adamcatlace.jpg" />
+</div>
+    
+  
+<!--      
+    <script>
+        //let imgSlider = document.querySelectorAll('.image-slider')
+    $$('.image-slider').forEach(function(slider) {
+// Create the extra div and
+// wrap it around the first image
+        var div = document.createElement('div');
+var img = slider.querySelector('img');
+slider.insertBefore(img, div);
+div.appendChild(img);
+// Create the slider
+var range = document.createElement('input');
+range.type = 'range';
+range.oninput = function() {
+div.style.width = this.value + '%';
+};
+slider.appendChild(range);
+});
+        
+    </script>
+    
+    -->
+</body>
+</html>

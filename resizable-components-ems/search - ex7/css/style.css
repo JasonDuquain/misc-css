@@ -1,0 +1,59 @@
+body {
+  font-family: 'Arial';
+}
+
+.contain {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+.range label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+.search {
+  margin-bottom: 1.35em;
+}
+.search label {
+  display: block;
+  margin-bottom: 6px;
+}
+.search input {
+  width: 25em;
+  font-size: 1em;
+  padding: 0.625em;
+  padding-left: 2.5em;
+  border-radius: 0.3125em;
+  border: 0.125em solid #b4b4b4;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/182774/search.svg") left 0.625em center/1.5em 1.5em no-repeat;
+}
+.search input:focus {
+  border-color: #000;
+  outline: 0;
+}
+
+.search--2x input {
+  font-size: 1.25em;
+}
+
+.search--px input {
+  font-size: 1.25em;
+  padding: 0.625em;
+  padding-left: 2.5em;
+  border-radius: 0.3125em;
+  border: 2px solid #b4b4b4;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/182774/search.svg") left 8px center/24px 24px no-repeat;
+}

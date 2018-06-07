@@ -1,0 +1,137 @@
+/* The version of Modular Scale used in this Pen was 2.* */
+@import "../../../../../modularscale";
+
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400|Lora:400);
+
+$ms-base: 1em;
+$ms-ratio: $major-third;
+
+$yellow: #fcf704;
+$cement: #ccc;
+$black: #191918;
+
+@mixin mq($w: 55em) {
+    @media (min-width: $w) {
+        @content;
+    }
+}
+
+html {
+    font: 400 1em / 1.33 "Lora", serif;
+    background-color: $black;
+}
+
+body {
+    padding-bottom: 3em;
+}
+
+.profile {
+
+
+    @include mq {
+
+    }
+
+
+    @include mq(80em) {
+
+    }
+
+} //.profile
+
+article {
+
+
+    @include mq {
+
+    }
+
+
+    @include mq(80em) {
+
+    }
+
+} //article
+
+header {
+
+}
+
+h1 {
+    font-family: "Old Standard TT", serif;
+
+}
+
+.nth-line-1,
+.nth-line-2 {
+    line-height: 1;
+}
+
+.nth-line-1 {
+
+
+    @include mq {
+
+    }
+}
+
+.nth-line-2 {
+
+
+    @include mq {
+
+    }
+}
+
+.lead {
+
+
+}
+
+hr {
+
+}
+
+section {
+
+
+    @include mq {
+
+    }
+}
+
+section p:first-of-type:first-letter {
+
+}
+
+p {
+    @include mq {
+        // text-align: justify
+    }
+}
+
+img {
+
+}
+
+blockquote {
+
+    quotes: "“" "”" "‘" "’";
+
+    &::before,
+    &::after {
+
+    }
+
+    &::before {
+        content: open-quote;
+    }
+
+    &::after {
+        content: close-quote;
+    }
+
+    @include mq {
+
+    }
+}

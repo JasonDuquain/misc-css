@@ -1,0 +1,61 @@
+body {
+  font-family: 'Arial';
+}
+
+.contain {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+.range label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+.list {
+  list-style: none;
+  padding: 0;
+  counter-reset: list;
+  margin-bottom: 40px;
+  font-size: 1em;
+}
+.list li {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 3.125em;
+  counter-increment: section;
+  margin-bottom: 1em;
+  min-height: 2.5em;
+}
+.list li:before {
+  content: counter(section);
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+  color: #000;
+  width: 2.5em;
+  height: 2.5em;
+  background: #ececec;
+  text-align: center;
+  line-height: 2.5em;
+  border-radius: 50%;
+}

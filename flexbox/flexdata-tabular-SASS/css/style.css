@@ -1,0 +1,72 @@
+html {
+  display: flex; }
+
+body {
+  margin: auto;
+  background: #161321;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Lato', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+input {
+  font-family: 'Lato';
+  -webkit-appearance: none; }
+
+html, body {
+  min-height: 100%; }
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.header-wrapper * {
+  color: #fff; }
+.header-wrapper .note {
+  color: #C6C5D1;
+  font-weight: 500;
+  font-size: .85rem; }
+.header-wrapper .logo {
+  color: #FF9081; }
+.header-wrapper .nav1 li {
+  transition: all 0.2s ease-in-out; }
+
+.material-button {
+  transition: all 0.2s ease-in-out;
+  background-color: #FB5555; }
+  .material-button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+
+.focus {
+  color: #fff; }
+
+ul.col.data:last-child {
+  border-bottom: 0 none;
+  padding-bottom: 0; }
+ul.col.header {
+  color: #888;
+  font-size: .7rem;
+  text-transform: uppercase; }
+
+.year {
+  color: #bbb; }
+
+.icon {
+  transition: all 0.2s ease-in-out; }
+  .icon::before {
+    color: #5092D5;
+    font-family: 'FontAwesome';
+    font-size: 20px; }
+  .icon.edit::before {
+    content: "\f040"; }
+  .icon.delete::before {
+    content: "\f1f8"; }
+
+/*# sourceMappingURL=style.css.map */

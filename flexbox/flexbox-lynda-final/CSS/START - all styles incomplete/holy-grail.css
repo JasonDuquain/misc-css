@@ -1,0 +1,104 @@
+/* Base styles */
+
+.site-title {
+	
+}
+.main-menu {
+	
+}
+
+.post-content {
+	
+}
+
+.sidebar {
+	
+}
+
+.example-menu {
+    
+}
+
+.example-menu ul {
+	
+}
+
+.example-menu a {
+	
+}
+
+.example-menu a:hover,
+.example-menu a:focus {
+	
+}
+
+.footer-area {
+	
+}
+
+/* Sidebar switcher buttons */
+
+@media screen and (max-width: 50em) {
+    /* Hide switcher on small screens */
+    .sidebar-switcher {
+        
+    }
+}
+
+@media screen and (min-width: 50em) {
+
+	.sidebar-switcher {
+		
+	}
+
+	.sidebar-switcher a {
+		
+	}
+
+	.sidebar-switcher a:hover,
+	.sidebar-switcher a:focus {
+		
+	}
+}
+
+/* Flexbox stuff */
+
+@media screen and (min-width: 50em) {
+    
+    .outer-wrap {
+        
+    }
+    
+    .content {
+        
+    }
+    
+    .main-area {
+        
+    }
+    
+    .post-content {
+        
+    }
+    
+    .sidebar {
+        
+    }
+    
+    .sidebar-left {
+        
+    }
+    
+    .no-sidebar {
+        
+    }
+    
+	.hide {
+        
+	}
+    
+    .hide a {
+        
+    }
+
+}

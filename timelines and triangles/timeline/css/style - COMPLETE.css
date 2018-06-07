@@ -1,0 +1,144 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: inherit;
+    background-color: #EEE;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 40px 30px;
+}
+
+a {
+  color: #00637d;
+}
+
+.timeline {
+  margin: 25px 0 22px;
+  padding: 0;
+  position: relative;
+}
+
+.timeline:after {
+    content: "";
+    position: absolute;
+    display: block;
+	
+    border: 6px solid;
+    border-top-width: 13px;
+    border-color: #00637d transparent transparent transparent;
+    bottom: -19px;
+    left: 15px;
+}
+
+.timeline-milestone {
+    border-left: 2px solid #00637d;
+    margin: 0 0 0 20px;
+    padding: 0 0 5px 25px;
+    position: relative;  
+}
+
+.timeline-milestone:before {
+    content: "";
+    display: block;
+    position: absolute;
+	
+    border: 7px solid #00637d;
+    border-radius: 50%;
+    left: -17px;
+    width: 32px;
+    height: 32px;
+}
+
+.timeline-milestone.is-completed:before {
+    background-color: #00637d;
+}
+
+.timeline-milestone.is-completed:after {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    display: block;
+    position: absolute;
+	
+    color: #fff;
+    line-height: 32px;
+    top: 0;
+    left: -17px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+}
+
+.timeline-action {
+    background-color: #fff;
+    padding: 12px 10px 12px 20px;
+    position: relative;
+    top: -15px;
+}
+
+.timeline-action.is-expandable .title {
+    cursor: pointer;
+    position: relative;
+}
+
+.timeline-action.is-expandable .title:focus {
+    outline: 0;
+    text-decoration: underline;
+}
+
+.timeline-action.is-expandable .title:after {
+    content: "";
+    position: absolute;
+    display: block;
+	
+    border: 6px solid #666;
+    border-color: transparent transparent transparent #666;
+    top: 6px;
+    right: 0;    
+}
+
+.timeline-action.is-expandable .content {
+    display: none;
+}
+
+.timeline-action.is-expandable.is-expanded .title:after {
+    border-color: #666 transparent transparent transparent;
+    top: 10px;
+    right: 5px;  
+}
+
+.timeline-action.is-expandable.is-expanded .content {
+    display: block;
+}
+
+.timeline-action .title {
+    color: #00637d;
+    font-size: 18px;
+    margin: 0;  
+}
+
+.timeline-action .date {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.timeline-action .content {
+    font-size: 14px;  
+}
+
+
+
+
+
+
+
+
+
+

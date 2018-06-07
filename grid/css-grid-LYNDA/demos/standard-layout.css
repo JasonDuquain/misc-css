@@ -1,0 +1,290 @@
+/** The primary stylesheet for the Standard Layout.
+ * This sheet pulls in surrounding components allowing you to focus on specifics. */
+
+/* Components */
+@import url('../CSS/reset.css');
+@import url('../CSS/accessibility.css');
+@import url('../CSS/typography.css');
+
+/* Header */
+.masthead {
+    background: #000; 
+}
+
+.site-branding {
+    
+}
+
+.site-title {
+    
+}
+
+.site-description {
+    margin: 0;
+    font-size: .9em;
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: 100;
+}
+
+/* Site Content */
+.site-content {
+    color: #000;
+}
+
+/* ******
+ * Main Grid using Template Areas
+**********/
+
+.site-content {
+    
+}
+
+.main-area {
+    
+}
+
+.footer-area { /* 1st footer */
+    
+}
+
+.promo-area {
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .site-content {
+           
+    }
+}
+
+/* Main Area */
+.main-area {
+    border-top: 1px solid #ccc;
+    padding: 1em;
+}
+
+.article-title {
+    font-size: 1.6em;
+    line-height: 1.2em;
+}
+
+.intro {
+    box-sizing: content-box;
+    margin: 0 -1em;
+    padding: 1em 2em;
+    background: #EFEFEF; 
+}
+
+.intro p {
+    font-style: italic;
+}
+
+.main-area p {
+    font-size: .9em;
+    line-height: 1.3em;
+}
+
+@media screen and (min-width: 500px) {
+
+    .main-area {
+
+    }
+
+    .article-title {
+
+    }
+
+    .intro p {
+
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .main-area {
+        
+    }
+}
+
+/* Breakdown */
+.stepimage {
+    
+}
+
+.stepimage figcaption {
+    
+}
+
+.step {
+    
+}
+
+.step-title {
+    
+}
+
+@media screen and (min-width: 700px) {
+    /******
+     Content Grid using numbered lines *******/
+    .breakdown {
+        
+    }
+
+    .intro {
+        
+    }
+
+    .stepimage figcaption {
+        
+    }
+
+    .item-desc {
+        
+    }
+
+    .stepimage p {
+        
+    }
+
+    .step {
+        
+    }
+
+    .step01-image {
+        
+    }
+
+    .step02-image {
+        
+    }
+
+    .step03-image {
+        
+    }
+
+    .step04-image {
+        
+    }
+
+    .step05-image {
+        
+    }
+
+    .step06-image {
+        
+    }
+
+    .step01-body {
+         
+    }
+
+    .step02-body {
+        
+    }
+
+    .step03-body {
+        
+    }
+
+    .step04-body {
+        
+    }
+
+    .step05-body {
+        
+    }
+
+    .step06-body {
+        
+    }
+}
+
+/* Footer Area */
+.footer-area {
+    margin: 1em;
+}
+
+@media screen and (min-width: 700px) {
+    .footer-area {
+        margin: 1em;
+    }
+}
+
+/* Promo Area */
+.promo-area {
+    
+}
+
+.promo-area a {
+    display: block;
+    text-decoration: none;
+}
+
+.promo-banner {
+    
+}
+
+.promo-banner figcaption {
+    box-sizing: border-box;
+}
+
+.promo-banner blockquote {
+    
+}
+
+.promo-banner h3 {
+    
+}
+
+.promo-banner p {
+    
+}
+
+@media screen and (min-width: 620px) and (max-width: 1000px) {
+
+    .promo-area {
+        
+    }
+
+    .promo-banner {
+        
+    }
+
+    .promo-banner img {
+        
+    }
+
+    .promo-banner figcaption {
+        
+    }
+
+    .promo-banner blockquote {
+        
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .promo-area {
+        
+    }
+
+    .promo-banner {
+        
+    }
+}
+
+/* Site Footer */
+.site-footer { /* 2nd footer */
+    margin-top: 4em;
+    padding: 2em;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+}
+
+@media screen and (min-width: 700px) {
+    .site-footer {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,76 @@
+$browser-context: 16; // Default
+$color-brand: #4a90e2;
+
+body {
+	font-family: 'Arial';
+}
+
+.contain {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em;
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+
+.search {
+	margin-bottom: 1.35em;
+
+	label {
+		display: block;
+		margin-bottom: 6px;
+	}
+
+	input {
+		width: em(400);
+		font-size: em(16);
+		padding: em(10);
+		padding-left: em(40);
+		border-radius: em(5);
+		border: em(2) solid #b4b4b4;
+		background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/182774/search.svg') left em(10) center / em(24) em(24) no-repeat;
+
+		&:focus {
+			border-color: #000;
+			outline: 0;
+		}
+	}
+}
+
+.search--2x {
+	input {
+		font-size: 1.25em;
+	}
+}
+
+.search--px {
+	input {
+		font-size: 1.25em;
+		padding: em(10);
+		padding-left: em(40);
+		border-radius: em(5);
+		border: 2px solid #b4b4b4;
+		background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/182774/search.svg') left 8px center / 24px 24px no-repeat;
+	}
+}

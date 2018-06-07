@@ -1,0 +1,77 @@
+.calendar {
+    
+}
+
+.calendar,
+.calendar ul,
+.calendar ol {
+    
+}
+
+.calendar ol {
+    
+}
+
+.calendar ol:before,
+.calendar ol:after {
+    content: '';
+    box-sizing: border-box;
+    
+}
+
+.monday ol:before,
+.wednesday.days31 ol:after,
+.thursday.days30 ol:after {
+    
+}
+
+.tuesday ol:before,
+.tuesday.days31 ol:after,
+.wednesday.days30 ol:after {
+    
+}
+
+.wednesday ol:before,
+.monday.days31 ol:after,
+.tuesday.days30 ol:after {
+    
+}
+
+.thursday ol:before,
+.sunday.days31 ol:after,
+.monday.days30 ol:after {
+    
+}
+
+.friday ol:before,
+.saturday.days31 ol:after,
+.sunday.days30 ol:after {
+    
+}
+
+.saturday ol:before,
+.friday.days31 ol:after,
+.saturday.days30 ol:after {
+    
+}
+
+.calendar ul li {
+    
+}
+
+.calendar li {
+    box-sizing: border-box;
+    
+}
+
+.calendar ul li {
+    
+}
+
+.calendar ol li {
+    
+}
+
+.calendar ol li:before {
+    
+}

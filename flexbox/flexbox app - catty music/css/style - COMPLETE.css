@@ -1,0 +1,203 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	display: flex;
+	background-color: #fff;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	font-family: Lato, sans-serif;
+	color: #222;
+	font-size: 0.9em;
+}
+
+main {
+	flex: 1 0 auto; /*fill the available space*/
+	display: flex;
+}
+
+aside {
+	flex: 0 0 40px; /*do not grow or shrink. Just stay fixed at 40px width*/
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-around; /*since direction is changed, this works on the vertical direcion*/
+	align-items: center; /*direction is changed! This affects the horizontal direction*/
+	background-color: #f2f2f2; 
+}
+
+/*font size for the icons*/
+aside i.fa {
+	font-size: 0.9em;
+}
+
+section.content {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+section.content .music-head {
+	background-color: #4e4e4e;
+	flex: 0 0 280px; /*don't grow or shrink - stay at 280px HEIGHT*/ 
+	display: flex;
+	padding: 40px;
+}
+
+section.content .music-head  .catty-music{
+	flex: 1 0 auto; /* take remaining space not used by the cattyBoard img */
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	padding-left: 50px;
+}
+
+.catty-music div:nth-child(1){
+	margin-bottom: auto;
+}
+
+.catty-music div:nth-child(2){
+	margin-top: 0;
+}
+
+.catty-music div:nth-child(2) i.fa{
+	font-size: 0.9em;
+	padding: 0 0.7em;
+	font-weight: 300;
+}
+
+.catty-music div:nth-child(1) p:first-child{
+	font-size: 1.8em;
+	margin: 0 0 10px;
+}
+
+/* Within the first div child of .catty-musi, this targets all paragraphs except the first */
+.catty-music div:nth-child(1) p:not(:first-child){
+	font-size: 0.9em;
+	margin: 2px 0;
+}
+
+section.content .music-list {
+	list-style-type: none;
+	padding: 5px 10px 0px;
+	flex: 1 0 auto; /* take up remaining height not used by .music-head */
+}
+
+li {
+	display: flex; /*Target each list containing the paragraphs*/
+	padding: 0 20px;
+	min-height: 50px;
+}
+
+li p {
+	flex: 0 0 25%;
+}
+
+li span.catty-cloud {
+	border: 1px solid black;
+	font-size: 0.6em;
+	padding: 3px;
+}
+
+li:nth-child(2n) {
+	background-color: #f2f2f2;
+}
+
+footer {
+	color: #fff;
+	background-color: rgba(61, 100, 158, .9);
+	display: flex;
+	flex: 0 0 90px; /*don't grow or shrink - just stay at a HEIGHT of 90px.*/
+	padding: 10px;
+}
+
+.catty-music-small {
+	display: flex;
+	margin-right: auto;
+}
+
+.catty-music-small img{
+	padding-right: 10px;
+	width: 100px;
+}
+
+.catty-music-controls {
+	display: flex;
+	width: 50%;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+/*
+Mobile responsiveness
+*/
+
+@media screen and (max-width: 64em) {
+
+    .sm-hide {
+        display: none;
+    }
+
+    .sm-text-center {
+        text-align: center;
+    }
+
+    section.content .music-head {
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    section.content .music-head  .catty-music {
+        padding: 0;
+    }
+
+    /*album art*/
+    .music-head img {
+        width: 150px;
+    }
+
+    /*album details*/
+    .catty-music div:nth-child(1) p:first-child{
+        margin: 20px 0;
+		font-size: 1em;
+    }
+
+    /*music control*/
+    .catty-music-controls {
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 44em) {
+
+    section.content .music-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section.content .music-list li{
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1 1 210px;
+        padding-right: 0;
+        border: 1px solid #efefef;
+        background-color: rgba(0,0,0,.1);
+    }
+    
+    section.content .music-list li p {
+        flex: 1 1 auto;
+    }
+    
+    section.content .music-list li p:last-child {
+        text-align: center;
+    }
+    
+    
+    
+}

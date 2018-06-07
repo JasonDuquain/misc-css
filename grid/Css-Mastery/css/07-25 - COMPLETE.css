@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    line-height: 1.375;
+    font-family: Georgia, Times New Roman, Times, serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: Avenir Next, Avenir, Franklin Gothic, Trebuchet MS, Arial, sans-serif;
+    margin-top: 0;
+}
+a {
+    color: #8E3339;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+/* here's our wrapper */
+.wrapper {
+    width: 95%;
+    max-width: 76em;
+    margin: 0 auto;
+}
+/* masthead styling */
+.masthead {
+    background-color: #8E3339;
+}
+.masthead h1 {
+    margin: 0;
+    padding: 0.5em 0;
+    color: #fff;
+    text-shadow: -.1em .1em 0 rgba(0,0,0,0.3);
+}
+
+/* navbar styling */
+.navbar {
+    background-color: #5E2126;
+    margin-bottom: 1.375em;
+}
+
+.navbar ul {
+    font-family: 'Avenir Next', Avenir, Corbel, 'Franklin Gothic', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #752A2F;
+    display: flex;
+    overflow: hidden;
+}
+.navbar li {
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-align: center;
+    flex: 1 1 auto;
+    border-left: 1px solid #8E3339;
+}
+.navbar li:first-child {
+    border-left: 0;
+}
+.navbar li a {
+    text-decoration: none;
+    display: block;
+    line-height: 1.75em;
+    padding: 1em 2em;
+    color: #fff;
+}
+
+/* content styling */
+.grid-a {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1.375em;
+}
+
+.story img {
+    max-width: 100%;
+}
+
+.subcategory {
+    margin-top: 1.5em;
+    border-bottom: 1px solid #8e3339;
+}
+
+.subcategory-header {
+    grid-row: 1/-1;
+}
+.story:nth-of-type(2),
+.story:nth-of-type(3) {
+    order: -2;
+}
+
+.story-featured {
+    order: -1;
+    grid-column: span 2;
+}
+
+.story {
+    padding: .6875em;
+    background-color: #eee;
+}

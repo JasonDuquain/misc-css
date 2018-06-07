@@ -1,0 +1,83 @@
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+     margin: 0 0 10px 0; 
+}
+
+.clip-svg {
+    width: 0;
+    height: 0;
+}
+
+.img-clip-block {
+    font-family: 'Cuprum', sans-serif;
+    margin: 1.25em 0; /*was 20px*/    
+}
+
+.img-clip-row {
+    
+}
+
+.img-clip-wrap {
+    
+}
+
+.img-clip-row:first-of-type .img-clip-wrap {
+    
+}
+
+.img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(odd) {
+    
+}
+
+.img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(even) {
+    
+}
+
+.img-clip-row:last-of-type .img-clip-wrap {
+    
+}
+
+.overlay {
+	transition: all .3s linear;
+	background: rgba(171, 147, 116, 0.8);
+}
+
+.overlay-content {
+    
+}
+
+.img-clip-wrap:hover .overlay {
+	transition: all 0.4s ease-in;
+}
+
+@media only screen and (min-width: 550px) {
+  .img-clip-row { 
+      
+  }
+
+  .img-clip-row:first-of-type {
+      
+  }
+
+  .img-clip-wrap {
+      
+  }
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        		
+    }
+	
+	.img-clip-wrap {
+        
+    }
+    
+}

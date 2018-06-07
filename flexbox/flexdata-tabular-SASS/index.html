@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Data</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-wrapper">
+            <!--position: relative -->
+            <div class="logo">Logo</div>
+            <!--floated left -->
+            <ul class="nav1">
+                <!--flex container and floated right-->
+                <li>Blog</li>
+                <li>News</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Log out</li>
+            </ul>
+            <div class="title">Welcome back, Kelly!</div>
+            <div class="note">Recent: <span class="focus">$250 </span>to <span class="focus">Best Buy</span> on Saturday, June 5.</div>
+            <span class="material-button"></span>
+            <!--empty span is absolutely positioned-->
+        </div>
+
+        <div class="content-wrapper">
+            <!--flex container-->
+            <div class="table-wrapper">
+                <ul class="horizontal col header">
+                    <!--flex container and position: relative-->
+                    <li class="content">Payoff Date</li>
+                    <!--flex-basis: 15%;-->
+                    <li class="content">Payee</li>
+                    <!--flex-basis: 30%;-->
+                    <li class="content ">Description</li>
+                    <!--flex-basis: 25%;-->
+                    <li class="content right">Remaining</li>
+                    <!--flex-basis:10%;-->
+                </ul>
+                <ul class="data col horizontal">
+                    <!--flex container and position: relative-->
+                    <li class="content">
+                        <!--flex-basis: 15%;-->
+                        <div>Nov 3</div>
+                        <div class="secondary">4 months</div>
+                    </li>
+                    <li class="content has-image">
+                        <!--flex-basis: 30%;-->
+                        <div>Best Buy</div>
+                        <div class="secondary">Best Buy, LLC.</div>
+                    </li>
+                    <li class="content">
+                        <!--flex-basis: 25%;-->
+                        <div>Washer & Dryer</div>
+                        <div class="secondary">Promotional Exp: 10/20/17</div>
+                    </li>
+                    <li class="content">
+                        <!--flex-basis:10%;-->
+                        <div>$250</div>
+                        <div class="secondary">2%</div>
+                    </li>
+                    <li class="content">
+                        <!-- flex-grow: 1 -->
+                        <div class="icon-wrapper">
+                            <span class="icon edit" data-tooltip="Edit"></span>
+                            <!--empty span-->
+                            <span class="icon delete" data-tooltip="Delete"></span>
+                            <!--empty span-->
+                        </div>
+                    </li>
+                </ul>
+                <ul class="data col horizontal">
+                    <!--flex container and postion: relative-->
+                    <li class="content">
+                        <!--flex-basis: 15%;-->
+                        <div>Jan 15 <span class="year">'17</span></div>
+                        <div class="secondary">6 months</div>
+                    </li>
+                    <li class="content has-image">
+                        <!--flex-basis: 30%;-->
+                        <div>Chase Auto</div>
+                        <div class="secondary">JP Morgan Chase Bank</div>
+                    </li>
+                    <li class="content">
+                        <!--flex-basis: 25%;-->
+                        <div>Scion TC '12</div>
+                        <div class="secondary">5 year loan</div>
+                    </li>
+                    <li class="content">
+                        <!--flex-basis:10%;-->
+                        <div>$8,9120</div>
+                        <div class="secondary">80%</div>
+                    </li>
+                    <li class="content">
+                        <!-- flex-grow: 1 -->
+                        <div class="icon-wrapper">
+                            <span class="icon edit" data-tooltip="Edit"></span>
+                            <!--empty span-->
+                            <span class="icon delete" data-tooltip="Delete"></span>
+                            <!--empty span-->
+                        </div>
+                    </li>
+                </ul>
+                <ul class="data col horizontal">
+                    <!--flex container and position: relative-->
+                    <li class="content">
+                        <!--flex-basis: 15%;-->
+                        <div>Mar 8 <span class="year">'17</span></div>
+                        <div class="secondary">8 months</div>
+                    </li>
+                    <li class="content has-image">
+                        <!--flex-basis: 30%;-->
+                        <div>Macy's</div>
+                        <div class="secondary">Macy's Inc.</div>
+                    </li>
+                    <li class="content">
+                        <!--flex-basis: 25%;-->
+                        <div>Couch</div>
+                        <div class="secondary">Promotional Exp: 3/8/17</div>
+                    </li>
+                    <li class="content">
+                        <!--flex-basis:10%;-->
+                        <div>$1,080</div>
+                        <div class="secondary">19%</div>
+                    </li>
+                    <li class="content">
+                        <!-- flex-grow: 1 -->
+                        <div class="icon-wrapper">
+                            <span class="icon edit" data-tooltip="Edit"></span>
+                            <!--empty span-->
+                            <span class="icon delete" data-tooltip="Delete"></span>
+                            <!--empty span-->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--table-wrapper-->
+        </div>
+        <!--content-wrapper-->
+    </div>
+    <!--container-->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

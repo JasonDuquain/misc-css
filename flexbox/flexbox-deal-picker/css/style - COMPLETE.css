@@ -1,0 +1,148 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem 1rem;
+  background: url(http://subtlepatterns.com/patterns/debut_light.png);
+  font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  color: #393939;
+}
+
+nav.ProductPicker-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end; /*now when padding top is applied to the active tab it will take effect*/
+}
+
+a.NavItem {
+    flex: 1 1 auto;
+}
+
+ul.ProductList {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li.Product,
+a.Product-moreCTA { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li.Product {
+    flex: 0 1 10em; /* 10em width since the container is set to 'row' */
+    min-height: 15em;
+}
+
+/* 
+Everything below this is just visual sugar */
+div.ProductPicker {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+ul.ProductList {
+    margin: 0;
+    padding: 2em;
+    border-radius: 0 0 10px 10px;
+    border-bottom: 4px solid #eee;
+    background: white;
+}
+
+ul.ProductList li {
+  list-style: none;
+  margin-bottom: 1rem;
+  padding: .5em;
+    text-align: center;
+}
+
+ul.ProductList--is-hidden {
+    display: none;
+}
+
+a.Product-moreCTA {
+    text-decoration: none;
+}
+
+i.Product-icon {
+    color: #82ABA1;
+    margin: 0 0 .5em;
+    border-radius: 50%;
+    font-size: 50px;
+}
+
+h6.Product-name {
+    color: #82ABA1;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+span.Product-price {
+    color: #E8AEB7;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+button.Product-buyCTA {
+    color: #444;
+    font-size: 1.25em;
+    font-weight: 700;
+    width: 100%;
+    padding: .5em .35em;
+    background: #B8E1FF;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+	cursor: pointer;
+	background-image: linear-gradient(rgba(255,255,255,.2), transparent);
+}
+
+li:nth-of-type(2) button {
+    background-color: goldenrod;
+}
+
+li:nth-of-type(3) button {
+    background-color: lightcoral;
+}
+
+/* Navigation */
+a.NavItem {
+	text-decoration: none;
+    color: #058b23;
+    padding: .8rem;
+    background: #94FBAB;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a.NavItem:first-of-type {
+    border-radius: 10px 0 0 0;
+}
+
+a.NavItem:last-of-type {
+    border-radius: 0 10px 0 0;
+}
+
+a.NavItem--is-active {
+	padding-top: 1.1rem; /* makes top taller then the inactive ones */
+    background: #E8AEB7;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+a.NavItem--is-active, a.NavItem--is-active:first-of-type, a.NavItem--is-active:last-of-type {
+    border-radius: 10px 10px 0 0;
+}
+
+

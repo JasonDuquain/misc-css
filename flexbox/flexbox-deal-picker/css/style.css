@@ -1,0 +1,108 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem 1rem;
+  background: url(http://subtlepatterns.com/patterns/debut_light.png);
+  font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  color: #393939;
+}
+
+nav.ProductPicker-nav {
+    
+}
+
+a.NavItem {
+    
+}
+
+ul.ProductList {
+    
+}
+
+li.Product,
+a.Product-moreCTA {
+    
+}
+
+li.Product {
+    
+}
+
+/* All below is just visual styles */
+div.ProductPicker {
+	max-width: 50rem;
+    margin: 0 auto;
+}
+
+ul.ProductList {
+    
+}
+
+ul.ProductList li {
+  list-style: none;
+}
+
+ul.ProductList--is-hidden {
+    
+}
+
+a.Product-moreCTA {
+    text-decoration: none;
+}
+
+i.Product-icon {
+    color: #82ABA1;
+}
+
+h6.Product-name {
+    color: #82ABA1;
+}
+
+span.Product-price {
+    color: #E8AEB7;
+}
+
+button.Product-buyCTA {
+	color: #444;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+li:nth-of-type(2) button {
+    
+}
+
+li:nth-of-type(3) button {
+    
+}
+
+/* Navigation */
+a.NavItem {
+		text-decoration: none;
+		color: #058b23;
+		
+}
+
+a.NavItem:first-of-type {
+    
+}
+
+a.NavItem:last-of-type {
+    
+}
+
+a.NavItem--is-active {
+    
+}
+
+a.NavItem--is-active, a.NavItem--is-active:first-of-type, a.NavItem--is-active:last-of-type {
+    
+}
+
+

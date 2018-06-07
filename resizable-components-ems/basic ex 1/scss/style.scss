@@ -1,0 +1,93 @@
+$browser-context: 16; // Default
+$color-brand: #4a90e2;
+
+body {
+	font-family: 'Arial';
+}
+
+.contain {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+
+.posts-wrapper {
+	font-size: 30px;
+}
+
+.post {
+	margin: 16px 0;
+
+	a {
+		display: block;
+		background: #f2f2f2;
+		padding: 15px;
+		border-left: 4px solid $color-brand;
+		text-decoration: none;
+		transition: background 0.3s ease;
+
+		&:hover {
+			background: $color-brand;
+			color: #fff;
+
+			span,
+			h2 {
+				color: #fff;
+			}
+		}
+	}
+
+	span {
+		display: block;
+		font-size: 14px;
+		color: #7d7d7d;
+		transition: color 0.2s ease;
+	}
+
+	h2 {
+		font-size: 22px;
+		color: $color-brand;
+		margin: 0;
+		transition: color 0.2s ease;
+	}
+}
+
+.post--enhanced {
+	margin-top: em(16);
+	margin-bottom: em(16);
+
+	a {
+		padding: em(15);
+		border-left-width: em(4);
+	}
+
+	span {
+		font-size: em(14);
+	}
+
+	h2 {
+		font-size: em(22);
+	}
+}

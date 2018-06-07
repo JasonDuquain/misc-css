@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
+figure.snip1091 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    margin: .625em .312em; /*was 10px 5px*/
+    min-width: 13.75em; /* was 220px*/
+    max-width: 19.375em; /* was 310px */
+    max-height: 19.375em; /* was 310px */
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background: #000000;
+    box-shadow: 0 0 .312em rgba(0, 0, 0, 0.85); /*was 5px*/
+}
+
+figure.snip1091 * {
+    transition: all 0.35s ease-in-out;
+}
+
+figure.snip1091 img {
+    opacity: .25;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+figure.snip1091 figcaption {
+    position: absolute;
+    top: 50%;
+    left: 1.875em; /*was 30px*/
+    right: 1.875em; /*was 30px*/
+    transform: rotate(0deg) translateY(-50%) scale(1);
+    transform-origin: center top;
+}
+
+figure.snip1091 figcaption h2 {
+    letter-spacing: -1px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: .625em 0; /*was 10px*/
+}
+
+figure.snip1091 figcaption h2 span {    
+    font-weight: 300;
+}
+
+figure.snip1091 figcaption:before,
+figure.snip1091 figcaption:after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: .125em; /* was 2px */
+    position: absolute;
+}
+
+figure.snip1091 figcaption:before {
+    left: 0;
+    top: 0;
+}
+
+figure.snip1091 figcaption:after {
+    bottom: 0;
+    right: 0;
+}
+
+figure.snip1091.red {
+    background: #2e0e0a;
+}
+
+figure.snip1091.green {
+    background: #061c10;
+}
+
+figure.snip1091.navy {
+    background: #000000;
+}
+
+figure.snip1091 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+figure.snip1091:hover img,
+figure.snip1091.hover img {
+    opacity: 1;
+}
+
+figure.snip1091:hover figcaption,
+figure.snip1091.hover figcaption {
+    transform: rotate(-45deg) translateY(-50%) scale(0.9);
+}
+
+figure.snip1091:hover figcaption:before,
+figure.snip1091.hover figcaption:before,
+figure.snip1091:hover figcaption:after,
+figure.snip1091.hover figcaption:after {
+    width: 200%;
+}
+
+/* Demo purposes only */
+
+body {    
+    text-align: center;
+}
+
+@media (max-width: 680px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1100px) {
+    body {
+        font-size: 24px;
+    }
+}

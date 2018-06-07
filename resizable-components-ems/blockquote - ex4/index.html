@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Blockquote</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="contain">
+  <div class="range">
+    <label for="range">Drag to change font-size:</label>
+    <input type="range" name="" id="range" min="10" max="40" />
+    <span class="current"></span>
+  </div>
+  <div class="item">
+    <p>The quote icon is positioned absolutely and <em>left</em> property is set with <em>em</em></p>
+    <blockquote class="quote">
+      <p><span>Building dynamic web components using modular design concepts is awesome. <em>- Ahmad Shadeed</em></span></p>
+    </blockquote>
+
+    <blockquote class="quote quote--dynamic">
+      <p><span>Building dynamic web components using modular design concepts is awesome. <em>- Ahmad Shadeed</em></span></p>
+    </blockquote>
+
+    <p>Bad example: the quote icon is overlapping the text, because <em>left</em> property is set with <em>px</em></p>
+
+    <blockquote class="quote quote--px">
+      <p><span>Building dynamic web components using modular design concepts is awesome. <em>- Ahmad Shadeed</em></span></p>
+    </blockquote>
+  </div>
+</div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

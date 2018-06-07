@@ -1,0 +1,75 @@
+html {
+	background-color:#333;
+	font-family:helvetica;
+}
+
+*{
+	padding: 10px;
+}
+
+header, footer {
+    
+}
+
+main {
+    
+}
+
+body,section {
+    
+}
+
+img {
+    
+}
+
+h1 {
+	margin: 0;
+}
+
+nav {
+        
+}
+
+nav a {
+    text-decoration: none;
+    
+}
+
+section>button, section>a {
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+section>img, section>button, section>a {
+      
+}
+
+@media screen and (min-width: 40em) {
+	
+	body,main,section {
+        
+        
+    }
+	
+	main {
+        
+    }
+	
+	main>section {
+       
+    }
+    
+    main>section>p {
+        
+    }
+	
+	header,nav {
+       
+    }
+	
+	main>section {
+        
+    }
+}

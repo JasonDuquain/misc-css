@@ -1,0 +1,84 @@
+$browser-context: 16; // Default
+$color-brand: #4a90e2;
+
+body {
+	font-family: 'Arial';
+}
+
+.contain {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em;
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+
+.social {
+	padding: 1em;
+	list-style: none;
+	background: #f2f2f2;
+	font-size: 1em;
+
+	&--2x {
+		font-size: 1.2em;
+	}
+
+	&--3x {
+		font-size: 1.4em;
+	}
+
+	&--px {
+		font-size: 1.5em;
+
+		.social__item {
+			svg {
+				width: 35px;
+				height: 35px;
+			}
+		}
+	}
+}
+
+.social__item {
+	display: inline-block;
+	margin-right: 1em;
+
+	svg {
+    display: inline-block;
+    vertical-align: middle;
+		width: em(35);
+		height: em(35);
+		fill: #000;
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: #000;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}

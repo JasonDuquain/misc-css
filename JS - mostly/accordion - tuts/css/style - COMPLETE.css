@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+    color: #5a1bbe;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+button:disabled {
+    color: #5a1bbe;      
+}
+
+svg {
+    /*svg images by https://iconmonstr.com*/
+    width: 16px;
+    height: 16px;
+}
+
+.hide {
+    display: none;  
+}
+
+.show {
+    display: flex;
+}
+
+body {
+    font: normal 20px/1.5 Helvetica, sans-serif;
+    margin-top: 25px;
+    background: #f2f2f2;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+p, .toggle-btn {
+    margin-bottom: 25px;  
+}
+
+.toggle-btn {
+    display: inline-block;
+    font-weight: bold;
+}
+
+span {
+    display: flex;
+    align-items: center;
+}
+
+span svg {
+    margin-left: 5px;    
+}
+
+svg path {
+    fill: currentColor;    
+}
+
+.info {
+    transition: height 500ms;
+    overflow: hidden;
+}

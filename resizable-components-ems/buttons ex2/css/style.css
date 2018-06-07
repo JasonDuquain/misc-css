@@ -1,0 +1,40 @@
+body {
+  font-family: 'Arial'; }
+
+.contain {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em; }
+  .range label {
+    display: block;
+    margin-bottom: 10px; }
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+.button {
+  display: block;
+  font-size: 1em;
+  background: #4a90e2;
+  padding: 0.625em 1em;
+  color: #fff;
+  border-radius: 0.25em;
+  margin-bottom: 16px;
+  font-weight: 300;
+  border: 0; }
+
+.button--2x {
+  font-size: 150%; }
+
+.button--3x {
+  font-size: 200%; }
+
+/*# sourceMappingURL=style.css.map */

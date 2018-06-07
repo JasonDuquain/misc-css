@@ -1,0 +1,50 @@
+
+
+body{
+    background: #D5D5D5;
+    font-family: museo-300;
+    font-size: 1.2rem; /* 19.2px */
+    text-align: center; 
+}
+
+.tri, .flecha {
+    
+}
+
+.tri {
+    
+}
+
+.tri::after {
+    
+}
+
+.flecha {
+    
+}
+
+.flecha::after {
+    
+}
+
+.drop-shadow {
+    
+}
+
+.box-shadow {
+    
+}
+
+@media (min-width: 900px) {
+    body {
+        
+    }
+}
+
+
+@media (min-width: 1250px) {
+    body {
+        
+    }
+}
+

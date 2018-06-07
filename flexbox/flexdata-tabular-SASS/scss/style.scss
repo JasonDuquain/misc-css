@@ -1,0 +1,245 @@
+$color-white: #fff;
+$color-purple-lt: #5C557A;
+$color-purple-dk: #271E4F;
+$bg-color: $color-purple-dk;
+$border: rgba(255,255,255,0.1);
+
+
+html {
+	display: flex;
+}
+
+body {
+	margin: auto;
+    background: #161321;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+input {
+    font-family: 'Lato';
+	-webkit-appearance: none;
+}
+
+html,body{ min-height: 100%; }
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.table-wrapper > ul {
+	    
+}
+
+.container {
+  
+}
+
+.header-wrapper {
+	  
+	* { color: $color-white; }
+	
+	.title {
+		
+	}
+	
+	.note {
+		color: #C6C5D1;
+		font-weight: 500;
+		font-size: .85rem;
+	}
+	
+	.logo {
+		color: #FF9081;
+	}
+	
+	.nav1 {
+		
+		li {
+			transition: all 0.2s ease-in-out;
+			
+			&:hover {
+					
+				}
+		}//li
+		
+	}//.nav1
+	
+}//.header-wrapper
+
+.material-button {
+		transition: all 0.2s ease-in-out;
+		background-color: #FB5555;
+		
+	&:before {
+		
+	}
+	
+	&:hover {
+		box-shadow: 0 0 20px rgba(0,0,0 , 0.3);
+	}
+	
+}//.material-button
+
+.focus {
+	color: $color-white;
+}
+
+.content-wrapper {
+	
+}
+
+.table-wrapper {
+  
+}
+
+ul.horizontal {
+  
+}
+
+ul.col {
+
+  &.data {
+    	
+		&:last-child {
+			border-bottom: 0 none;
+			padding-bottom: 0;	
+		}
+		
+    .content {
+	
+			&:last-child {
+			
+			}
+			
+    }//ul.content
+	
+  }
+  
+  li.content {
+    
+    &:first-child {
+    	
+  }
+  
+    &:nth-child(2){
+      
+    }
+	
+     &:nth-child(3){
+		
+    }
+	
+		&:nth-child(4){
+			
+		
+		}	
+
+  }//li.content
+			
+   &.header {
+	 color: #888;
+    font-size: .7rem;
+    text-transform: uppercase;
+ 
+  }
+
+  .secondary {
+	
+ 
+  }
+  
+}//ul.col1
+
+.year {
+	color: #bbb;
+}
+
+.has-image {
+	
+	&:before {
+		
+	}
+	
+}//.has-image
+
+ .table-wrapper > ul:nth-child(1){
+	
+}
+
+.table-wrapper > ul:nth-child(2){
+	
+}
+
+.table-wrapper > ul:nth-child(3){
+	
+}
+
+.table-wrapper > ul:nth-child(4){
+	
+}
+
+@keyframes nav-fade {
+	100% { 
+		
+}
+
+}
+
+.icon {
+	transition: all 0.2s ease-in-out;
+	
+	&:hover {
+		
+	}
+	
+	&::before {
+		color: #5092D5;
+		font-family: 'FontAwesome';
+		font-size: 20px;
+	}
+	
+	&.edit::before {
+		content:  "\f040";
+	}
+	&.delete::before {
+		content: "\f1f8";
+	}
+	
+}//.icon
+
+.icon-wrapper {
+    
+}
+
+[data-tooltip] {
+	
+	&:hover {
+	
+		&:after {
+			
+		}
+		
+	}
+	
+	&.edit:hover:after {
+		
+	}
+	
+	&.delete:hover:after{
+		
+	}
+	
+}//[data-tooltip]

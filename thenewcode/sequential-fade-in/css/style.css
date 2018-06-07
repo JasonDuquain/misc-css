@@ -1,0 +1,42 @@
+
+body { 
+    
+}
+
+div#cars { 
+    font-size: 0;
+    
+} 
+
+div#cars img { 
+    
+}
+
+div#cars img.visible { 
+    
+}
+
+/* COMPLETE
+
+body { 
+    background: #000; 
+    margin: 0; 
+}
+
+div#cars { 
+    font-size: 0; 
+    background: #000; 
+} 
+
+div#cars img { 
+    transition: .8s opacity; 
+    width: 50%; 
+    height: auto; 
+    opacity: 0; 
+}
+
+div#cars img.visible { 
+    opacity: 1; 
+}
+
+*/

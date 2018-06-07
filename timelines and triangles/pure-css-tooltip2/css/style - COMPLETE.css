@@ -1,0 +1,61 @@
+/********** Right Tooltip **********/
+[data-tooltip].t-right:before {
+  top: 50%;
+  left: 100%;
+  margin-left: 5px; /* make room for triangle */
+  transform: translateY(-50%);
+}
+[data-tooltip].t-right:after {
+  border-right: 8px solid #000;
+  border-left: none;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+[data-tooltip].t-right:hover:before,
+[data-tooltip].t-right:hover:after {
+  transform: translateX(5px) translateY(-50%);
+}
+
+/********** Bottom Tooltip **********/
+[data-tooltip].t-bottom:before {
+  top: 100%;
+  left: 50%;
+  margin-top: 5px; /* make room for triangle */
+  transform: translateX(-50%);
+}
+[data-tooltip].t-bottom:after {
+  border-bottom: 8px solid #000;
+  border-top: none;	
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+[data-tooltip].t-bottom:hover:before,
+[data-tooltip].t-bottom:hover:after {
+  transform: translateX(-50%) translateY(5px);
+}
+
+/********** Left Tooltip **********/
+[data-tooltip].t-left:before {
+  top: 50%;
+  right: 100%;
+  margin-right: 5px; /* make room for triangle */
+  transform: translateY(-50%);
+}
+[data-tooltip].t-left:after {
+  border-left: 8px solid #000;
+  border-right: none;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  filter: drop-shadow(-2px 2px 2px rgba(0,0,0,1));
+}
+
+[data-tooltip].t-left:hover:before,
+[data-tooltip].t-left:hover:after {
+  transform: translateX(-5px) translateY(-50%);
+  filter: drop-shadow(-2px 2px 2px rgba(0,0,0,1));
+}

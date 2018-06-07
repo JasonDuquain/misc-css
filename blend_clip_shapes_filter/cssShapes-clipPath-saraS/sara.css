@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    color: #555;
+    font-size: 0.95em;
+    background-color: #eee;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+    
+}
+
+.element {
+    
+}
+
+p, h1, h3 {
+	  padding: 1em 0; 
+}
+
+p {
+     
+}
+
+ul {
+	  list-style: circle;
+}
+
+.clear {
+    
+}

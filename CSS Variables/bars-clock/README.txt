@@ -1,0 +1,3 @@
+A Pen created at CodePen.io. You can find this one at https://codepen.io/georgec/pen/EWyyMa.
+
+ The following example creates a CSS bars clock that tells the current time, by updating CSS variables only using JavaScript. Each CSS variable is fed the current hour, minutes, or seconds of the day as a percentage of a full 24 hours, 60 minutes, or 60 seconds, respectively. For example, 6pm would translate into 6/24, or 40% for the hour field. 

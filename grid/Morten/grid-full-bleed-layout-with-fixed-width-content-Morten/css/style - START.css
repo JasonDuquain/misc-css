@@ -1,0 +1,178 @@
+/*-------------------------
+CSS Reset
+----------------------------------*/
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+/*---------------------------------
+Typography
+------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
+}
+
+
+/* Promo section */
+
+.logo,
+.site-title {
+	
+}
+
+div.logo {
+	
+}
+
+h2.site-title {
+	
+}
+
+/* Splash section */
+
+section.splash {
+	
+}
+
+div.splash-content {
+	
+}
+
+@media screen and (min-width: 600px) {
+	div.splash-text {
+		
+	}
+
+	div.splash-text p {
+		
+	}
+}
+
+/* Buckets section */
+
+section.buckets {
+	
+}
+
+section.buckets ul {
+	margin: 0;
+	padding: 0;
+}
+
+section.buckets li {
+	list-style-type: none;
+}
+
+div.bucket {
+	
+}
+
+/* More section */
+
+section.more {
+	
+}
+
+/* Twins section */
+
+div.twin {
+	padding: 2em;
+    background: #2185c5;
+    color: #fff;
+}
+
+div.twin:last-of-type {
+	background: #FF7F66;
+}
+
+
+/* Colophon section */
+footer.colophon {
+	padding: 2em;
+	background: rgb(26, 26, 26);
+	color: white;
+	text-align: center;
+}
+
+footer.colophon a {
+	color: white;
+}
+
+footer.colophon a:hover,
+footer.colophon a:focus {
+	border-bottom: 1px solid white;
+}
+
+/*-------------------------------------
+Use flex to create a three-bucket layout 
+------------------------------------*/
+@media screen and (min-width: 700px) {
+
+		section.buckets ul {
+			
+		}
+
+		section.buckets li {
+			
+		}
+
+}
+
+/*----------------------------------
+CSS Grid layout for wider screens:
+----------------------------------*/
+@media screen and (min-width: 600px) {
+
+		/* Four-column layout. Two center columns have a total max width of 50em: */
+		.grid {
+			
+		}
+
+		/* Center items by placing them in the two center columns: */
+		div.splash-content,
+		div.more-content,
+		section.buckets ul {
+			
+		}
+
+		/* Use automatic grid placement + span to let each item span two columns:*/
+		div.twin,
+		footer.colophon aside {
+			
+		}
+
+}

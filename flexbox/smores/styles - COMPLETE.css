@@ -1,0 +1,397 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #d1c2ae;
+	background: hsl(35, 28%, 80%);
+	color: #443526;
+	font-family: 'PT Serif', serif;
+}
+.wrapper {
+	min-width: 320px;
+	width: 90%;
+	margin: 0 auto;
+}
+article, aside, dialog, figure, footer, header, hgroup, nav, section { display:block; }
+
+/* Text */
+h1, h2, h3 {
+	font-family: 'Hammersmith One', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+h1 {
+	font-size: 300%;
+	line-height: 1;
+}
+a {
+	color: #F0470F;
+}
+
+.intro {
+	margin-bottom: 1.5em;
+    font-size: 125%;
+    line-height: 1.5;
+}
+
+/* Header --------------------------------- */
+.logo {
+	text-align: center;
+}
+.tagline {
+	font-family: 'Hammersmith One', sans-serif;
+    margin-top: 5px;
+    color: #fff;
+}
+
+/***** ADD FLEX STYLES*****/
+/**************************/
+.list-nav {
+	list-style: none;
+	font-family: 'Hammersmith One', sans-serif;
+	font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+	
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Forms ------------------------------ */
+
+button {
+	box-shadow: inset 0 0 1px 1px hsla(0,0%,100%,.5);
+	text-shadow: 0 1px 0 hsla(0,0%,0%,.5);
+	font-family: 'Hammersmith One', sans-serif;
+	font-weight: normal;
+    background: hsla(15,88%,50%,1.0);
+	border: 1px solid hsla(15,80%,40%,1.0);
+    border-radius: 3px;
+    color: #fff;
+    padding: 12px 20px 14px 20px;
+	text-align: center;
+	font-size: 112.5%;
+	text-transform: uppercase;  
+}
+
+button:hover {
+    background: hsla(15,88%,47%,1.0);
+    cursor: pointer;
+}
+
+button:active {
+    background: hsla(15,90%,52%,1.0);
+    color: #000;
+}
+
+input[type="text"] {
+	padding: 2px 2px 4px 4px;
+	border: 1px solid hsl(35,28%,70%);
+	border-radius: 2px;
+	box-shadow: inset 0 0 2px #fff;
+	background: linear-gradient(top, hsl(35,28%,90%), #fff);
+}
+
+input[type="checkbox"], input[type="radio"] {
+	margin:0 4px 0 0;
+	padding:0;
+	width:16px;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+	position: relative;
+	padding-left: 4px;
+}
+
+input[type="checkbox"] + label::before, input[type="radio"] + label::before {
+	position: absolute;
+	left: -21px;
+	top: 0;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding: 2px 2px 4px 4px;
+	background: #fff;
+	background: linear-gradient(top, hsl(35,28%,90%), #fff);
+	content: " ";
+	margin-top: 2px;
+	cursor: pointer;
+	border: 1px solid hsl(35, 28%, 70%);
+	border-radius: 2px;
+	text-align: center;
+	line-height: 10px;
+	vertical-align: top;
+	box-shadow: inset 0 0 1px #fff;
+	color: #F0470F;	
+}
+
+input[type="radio"] + label::before {
+	width: 9px;
+	height: 9px;
+	padding: 1px 3px 5px 3px;
+	border-radius: 50%;
+}
+
+input[type="checkbox"] + label:hover::before, input[type="checkbox"]:focus + label::before {
+	box-shadow: inset 0 0 2px 1px #fd2;
+}
+input[type="checkbox"]:checked + label:before {
+	content: "\2713";
+}
+input[type="radio"]:checked + label:before {
+	content: "\25CF";
+}
+input:disabled + label:before {
+	border-color: #bbb;
+	color: #bbb;
+	text-shadow: 0 -1px #ccc, 0 1px #666;
+	background: linear-gradient(top, #d5d5d5, #e5e5e5); /* add other variations */
+}
+
+/* S'mores Builder ----------------- */
+.builder {
+	margin: 0 0 40px -20px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.builder-component {
+	flex: 1 1 200px;
+    margin: 20px 0 20px 20px;
+    padding: 20px;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.2);
+	
+	display: flex;
+    flex-direction: column;
+}
+
+.builder-component-name {
+    margin: 0 0 .5em 0;
+    padding: 10px 0 0 0;
+	position: relative;
+}
+
+.builder-component-name:before {
+	content: '';
+	position: absolute;
+	display: block;
+    width: 40px;
+    height: 40px;
+    background: url(icons.png);
+    top: -40px;
+    left: calc(50% - 20px);
+}
+
+.builder-component_marshmallow .builder-component-name:before { background-position: -40px 0; }
+.builder-component_candy .builder-component-name:before { background-position: -80px 0; }
+.builder-component_accessories .builder-component-name:before { background-position: -120px 0; }
+
+.ingredients-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients-list-item:not(:last-child) {
+	margin-bottom: .5em
+}
+
+.ingredients-list-item:last-child {
+	display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.other-ingredient-label {
+	margin-right: 4px;
+}
+
+.other-ingredient-field {
+	flex: 1;
+    margin: 0;
+}
+
+.builder-action {
+	flex: 1 1 100%;
+    margin: 0 0 0 20px;
+    text-align: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.builder-action-label {
+	font-family: 'Hammersmith One', sans-serif;
+	font-weight: normal;
+    font-size: 112.5%;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.builder-action-field {
+    flex: 1;
+}
+
+.builder-action-button {
+	flex: 1 1 100%;
+    margin-top: 10px;
+}
+
+/* S'mores Gallery --------------------------- */
+.gallery {
+	margin-left: -20px;
+    text-align: center;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+	flex: 1 0 200px; 
+    margin: 0 0 20px 20px;
+	padding: 20px;
+	border-radius: 2px;
+	border: 1px solid rgb(65, 51, 37);
+	background: rgb(98, 77, 55);
+	color: rgb(237, 230, 222);
+    vertical-align: top;
+}
+
+.gallery-item:hover {
+	background: rgb(65, 51, 37);
+	color: #fff;
+}
+
+.gallery-item-name {
+	margin: 0 0 .5em 0;
+}
+
+.gallery-item-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Pagination ------------------------------- */
+.pagination {	
+	list-style: none;
+    margin: 0 0 40px 0;
+    padding: 0;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pagination-item {
+	order: 2;
+}
+
+.pagination-item:first-child {
+	order: 0;
+    text-align: left;
+	width: 50%;
+}
+
+.pagination-item:last-child {
+	order: 1;
+    text-align: right;
+	width: 50%;
+}
+
+.pagination-link {
+	display: inline-block; /* just keeps padded boxes from overlapping each other vertically */
+	margin: 0 0 10px 0;
+	padding: 10px;
+	border-radius: 2px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (min-width:600px) {
+	/* Header ---------- */
+	.list-nav {
+		letter-spacing: 1px;  
+	} 
+    
+	.list-nav-item {
+		padding: 0 .5em; /* FALLBACK */
+	}
+    
+	.list-nav-item:first-child {
+		padding-left: 0;
+	}
+    
+	.list-nav-item:last-child {
+		padding-right: 0;
+	}
+	
+	/* S'mores Builder ---------- */
+	.flexbox .builder-action {
+        align-items: stretch;
+	}
+    
+	.builder-action-field {
+		margin: 0 10px 0 0;
+	}
+    
+	.builder-action-label {
+		align-self: center;
+	}
+    
+	.builder-action-button {
+		flex: none;
+        margin: 0;
+	}
+	
+	/* Pagination ---------- */
+	.pagination-item,
+	.flexbox .pagination-item:first-child,
+	.flexbox .pagination-item:last-child { /* Need .flexbox class just for specificity, to override earlier rule that set width to 50% */
+		order: 0;
+        width: auto;
+        text-align: center;
+	}
+}
+
+@media screen and (min-width:860px) {
+	/* Header ---------- */
+	.flexbox .list-nav {
+		justify-content: flex-start;
+        position: relative;
+        top: -70px;
+	}
+    
+	.flexbox .list-nav-item_home {
+		margin-right: 15px;
+	}
+    
+	.flexbox .list-nav-item_tumblr {
+		margin-left: 15px;
+	}
+    
+	.flexbox .list-nav-item_party { 
+		margin-left: auto;
+	}
+
+	/* S'mores Builder ---------- */
+	.builder-component {
+		flex: 1 1 calc(25% - 62px);
+	}
+    
+	/* Pagination ---------- */
+	.flexbox .pagination { /* Need .flexbox class just for specificity */
+		justify-content: center;
+	}
+    
+	.pagination-link {
+		margin: 0 10px;
+	}
+}

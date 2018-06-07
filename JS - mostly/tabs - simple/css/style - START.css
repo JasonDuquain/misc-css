@@ -1,0 +1,36 @@
+.container--tabs {
+    margin: 2rem;  
+}
+
+.container--tabs .nav-tabs {
+    list-style-type: none;
+    
+}
+
+.container--tabs .nav-tabs > li {
+    
+}
+
+.container--tabs .nav-tabs > li > a {
+    
+}
+
+.container--tabs .nav-tabs > li > a:hover {
+          
+}
+
+.container--tabs .nav-tabs > li.active > a,
+.container--tabs .nav-tabs > li.active > a:hover,
+.container--tabs .nav-tabs > li.active > a:focus {
+    
+}
+
+.container--tabs .tab-content > .tab-pane {
+    
+}
+
+.container--tabs .tab-content > .tab-pane.active {
+    
+}
+
+

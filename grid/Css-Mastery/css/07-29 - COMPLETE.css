@@ -1,0 +1,48 @@
+
+.grid-b {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 1fr;
+    grid-template-areas: 
+        "hd ... ... ..."
+        "hd st1 ... st2"
+        "hd ... ... ...";
+    grid-gap: 1.375em;
+}
+
+.story img {
+    width: 100%;
+}
+
+.grid-b .subcategory-header {
+    padding: .6875em;
+    grid-area: hd;
+    background-color: #eee;
+}
+
+.story {
+    background-color: #eee; 
+    padding: .6875em;
+}
+
+.grid-b .story:nth-child(2) {
+    grid-area: st1;
+}
+
+.grid-b .story:nth-child(3) {
+    grid-area: st2;
+}
+
+.ad {
+    padding: .6875em;
+    display: flex;
+    background-color: #8e3339;
+    color: #fff;
+}
+
+.ad h3 a {
+    color: inherit;
+}
+
+.ad h3 {
+    margin: auto;
+}

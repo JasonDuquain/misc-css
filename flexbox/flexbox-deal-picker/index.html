@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deal Picker - Flexbox Fridays 3</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="ProductPicker">
+  <nav class="ProductPicker-nav"><!--flex container-->
+    <a href="#Deals" class="NavItem NavItem--is-active">Deals</a>
+    <a href="#Trips" class="NavItem">Trips</a>
+    <a href="#Fun" class="NavItem">Fun</a>
+  </nav>
+  
+  <div class="ProductListWindow">
+    <ul id="Deals" class="ProductList"><!--flex container-->
+        <li class="Product"><!--flex container direction: column-->
+            <a href="#" class="Product-moreCTA"><!--flex container direction: column-->
+                <i class="Product-icon fa fa-bus"> </i>
+                <h6 class="Product-name">
+                  Bus Ride
+                </h6>
+            </a>
+            <span class="Product-price">$3</span>
+            <button class="Product-buyCTA">Buy</button>
+        </li>
+      <li class="Product"><!--flex container direction: column-->
+            <a href="#" class="Product-moreCTA"><!--flex container direction: column-->
+                <i class="Product-icon fa fa-headphones"> </i>
+                <h6 class="Product-name">
+                  Headphones
+                </h6>
+            </a>
+            <span class="Product-price">$29</span>
+            <button class="Product-buyCTA">Buy</button>
+        </li>
+      <li class="Product"><!--flex container direction: column-->
+            <a href="#" class="Product-moreCTA"><!--flex container direction: column-->
+                <i class="Product-icon fa fa-compass"> </i>
+                <h6 class="Product-name">
+                  Compass
+                </h6>
+            </a>
+            <span class="Product-price">$5</span>
+            <button class="Product-buyCTA">Buy</button>
+        </li>
+      <li class="Product"><!--flex container direction: column-->
+            <a href="#" class="Product-moreCTA"><!--flex container direction: column-->
+                <i class="Product-icon fa fa-bicycle"> </i>
+                <h6 class="Product-name">
+                  Bicycle
+                </h6>
+            </a>
+            <span class="Product-price">$399</span>
+            <button class="Product-buyCTA">Buy</button>
+        </li>
+      </ul>
+      
+      <ul id="Trips" class="ProductList ProductList--is-hidden"><!--flex container-->
+        <li 
+           class="Product">
+            <a 
+               href="#" 
+               class="Product-moreCTA">
+                <i  class="Product-icon fa fa-suitcase"></i>
+                <h6 class="Product-name">
+                  Suitcase
+                </h6>
+            </a>
+            <span class="Product-price">$40</span>
+            <button class="Product-buyCTA">Buy</button>
+        </li>
+      <li 
+           class="Product">
+            <a 
+               href="#" 
+               class="Product-moreCTA">
+                <i class="Product-icon fa fa-plane"></i>
+                <h6 class="Product-name">
+                  Plane Ride
+                </h6>
+            </a>
+            <span class="Product-price">$350</span>
+            <button class="Product-buyCTA">Buy</button>
+        </li>
+      <li 
+           class="Product">
+            <a 
+               href="#" 
+               class="Product-moreCTA">
+                <i class="Product-icon fa fa-subway"></i>
+                <h6 class="Product-name">
+                  Subway Ride
+                </h6>
+            </a>
+            <span class="Product-price">$3</span>
+            <button class="Product-buyCTA">Buy</button>
+        </li>
+      <li 
+           class="Product">
+            <a 
+               href="#" 
+               class="Product-moreCTA">
+                <i class="Product-icon fa fa-rocket"></i>
+                <h6 class="Product-name">
+                  Space Trip
+                </h6>
+            </a>
+            <span class="Product-price">$499</span>
+            <button class="Product-buyCTA">Buy</button>
+        </li>
+      </ul>
+
+      <ul id="Fun" class="ProductList ProductList--is-hidden"><!--flex container-->
+        <li 
+           class="Product">
+            <a 
+               href="#" 
+               class="Product-moreCTA">
+                <i class="Product-icon fa fa-magic"></i>
+                <h6 class="Product-name">
+                  Magic Show
+                </h6>
+            </a>
+            <span class="Product-price">$30</span>
+            <button class="Product-buyCTA">Buy</button>
+        </li>
+      <li 
+           class="Product">
+            <a 
+               href="#" 
+               class="Product-moreCTA">
+                <i class="Product-icon fa fa-life-ring"></i>
+                <h6 class="Product-name">
+                  Swim Lesson
+                </h6>
+            </a>
+            <span class="Product-price">$20</span>
+            <button class="Product-buyCTA">Buy</button>
+        </li>
+      <li 
+           class="Product">
+            <a 
+               href="#" 
+               class="Product-moreCTA">
+                <i class="Product-icon fa fa-flask"></i>
+                <h6 class="Product-name">
+                  Science Lesson
+                </h6>
+            </a>
+            <span class="Product-price">$59</span>
+            <button class="Product-buyCTA">Buy</button>
+        </li>
+      <li 
+           class="Product">
+            <a 
+               href="#" 
+               class="Product-moreCTA">
+                <i class=" Product-icon fa fa-flag-checkered"></i>
+                <h6 class="Product-name">
+                  Races
+                </h6>
+            </a>
+            <span class="Product-price">$70</span>
+            <button class="Product-buyCTA">Buy</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

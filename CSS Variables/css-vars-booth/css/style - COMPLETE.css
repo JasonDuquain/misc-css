@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+  
+:root {
+  --primary-color: rgba(241,196,15 ,1);
+  --secondary-color: teal;  
+  --slider: 0;
+}
+
+body {
+  margin: 0;
+  color: rgba(255,255,255,0.9);
+  background: url('http://bit.ly/2FiPrRA') 0 100%/340px no-repeat, var(--primary-color);
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+main.booth {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slider */
+.slider {
+  position: absolute;
+  background: rgba(0,0,0,0.4);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  right: 10px;
+  top: 10px;
+}
+
+.slider > * {
+  display: block;
+}
+
+/* Color Boxes */
+.color-boxes {
+  transition: transform 0.3s
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  background: red;
+  border-radius: 0.3rem;   
+  transform: perspective(500px) rotateY( calc(var(--slider) * 1deg));
+}
+
+.color-box {
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4); 
+  padding: 1rem 3.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 0.3rem;
+}
+
+/* Handle colors for each color box */
+.color-box:nth-child(1) {
+  background: var(--bg-1);
+}
+
+.color-box:nth-child(2) {
+  background: var(--bg-2);
+}
+
+.color-box:nth-child(3) {
+  background: var(--bg-3);
+}
+
+
+
+

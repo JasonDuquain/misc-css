@@ -1,0 +1,62 @@
+/*http://thenewcode.com/448/HTML5-Image-Captions-With-CSS-Transition-Effects*/
+
+body {
+  background: #222;
+}
+
+#sliding-container {
+  font-family: Avenir, Helvetica, sans-serif;
+  display: flex;
+}
+
+#sliding-container figure {
+  position: relative;
+  flex: 1;
+  font-size: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+#sliding-container img {
+  transition: 2.4s linear;
+  max-width: 100%;
+}
+
+#sliding-container figure:first-of-type img {
+  width: 133%;
+  max-width: initial;
+}
+
+#sliding-container figure:first-of-type:hover img {
+    transform: translateX(-24%);
+}
+
+#sliding-container figure figcaption {
+  transition: .6s;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  width: 100%;
+  color: #fff;
+  padding: .3rem;
+  position: absolute;
+  margin: 0;
+  top: -2rem;
+}
+
+#sliding-container figure:hover figcaption {
+   transform: translateY(2rem);
+}
+
+#sliding-container figure:last-of-type img:nth-child(1) {
+    position: absolute;
+}
+
+#sliding-container figure:last-of-type:hover img:nth-child(1) {
+  opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #sliding-container {
+    flex-direction: column;
+  }
+}

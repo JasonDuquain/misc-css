@@ -1,0 +1,70 @@
+html {
+    background-color: #deded8;
+    font-family: trebuchet, geneva, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+article,
+aside,
+footer,
+header {
+    box-sizing: border-box;
+    
+    
+}
+
+header {
+    
+}
+
+aside {
+           
+}
+
+/* default navigation values */
+nav {
+    
+}
+
+nav a {
+    text-decoration: none;
+       
+}
+
+nav a:last-of-type {
+    
+}
+
+nav a:hover {
+    outline: 1px solid red;
+    color: red;
+    text-decoration: underline;
+}
+
+/* larger screen */
+@media screen and (min-width: 30rem) {
+    body {
+        
+    }
+    
+    main {
+        box-sizing: border-box;
+        
+    }
+    
+    nav,
+    header {
+        
+    }
+    
+    article {
+       
+    }
+    
+    aside {
+        
+    }
+}

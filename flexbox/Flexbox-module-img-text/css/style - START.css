@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Ubuntu, sans-serif;
+    margin: 2rem;
+    background-color: #858198;
+}
+
+.flex {
+    
+}
+
+.flex div:first-child {
+    
+}
+
+.flex div:last-child {
+    
+}
+
+.flex:first-of-type div:first-child {
+    
+}
+
+.flex:last-of-type div:first-child {
+    
+}
+
+.flex:nth-child(odd) {
+    
+}
+
+.flex h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+.flex p {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.flex p:last-of-type {
+    
+}
+
+.column {
+    
+}
+
+@media all and (max-width: 600px) {
+
+    body {
+        
+    }
+
+}
+
+@media all and (max-width: 450px) {
+
+    h2 {
+        
+    }
+
+    .flex {
+        
+    }
+
+    .flex div:last-child {
+        
+    }
+
+}
+
+@media all and (max-width: 400px) {
+
+    .flex {
+        
+    }
+
+    .flex div:first-child {
+        
+    }
+    
+}

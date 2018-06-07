@@ -1,0 +1,156 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	
+}
+
+main {
+    
+}
+
+aside {
+	background-color: #f2f2f2;
+}
+
+/*font size for the icons*/
+aside i.fa {
+	font-size: 0.9em;
+}
+
+section.content {
+	
+}
+
+section.content .music-head {
+	background-color: #4e4e4e;
+}
+
+section.content .music-head  .catty-music{
+    
+}
+
+.catty-music div:nth-child(1){
+	
+}
+
+.catty-music div:nth-child(2){
+	margin-top: 0;
+}
+
+.catty-music div:nth-child(2) i.fa{
+	font-size: 0.9em;
+	padding: 0 0.7em;
+	font-weight: 300;
+}
+
+.catty-music div:nth-child(1) p:first-child{
+	font-size: 1.8em;
+	margin: 0 0 10px;
+}
+
+/* Within the first div child of .catty-music, this targets all paragraphs except the first */
+.catty-music div:nth-child(1) p:not(:first-child){
+    
+}
+
+section.content .music-list {
+	list-style: none;
+    padding: 5px 10px 0;
+}
+
+li {
+    
+}
+
+li p {
+    
+}
+
+li span.catty-cloud {
+    
+}
+
+li:nth-child(2n) {
+    
+}
+
+footer {
+	color: #fff;
+    background-color: rgba(61, 100, 158, .9);
+}
+
+.catty-music-small {
+	
+}
+
+.catty-music-small img{
+    
+}
+
+.catty-music-controls {
+	
+    
+}
+
+/*===========
+Mobile responsiveness
+*/
+
+@media screen and (max-width: 64em) {
+
+    .sm-hide {
+        
+    }
+
+    .sm-text-center {
+        
+    }
+
+    section.content .music-head {
+        
+    }
+
+    section.content .music-head  .catty-music {
+        
+    }
+
+    /*album art*/
+    .music-head img {
+        
+    }
+
+    /*album details*/
+    .catty-music div:nth-child(1) p:first-child {
+        
+    }
+
+    /*music control*/
+    .catty-music-controls {
+        
+    }
+
+}
+
+@media screen and (max-width: 44em) {
+
+    section.content .music-list {
+        
+    }
+    
+    section.content .music-list li{
+        
+    }
+    
+    section.content .music-list li p {
+        
+    }
+    
+    section.content .music-list li p:last-child {
+        
+    }
+    
+    
+    
+}

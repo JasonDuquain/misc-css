@@ -1,0 +1,57 @@
+body {
+  font-family: 'Arial';
+}
+
+.contain {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+.range label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+.member {
+  position: relative;
+  background: #ececec;
+  padding: 2rem;
+  min-height: 6.875em;
+  padding-right: 8.125em;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+.member img {
+  position: absolute;
+  right: 1.25em;
+  top: 1.25em;
+  width: 6.25em;
+  height: 6.25em;
+  background: #fff;
+  padding: 0.25em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.member p,
+.member h2 {
+  margin: 0;
+}
+.member h2 {
+  font-size: 1.2rem;
+}
+.member p {
+  font-size: 1rem;
+  line-height: 1.45;
+}

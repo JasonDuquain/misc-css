@@ -1,0 +1,65 @@
+body {
+  font-family: 'Arial';
+}
+
+.contain {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+.range label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+.social {
+  padding: 1em;
+  list-style: none;
+  background: #f2f2f2;
+  font-size: 1em;
+}
+.social--2x {
+  font-size: 1.2em;
+}
+.social--3x {
+  font-size: 1.4em;
+}
+.social--px {
+  font-size: 1.5em;
+}
+.social--px .social__item svg {
+  width: 35px;
+  height: 35px;
+}
+
+.social__item {
+  display: inline-block;
+  margin-right: 1em;
+}
+.social__item svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2.1875em;
+  height: 2.1875em;
+  fill: #000;
+}
+.social__item a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+.social__item a:hover {
+  opacity: 0.6;
+}

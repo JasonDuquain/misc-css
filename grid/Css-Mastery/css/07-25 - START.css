@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    line-height: 1.375;
+    font-family: Georgia, Times New Roman, Times, serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Avenir Next, Avenir, Franklin Gothic, Trebuchet MS, Arial, sans-serif;
+    margin-top: 0;
+}
+
+a {
+    color: #8E3339;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* here's our wrapper */
+.wrapper {
+    
+}
+
+/* masthead styling */
+.masthead {
+    background-color: #8E3339;
+}
+
+.masthead h1 {
+    
+}
+
+/* navbar styling */
+.navbar {
+    
+}
+
+.navbar ul {
+    font-family: 'Avenir Next', Avenir, Corbel, 'Franklin Gothic', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    list-style: none;
+    
+}
+
+.navbar li {
+    box-sizing: border-box;
+}
+
+.navbar li:first-child {
+    
+}
+
+.navbar li a {
+    text-decoration: none;
+    
+}
+
+/* content styling */
+.grid-a {
+    
+}
+
+.story img {
+    
+}
+
+.subcategory {
+    
+}
+
+.subcategory-header {
+    
+}
+.story:nth-of-type(2),
+.story:nth-of-type(3) {
+    
+}
+
+.story-featured {
+    
+}
+
+.story {
+    
+}

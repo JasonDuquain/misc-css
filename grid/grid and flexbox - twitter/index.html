@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twitter's Basic Layout with CSS Grid and Flexbox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main><!--display: grid-->
+  
+      <header class="item header"></header><!--empty header-->
+
+      <div class="stats"><!--position: relative;/z-index: 4;-->
+         <input type="checkbox" id="check">
+        <label class="btn-toggle" for="check">+</label>
+        <nav><!--display: flex-->
+          <a href="#">Tweets<span>509</span></a>
+           <a href="#">Following<span>1839</span></a>
+           <a href="#">Followers<span>235</span></a>
+          <a href="#">Favourites<span>200</span></a>
+           <a href="#">List<span>2</span></a>
+              <button class="btn">Follow</button>
+        </nav>
+      </div>
+
+      <aside class="item side-1"><!--z-index: 5;/display: flex @ < 1080px-->
+       <!--was https://pbs.twimg.com/profile_images/2309242092/7um0112y4n9pvvlcodkl_400x400.png-->
+        <img class="pro" src="images/codepen.png" alt="Codepen">
+        <section>
+          <h2>CodePen.IO</h2>
+          <p>Demo or it didn't happen.</p>
+          <button class="btn">Tweet To Codepen</button>
+        </section>
+      </aside>
+
+      <div class="item main">
+        <h2>Tweets</h2>
+      </div>
+
+      <aside class="item side-2">
+        <h2>Who to Follow?</h2>
+      </aside>
+
+</main>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>

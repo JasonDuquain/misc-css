@@ -1,0 +1,48 @@
+body{
+    
+}
+
+#bubbles1, #bubbles2, #fish{
+    
+}
+
+#bubbles2{
+    
+}
+
+#fish{
+    
+}
+
+div.credits{
+    text-align: right;
+    color: white;
+}
+
+div.credits a{
+    color: lightyellow;
+    text-decoration: none;
+}
+
+/* ## CSS media queries. Smaller versions of bg images for small screen devices #### ***was max-device-width **/
+
+
+@media screen and (max-width: 860px){ 
+
+    body{
+        background-image: url(img/deepsea_small.jpg);
+    }
+
+    #bubbles1{
+        background-image: url(img/bubbles1_small.png);
+    }
+
+    #bubbles2{
+        background-image: url(img/bubbles3_small.png);
+    }
+
+    #fish{
+        background-image: url(img/fish_small.png);
+    }
+
+}

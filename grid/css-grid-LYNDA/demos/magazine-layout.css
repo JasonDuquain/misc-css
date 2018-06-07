@@ -1,0 +1,231 @@
+/**
+ * The primary stylesheet for the Standard Layout.
+ * This sheet pulls in surrounding components allowing you to focus on specifics.
+ */
+
+/* Components */
+@import url('../CSS/reset.css');
+@import url('../CSS/accessibility.css');
+@import url('../CSS/typography.css');
+
+body {
+    font-family: 'Alegreya', serif;
+    color: #000;
+    margin: 1em;
+}
+
+figure {
+    margin: 0;
+}
+
+.featured-image {
+    margin: -1em -1em 0 -1em;
+    max-height: 80vw;
+    overflow: hidden;
+}
+
+.featured-image img {
+    margin-top: -25vw;
+}
+
+.main-title {
+    margin: .7em 0 .5em;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.main-title::after {
+    display: block;
+    width: 10%;
+    margin: .5em auto .8em;
+    content: "";
+    border-bottom: 1px solid #333;
+}
+
+.main-story {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.sub-story-title {
+    margin-bottom: .2em;
+    font-size: 1.8em;
+    font-style: italic;
+}
+
+.byline {
+    display: block;
+    margin: 0 0 1.5em;
+    padding-top: .5em;
+    color: #333;
+    font-style: italic;
+    border-top: 1px solid #cdcdcd;
+}
+
+.story::after {
+    display: block;
+    font-family: 'Alegreya', serif;
+    font-size: 1.6rem;
+    content: "— § —";
+    text-align: center;
+    color: #545454;
+}
+
+@media screen and (min-width: 600px) {
+
+    .story {
+        
+    }
+    .story::after {
+        
+    }
+
+    .featured-image {
+        
+    }
+
+    .featured-image img {
+        
+    }
+
+    .story-image {
+        
+    }
+}
+
+/* *******************************************************
+* Main Grid
+* *******************************************************/
+
+@media screen and (min-width: 800px) {
+
+    .main-area {
+        
+    }
+
+    .one {
+        
+    }
+
+    .two {
+        
+    }
+
+    .three {
+        
+    }
+
+    .four {
+        
+    }
+
+    .five {
+        
+    }
+
+    .three,
+    .four {
+        
+    }
+
+    .featured-image img {
+        
+    }
+}
+
+@media screen and (min-width: 1050px) {
+
+    .main-area {
+        
+    }
+
+    .one {
+        
+    }
+
+    .two {
+        
+    }
+
+    .three {
+        
+    }
+
+    .four {
+        
+    }
+
+    .five {
+        
+    }
+
+    .three,
+    .four {
+        
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .main-area {
+         
+    }
+
+    .one {
+        
+    }
+
+    .two {
+        
+    }
+
+    .three {
+        
+    }
+
+    .four {
+        
+    }
+
+    .five {
+        
+    }
+
+    .story {
+        
+    }
+
+    .three,
+    .four {
+        
+    }
+
+    .featured-image {
+        
+    }
+
+    .featured-image img {
+        
+    }
+
+    .story-image {
+        
+    }
+
+    .one,
+    .two {
+        
+    }
+    
+    .three .sub-story {
+        
+    }
+
+    .two .sub-story > p,
+    .three .sub-story p,
+    .sub-story-title {
+        
+    }
+}

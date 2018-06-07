@@ -1,0 +1,99 @@
+.calendar {
+    counter-reset: calendar;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
+
+.calendar,
+.calendar ul,
+.calendar ol {
+    text-align: center;
+    display: flex; /* ul and ol are both flex containers and flex items */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid white;
+}
+
+.calendar ol {
+    flex-wrap: wrap;
+}
+
+/* this style ensures day1 falls on correct day (fri) */
+.calendar ol:before,
+.calendar ol:after {
+    content: '';
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.monday ol:before,
+.wednesday.days31 ol:after,
+.thursday.days30 ol:after {
+    flex: 0 0 14.25%;
+}
+
+.tuesday ol:before,
+.tuesday.days31 ol:after,
+.wednesday.days30 ol:after {
+    flex: 0 0 28.5%;
+}
+
+.wednesday ol:before,
+.monday.days31 ol:after,
+.tuesday.days30 ol:after {
+    flex: 0 0 42.75%;
+}
+
+.thursday ol:before,
+.sunday.days31 ol:after,
+.monday.days30 ol:after {
+    flex: 0 0 57%;
+}
+
+.friday ol:before,
+.saturday.days31 ol:after,
+.sunday.days30 ol:after {
+    flex: 0 0 71.25%;
+}
+
+.saturday ol:before,
+.friday.days31 ol:after,
+.saturday.days30 ol:after {
+    flex: 0 0 85.5%;
+}
+
+.calendar ul li {
+    background-color: rgba(0, 0, 0, 0.2);
+    outline: 1px solid white;
+}
+
+.calendar li {
+    box-sizing: border-box;
+    flex: 0 0 14.25%;
+    text-align: center;
+    padding: 5px;
+}
+
+.calendar ul li {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 15%;
+    overflow: hidden;
+}
+
+.calendar ol li {
+    outline: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: right;
+    height: 100px;
+    padding: 5px;
+}
+
+/* these add the numbers */
+.calendar ol li:before {
+    counter-increment: calendar;
+    content: counter(calendar);
+}

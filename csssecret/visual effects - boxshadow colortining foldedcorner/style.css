@@ -1,0 +1,62 @@
+
+div {
+	margin-bottom: 2em;
+	line-height: 1.5;	
+}
+
+/**** one-sided shadow ****/
+div.one_shadow {
+    	
+}
+
+/**** two-sided shadow ****/
+div.two_shadow {
+    
+}
+
+/**** color tinting - with filter ****/
+img {
+    
+}
+
+img:hover,
+img:focus {
+    
+}
+
+/**** color tinting - with blend-mode ****/
+.tinted-image {
+    transition: .5s background-color;
+    
+}
+
+.tinted-image:hover {
+    
+}
+
+
+div[class^='folded'] {
+    	
+}
+
+/**** folded corner - basic ****/
+div[class^='folded'] {
+	
+}
+
+/**** folded corner - basic ****/
+div.folded {
+	
+}
+
+/**** folded corner - realistic ****/
+div.folded_real {
+	
+}
+
+div.folded_real::before {
+	content: '';
+	
+}
+
+

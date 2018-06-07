@@ -1,0 +1,43 @@
+
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+button.accordion {
+	transition: background-color 200ms linear;
+}
+
+button.accordion::after {
+    content: "\f055";
+    
+}
+
+button.accordion.is-open::after {
+    content: "\f056";
+}
+
+button.accordion:hover, button.accordion.is-open {
+    
+}
+
+div.accordion-content {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

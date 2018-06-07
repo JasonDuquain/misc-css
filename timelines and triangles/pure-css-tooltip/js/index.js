@@ -1,0 +1,1 @@
+// No JavaScript needed for the tooltip with data-element

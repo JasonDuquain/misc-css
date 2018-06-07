@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Arapey:400italic);
+
+body {
+	background: #dedede;
+    -webkit-font-smoothing: antialiased;
+    min-width: 1200px;
+}
+
+.grid {
+  
+}
+
+.grid--item {
+    transition: all 0.5s; 
+}
+
+.grid--item:before {
+    content: "";   
+}
+
+.grid--item:nth-child(1), .grid--item:nth-child(2) {
+  
+}
+
+.grid--item:nth-child(7n - 1), .grid--item:nth-child(1) {
+  
+}
+
+div.img {
+  
+}
+
+div.img::before, .img::after {
+    content: ""; 
+	transition: opacity 0.5s; 	
+}
+
+div.img::before {
+  
+}
+
+div.img::after {
+  
+}
+
+.container {
+    transition: all 500ms;  
+}
+
+h1,
+h2 {
+    font-family: 'Arapey';
+    font-style: italic;
+    font-weight: 400;  
+}
+
+h1 {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 56px;
+    color: #242424;  
+}
+
+h2 {
+	font-size: 32px; 
+}
+
+h2::before, h2::after {
+    content: "";   
+}
+
+.desc {
+    font-family: 'ATC Overlook';    
+}
+
+.grid--item:hover .img:before,
+.grid--item:hover .img:after,
+.grid--item:hover .container {
+  
+}
+
+.grid--item:hover .container {
+  
+}

@@ -1,0 +1,73 @@
+$browser-context: 16; // Default
+$color-brand: #4a90e2;
+
+body {
+	font-family: 'Arial';
+}
+
+.contain {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em;
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+
+.modal {
+	width: 650px;
+}
+
+.modal__header {
+	background: lightgrey;
+	border-radius: em(5);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+	position: relative;
+
+	h2 {
+		font-size: 1em;
+		margin: 0;
+	}
+
+	svg {
+		width: 1em;
+		height: 1em;
+	}
+}
+
+.modal__header {
+  border-radius: 0.3125em;
+  padding: 1em;
+}
+
+.modal__header h2 {
+  font-size: 1em;
+}
+
+.modal__header svg {
+  width: 1em;
+  height: 1em;
+}

@@ -1,0 +1,32 @@
+/**** fluid-fixed ****/
+body {
+	margin: 0;
+	font: 100%/1.5 sans-serif;
+}
+
+header, section, footer {
+	padding: 1em calc(50% - 350px);
+}
+
+footer {
+	background: #333;
+	color: white;
+}
+
+header {
+	background: orange;
+	color: white;
+}
+
+section + section {
+	background: #eee;
+}
+
+/**** min-content *****/
+
+figure {
+	padding: 10px;
+	border: 1px solid silver;
+	max-width: min-content;
+	margin: auto;
+}

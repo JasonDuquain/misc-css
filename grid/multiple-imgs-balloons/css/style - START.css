@@ -1,0 +1,102 @@
+body {
+    background-color: #efefef;  
+}
+
+h3 {
+    
+}
+
+h3+p {
+    
+}
+
+.wrapper {
+    background-color: #fff;
+    
+}
+
+.home-hero {
+    
+}
+
+.home-hero > * {
+    
+}
+
+.feature {
+    
+}
+
+.photos {
+    
+}
+
+.news {
+    
+}
+
+.special {
+    
+}
+
+.amazing {
+     
+}
+
+.special h3,
+.amazing h3{
+    
+}
+
+.cta {
+	background-color: rgb(123,14,34);    
+}
+
+a.spam-button:link {
+    text-decoration: none;
+
+}
+
+@media (min-width: 500px) {
+  .home-hero {
+      
+  }
+  
+  .feature {
+      
+  }
+  
+  .special {
+      
+  }
+    
+  .amazing {
+      
+  }
+    
+  .cta {
+       
+  }
+}
+
+@media (min-width: 800px) {
+   .home-hero {
+       
+  }
+  
+  .feature {
+      
+  }
+  
+  .special {
+      
+  }
+    
+  .amazing {
+      
+  }
+    
+  .cta {
+      
+  }
+}

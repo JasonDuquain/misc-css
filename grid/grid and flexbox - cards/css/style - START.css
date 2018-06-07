@@ -1,0 +1,71 @@
+html {
+  background: #f5f7f8;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 0;
+}
+
+.band {
+      
+  
+}
+
+@media only screen and (min-width: 500px) {
+    
+  .band {
+        
+  }  
+    
+  .item-1 {
+      
+  }
+    
+  .item-1 h1 {
+    font-size: 30px; 
+  }
+    
+}
+
+@media only screen and (min-width: 850px) {
+    
+  .band {
+        
+  }
+    
+}
+
+/* card */
+a.card .thumb {
+  
+}
+
+a.card {
+	text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	transition: all 100ms ease-in;
+}
+
+a.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+a.card article {
+  
+  
+}
+
+a.card p { 
+  
+}
+
+/* typography */
+h1 {
+	font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+a.card span {
+  
+}

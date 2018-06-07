@@ -1,0 +1,125 @@
+$browser-context: 16; // Default
+$color-brand: #4a90e2;
+
+body {
+	font-family: 'Arial';
+}
+
+.contain {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em;
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+
+.block {
+    border-radius: em(5);
+    //overflow: hidden;
+	  margin-bottom: 1em;
+}
+
+.block__title {
+	position: relative;
+	font-size: em(24);
+	background: $color-brand;
+	padding: em(8);
+	color: #fff;
+	margin: 0;
+	//overflow: hidden;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+
+	&:after {
+		content: "";
+		position: absolute;
+		left: em(4);
+		top: 0;
+		width: em(40);
+		height: em(40);
+		border-radius: 50%;
+    background: #000;
+    opacity: 0.5;
+		transform: scale(1.75);
+	}
+
+	&:before {
+		content: "";
+		flex: 1;
+		margin-left: em(8);
+		border-bottom: em(1) dashed transparentize(#fff, 0.5);
+	}
+}
+
+.block__content {
+	font-size: em(18);
+	padding: em(8);
+	color: #000;
+	background: lightgrey;
+
+	p {
+		font-size: 100%;
+		color: inherit;
+		margin: 0;
+	}
+}
+
+.block--px {
+	.block__title {
+		font-size: 24px;
+		padding: 8px;
+
+		&:after {
+			content: "";
+			left: 4px;
+			top: 4px;
+			width: 40px;
+			height: 40px;
+		}
+
+		&:before {
+			content: "";
+			margin-left: 8px;
+		}
+	}
+
+	.block__content {
+		font-size: 18px;
+		padding: 8px;
+	}
+}
+
+.clip-circle {
+  .block,
+  .block__title {
+    overflow: hidden;
+  }
+  
+  .block__title {
+    &:after {
+      opacity: 0.25;
+    }
+  }
+}

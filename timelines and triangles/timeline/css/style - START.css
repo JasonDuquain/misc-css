@@ -1,0 +1,108 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: inherit;
+    background-color: #EEE;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 40px 30px;
+}
+
+a {
+  color: #00637d;
+}
+
+.timeline {
+  margin: 25px 0 22px;
+  padding: 0;
+  position: relative;
+}
+
+.timeline:after {
+	content: "";
+    display: block;
+    position: absolute;
+    
+}
+
+.timeline-milestone {
+  
+}
+
+.timeline-milestone:before {
+    content: "";
+    display: block;
+    position: absolute;
+  
+}
+
+.timeline-milestone.is-completed:before {
+  background-color: #00637d;
+}
+
+.timeline-milestone.is-completed:after {
+	content: "\f00c";
+    font-family: "FontAwesome";
+    display: block;
+    position: absolute;
+}
+
+.timeline-action {
+  
+}
+
+.timeline-action.is-expandable .title {
+  
+}
+
+.timeline-action.is-expandable .title:focus {
+    outline: 0;
+    text-decoration: underline;
+}
+
+.timeline-action.is-expandable .title:after {
+    content: "";
+    position: absolute;
+    display: block;
+  
+}
+
+.timeline-action.is-expandable .content {
+  
+}
+
+.timeline-action.is-expandable.is-expanded .title:after {
+  
+}
+
+.timeline-action.is-expandable.is-expanded .content {
+    display: block;
+}
+
+.timeline-action .title {
+    color: #00637d;
+    font-size: 18px;
+    margin: 0;  
+}
+
+.timeline-action .date {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.timeline-action .content {
+    font-size: 14px;  
+}
+
+
+
+
+

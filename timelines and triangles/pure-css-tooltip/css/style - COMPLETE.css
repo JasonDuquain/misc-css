@@ -1,0 +1,85 @@
+@import "https://fonts.googleapis.com/css?family=Lato|Oswald";
+
+body {
+     max-width: 60%;
+    margin: 0 auto;
+    font-family: 'Lato';
+    font-weight: 200;
+    background: #f1c40f;
+    font-size: 1.4em; /*22.4px*/
+    line-height: 1.5em; /*33.6px*/
+}
+
+body::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 10%; /* 10 of the WIDTH of the row div */
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+.title--blue {
+    font-family: 'Oswald';
+    color: #4862A3;
+    margin: 0;
+    line-height: 1em;
+}
+
+.tooltip {
+    color: #3B627E;
+	
+    position: relative;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.tooltip:hover::before {
+    content: "";
+    border: solid transparent .446em;
+    border-bottom-color: rgba(72,98,163,1);
+    position: absolute;
+    top: .892em; /*20px*/
+    filter: drop-shadow(-2px -2px 2px rgba(0,0,0,0.5));
+}
+
+.tooltip:hover::after {
+    font-size: .7em; /*15.68px*/ 
+    content: attr(data-tooltip);
+    position: absolute;
+    min-width: 15em;
+    font-weight: 100;
+    line-height: 1.3em;
+    margin: 0;
+    background: rgba(72,98,163,1);
+    color: #fff;
+    padding: .956em; /*15px*/
+    border-radius: .318em;  /*5px*/
+    right: 10%;
+    top: 2.551em; /*40px*/
+    z-index: 1;
+    filter: drop-shadow(-2px -2px 2px rgba(0,0,0,0.5));
+}
+
+@media (max-width: 680px) {
+    body {
+       font-size: 1em; 
+    } 
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.8em; 
+    } 
+}
+
+
+
+

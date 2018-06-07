@@ -1,0 +1,49 @@
+/****** CUSTOM UNDERLINES ******/
+
+body {
+    font: 250%/1.6 Baskerville, Palatino, serif;
+}
+
+a {
+    
+}
+
+p.underlines:nth-child(2) a {
+    
+}
+
+
+/****** LETTERPRESS ******/
+p.letterpress {
+    
+}
+
+p.letterpress + p.letterpress {
+    
+}
+
+/****** STROKED TEXT ******/
+div.hay {
+    background: deeppink;
+	   font: bold 100%/1 Rockwell, serif;	
+}
+
+h1 {
+    	
+}
+
+h1.stroked { 
+    
+}
+
+h1 text { fill: currentColor }
+
+h1 use {
+    
+}
+
+/****** EXTRUDED TEXT ******/
+p.extrude {
+    font: bold 200%/1 Rockwell, serif;
+	
+}

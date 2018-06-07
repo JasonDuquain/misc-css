@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clip-path: Diamond grid</title>
+  <meta name="viewport" content="width=device-width">
+  <link href='http://fonts.googleapis.com/css?family=Cuprum:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+    <div class="img-clip-block">
+       
+        <div class="img-clip-row">
+            <div class="img-clip-wrap"></div><!--empty div positioned relatively-->
+        </div>
+        
+        <div class="img-clip-row">
+        <a href="https://stocksnap.io/photo/J633WD7BAR" class="img-clip-wrap"><!--position: relative-->
+            <div class="overlay"><!--position: absolute-->
+                <div class="overlay-content">Portraits </div><!--position: absolute-->
+            </div>
+        </a>
+        <a href="https://stocksnap.io/photo/J633WD7BAR" class="img-clip-wrap"><!--postion: relative-->
+            <div class="overlay"><!--position: absolute-->
+                <div class="overlay-content">Poetry</div><!--position: absolute-->
+            </div>
+        </a>
+        </div>
+        
+        <div class="img-clip-row">
+        <a href="https://stocksnap.io/photo/J633WD7BAR" class="img-clip-wrap polygon-clip-rhombus"><!--position: relative-->
+            <div class="overlay"><!--position: absolute-->
+                <div class="overlay-content">Published</div><!--position: absolute-->
+            </div>
+        </a>
+        </div>
+        
+    </div>
+<!-- /img-clip-block -->
+
+		<svg class="clip-svg">
+			  <defs>
+				    <clipPath id="clip-diamond-demo" clipPathUnits="objectBoundingBox">
+					      <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+				    </clipPath>
+			  </defs>	
+		</svg>
+</body>
+</html>

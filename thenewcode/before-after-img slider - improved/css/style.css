@@ -1,0 +1,59 @@
+body { background: #113 }
+
+div#inked-painted { 
+    position: relative; 
+    font-size: 0; 
+    -ms-touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+div#inked-painted img { 
+    
+}
+
+div#colored { 
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/colored-panel.jpg);
+    background-size: cover;
+    
+    
+}
+
+div#inked-painted:hover {
+    cursor: col-resize;
+}
+
+/* COMPLETE
+
+body { background: #113; }
+
+div#inked-painted { 
+    position: relative; 
+    font-size: 0; 
+    -ms-touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+div#inked-painted img { 
+    width: 100%; 
+    height: auto; 
+}
+
+div#colored { 
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/colored-panel.jpg);
+    background-size: cover; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    height: 100%;
+    width: 50%;
+}
+
+div#inked-painted:hover {
+    cursor: col-resize; 
+}
+
+
+
+*/

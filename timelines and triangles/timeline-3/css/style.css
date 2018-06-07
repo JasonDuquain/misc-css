@@ -1,0 +1,171 @@
+body {
+    background: #e6e6e6;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+#conference-timeline {
+    position: relative;
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+    display: table;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #00b0bd;
+	
+	
+}
+
+#conference-timeline .conference-center-line {
+    position: absolute;
+    background: #00b0bd;
+	
+	
+}
+
+#conference-timeline .conference-timeline-content {
+  
+}
+
+.timeline-article {
+  
+}
+
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+  
+}
+
+.timeline-article .timeline-author {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #242424;
+	
+	
+	
+}
+
+.timeline-article .content-left,
+.timeline-article .content-right {
+    box-shadow: 0 1px 3px rgba(0,0,0,.03);
+    position: relative;
+}
+
+.timeline-article p {
+	font-size: 14px;
+    font-weight: 400;
+    color: #242424;
+    line-height: 24px;
+	
+	
+}
+
+.timeline-article p span.article-number {
+	color: #00b0bd;
+    position: absolute;
+    font-weight: 300;
+  
+  
+}
+
+.timeline-article .content-left-container {
+	transition: 500ms ease-out;
+}
+
+.timeline-article .content-right-container {
+	transition: 500ms ease-out;
+}
+
+.timeline-article .content-left-container.slidein,
+.timeline-article .content-right-container.slidein {
+    
+}
+
+.timeline-article .content-left:before,
+.timeline-article .content-right:before{
+    //position: absolute;
+    //font-family: "FontAwesome";
+    //font-size: 23px;
+}
+
+.timeline-article .content-left:before {
+    content: "\f0da";
+  
+}
+
+.timeline-article .content-right:before {
+    content: "\f0d9";
+  
+}
+
+.timeline-article .meta-date {
+    position: absolute;
+  
+}
+
+.timeline-article .meta-date .date,
+.timeline-article .meta-date .month {
+    display: block;
+    text-align: center;
+    font-weight: 900;
+}
+
+.timeline-article .meta-date .date {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.timeline-article .meta-date .month {
+    font-size: 18px;
+    line-height: 10px;
+}
+
+@media only screen and (max-width: 830px) {
+	
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    
+  }
+  
+  #conference-timeline .conference-center-line {
+    
+  }
+  
+  .timeline-article .meta-date {
+    
+  }
+  
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    
+  }
+  
+  .timeline-article .content-left-container {
+    
+  }
+  
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    
+  }
+  
+  .timeline-article .content-left:before {
+      content: "\f0d9";
+    
+  }
+  
+  .timeline-article .content-right:before {
+    
+  }
+  
+}
+
+

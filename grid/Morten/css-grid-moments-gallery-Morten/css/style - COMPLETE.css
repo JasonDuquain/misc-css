@@ -1,0 +1,172 @@
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+body {
+  margin: 0;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 100%;
+  font-size: 1.2em;
+}
+
+img {
+	display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+code {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-weight: bold;
+}
+
+/* Header */
+
+header.masthead {
+	text-align: center;
+    border-bottom: 1px solid rgb(230,230,230);
+}
+
+div.intro {
+    margin: 0 auto;
+    padding: 1em 1em 2em;
+    max-width: 50%;
+    font-size: 90%;
+    text-align: left;
+    line-height: 1.4em;
+    columns: 2;
+    column-gap: 2em;
+}
+
+div.intro p {
+    margin: 0 0 1em;
+}
+
+/* Colophon section */
+footer.colophon {
+	padding: 2em;
+    background: rgb(26,26,26);
+    color: #fff;
+    font-size: 90%;
+    text-align: center;
+    line-height: 1.8em;
+}
+
+footer.colophon a {
+	text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid white;
+}
+
+footer.colophon a:hover,
+footer.colophon a:focus {
+	border-bottom: 1px solid transparent;
+}
+
+/*--------------------------------------------------------------
+Cards:
+--------------------------------------------------------------*/
+
+ul.cards {
+	list-style-type: none;
+    max-width: 25em;
+    margin: 1em auto;
+    padding: 0;
+}
+
+ul.cards a {
+	text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+
+figcaption.caption {
+	padding: 1em;
+    font-size: 90%;
+    color: #000;
+}
+
+h3.caption-title {
+	margin: 0;
+    font-size: 1.4em;
+    line-height: 1em;
+}
+
+div.location {
+    padding: .5em 0;
+    color: rgb(102,102,102);
+}
+
+figcaption.caption p {
+	margin-top: .5em;
+    margin-bottom: 0;
+    line-height: 1.3em;
+}
+
+ul.cards a:focus .caption,
+ul.cards a:hover .caption {
+	background: rgb(247,247,247);
+}
+
+/*---------------------------------------
+CSS Grid layout for wider screens:
+-----------------------------------------*/
+
+@media screen and (min-width: 27em) {
+    ul.cards {
+       margin: 0 auto;
+        padding: 1em;
+    }
+    li.card-item,
+    li.card-item a {
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+        
+    }
+    ul.cards a:focus,
+    ul.cards a:hover {
+       outline: 1px solid rgb(204, 204, 204); 
+    }
+    ul.cards a:focus .caption,
+    ul.cards a:hover .caption {
+        background: white;
+    }
+    figure.card {
+        margin: .5em;
+        display: grid;
+        grid-template-columns: 8em auto;
+        overflow: hidden;
+    }
+    figure.card img {
+        height: 100%;
+        width: auto;
+    }
+    figcaption.caption {
+       background: #fff;
+    }
+}
+
+@media screen and (min-width: 62em) {
+    ul.cards {
+       max-width: none;
+        margin: 1em 0;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: repeat(2,25em);
+        grid-gap: 1em;
+        justify-content: center;
+    }
+    li.double {
+        grid-row: span 3;
+    }
+    li.double figure.card {
+        display: block;
+    }
+    li.double img {
+        height: calc( (100% / 3) * 2 + .5em);
+    }
+}
+
+

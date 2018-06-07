@@ -1,0 +1,3 @@
+A Pen created at CodePen.io. You can find this one at https://codepen.io/dudleystorey/pen/vEKLeX.
+
+ Uses both flexbox and object-fit to create a responsive fashion gallery in pure CSS. Browsers that do not support object-fit (currently Firefox and IE) will show squished thumbnails. [Full article on my blog](http://thenewcode.com/968/A-CSS-Object-Fit-Gallery-Thumbnail-and-Full-Image-In-One-File). Photographs by [Feng Yi](https://500px.com/flashadowstudio), licensed under Creative Commons.

@@ -1,0 +1,328 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #d1c2ae;
+	background: hsl(35, 28%, 80%);
+	color: #443526;
+	font-family: 'PT Serif', serif;
+}
+.wrapper {
+	min-width: 320px;
+	width: 90%;
+	margin: 0 auto;
+}
+article, aside, dialog, figure, footer, header, hgroup, nav, section { display:block; }
+
+/* Text */
+h1, h2, h3 {
+	font-family: 'Hammersmith One', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+h1 {
+	font-size: 300%;
+	line-height: 1;
+}
+a {
+	color: #F0470F;
+}
+
+.intro {
+	margin-bottom: 1.5em;
+    font-size: 125%;
+    line-height: 1.5;
+}
+
+/* Header --------------------------------- */
+.logo {
+	text-align: center;
+}
+.tagline {
+	font-family: 'Hammersmith One', sans-serif;
+    margin-top: 5px;
+    color: #fff;
+}
+/************************/
+/***** ADD FLEX STYLES*****/
+.list-nav {
+	list-style: none;
+	font-family: 'Hammersmith One', sans-serif;
+	font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    
+}
+
+/* Forms ------------------------------ */
+
+button {
+	box-shadow: inset 0 0 1px 1px hsla(0,0%,100%,.5);
+	text-shadow: 0 1px 0 hsla(0,0%,0%,.5);
+	font-family: 'Hammersmith One', sans-serif;
+	font-weight: normal;
+    background: hsla(15,88%,50%,1.0);
+	border: 1px solid hsla(15,80%,40%,1.0);
+    border-radius: 3px;
+    color: #fff;
+    padding: 12px 20px 14px 20px;
+	text-align: center;
+	font-size: 112.5%;
+	text-transform: uppercase;
+    
+}
+
+button:hover {
+    background: hsla(15,88%,47%,1.0);
+    cursor: pointer;
+}
+
+button:active {
+    background: hsla(15,90%,52%,1.0);
+    color: #000;
+}
+
+input[type="text"] {
+	padding: 2px 2px 4px 4px;
+	border: 1px solid hsl(35,28%,70%);
+	border-radius: 2px;
+	box-shadow: inset 0 0 2px #fff;
+	background: linear-gradient(top, hsl(35,28%,90%), #fff);
+}
+
+input[type="checkbox"], input[type="radio"] {
+	margin:0 4px 0 0;
+	padding:0;
+	width:16px;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+	position: relative;
+	padding-left: 4px;
+}
+
+input[type="checkbox"] + label::before, input[type="radio"] + label::before {
+	position: absolute;
+	left: -21px;
+	top: 0;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding: 2px 2px 4px 4px;
+	background: #fff;
+	background: linear-gradient(top, hsl(35,28%,90%), #fff);
+	content: " ";
+	margin-top: 2px;
+	cursor: pointer;
+	border: 1px solid hsl(35, 28%, 70%);
+	border-radius: 2px;
+	text-align: center;
+	line-height: 10px;
+	vertical-align: top;
+	box-shadow: inset 0 0 1px #fff;
+	color: #F0470F;	
+}
+
+input[type="radio"] + label::before {
+	width: 9px;
+	height: 9px;
+	padding: 1px 3px 5px 3px;
+	border-radius: 50%;
+}
+
+input[type="checkbox"] + label:hover::before, input[type="checkbox"]:focus + label::before {
+	box-shadow: inset 0 0 2px 1px #fd2;
+}
+input[type="checkbox"]:checked + label:before {
+	content: "\2713";
+}
+input[type="radio"]:checked + label:before {
+	content: "\25CF";
+}
+input:disabled + label:before {
+	border-color: #bbb;
+	color: #bbb;
+	text-shadow: 0 -1px #ccc, 0 1px #666;
+	background: linear-gradient(top, #d5d5d5, #e5e5e5); /* add other variations */
+}
+
+/* S'mores Builder ----------------- */
+.builder {
+	margin: 0 0 40px -20px;
+		
+}
+
+.builder-component {
+	
+}
+
+.builder-component-name {
+	margin: 0 0 .5em 0;
+    padding: 10px 0 0 0;
+}
+
+.builder-component-name:before {
+	content: '';
+	position: absolute;
+	
+}
+
+.builder-component_marshmallow .builder-component-name:before {  }
+.builder-component_candy .builder-component-name:before {  }
+.builder-component_accessories .builder-component-name:before {  }
+
+.ingredients-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ingredients-list-item:not(:last-child) {
+	
+}
+
+.ingredients-list-item:last-child {
+	
+}
+
+.other-ingredient-label {
+	margin-right: 4px;
+}
+
+.other-ingredient-field {
+	
+}
+
+.builder-action {
+	
+}
+
+.builder-action-label {
+	font-family: 'Hammersmith One', sans-serif;
+	font-weight: normal;
+    
+}
+
+
+.builder-action-field {
+	
+}
+
+.builder-action-button {
+	
+}
+
+/* S'mores Gallery --------------------------- */
+.gallery {
+	
+}
+
+.gallery-item {
+	
+}
+
+.gallery-item:hover {
+	background: rgb(65, 51, 37);
+	color: #fff;
+}
+
+.gallery-item-name {
+	margin: 0 0 .5em 0;
+}
+
+.gallery-item-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Pagination ------------------------------- */
+.pagination {	
+	list-style: none;
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
+.pagination-item {
+	
+}
+
+.pagination-item:first-child {
+	
+}
+
+.pagination-item:last-child {
+	
+}
+
+.pagination-link {
+	
+}
+
+@media screen and (min-width:600px) {
+	/* Header ---------- */
+	.list-nav {
+		letter-spacing: 1px;
+	} 
+	.list-nav-item {
+		padding: 0 .5em; /* FALLBACK */
+	}
+	.list-nav-item:first-child {
+		
+	}
+	.list-nav-item:last-child {
+		
+	}
+	
+	/* S'mores Builder ---------- */
+	.flexbox .builder-action {
+		
+	}
+	.builder-action-field {
+		
+	}
+	.builder-action-label {
+		
+	}
+	.builder-action-button {
+		
+	}
+	
+	/* Pagination ---------- */
+	.pagination-item,
+	.flexbox .pagination-item:first-child,
+	.flexbox .pagination-item:last-child { /* Need .flexbox class just for specificity, to override earlier rule that set width to 50% */
+		
+	}
+}
+
+@media screen and (min-width:860px) {
+	/* Header ---------- */
+	.flexbox .list-nav {
+		
+	}
+	.flexbox .list-nav-item_home {
+		margin-right: 15px;
+	}
+    
+	.flexbox .list-nav-item_tumblr {
+		margin-left: 15px;
+	}
+	.flexbox .list-nav-item_party { /* make the break between left and right sides happen before this link */
+		
+	}
+
+	/* S'mores Builder ---------- */
+	.builder-component {
+		
+	}
+	
+	/* Pagination ---------- */
+	.flexbox .pagination { /* Need .flexbox class just for specificity */
+		
+	}
+	.pagination-link {
+		
+	}
+}

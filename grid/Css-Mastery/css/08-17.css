@@ -1,0 +1,59 @@
+/* content styling */
+
+.story {
+    padding: .6875em;
+    background-color: #eee;
+}
+
+.story img {
+    width: 100%;
+}
+
+.ad {
+    
+}
+
+.ad h3 a {
+    
+}
+
+.ad h3 {
+    
+}
+
+/* grid styling */
+.grid-b {
+    
+}
+
+.grid-b .subcategory-header {
+    
+}
+
+.grid-b .story:nth-of-type(1) {
+    
+}
+
+.grid-b .story:nth-of-type(2) {
+    
+}
+
+@media only screen and (min-width: 37.5em) {
+    .grid-b {
+        
+    }
+}
+
+@media only screen and (min-width: 55em) {
+    .grid-b {
+        
+    }
+}
+
+@media only screen and (min-width: 70em) {
+    .grid-b {
+        
+    }
+}
+
+

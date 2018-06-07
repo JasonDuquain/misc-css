@@ -1,0 +1,72 @@
+* {margin:0;padding:0;border:0 none; position: relative;}
+
+*,*:before,*:after {box-sizing:inherit;}
+
+html {
+	box-sizing:border-box;
+	background: #c6d9d3;
+	font-family: Helvetica,Arial,san-serif;
+}
+
+@media only screen and (min-width: 800px) {
+    
+.wrap {
+	
+}	
+       
+figure:first-child {
+    
+}
+    
+/*
+figure:last-child {
+    grid-row-start: span 6;
+    grid-column-start: span 6;	
+}
+figure:nth-child(odd) {
+    grid-row-star: span 2;
+    grid-column-start: span 3;	
+}
+*/
+    
+/*figure:nth-child(even) {
+    grid-column-star: span 3;
+}....mistake?*/
+    
+figure:nth-child(2n+3) {
+    
+}
+    
+figure:nth-child(4n+5) {
+    
+}
+    
+figure:nth-child(6n+7) {
+    
+}
+    
+figure:nth-child(8n+9) {
+    
+}
+    
+img {
+	
+}
+    
+figure {
+    
+}
+    
+figure::after {
+		
+}
+    
+}
+
+figure,
+img {
+	transition: .4s;
+}
+
+
+	

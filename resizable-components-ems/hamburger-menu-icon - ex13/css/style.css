@@ -1,0 +1,69 @@
+body {
+  font-family: 'Arial';
+}
+
+.contain {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+.range label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+.menu {
+  position: relative;
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 2.5em;
+  height: 1.875em;
+  margin-bottom: 20px;
+  background: transparent;
+  border: 0;
+  text-indent: -999px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+.menu:hover {
+  opacity: 0.75;
+}
+.menu span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.375em;
+  background: #4a90e2;
+  border-radius: 0.3125em;
+}
+.menu span:after, .menu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+}
+.menu span:after {
+  top: 0.75em;
+}
+.menu span:before {
+  top: 1.5em;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Max-content demo with kittens</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <p class="first">
+            Demo of the value "max-content". Normally you would scale the image to fit the row, max-content takes another approach and reduces the size of the row/container to contain the natural size of images
+        </p>
+    </div>
+    <div class="democontainer">
+        <div class="row1">
+            <p>Without <i>width:max-content</i> </p>
+            <img src="http://lorempixel.com/200/200/">
+            <img src="http://lorempixel.com/200/200/">
+            <img src="http://lorempixel.com/200/200/">
+        </div>
+        <div class="row2">
+            <p>With <i>width:max-content</i> </p>
+            <img src="http://lorempixel.com/200/200/">
+            <img src="http://lorempixel.com/200/200/">
+            <img src="http://lorempixel.com/200/200/">
+        </div>
+    </div>
+
+    <div class="image-container">
+        <p>Without <i>width:min-content</i> </p>
+        <img src="https://c2.staticflickr.com/6/5113/14224694159_5e266ab6e2_n.jpg">
+        <p class="image--caption">New York</p>
+        <p class="image--caption-two">A photo taken by Alain Ferraro onMay 2, 2014 using a Canon PowerShot G12</p>
+    </div>
+    <div class="image-container">
+        <p>With <i>width:min-content</i> </p>
+        <img src="https://c2.staticflickr.com/6/5113/14224694159_5e266ab6e2_n.jpg">
+        <p class="image--caption">New York</p>
+        <p class="image--caption-two">A photo taken by Alain Ferraro onMay 2, 2014 using a Canon PowerShot G12</p>
+    </div>
+
+</body>
+
+</html>

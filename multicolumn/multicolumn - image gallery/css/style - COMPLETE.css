@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+body {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+  background: #2c2c2c;
+  margin: 0;
+  padding: 0.75em 0.25em;
+  line-height: 1.1em;
+}
+
+ul {
+  -webkit-columns: 200px; /* width: 200px count: auto */
+     -moz-columns: 200px;
+          columns: 200px;
+  -webkit-column-break-inside: avoid;
+     page-break-inside: avoid;
+          break-inside: avoid;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}

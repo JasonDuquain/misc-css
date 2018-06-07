@@ -1,0 +1,39 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    box-sizing: inherit;
+}
+
+.accordionWrapper {
+    box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.accordionItem {
+    font-family: 'Open-sans', Arial, sans-serif;
+}
+
+.accordionItemHeading {
+	margin: 0 0 10px 0;
+    cursor: pointer;
+    background: #2980b9;
+	
+}
+
+.close .accordionItemContent {
+	transition: height 1s ease-out;
+}
+
+.open .accordionItemContent {
+    transition: transform 0.4s ease;
+    margin: 0 0 10px 0;
+}
+
+.open .accordionItemHeading {
+    color: #7f8c8d;
+    background-color: #bdc3c7;
+    
+}

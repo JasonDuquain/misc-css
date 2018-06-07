@@ -1,0 +1,50 @@
+body, html{
+	font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.pimg1, .pimg2, .pimg3{
+   
+}
+
+.pimg1{
+  
+}
+
+.pimg2{
+  
+}
+
+.pimg3{
+  
+}
+
+.section{
+  
+}
+
+.section-light{
+  
+}
+
+.section-dark{
+  
+}
+
+.ptext{
+  
+}
+
+.ptext .border{
+  
+}
+
+.ptext .border.trans{
+  
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    
+  }
+}

@@ -1,0 +1,385 @@
+
+/* ====== Basic styles ====== */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #1c1c1c;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: 1.5em;
+}
+
+/* ====== Helper classes ====== */
+
+/** Make the antialiasing on dark backgrounds a bit lighter
+* on WebKit/Firefox OS X. */
+.inverted {
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.section {
+  
+}
+
+.section:after {
+  content: '';
+  display: table;
+  clear: both;
+  height: 0;
+}
+
+/* ====== Header styles ====== */
+
+/** 1. SVG file containing JPEG image + a radial gradient mask, then a linear gradient background. */
+.page-header {
+  
+}
+
+/** Masked header title.
+* 1. Use the -webkit-prefixed properties to create a CSS radial gradient mask.
+*    These are not supported unprefixed when writing this.
+* 2. Size the mask to twice the size. Positioning won't work as the transparent
+*    background created by simply moving it will mask out the top of the text. */
+.header-title {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto Condensed, Roboto, arial, sans-serif;
+    font-size: 6em;
+    font-size: 10vw;
+    text-transform: uppercase;
+    -webkit-mask-image: radial-gradient( ellipse 90% 30% at 50% 50%, rgba(0, 0, 0, 0) 45%, #000 70%);
+    /* [1] */
+    -webkit-mask-size: 100% 200%;
+    /* [2] */
+    margin: auto auto 8%;
+}
+
+.header-title {
+    mask: url(#ellipseMask);
+}
+
+@media only screen and (min-width: 60em) {
+    .page-header {
+        background-size: 60em auto;
+        min-height: 20em;
+    }
+    
+    .header-title {
+        font-size: 160px;
+        margin-bottom: 60px;
+    }
+    
+}
+
+.section-title {
+  font-family: Roboto Condensed, Roboto, Arial, sans-serif;
+  
+}
+
+.section-text {
+  font-size: 1.125em;
+}
+.fig {
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .fig {
+    
+  }
+  .stacked:nth-of-type(even) .fig {
+    
+  }
+}
+
+.stacked:nth-of-type(even) .section-text {
+  
+}
+
+.section-universe {
+  
+}
+
+.section-sun {
+	background-color: #D8F4FD; 
+}
+
+.fig-sun {
+    mask: url(#circlemask);
+}
+
+.section-sun .section-title {
+	color: #1C6E88;   
+}
+
+.section-moon {
+  
+}
+
+/* ===== Figures and images ====== */
+
+/** Switch to the following rule to use the margin reference box 
+* as a shape instead: */
+
+/*.fig-moon {
+  max-width: 40%;
+  border-radius: 50%;
+  shape-outside: margin-box;
+  margin-left: 2em;
+}*/
+
+.fig-moon {
+  
+}
+
+.section-planets {
+  
+}
+
+/** 1. Use the image as the shape – the xparent edges will generate it.
+* 3. Use a shape threshold (if using the img) to set the tolerance level before the shape is generated.
+* 4. Set a margin on the generated shape.
+* 5. Add a blend mode to make the img fit in with the bg better. */
+.fig-planet {
+  
+}
+
+.fig-sun {
+    max-width: 40%; 
+}
+
+/* The img of the Sun uses both masking and filters to go from a black-and-white
+* image to a colorized version with xparency. See full-example.html for the 
+* SVG mask version.
+* 1. Add a list of filters to colorize the img.
+* 2. Mask away the bg using a radial gradient. */
+.fig-sun {
+    filter: contrast(0.34) brightness(1.6) sepia(1) hue-rotate(10deg); /* [1] */
+    -webkit-mask-image: radial-gradient(circle closest-side at 50%, #000, #000 90%, rgba(0,0,0,0) 93%); /* [2] */     
+}
+
+.fig-universe {
+  
+}
+
+.section-text p {
+  
+}
+
+/* ==== Navigation ==== */
+
+/*1. Add a transform to the parent section, to counter a bug in Blink
+where the filter on child items freaks out.*/
+.nav-section {
+  
+}
+
+.nav-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+@media only screen and (min-width: 600px) {
+      /** 1. Shape the "Moon" item using a border-radius */
+      .nav-section [href="#moon"] {
+        border-radius: 50%; /* [1] */
+        }
+      /** 1. Shape the remaining items with a clip-path in inline SVG.*/
+      .nav-section [href="#sun"] {
+        -webkit-clip-path: url(#sunclip); /* [1] */
+                clip-path: url(#sunclip); /* [1] */
+      }
+      .nav-section [href="#planets"] {
+        -webkit-clip-path: url(img/clip.svg#saturnclip); /* [1] */
+                clip-path: url(img/clip.svg#saturnclip); /* [1] */
+      }
+
+      .nav-section [href="#milky-way"] {
+        -webkit-clip-path: url(#milkyclip); /* [1] */
+                clip-path: url(#milkyclip); /* [1] */
+      }
+      .nav-section [href="#universe"] {
+        -webkit-clip-path: url(#cloudclip); /* [1] */
+                clip-path: url(#cloudclip); /* [1] */
+      }
+    }
+
+/**Some tiny responsive tweaks to make the menu fall back to a simpler appearance on small screens: */
+@media only screen and (max-width: 599px) {
+  .nav-section li {
+      margin-bottom: .25em;  
+  }
+  .nav-section a {
+      padding: .5em;  
+  }
+}
+/* we also scope the enhanced version to a media query: */
+@media only screen and (min-width: 600px) {
+  .nav-section ul {
+    
+  }
+
+  /**1. Add a drop-shadow filter to the list-items.*/
+
+  .nav-section li {
+    
+  }
+}
+
+/**Uncomment animation code to view the "focus" animation.
+Sadly, this has serious rendering bugs at the moment when combined with clip-paths.*/
+
+.nav-section li {
+    animation: inFocus 1s both;
+}
+.nav-section li:nth-child(2) {
+    animation-delay: .25s;
+}
+.nav-section li:nth-child(3) {
+    animation-delay: .50s;
+}
+.nav-section li:nth-child(4) {
+    animation-delay: .75s;
+}
+.nav-section li:nth-child(5) {
+    animation-delay: 1s;
+}
+
+/**1. Change the shadow color on hover, to create the glow.*/
+.nav-section li:hover {
+  
+}
+
+/*1. Add a null xform to prevent rendering bugs in Blink/WebKit. This still freaks out in Safari, but only intermittently. */
+.nav-section a {
+	text-decoration: none;
+}
+
+.nav-section a:focus,
+.nav-section a:hover,
+.nav-section a:active {
+  
+}
+
+/* 1. Colorize the Milky Way bg using luminosity blend mode. */
+.section-milkyway {
+  
+}
+
+/* 1. Add a backdrop blur to the semi-xparent text bg. Falls back to just the normal alpha xparency. */
+.section-milkyway .section-text {
+  
+}
+
+.page-footer {
+    background-color: #222B33;
+    color: #eee;  
+}
+
+.page-footer a {
+  color: inherit;
+}
+
+.universe-header {
+  
+}
+
+@media only screen and (min-width: 800px) {
+  .universe-header {
+    
+  }
+  
+  .section-universe .section-text {
+    
+  }
+  
+  .section-milkyway .section-text {
+    
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .universe-header {
+    
+  }
+}
+
+.section-universe {
+  
+}
+
+:root .universe-title {
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+}
+
+.universe-title text {
+  
+}
+
+.universe-title svg {
+  
+}
+
+@supports (mix-blend-mode: screen) {
+    /**1. Only add the mix-blend-mode rules if supported. Screen makes black 100% xparent.
+    * 2. Change the fill color to black for supporting browsers,
+    resulting in 100% xparency for the text. */
+    .universe-title {
+      
+    }
+    .universe-title text {
+      
+    }
+  }
+
+  .universe-span-1 {
+    
+  }
+  .universe-span-2 {
+    
+  }
+  
+/**1. Clip the sections using clip-path and basic shape fns. */
+.stacked {
+          
+}
+.page-header {
+          
+}
+.page-footer {
+    
+}
+
+/**1. Adjust the negative margin-top for sections to pull them together, but only if clip-paths are supported. */
+@supports ((clip-path: polygon(0 0)) or 
+   (-webkit-clip-path: polygon(0 0))) {
+  .stacked {
+    
+  }
+}
+
+@keyframes inFocus {
+  from {
+	  filter: blur(10px); 
+  }
+}
+

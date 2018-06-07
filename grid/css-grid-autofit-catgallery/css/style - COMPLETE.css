@@ -1,0 +1,75 @@
+.container {
+  max-width: 100%;
+  display: grid;
+  /*grid-template-columns: repeat(auto-fit, minmax(1fr, auto));*/
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+
+.image {
+  height: 250px;
+  margin: 0;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  grid-column: auto / span 3;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: end;
+}
+
+.image_large {
+  grid-column: auto / span 6;
+}
+
+.image figcaption {
+  padding: 10px;
+  background-color: rgba(45, 45, 45, 0.8);
+  color: #fff;
+  text-align: center;
+}
+
+.image1 {
+  background-image: url("https://flormontana1997.files.wordpress.com/2014/04/027.jpg");
+}
+.image2 {
+  background-image: url("https://www.clubveterinario.es/archivos/noticias/noticias_48_1390596377.jpg");
+}
+.image3 {
+  background-image: url("https://www.hogarmania.com/archivos/201204/estrenimiento-gato-bebe2-xl-668x400x80xX.jpg?1");
+}
+.image4 {
+  background-image: url("http://img.notigatos.es/wp-content/uploads/2016/09/gatito-adorable-830x553.jpg");
+}
+.image5 {
+  background-image: url("https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg");
+}
+.image6 {
+  background-image: url("http://www.rd.com/wp-content/uploads/sites/2/2016/02/06-train-cat-shake-hands.jpg");
+}
+.image7 {
+  background-image: url("https://d39kbiy71leyho.cloudfront.net/wp-content/uploads/2016/05/09170020/cats-politics-TN.jpg");
+}
+.image8 {
+  background-image: url("https://i.ytimg.com/vi/cNycdfFEgBc/maxresdefault.jpg");
+}
+.image9 {
+  background-image: url("https://images-production.global.ssl.fastly.net/uploads/posts/image/47360/grumpy-cat.jpg");
+}
+
+.image:hover {
+  filter: grayscale(100%);
+}
+
+@media only screen and (min-width: 700px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  
+  figure:nth-child(7) {
+     order: 2;
+  } 
+  
+  
+}

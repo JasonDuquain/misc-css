@@ -1,0 +1,129 @@
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+body {
+  margin: 0;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 100%;
+  font-size: 1.2em;
+}
+
+img {
+	
+}
+
+code {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-weight: bold;
+}
+
+/* Header */
+
+header.masthead {
+	
+}
+
+div.intro {
+  
+}
+
+div.intro p {
+  
+}
+
+/* Colophon section */
+footer.colophon {
+	
+}
+
+footer.colophon a {
+	
+}
+
+footer.colophon a:hover,
+footer.colophon a:focus {
+	
+}
+
+/*--------------------------------------------------------------
+Cards:
+--------------------------------------------------------------*/
+
+ul.cards {
+	list-style-type: none;
+
+}
+
+ul.cards a {
+	text-decoration: none;
+}
+
+figcaption.caption {
+	
+}
+
+h3.caption-title {
+	
+}
+
+div.location {
+  
+}
+
+figcaption.caption p {
+	
+}
+
+ul.cards a:focus .caption,
+ul.cards a:hover .caption {
+	
+}
+
+/*---------------------------------------
+CSS Grid layout for wider screens:
+-----------------------------------------*/
+
+@media screen and (min-width: 27em) {
+    ul.cards {
+        
+    }
+    li.card-item,
+    li.card-item a {
+        
+    }
+    ul.cards a:focus,
+    ul.cards a:hover {
+        
+    }
+    ul.cards a:focus .caption,
+    ul.cards a:hover .caption {
+        
+    }
+    figure.card {
+        
+    }
+    figure.card img {
+        
+    }
+    figcaption.caption {
+       
+    }
+}
+
+@media screen and (min-width: 62em) {
+    ul.cards {
+        
+    }
+    li.double {
+        
+    }
+    li.double figure.card {
+        
+    }
+    li.double img {
+        
+    }
+}
+
+

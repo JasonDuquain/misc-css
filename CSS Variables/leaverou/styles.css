@@ -1,0 +1,54 @@
+
+#mouse.slide {
+    
+}
+
+.seperate {
+    margin-top: 100px;    
+}
+
+input[type="range"] {
+    
+}
+
+.scrolling {
+    width: 80%;
+    border: 2px solid black;
+    margin: 0 auto;
+    
+}
+
+/* COMPLETE 
+
+#mouse.slide {
+    background-image: radial-gradient(at calc(100% * var(--mouse-x)) calc(100% * var(--mouse-y)), transparent, black 30%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.seperate {
+    margin-top: 100px;
+}
+
+input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #f06 calc(1% * var(--value, 50)), white 0);
+}
+
+.scrolling {
+    width: 80%;
+    border: 2px solid black;
+    margin: 0 auto;
+    line-height: 1.8;
+    padding: 4em;
+    overflow: scroll;
+    height: 20em;
+    
+    background-image: linear-gradient(to right, green calc(100% * var(--scroll)), transparent 0);
+    background-size: 100% 1em;
+    background-repeat: no-repeat;    
+}
+
+
+*/

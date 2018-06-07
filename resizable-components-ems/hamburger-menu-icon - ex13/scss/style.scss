@@ -1,0 +1,82 @@
+$browser-context: 16; // Default
+$color-brand: #4a90e2;
+
+body {
+	font-family: 'Arial';
+}
+
+.contain {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em;
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+
+.menu {
+	position: relative;
+	display: block;
+	appearance: none;
+	width: em(40);
+	height: em(30);
+	margin-bottom: 20px;
+  background: transparent;
+  border: 0;
+  text-indent: -999px;
+	cursor: pointer;
+	transition: opacity 0.2s ease;
+
+	&:hover {
+		opacity: 0.75;
+	}
+	
+	span {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: em(6);
+		background: $color-brand;
+		border-radius: em(5);
+
+		&:after,
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: 100%;
+			background: inherit;
+			border-radius: inherit;
+		}
+
+		&:after {
+			top: em(12);
+		}
+
+		&:before {
+			top: em(24);
+		}
+	}
+}

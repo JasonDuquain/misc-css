@@ -1,0 +1,337 @@
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+abbr,
+img,
+small,
+strong,
+ol,
+ul,
+li,
+form,
+label,
+article,
+aside,
+footer,
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+ol,
+ul,
+li {
+  list-style: none; }
+
+li {
+  margin-bottom: 1em; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -moz-box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+button,
+input,
+textarea {
+  color: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
+strong {
+  font-weight: 700; }
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+body {
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.container {
+  position: relative;
+  max-width: 73.125em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+@media (min-width: 75em) {
+  .container {
+    padding-left: 0;
+    padding-right: 0; } }
+.header {
+  background: #5066C2;
+  text-align: center; }
+
+/*------------------------------------*\
+    footer
+\*------------------------------------*/
+.section {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.section__title {
+  border-bottom: 1px solid #d4d4d4;
+  font-size: 1.25em;
+  color: #5066C2;
+  font-weight: 700;
+  margin-bottom: 0.85em; }
+  .section__title span {
+    display: inline-block;
+    background: -webkit-linear-gradient(#5066C2, #5066C2) repeat-x;
+    background: linear-gradient(#5066C2, #5066C2) repeat-x;
+    background-size: 100% 3px;
+    background-position: bottom center;
+    padding: 0.5em 0.875em; }
+  .section__title--sub {
+    color: #4a4a4a;
+    border-bottom: 0; }
+    .section__title--sub span {
+      background-size: 0; }
+
+@media (min-width: 55em) {
+  .section__content {
+    padding-right: 2em; } }
+.layout__item--aside .section__content {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.form__item {
+  margin-bottom: 1em; }
+  .form__item label {
+    display: block;
+    margin-bottom: 0.35em; }
+  .form__item input {
+    border: 2px solid #B4B4B4;
+    padding: 0.75em 0.5em;
+    font-size: 16px;
+    border-radius: 0.25em;
+    width: 100%;
+    max-width: 25em; }
+    .form__item input:focus {
+      outline: 0;
+      border-color: #5066C2;
+      box-shadow: 0 0 0.3125em 0.125em rgba(80, 102, 194, 0.5); }
+
+@media (min-width: 55em) {
+  .layout__item {
+    float: left; } }
+
+.layout__item--aside {
+  background: #fbfbfb;
+  border-left: 1px solid #d9D9d9;
+  border-right: 1px solid #d9D9d9; }
+
+@media (min-width: 55em) {
+  .layout {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .layout__item--primary {
+    width: 70%; }
+
+  .layout__item--aside {
+    width: 30%; } }
+.page-title {
+  font-size: 1.15rem;
+  color: #fff; }
+  .page-title a {
+    display: inline-block;
+    border-bottom: 0.25em solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 0.25em;
+    padding-top: 0.35em; }
+  .page-title img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.1875em;
+    height: 2.375em; }
+  @media (min-width: 55em) {
+    .page-title {
+      font-size: 1.5rem; } }
+
+.hero {
+  background: #f4f4f4;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
+.hero__wrapper > *:not(:last-child) {
+  margin-bottom: 0.7rem; }
+
+/* I need to find a workaround for using large font sizes with things to be based */
+/* on 16 px font size */
+.hero__title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #5066C2;
+  max-width: 20em; }
+  @media (min-width: 55em) {
+    .hero__title {
+      font-size: 2.5em; } }
+
+.tags__item {
+  display: inline-block;
+  font-size: 0.875em; }
+  .tags__item a {
+    display: block;
+    padding: 0.25em 0.75em;
+    background: #d4d4d4;
+    border-radius: 20px;
+    min-width: 60px;
+    text-align: center; }
+    .tags__item a:hover {
+      background: #5066C2;
+      color: #fff; }
+
+.bio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1em; }
+  @media (min-width: 55em) {
+    .bio {
+      font-size: 1.125em; } }
+
+.bio__avatar {
+  width: 2.75em;
+  height: 2.75em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bio__meta {
+  color: #4a4a4a; }
+  .bio__meta time,
+  .bio__meta span {
+    display: block;
+    font-size: 85%;
+    margin-top: 0.25em; }
+
+.list {
+  counter-reset: list; }
+
+.list__item {
+  font-size: 1em;
+  margin-bottom: 0.8em; }
+  .list__item:before {
+    content: counter(list);
+    counter-increment: list; }
+  .list__item ul {
+    counter-reset: sublist;
+    font-size: 1em; }
+
+.list__subitem {
+  padding-left: 1.5em;
+  font-size: 90%; }
+  .list__subitem:not(:last-child) {
+    margin-bottom: 0.7em; }
+  .list__subitem:before {
+    content: counter(list) "." counter(sublist);
+    counter-increment: sublist; }
+  .list__subitem span {
+    font-size: 1em; }
+
+.list__item,
+.list__subitem {
+  position: relative;
+  min-height: 2.5em;
+  padding-left: 2.75em;
+  line-height: 2.5em; }
+  .list__item:before,
+  .list__subitem:before {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    background: lightgrey;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.5em;
+    margin-right: 0.5rem; }
+
+.button {
+  background: #5066C2;
+  border-radius: 0.25em;
+  padding: 0.75em 1.25em;
+  color: #fff;
+  border: 0;
+  font-size: 1em; }
+
+.quote {
+  position: relative;
+  background: #ebebeb;
+  padding: 1em;
+  padding-left: 4.375em;
+  border: 0.125em solid #bcbcbc;
+  border-radius: 0.25em; }
+  .quote:before {
+    content: "";
+    position: absolute;
+    left: 1.375em;
+    top: 1.5em;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/182774/quotes1.svg") no-repeat;
+    background-size: 100%;
+    width: 2.25em;
+    height: 1.5625em; }
+  .quote p {
+    font-size: 1.5em; }
+
+footer {
+  padding: 1em;
+  border-top: 1px solid grey;
+  text-align: center;
+}
+
+footer a {
+  color: #5066C2;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}

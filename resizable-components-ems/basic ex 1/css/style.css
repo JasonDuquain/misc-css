@@ -1,0 +1,78 @@
+body {
+  font-family: 'Arial';
+}
+
+.contain {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+}
+.range label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+.posts-wrapper {
+  font-size: 30px;
+}
+
+.post {
+  margin: 16px 0;
+}
+.post a {
+  display: block;
+  background: #f2f2f2;
+  padding: 15px;
+  border-left: 4px solid #4a90e2;
+  text-decoration: none;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.post a:hover {
+  background: #4a90e2;
+  color: #fff;
+}
+.post a:hover span,
+.post a:hover h2 {
+  color: #fff;
+}
+.post span {
+  display: block;
+  font-size: 14px;
+  color: #7d7d7d;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+.post h2 {
+  font-size: 22px;
+  color: #4a90e2;
+  margin: 0;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.post--enhanced {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.post--enhanced a {
+  padding: 0.9375em;
+  border-left-width: 0.25em;
+}
+.post--enhanced span {
+  font-size: 0.875em;
+}
+.post--enhanced h2 {
+  font-size: 1.375em;
+}

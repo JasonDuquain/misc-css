@@ -1,0 +1,54 @@
+$browser-context: 16; // Default
+$color-brand: #4a90e2;
+
+body {
+	font-family: 'Arial';
+}
+
+.contain {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em;
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+
+.headline {
+	span {
+		display: inline-block;
+		box-shadow: inset 0 em(-4) 0 0 #e7e7e7;
+	}
+}
+
+.headline--dynamic {
+	font-size: 240%;
+}
+
+.headline--fixed {
+	font-size: 240%;
+
+	span {
+		box-shadow: inset 0 -4px 0 0 #e7e7e7;
+	}
+}

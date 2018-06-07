@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+Header styles minus menu
+--------------------------------------------------------------*/
+
+.masthead {
+    
+}
+
+.site-title {
+    
+}
+
+
+
+@media screen and (min-width: 44.44em) {
+    .site-title {
+        
+    }
+}
+    
+@media screen and (min-width: 50em) {
+    .site-title {
+        
+    }
+}
+
+.site-title a {
+    
+}
+
+.site-title a:hover {
+    
+}

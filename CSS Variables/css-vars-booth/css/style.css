@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+  
+:root {
+	--primary-color: rgba(241,196,15 ,1);
+    --secondary-color: teal;  
+    --slider: 0;
+}
+
+body {
+  margin: 0;
+  color: rgba(255,255,255,0.9);
+  //background: url('http://bit.ly/2FiPrRA') 0 100%/340px no-repeat, var(--primary-color, goldenrod);
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+main.booth {
+  
+}
+
+/* Slider */
+.slider {
+  
+}
+
+.slider > * {
+  
+}
+
+/* Color Boxes */
+.color-boxes {
+	transition: transform 0.3s;
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+}
+
+.color-box {
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.4); 
+	
+}
+
+/* Handle colors for each color box */
+.color-box:nth-child(1) {
+  
+}
+
+.color-box:nth-child(2) {
+  
+}
+
+.color-box:nth-child(3) {
+  
+}
+
+
+
+
+
+
+
+
+
+

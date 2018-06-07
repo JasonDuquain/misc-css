@@ -1,0 +1,31 @@
+:root {
+    --hourpct: 0;    
+    --minutepct: 0;    
+    --secondpct: 0;    
+}
+
+div.barclock{
+    font-weight: bold;
+    border: 1px solid gray;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+div.barclock:after{
+    content: '';
+}
+
+div#hour:after{
+    background: #00b9f1;
+}
+
+div#minute:after{
+    background: #f9c00c;
+}
+
+div#second:after{
+    background: #75D701;
+}

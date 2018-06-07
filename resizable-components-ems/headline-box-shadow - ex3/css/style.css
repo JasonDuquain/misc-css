@@ -1,0 +1,41 @@
+body {
+  font-family: 'Arial';
+}
+
+.contain {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.range {
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+.range label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Sass function credit:
+https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+/*********************************/
+/*** Demo Code ***/
+/*********************************/
+.headline span {
+  display: inline-block;
+  box-shadow: inset 0 -0.25em 0 0 #e7e7e7;
+}
+
+.headline--dynamic {
+  font-size: 240%;
+}
+
+.headline--fixed {
+  font-size: 240%;
+}
+.headline--fixed span {
+  box-shadow: inset 0 -4px 0 0 #e7e7e7;
+}

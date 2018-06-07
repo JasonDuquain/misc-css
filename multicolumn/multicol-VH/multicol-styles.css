@@ -1,0 +1,41 @@
+html {
+    font-size: 10px;			
+}
+			
+/* reset */
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6,pre, p, th, td, article, section, figure, img {
+    margin: 0;
+    padding: 0;
+    
+}
+    		
+body {
+    
+}
+    		
+h1 { 
+    
+}
+    		
+/* paragraph styles */
+p {
+    
+}
+
+p:first-of-type {
+     		
+}
+    		
+/* multi-column */
+article > section {
+    
+}
+
+@media (max-width: 40rem) {
+    article > section {
+        
+        
+    }
+    
+    
+}

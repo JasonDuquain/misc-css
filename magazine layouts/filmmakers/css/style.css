@@ -1,0 +1,109 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: Merriweather, serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  
+}
+
+.top-matter {
+  
+}
+
+.top-matter * {
+  
+}
+
+h1 {
+  font-family: "News Cycle", sans-serif;
+  
+}
+
+h1 span {
+  
+}
+
+.intro {
+  
+}
+
+.article-container {
+    
+}
+
+.article-container p:first-child:first-letter {
+  font-weight: 700;
+  
+}
+
+.article-container p {
+  
+}
+
+.article-container p:after {
+  content: '';
+  
+}
+
+.article-container p:first-child {
+  
+}
+
+.article-container img {
+  
+}
+
+@media only screen and (min-width: 900px) {
+    
+  .container {
+    
+  }
+    
+  .top-matter {
+    
+  }
+    
+  .top-matter .intro {
+    
+  }
+    
+  .top-matter h1 {
+    
+  }
+    
+  .top-matter h1 span {
+    
+  }
+    
+  .intro p {
+    
+  }
+    
+}

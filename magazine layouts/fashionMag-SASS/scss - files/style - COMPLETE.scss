@@ -1,0 +1,303 @@
+/*** Variables ***/
+$xxs:   415px;
+$xs:    620px;
+$sm:    768px;
+$md:    992px;
+$lg:    1240px;
+$xlg:   1502px;
+
+$font-size-base: 14px;
+$line-height-base: 2;
+$serif-font: 'Playfair Display', 'Times New Roman', serif;
+$sans-serif-font: 'Droid Sans', 'Arial', sans-serif;
+$accent-font: 'Oswald', $sans-serif-font;
+
+$black: #000;
+$gray: #666;
+$white: #FFF;
+$pink: #CF8699;
+
+/***** Mixins *****/
+@mixin min($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin max($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  line-height: $size;
+}
+
+/*** General Styles ***/
+
+body {
+  font-family: $sans-serif-font;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+a {
+    color: $black;
+    
+  &:hover, &:focus {
+      color: $pink;    
+  }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/*** Magazine Styles ***/
+html, body {
+    height: 100%; // for full window height
+}
+
+.magazine {
+    height: 100%;  
+    
+  @include min($lg) {
+      display: flex;
+      min-height: 100%;
+      height: auto;
+      flex-direction: row-reverse; 
+  }
+}
+
+/*** Magazine Photo ***/
+.magazine-photo {
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    height: 100%;
+    background: $black url('http://raiscake.me/files/fashion-bg.jpg') no-repeat center center;
+    background-size: cover;
+    
+  @include min($lg) {
+      width: 50%;
+      min-height: none;
+      height: auto;        
+  }
+}
+
+.magazine-photo__wrapper {
+    width: 100%;  
+}
+
+.magazine-photo__title {
+    font-family: $serif-font;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.35; 
+    
+    @include min($xs) {
+        font-size: 3em;
+    }
+	
+    @include min($sm) {
+        font-size: 3.43em;
+    }
+    
+  span {
+      display: block;
+      font-size: 1.25em;
+      font-style: normal;
+      letter-spacing: .06em;
+      
+    @include min($xxs) {
+        font-size: 1.75em;
+    }
+      
+  }
+    
+} //.magazine-photo__title
+
+.magazine-photo__line {
+    width: 50%;
+    border: 0;
+    border-bottom: 2px solid black;
+    opacity: .25;
+}
+
+.magazine-photo__desc {
+    margin: 1.5em 0 0;
+    color: $gray;
+    letter-spacing: .14em;
+}
+
+/*** Magazine Content ***/
+.magazine-content {
+    position: relative;
+    overflow: hidden;
+    
+  @include min($lg) {
+      width: 50%;
+  }
+    
+}
+
+.magazine-article__image {
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+}
+
+.magazine-article__title {
+    margin: 8em 0 3em;
+    font-family: $serif-font;
+    font-size: 1.43em;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: .1em;
+    
+  @include min($xs) {
+      margin-top: 4em;
+  }
+    
+  span {
+      display: block;
+      max-width: 330px;
+      margin: 0 auto;
+      color: $white;
+      font-family: $accent-font;
+      font-size: 3em;
+      font-style: normal;
+      letter-spacing: .13em;
+      line-height: 1.35;
+      background: $black;
+
+    @include min($xxs) {
+        font-size: 4em;
+    }
+      
+  }
+    
+} //.magazine-article__title
+
+.magazine-article__body {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    margin: 0 auto 20em;
+    
+  @include min($xxs) {
+      width: 80%;
+  }
+    
+  @include min($xs) {
+      column-count: 2;
+      column-gap: 1em;
+      padding-left: 5em;
+  }
+    
+  @include min($xlg) {
+      width: 70%;
+      margin-bottom: 10em;
+      padding-left: 10em;
+  }
+    
+  p {
+      margin: 0;
+      padding: .5em .8em;
+      background: $white;
+      
+    strong {
+        display: block;
+    }
+      
+    &:first-of-type {
+        padding: .5em .8em;
+        color: $white;
+        background: $black;
+        text-decoration: underline;
+        
+      @include min($xs) {
+        margin-top: -8em;
+      }
+        
+    }
+      
+  } //p
+    
+} //.magazine-article__body
+
+.magazine-article__body-title {
+    @include circle(150px);
+    column-span: all;
+    margin: 0 auto 2em;
+    color: $white;
+    font-family: $accent-font;
+    font-weight: 400;
+    letter-spacing: .14em;
+    background: $pink;
+    border-radius: 50%;
+    shape-outside: circle();
+    transform: rotate(10deg); //this property causes the element to now be on top of the 1st paragraph
+    
+    @include min($xxs) {
+        float: right;
+        margin: .5em;
+    }
+    
+    @include min($xs) {
+        float: none;
+        margin: 0 -1em 2em auto;
+    }
+    
+    @include min(1700px) {
+        margin-right: -2em;
+    }
+    
+} //.magazine-article__body-title
+
+.trapezoid {
+    position: absolute;
+    bottom: 14em;
+    left: 5em;
+    border-bottom: 950px solid $black;
+    border-left: 300px solid transparent;
+    border-right: 100px solid transparent;
+    height: 0;
+    width: 400px;
+    transform: rotate(-40deg);
+    z-index: 0;
+}
+
+/*** Credits ***/
+.magazine-credits {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    padding: .5em .8em;
+    color: $white;
+    font-size: .86em;
+    background: $black;
+    
+  a {
+      color: $white;
+  }
+    
+  p {
+      padding: 0;
+      line-height: 1.35;
+  }
+    
+} //.magazine-credits
