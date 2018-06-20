@@ -10,11 +10,6 @@ p {
     margin: 0 0 .625em 0; /*was 10px*/ 
 }
 
-.clip-svg {
-    width: 0;
-    height: 0;
-}
-
 .img-clip-block {
     font-family: 'Cuprum', sans-serif;
     margin: 1.25em 0; /*was 20px*/

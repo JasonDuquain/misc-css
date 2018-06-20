@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+html,
+body {
+    height: 100%;
+    --yellowish: #f1f2b5;
+    --greenish: #135058;
+}
+
+* {
+    font-family: 'Poiret One', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+  
+}
+
+hr.alt {
+  
+}
+
+.home {
+  
+}
+
+.home::after {
+  
+}
+
+.box {
+  
+  
+}
+
+.box h1 {
+  font-size: 2.7em;
+  text-transform: uppercase;
+}
+
+.box::after,
+.box::before {
+  content: "";
+  
+}
+
+.box::after {
+  
+}
+
+.box::before {
+  
+}
+
+.about {
+  text-align: center;
+  width: 100%;
+}
+
+.about h2 {
+  position: relative;
+  font-size: 2.5em;
+  
+}
+
+.about p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.services {
+  
+}
+
+.services h2 {
+  font-size: 2.5em;
+}
+
+.services::before {
+  content: "";
+  
+}
+
+.collection {
+  
+}
+
+.collection p {
+  
+}
+
+.box-alt {
+  
+}
+
+.box-alt i {
+  
+}
+
+.box-alt::after,
+.box-alt::before {
+  content: "";
+  position: absolute;
+  
+}
+
+.box-alt::after {
+  
+}
+
+.box-alt::before {
+  
+}
+
+.contact {
+	margin-top: -20px;
+    text-align: center;
+    margin-bottom: 50px; 
+}
+

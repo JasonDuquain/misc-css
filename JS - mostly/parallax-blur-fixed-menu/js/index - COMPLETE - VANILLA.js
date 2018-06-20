@@ -1,6 +1,6 @@
 //Based on the Scroller function from @sallar
 let content = document.querySelector('header .content');
-let blur = document.querySelector('header .overlay');
+let blur = document.querySelector('header .overlay'); // this element has the filter: blur(4px) applied
 let nav = document.querySelector('nav');
 let wHeight = window.innerHeight;
 
@@ -21,10 +21,10 @@ class Scroller {
     
     init() {
         window.addEventListener('scroll', this.onScroll.bind(this));
-            let hdr = document.querySelector('header:first-of-type');
-            let hdrStyles = window.getComputedStyle(hdr);
-            let hdrBgImg = hdrStyles.getPropertyValue('background-image');
-            blur.style.backgroundImage = hdrBgImg;
+        let hdr = document.querySelector('header:first-of-type');
+        let hdrStyles = window.getComputedStyle(hdr);
+        let hdrBgImg = hdrStyles.getPropertyValue('background-image');
+        blur.style.backgroundImage = hdrBgImg;
     }
 
     onScroll() {

@@ -22,10 +22,7 @@ body {
   width: 40%;
   height: 600px;
   float: left;
-  background-image: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/clip-path/cupcakes.jpg);
-  background-size: cover;
-  background-position: -100px 0;
-  background-repeat: no-repeat;
+  background: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/clip-path/cupcakes.jpg) no-repeat -100px 0/cover;
   clip-path: ellipse(90% 70% at 0% 50%);
   shape-outside: ellipse(90% 70% at 0% 50%);
   shape-margin: 2em;

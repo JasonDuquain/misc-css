@@ -294,7 +294,7 @@ p + p {
         width: 6.25em;
         float: left;
         display: flex;
-        filter: drop-shadow(0 0 .5em rgba(0,0,0,0.3)); /* [1] */
+        filter: drop-shadow(0 0 .5em rgba(0,0,0,.3)); /* [1] */
     }
 }
 
@@ -319,7 +319,7 @@ p + p {
 /**
 * 1. Change the shadow color on hover, to create the glow. */
 .nav-section li:hover {
-    filter: drop-shadow(0 0 .5em rgba(50,50,255,0.2)); 
+    filter: drop-shadow(0 0 .5em rgba(50,50,255,.2)); 
 }
 
 /**
@@ -327,9 +327,9 @@ p + p {
 freaks out in Safari, but only intermittently.
 */
 .nav-section a {
+    text-decoration: none;
     background-color: #1A4298;
     color: #fff;
-    text-decoration: none;
     display: flex;
     align-items: center;
     width: 100%;

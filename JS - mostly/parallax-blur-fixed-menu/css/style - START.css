@@ -58,12 +58,14 @@ img {
   color: #222;
 }
 
-.site nav{
+.site nav {
   
 }
 
-.site nav a{
-  
+.site nav a {
+    padding: 10px 30px;
+    font-size: 1.3em;
+    display: inline-block
 }
 
 .site nav a:hover{

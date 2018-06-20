@@ -3,6 +3,16 @@ let planets = document.getElementById("planets");
 let numPlanets = document.querySelectorAll("#planets > img").length;
 let planetPhotos = planets.children;
 
+function createTimer(i) {
+    
+}
+
+function iterate(numPlanets) {
+    
+}
+
+
+
 
 
 /* COMPLETE

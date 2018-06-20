@@ -24,7 +24,9 @@ svg {
 }
 
 body {
-  font: normal 20px/1.5 Helvetica, sans-serif;
+	font: normal 20px/1.5 Helvetica, sans-serif;
+    margin-top: 25px;
+    background: #f2f2f2;
   
 }
 

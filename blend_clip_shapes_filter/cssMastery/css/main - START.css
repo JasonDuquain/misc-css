@@ -23,8 +23,7 @@ p + p {
 
 /* ====== Helper classes ====== */
 
-/** Make the antialiasing on dark backgrounds a bit lighter
-* on WebKit/Firefox OS X. */
+/** Make the antialiasing on dark backgrounds a bit lighter on WebKit/Firefox OS X. */
 .inverted {
   -webkit-font-smoothing: antialiased;
 }
@@ -55,9 +54,7 @@ p + p {
 
 /** Masked header title.
 * 1. Use the -webkit-prefixed properties to create a CSS radial gradient mask.
-*    These are not supported unprefixed when writing this.
-* 2. Size the mask to twice the size. Positioning won't work as the transparent
-*    background created by simply moving it will mask out the top of the text. */
+* 2. Size the mask to twice the size. Positioning won't work as the transparent background created by simply moving it will mask out the top of the text. */
 .header-title {
     color: #fff;
     text-align: center;

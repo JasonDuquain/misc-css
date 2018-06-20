@@ -13,10 +13,10 @@ figure#zoom-gallery {
 
 figure#zoom-gallery img { 
   transition: .7s all ease-in-out;
+  box-shadow: 0 0 5px 0 #000; 
   width: 25%; 
   max-width: 300px; 
   margin: 4%; 
-  box-shadow: 0 0 5px 0 #000; 
 } 
 
 label { 

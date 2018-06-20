@@ -11,6 +11,7 @@ figure#spinner {
     transition: 1000ms;
     transform-style: preserve-3d;
     height: 300px;
+	/* x-offset | y-offset | z-offset */
     transform-origin: 50% 50% -500px;
 } 
 

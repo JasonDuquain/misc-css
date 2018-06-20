@@ -39,4 +39,3 @@ carousels.forEach(function(c) {
 
     
 });
-

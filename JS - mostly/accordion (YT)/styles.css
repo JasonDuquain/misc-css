@@ -7,7 +7,7 @@
 }
 
 button.accordion {
-	   transition: background-color 200ms linear;
+	transition: background-color 200ms linear;
 }
 
 button.accordion::after {

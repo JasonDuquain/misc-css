@@ -1,6 +1,6 @@
 
 body { 
-    
+        
 }
 
 div#cars { 
@@ -9,11 +9,12 @@ div#cars {
 } 
 
 div#cars img { 
+    transition: .8s opacity; 
     
 }
 
 div#cars img.visible { 
-    
+    opacity: 1;
 }
 
 /* COMPLETE

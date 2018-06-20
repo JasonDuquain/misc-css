@@ -36,8 +36,8 @@ body {
 }
 
 .open .accordionItemContent {
-    margin: 0 0 10px 0;
     transition: transform 400ms ease;
+    margin: 0 0 10px 0;
     padding: 20px;
     border: 1px solid #ddd;
     transform: scaleY(1);

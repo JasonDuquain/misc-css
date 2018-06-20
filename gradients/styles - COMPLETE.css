@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Syncopate);
+
+:root {
+    --darkgreen: #56ab2f;
+    --lightgreen: #a8e063;
+}
+
+body {
+    background: radial-gradient(circle closest-corner at center 125px, #222, black 40%) no-repeat;
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+    padding: 100px 0;
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    background: radial-gradient(circle farthest-corner at center center, #ccc, #333 ) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.one {
+  height: 100px;
+  margin: 20px;
+  background: radial-gradient(circle closest-side, var(--darkgreen), var(--lightgreen));
+}
+
+.two {
+  height: 100px;
+  margin: 20px;
+  background: radial-gradient(circle 80px, var(--darkgreen), var(--lightgreen));
+}
+
+.three {
+  height: 100px;
+  margin: 20px;
+  background: radial-gradient(circle, var(--darkgreen), var(--lightgreen) 150px);
+}
+
+.four {
+  height: 100px;
+  margin: 20px;
+  background: radial-gradient(circle farthest-side, var(--darkgreen), var(--lightgreen));
+}
+
+.examples-wrap {
+    height: 40vh;
+    margin: 50px 0;
+    background: #000;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: radial-gradient(circle at top right,#16222A, #3A6073) ;
+}
+
+.examples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  
+  --light: #5d1674;
+  --dark: #2f0047;
+}
+.examples > div {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.five {
+    background: radial-gradient(at top left, var(--light), var(--dark));
+}
+
+.six {
+    background: radial-gradient(at top right, var(--light), var(--dark));
+}
+
+.seven {
+    background: radial-gradient(at bottom left, var(--light), var(--dark));
+}
+
+.eight {
+    background: radial-gradient(at bottom right, var(--light), var(--dark));
+}
+
+.fade {
+    height: 1.5em;
+    width: 400px;
+    background-image: repeating-linear-gradient(-45deg, #57b, #57b 10px, #148 10px, #148 20px); 
+    border-radius: 0.3em;
+}
+
+.fadeEstelle {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 20px;
+    background-image:
+    radial-gradient(ellipse at 25% 15%,
+      black 1%, 1%, 
+      palegoldenrod 2%,
+      rebeccapurple 100%);
+    background-size: 400px 300px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+
+

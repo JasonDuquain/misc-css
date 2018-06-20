@@ -1,0 +1,3 @@
+A Pen created at CodePen.io. You can find this one at https://codepen.io/Hudson_Taylor11/pen/XpBMwM.
+
+ I built this site to experiment with slanted edges and cool gradient color schemes. I wanted to keep it simple and semi-retro...

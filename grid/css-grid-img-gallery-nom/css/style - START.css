@@ -25,6 +25,7 @@ h1 {
 
 .item {
 	box-sizing: border-box;
+	box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
 	transition: transform 0.3s ease-in-out;
 }
 

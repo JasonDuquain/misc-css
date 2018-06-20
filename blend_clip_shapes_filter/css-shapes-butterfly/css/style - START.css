@@ -15,11 +15,14 @@ body {
 }
 
 h1 {
-   
+  font: 100 3em/1.5 'Lato', sans-serif;
+  text-transform: uppercase;
+  margin-top: 1em;
 }
 
 p {
-   ; 
+  font: 300 1.05em/1.5 'Lato', sans-serif;
+  margin-bottom: 1.1em;
 }
 
 article {

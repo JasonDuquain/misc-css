@@ -20,7 +20,7 @@ body {
 }
 
 p, h1, h3 {
-	  padding: 1em 0; 
+	padding: 1em 0; 
 }
 
 p {
@@ -28,7 +28,7 @@ p {
 }
 
 ul {
-	  list-style: circle;
+	list-style: circle;
 }
 
 .clear {

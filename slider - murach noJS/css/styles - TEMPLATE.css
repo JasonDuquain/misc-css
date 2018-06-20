@@ -1,0 +1,45 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 100%; 
+}
+
+section {
+	padding: 20px;
+}
+
+div {
+    	
+}
+
+h1 {
+	margin: 0 0 .25em;
+    padding: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+    color: blue;
+    font-size: 100%    
+}
+
+img {
+		
+}
+
+/*** animation ***/
+ul {
+    
+}
+
+ul:hover {
+	
+}
+
+@keyframes slideshow {
+ 
+}

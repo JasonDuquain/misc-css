@@ -10,11 +10,6 @@ p {
      margin: 0 0 10px 0; 
 }
 
-.clip-svg {
-    width: 0;
-    height: 0;
-}
-
 .img-clip-block {
     font-family: 'Cuprum', sans-serif;
     margin: 1.25em 0; /*was 20px*/    
@@ -50,7 +45,9 @@ p {
 }
 
 .overlay-content {
-    
+	color: rgba(255, 255, 255, 0.4);
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-weight: 400;
 }
 
 .img-clip-wrap:hover .overlay {

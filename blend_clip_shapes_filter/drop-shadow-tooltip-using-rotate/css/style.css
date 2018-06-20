@@ -3,17 +3,15 @@ body {
 }
 
 .tooltip {
-   
+       
 }
 
 .tooltip__arrow {
-    
     
 }
 
 .tooltip__arrow::after {
     content: "";
-    
     
 }
 

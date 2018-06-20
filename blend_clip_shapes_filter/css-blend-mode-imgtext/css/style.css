@@ -1,0 +1,38 @@
+body {
+  background: #111;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: arial, sans-seriff;
+}
+
+.container {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  
+}
+
+.container img {
+  
+}
+
+.container .text {
+	font-weight: bold;
+}
+
+.container .text:before {
+    content: " ";
+    display: block;
+}
+
+@supports (mix-blend-mode: multiply) {
+    
+  .container .text {
+    
+  }
+    
+  .container .text:before {
+    
+  }
+    
+}

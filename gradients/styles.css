@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Syncopate);
+
+:root {
+    --darkgreen: #56ab2f;
+    --lightgreen: #a8e063;
+}
+
+body {
+    
+}
+
+h1 {
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    padding: 100px 0;
+    
+}
+
+.one {
+  height: 100px;
+  margin: 20px;
+  
+}
+
+.two {
+  height: 100px;
+  margin: 20px;
+  
+}
+
+.three {
+  height: 100px;
+  margin: 20px;
+  
+}
+
+.four {
+  height: 100px;
+  margin: 20px;
+  
+}
+
+.examples-wrap {
+    height: 40vh;
+    margin: 50px 0;
+    background: #000;
+    
+}
+
+.examples {
+  
+  
+  --light: #5d1674;
+  --dark: #2f0047;
+}
+
+.examples > div {
+  
+}
+
+.five {
+    
+}
+
+.six {
+    
+}
+
+.seven {
+    
+}
+
+.eight {
+    
+}
+
+.fade {
+    
+}
+
+.fadeEstelle {
+    
+}
+    
+
+
+
+
