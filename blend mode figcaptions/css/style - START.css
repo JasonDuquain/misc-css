@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding: 3% 5%;
+    font-family: Lato, sans-serif;
+    position: relative;
+}
+
+body:before {
+    content: "";
+    background-image: url(https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=d82a1ac4cbc3696cb88b97d69a1fbb2c);
+  
+}
+
+article {
+    box-shadow: 0px 0px 50px -10px #9a7289;
+}
+
+aside {
+  
+}
+
+aside img {
+  
+}
+
+section {
+  
+}
+
+section:before {
+  
+}
+
+h1, h2, h3 {
+    font-family: Montserrat, sans-serif;
+}
+
+h1 {
+    font-size: 6vw;
+    margin: 0 0 2vw 0;
+}
+
+h2 {
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0 0 1vw 0;
+}
+
+@keyframes move {
+    0% {
+    
+    }
+    100% {
+    
+    }
+}
+
+.teaser {
+  
+}
+
+.teaser figure {
+  
+}
+
+.teaser img {
+  
+}
+
+.teaser figcaption {
+	font-size: 20px;
+    color: #000;
+}
+
+.teaser figcaption h3 {
+    margin: 0;
+    padding: 3px 5px;
+    width: 100%;
+}
+
