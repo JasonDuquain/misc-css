@@ -39,9 +39,11 @@ a {
 }
 
 .picture-box {
-    background-image: url(http://lorempixel.com/800/900/people/9/);
+    background-image: url(../img/pic.jpg);
     height: 300px;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 h1 {
@@ -105,25 +107,17 @@ h1 span {
       min-height: 900px;
   }
     
-  .picture-box {
-      background-image: url(http://lorempixel.com/800/1200/people/9/);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-  }
-    
   .top-matter {
       display: flex; 
-      align-items: stretch;
       justify-content: center;
       background: #f0ffff;
   }
     
   .title-box {
+      width: 200px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 200px;
       order: 2;
   }
     
@@ -162,24 +156,3 @@ h1 span {
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .main-article p {
-      font-size: 1.25em;
-  }
-    
-  .main-article section:first-child p:first-child:first-letter {
-      float: left;
-      color: tomato;
-      font-size: 105px;
-      line-height: 60px;
-      padding-top: 13px;
-      padding-right: 8px;
-      padding-left: 3px;
-      font-weight: 100;
-  }
-    
-}
-
-.byline p {
-    margin-bottom: 16px;
-}

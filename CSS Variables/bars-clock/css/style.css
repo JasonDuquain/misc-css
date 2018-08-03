@@ -16,20 +16,16 @@ div.barclock{
 
 div.barclock:after{
     content: '';
-    
 }
 
 div#hour:after{
     background: #00b9f1;
-    
 }
 
 div#minute:after{
     background: #f9c00c;
-    
 }
 
 div#second:after{
     background: #75D701;
-    
 }

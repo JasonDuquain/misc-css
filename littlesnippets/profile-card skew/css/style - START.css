@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+figure.snip0067 {
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 10px 1%;
+    position: relative;
+    
+
+}
+
+figure.snip0067 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease-in-out;
+}
+
+figure.snip0067 img {
+    max-width: 100%;
+    position: relative;
+    display: block;
+}
+
+figure.snip0067:before {
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    content: '';
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+
+
+}
+
+figure.snip0067 figcaption {
+	
+}
+
+figure.snip0067 figcaption h2,
+figure.snip0067 figcaption p {
+	
+}
+
+figure.snip0067 figcaption h2 {
+    font-size: 1.4em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+figure.snip0067 figcaption h2 span {
+    font-weight: 800;
+}
+
+figure.snip0067 figcaption p {
+    font-weight: 500;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+figure.snip0067 figcaption .icons {
+	
+}
+
+figure.snip0067 figcaption .icons i {
+    display: inline-block;
+    font-size: 20px;
+
+
+}
+
+figure.snip0067 figcaption a {
+	
+}
+
+figure.snip0067 figcaption a:hover {
+	
+}
+
+figure.snip0067 .position {
+    position: absolute;
+    font-size: 0.9em;
+    font-weight: 500;
+
+}
+
+figure.snip0067.blue .icons i {
+    background: #164666;
+}
+
+figure.snip0067.blue .position {
+    background: #20638f;
+}
+
+figure.snip0067.red .icons i {
+    background: #6d2018;
+}
+
+figure.snip0067.red .position {
+    background: #962d22;
+}
+
+figure.snip0067.yellow .icons i {
+    background: #924d10;
+}
+
+figure.snip0067.yellow .position {
+    background: #bf6516;
+}
+
+figure.snip0067.green .icons i {
+    background: #145b32;
+}
+
+figure.snip0067.green .position {
+    background: #1e8449;
+}
+
+figure.snip0067:hover figcaption,
+figure.snip0067.hover figcaption,
+figure.snip0067:hover .icons i,
+figure.snip0067.hover .icons i {
+	
+}
+
+figure.snip0067:hover .icons a:nth-of-type(2) i {
+    
+}
+
+figure.snip0067:hover .icons a:nth-of-type(3) i {
+    
+}
+
+figure.snip0067:hover:before,
+figure.snip0067.hover:before {
+	
+}

@@ -5,20 +5,16 @@ body {
 
 div#planets {
     font-size: 0;
-    overflow: hidden;
+    
 }
 
 div#planets img {
     transition: .4s all;
-    float: left;
-    width: 33.333%;
-    opacity: 0;
-    transform: scale(0);
+    
 }
 
 div#planets img.wax {
-    opacity: 1;
-    transform: scale(1);
+    
 }
 
 /* COMPLETE

@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+
+:root {
+    --orange: #c47135;
+}
+
+.snip1582 {
+    font-family: 'BenchNine', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    font-size: 22px;
+    display: inline-block;
+    margin: .681em 1em; /* was 15px 22px */
+    padding: .545em 1.818em .454em; /* was 12px 40px 10px */
+    outline: none;
+    background-color: var(--orange);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1em;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.snip1582:before,
+.snip1582:after {
+    content: "";
+    transition: all 250ms;
+    position: absolute;
+    border: 0px solid transparent;
+    height: 1.0909em;
+    width: 1.0909em;
+}
+
+.snip1582:before {
+    border-top-width: .090em;
+    border-color: var(--orange);
+    top: -.227em;
+    left: 0;
+}
+
+.snip1582:after {
+    border-bottom-width: .090em; /* was 2px */
+    border-color: var(--orange);
+    bottom: -.227em; /* was 5px */
+    right: 0;         
+}
+
+.snip1582:hover:before,
+.snip1582.hover:before,
+.snip1582:hover:after,
+.snip1582.hover:after {
+     width: 100%;  
+}
+
+/* Demo purposes only */
+
+body {
+    background-color: #212121;
+    padding: 2.272em 0; /* was 50px */
+    text-align: center; 
+}
+
+@media (max-width: 680px) {
+    .snip1582 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .snip1582 {
+        font-size: 32px;
+    }
+}

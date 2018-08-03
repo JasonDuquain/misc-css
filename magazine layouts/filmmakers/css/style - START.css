@@ -22,7 +22,9 @@ body {
 }
 
 img {
-  
+	max-width: 100%;
+    height: auto;
+    vertical-align: baseline;
 }
 
 a {
@@ -38,7 +40,7 @@ a {
 }
 
 .top-matter * {
-  
+    color: #fffff0;    
 }
 
 h1 {

@@ -11,10 +11,10 @@ body {
 }
 
 h1 {
-    display: inline-block;
-    padding: 100px 0;
     font-family: 'Syncopate', sans-serif;
     text-transform: uppercase;
+    padding: 100px 0;
+    display: inline-block;
     background: radial-gradient(circle farthest-corner at center center, #ccc, #333 ) no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

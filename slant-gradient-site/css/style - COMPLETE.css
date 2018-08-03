@@ -153,8 +153,8 @@ hr.alt {
 }
 
 .box-alt i {
-    transform: rotate(45deg);
     font-size: 4em;
+    transform: rotate(45deg);
 }
 
 .box-alt::after,

@@ -1,14 +1,4 @@
 
-let lis = document.querySelectorAll('.entry');
-
-
-
-
-
-
-
-
-
 
 
 
@@ -52,6 +42,8 @@ let lis = document.querySelectorAll('.entry');
 
 
 /*
+
+let lis = document.querySelectorAll('.entry');
 
 function callbackFunc() {
   lis.forEach(function(el) {

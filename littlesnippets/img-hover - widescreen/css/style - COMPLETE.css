@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
+
+.snip1585 {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    margin: 8px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    max-width: 315px;
+    min-width: 230px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.snip1585 * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+}
+
+.snip1585:before,
+.snip1585:after {
+    content: '';
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 50px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 50px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.snip1585:before {
+    transform: scaleY(2);
+}
+
+.snip1585:after {
+    transform: scaleY(2);
+}
+
+.snip1585 img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;    
+}
+
+.snip1585 figcaption {
+    line-height: 1.1em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    transition-delay: 0s;
+    opacity: 0;
+}
+
+.snip1585 h3 {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.snip1585 h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.snip1585:hover > img,
+.snip1585.hover > img {
+    opacity: .7;    
+}
+
+.snip1585:hover:before,
+.snip1585.hover:before,
+.snip1585:hover:after,
+.snip1585.hover:after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.snip1585:hover figcaption,
+.snip1585.hover figcaption {
+    opacity: 1;
+    transition-delay: .1s;
+}
+
+/* Demo purposes only */
+body {
+    background-color: #212121;
+    text-align: center;
+}

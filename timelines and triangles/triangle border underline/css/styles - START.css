@@ -2,9 +2,7 @@
     box-sizing: border-box;
 }
 
-*,
-::before,
-::after {
+*, ::before, ::after {
     box-sizing: inherit;
     text-decoration: none;
     list-style-type: none;
@@ -17,14 +15,12 @@ ul.arrowunderline {
     margin: 2em 0 0 0;
     padding: 0;
     text-align: center;
-    /* enter "left", "right", or "center" to orient the menu accordingly */
     font: bold 16px Georgia;
 }
 
 ul.arrowunderline li {
     display: inline;
     margin-right: 25px;
-    /* spacing between each menu item */
 }
 
 ul.arrowunderline li a {

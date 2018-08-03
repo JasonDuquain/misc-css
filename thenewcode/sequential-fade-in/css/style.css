@@ -1,6 +1,7 @@
 
 body { 
-        
+    background: #000;
+    margin: 0;
 }
 
 div#cars { 
@@ -14,7 +15,7 @@ div#cars img {
 }
 
 div#cars img.visible { 
-    opacity: 1;
+    
 }
 
 /* COMPLETE

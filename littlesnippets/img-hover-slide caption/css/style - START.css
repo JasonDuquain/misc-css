@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+
+:root {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+figure.snip0017 {
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 10px 1%;
+    position: relative;
+    
+    
+}
+
+figure.snip0017 img {
+    transition: opacity 0.35s;
+    
+}
+
+figure.snip0017 figcaption {
+    
+}
+
+figure.snip0017 figcaption::before {
+    content: '';
+    transition: all 0.5s;
+    
+}
+
+figure.snip0017 h2,
+figure.snip0017 p {
+    transition: opacity 0.35s, transform 0.35s;
+    
+}
+
+figure.snip0017 h2 {
+    
+}
+
+figure.snip0017 h2 span {
+    
+}
+
+figure.snip0017 p {
+    
+}
+
+figure.snip0017:hover img {
+    
+}
+
+figure.snip0017:hover figcaption h2 {
+    
+}
+
+figure.snip0017:hover figcaption p {
+    
+}
+
+figure.snip0017:hover figcaption::before {
+    
+}

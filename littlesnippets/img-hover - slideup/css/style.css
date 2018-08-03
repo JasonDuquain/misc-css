@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
+
+.snip1576 {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    margin: 8px;
+    
+    
+}
+
+.snip1576 * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+}
+
+.snip1576:after {
+    content: '';
+    position: absolute;
+    transition: all 0.5s linear;
+    
+    
+}
+
+.snip1576 img {
+    
+}
+
+.snip1576 figcaption {
+	line-height: 1.1em;
+}
+
+.snip1576 h3 {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.snip1576 h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.snip1576 a {
+    
+}
+
+.snip1576:hover > img,
+.snip1576.hover > img {
+    
+}
+
+.snip1576:hover:after,
+.snip1576.hover:after {
+    
+}
+
+.snip1576:hover figcaption,
+.snip1576.hover figcaption {
+    
+}
+
+/* Demo purposes only */
+
+body {
+    background-color: #212121;
+    text-align: center;
+}

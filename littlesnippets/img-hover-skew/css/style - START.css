@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Teko:700);
+
+.snip1543 {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 10px 5px;
+    
+    
+}
+
+.snip1543 *,
+.snip1543 *:before,
+.snip1543 *:after {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+}
+
+.snip1543 img {
+    
+}
+
+.snip1543:before,
+.snip1543:after {
+    content: '';
+    transition: all 0.45s ease;
+    
+}
+
+.snip1543:before {
+    
+}
+
+.snip1543:after {
+    
+}
+
+.snip1543 figcaption {
+    
+}
+
+.snip1543 figcaption:before,
+.snip1543 figcaption:after {
+    content: '';
+    
+}
+
+.snip1543 figcaption:before {
+    
+}
+
+.snip1543 figcaption:after {
+    
+}
+
+.snip1543 h3,
+.snip1543 p {
+    margin: 0;
+    opacity: 0;
+    letter-spacing: 1px;
+}
+
+.snip1543 h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.snip1543 p {
+    font-size: 0.9em;
+}
+
+.snip1543:hover h3,
+.snip1543.hover h3,
+.snip1543:hover p,
+.snip1543.hover p {
+    
+}
+
+.snip1543:hover:before,
+.snip1543.hover:before {
+    
+}
+
+.snip1543:hover:after,
+.snip1543.hover:after {
+    
+}
+
+.snip1543:hover figcaption:before,
+.snip1543.hover figcaption:before {
+    
+}
+
+.snip1543:hover figcaption:after,
+.snip1543.hover figcaption:after {
+    
+}
+
+/* Demo purposes only */
+body {
+    background-color: #212121;
+    text-align: center;
+}

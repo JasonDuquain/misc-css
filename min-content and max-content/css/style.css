@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
 html { 
-     
+	background: linear-gradient(135deg, #f1c40f 0%, #e74c3c 100%); 
 }
 
 .democontainer {
@@ -19,8 +19,9 @@ p:not(.first) {
 }
 
 .row1, .row2 {
-    
-  
+	margin: 0 auto 20px auto;
+    max-width: 100%;
+    border: 4px solid white;
 }
 
 .row2 {
@@ -30,7 +31,8 @@ p:not(.first) {
 /********* MIN-CONTENT *****/
 
 .image-container { 
-     
+	border: 2px solid black; 
+    margin: 20px auto;
 }
 
 .image-container:last-of-type {

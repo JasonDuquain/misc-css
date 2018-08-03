@@ -2,9 +2,7 @@
     box-sizing: border-box;
 }
 
-*,
-::before,
-::after {
+*, ::before, ::after {
     box-sizing: inherit;
     text-decoration: none;
     list-style-type: none;
@@ -17,7 +15,6 @@ ul.arrowunderline {
     margin: 2em 0 0 0;
     padding: 0;
     text-align: center;
-    /* change to orient the menu accordingly */
     font: bold 16px Georgia;
 }
 
@@ -33,7 +30,6 @@ ul.arrowunderline li a {
     color: black;
 	border-bottom: 3px solid transparent;
     padding-bottom: 8px;
-    /*spacing between each menu item and arrow underline beneath it */
 }
 
 ul.arrowunderline li a:hover {

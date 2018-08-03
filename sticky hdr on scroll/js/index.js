@@ -1,16 +1,43 @@
 
-let nav = document.querySelector('nav');
-let div = document.querySelector('nav div');
-let banner = document.querySelector('.header-banner');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /* START
 
-let nav = document.querySelector('nav');
-let div = document.querySelector('nav div');
-let banner = document.querySelector('.header-banner');
 
 */
 

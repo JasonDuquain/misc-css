@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+figure.snip0077 {
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 10px 1%;
+    position: relative;
+    float: left;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    text-align: center;
+    color: #fff;
+}
+
+figure.snip0077 * {
+    box-sizing: padding-box;
+}
+
+figure.snip0077 img {
+    transition: all 0.5s;
+    width: 100%;
+}
+
+figure.snip0077 figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    right: 50px;
+    transform: translateY(-50%);
+}
+
+figure.snip0077 figcaption h2,
+figure.snip0077 figcaption p {
+    transition: all 0.5s linear;
+    margin: 0;
+    color: transparent; 
+    text-shadow: 0 0 40px #fff;
+    transition-delay: 0s;
+}
+
+figure.snip0077 figcaption h2 {
+    position: relative;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+figure.snip0077 figcaption h2 span {
+    font-weight: 800;
+}
+
+figure.snip0077 figcaption p {
+    font-size: .9em;
+    font-weight: 500;
+    opacity: .65;
+}
+
+figure.snip0077:before,
+figure.snip0077:after {
+    transition: opacity 0.5s, transform 0.5s;
+    content: '';
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    opacity: 0; 
+}
+
+figure.snip0077:before {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: scale(0, 1);    
+}
+
+figure.snip0077:after {
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: scale(1, 0);
+}
+
+figure.snip0077.blue {
+    background: #0a212f;
+}
+
+figure.snip0077.red {
+    background: #36100c;
+}
+
+figure.snip0077.yellow {
+    background: #562e0a;
+}
+
+figure.snip0077:hover img,
+figure.snip0077.hover img {
+    opacity: .2;
+    filter: blur(5px);
+    transform: scale(1.1);
+}
+
+figure.snip0077:hover figcaption h2,
+figure.snip0077.hover figcaption h2,
+figure.snip0077:hover figcaption p,
+figure.snip0077.hover figcaption p {
+    color: #fff;
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.5);
+    transition-delay: 0.2s;
+}
+
+figure.snip0077:hover:before,
+figure.snip0077.hover:before,
+figure.snip0077:hover:after,
+figure.snip0077.hover:after {
+    opacity: 0.8;
+    transform: scale(1);
+}

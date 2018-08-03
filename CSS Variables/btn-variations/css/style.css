@@ -10,11 +10,10 @@
 
 /* variations */
 .btn.red {
-            
+  
 }
-
 .btn.yellow {
-      
+  
 }
 
 
@@ -25,7 +24,6 @@
   padding: 2rem 4rem;
   border: 2px solid var(--color, black);
   background: transparent;
-  border-radius: 2px;
 }
 .btn:hover {
   cursor: pointer;

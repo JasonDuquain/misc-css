@@ -108,8 +108,8 @@ h1 span {
     max-width: 105%;
     margin: 0 -5%;
     padding: 19px 0;
-	//column-span: all;
-    //margin: 0 auto;
+	column-span: all;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 900px) {
@@ -120,7 +120,6 @@ h1 span {
       min-height: 100vh;
       display: flex;
       justify-content: flex-end;
-      align-content: stretch;
       padding: 0;
   }
     

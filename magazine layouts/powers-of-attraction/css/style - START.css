@@ -22,16 +22,14 @@ body {
   clear: both;
 }
 
-img {
-  
-}
-
 a {
   text-decoration: none;
 }
 
 .container {
-  
+	max-width: 1600px;
+    margin: 0 auto;
+    background: #fff;
 }
 
 .picture-box {
@@ -82,10 +80,6 @@ h1 span {
     
   }
     
-  .picture-box {
-    
-  }
-    
   .top-matter {
     
   }
@@ -115,17 +109,4 @@ h1 span {
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .main-article p {
-    
-  }
-    
-  .main-article section:first-child p:first-child:first-letter {
-    
-  }
-    
-}
 
-.byline p {
-  
-}
