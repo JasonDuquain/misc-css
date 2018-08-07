@@ -3,17 +3,16 @@
 figure.snip0021 {
     font-family: 'Raleway', Arial, sans-serif;
     margin: 10px 1%;
-    
-    color: #fff;
     position: relative;
-    float: left;
-    overflow: hidden;
     min-width: 220px;
     max-width: 310px;
     max-height: 220px;
+    color: #fff;
+    float: left;
     width: 100%;
     background: #000;
     text-align: center;
+    overflow: hidden;
 }
 
 figure.snip0021 * {
@@ -22,7 +21,6 @@ figure.snip0021 * {
 
 figure.snip0021 img {
     transition: opacity 0.35s;
-    opacity: 1;
     width: 100%;
 }
 
@@ -36,11 +34,11 @@ figure.snip0021 figcaption {
 }
 
 figure.snip0021 figcaption > div {
+    position: relative;
     float: left;
+    width: 50%;
     height: 100%;
     overflow: hidden;
-    width: 50%;
-    position: relative;
 }
 
 figure.snip0021 figcaption::before {
@@ -51,9 +49,10 @@ figure.snip0021 figcaption::before {
     bottom: 50%;
     left: 50%;
     width: 2px;
-    background-color: rgba(255, 255, 255, 0.5);
-    transition-delay: 0.6s;
-    opacity: 0;
+    background-color: rgba(255,255,255,.5);
+    color: red;
+    transition-delay: .6s;
+    opacity: 0; /*no height so not able to view this anyway*/
 }
 
 figure.snip0021 h2,
@@ -76,9 +75,10 @@ figure.snip0021 h2 {
     word-spacing: -.1em;
     font-weight: 300;
     text-transform: uppercase;
+    
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transform: translate3d(50%, 0%, 0);
+    background: rgba(0,0,0,.5);
+    transform: translate3d(50%, 0, 0);
 }
 
 figure.snip0021 h2 span {
@@ -87,7 +87,6 @@ figure.snip0021 h2 span {
 
 figure.snip0021 p {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, transparent 40%, rgba(0, 0, 0, 0.1) 100%);
-    display: block;
     bottom: 0;
     text-align: left;
     font-weight: 300;
@@ -98,9 +97,9 @@ figure.snip0021 p {
 }
 
 figure.snip0021 .curl {
-    transition: all .3s ease;
     background: linear-gradient(135deg, #ffffff, #f3f3f3 20%, #cccccc 38%, #bbbbbb 44%, #aaaaaa 50%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.4));
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all .3s ease;
     position: absolute;
     width: 0;
     height: 0;
@@ -133,16 +132,14 @@ figure.snip0021 .curl:after {
 
 figure.snip0021:hover img,
 figure.snip0021.hover img {
-    opacity: 0.7;
+    opacity: .7;
 }
 
-figure.snip0021:hover figcaption h2,
-figure.snip0021.hover figcaption h2,
-figure.snip0021:hover figcaption p,
-figure.snip0021.hover figcaption p {
+figure.snip0021:hover figcaption h2, figure.snip0021.hover figcaption h2,
+figure.snip0021:hover figcaption p, figure.snip0021.hover figcaption p {
     transform: translate3d(0%, 0%, 0);
     transition-delay: 0.3s;
-	opacity: 1;
+	   opacity: 1;
 }
 
 figure.snip0021:hover figcaption::before,

@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
+figure.snip1109 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    
+    
+}
+
+figure.snip1109 * {
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+figure.snip1109 img {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+figure.snip1109:before {
+    content: '';
+    transition: all 0.3s ease-in-out;
+    
+}
+
+figure.snip1109 figcaption {
+    
+}
+
+figure.snip1109 h3 {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+    padding: 6px 12px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+figure.snip1109 h3 span {
+    font-weight: 800;
+}
+
+figure.snip1109.yellow {
+    background-color: #e08e0b;
+}
+
+figure.snip1109.yellow i {
+    color: #fff;
+    background-color: #e08e0b;
+}
+
+figure.snip1109.navy {
+    background-color: #2b3c4e;
+}
+
+figure.snip1109.navy i {
+    color: #fff;
+    background-color: #2b3c4e;
+}
+
+figure.snip1109:hover img,
+figure.snip1109.hover img {
+    
+}
+
+figure.snip1109:hover:before,
+figure.snip1109.hover:before {
+    
+}
+
+figure.snip1109:hover figcaption,
+figure.snip1109.hover figcaption {
+    
+}
+

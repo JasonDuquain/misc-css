@@ -3,6 +3,10 @@
 figure.snip0021 {
     font-family: 'Raleway', Arial, sans-serif;
     margin: 10px 1%;
+    position: relative;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
     
     
 }
@@ -12,7 +16,7 @@ figure.snip0021 * {
 }
 
 figure.snip0021 img {
-	
+	transition: opacity 0.35s;
 }
 
 figure.snip0021 figcaption {
@@ -20,7 +24,7 @@ figure.snip0021 figcaption {
 }
 
 figure.snip0021 figcaption > div {
-    
+    position: relative;
 }
 
 figure.snip0021 figcaption::before {
@@ -37,6 +41,11 @@ figure.snip0021 p {
 
 figure.snip0021 h2 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, transparent 60%, rgba(0, 0, 0, 0.6) 100%);
+    text-align: right;
+    display: inline-block;
+    word-spacing: -.1em;
+    font-weight: 300;
+    text-transform: uppercase;
     
 }
 

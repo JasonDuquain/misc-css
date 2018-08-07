@@ -13,10 +13,11 @@
     margin: .681em 1em; /* was 15px 22px */
     padding: .545em 1.818em .454em; /* was 12px 40px 10px */
     outline: none;
+    cursor: pointer;
+	
     background-color: var(--orange);
     border: none;
     color: #fff;
-    cursor: pointer;
     line-height: 1em;
     position: relative;
     text-transform: uppercase;

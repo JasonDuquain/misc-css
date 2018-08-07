@@ -5,6 +5,9 @@
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 10px 5px;
+    position: relative;
+    min-width: 230px;
+    max-width: 315px;
     
     
 }

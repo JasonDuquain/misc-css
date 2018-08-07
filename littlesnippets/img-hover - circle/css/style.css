@@ -1,7 +1,7 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
 .snip1566 {
-    font-size: 16px;
+	font-size: 16px;
     position: relative;
     display: inline-block;
     margin: 20px;
@@ -11,9 +11,7 @@
     color: #bbb;
 }
 
-.snip1566 *,
-.snip1566:before,
-.snip1566:after {
+.snip1566 *, .snip1566:before, .snip1566:after {
     box-sizing: border-box;
     transition: all 0.3s linear;
 }
@@ -22,75 +20,37 @@
 .snip1566:after {
     content: '';
     box-sizing: border-box;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    border: 2px solid #bbb;
-    border-color: transparent #bbb;
+    
 }
 
 .snip1566 img {
-    max-width: 100%;
-    backface-visibility: hidden;
-    vertical-align: top;
-    border-radius: 50%;
-    padding: 10px;
+    
 }
 
 .snip1566 figcaption {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    bottom: 5px;
-    left: 5px;
-    background-color: rgba(0,0,0,.9);
-    border-radius: 50%;
-    opacity: 0;
+    
+    
 }
 
 .snip1566 i {
-    font-size: 4em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    
 }
 
 .snip1566 a {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;    
+    
 }
 
 .snip1566:hover figcaption,
 .snip1566.hover figcaption {
-    opacity: 1;
-    transform: translateX(0);
+    
 }
 
-.snip1566:hover:before,
-.snip1566.hover:before,
-.snip1566:hover:after,
-.snip1566.hover:after {
-    border-width: 10px;
+.snip1566:hover:before, .snip1566.hover:before {
+    
 }
 
-.snip1566:hover:before,
-.snip1566.hover:before {
-    transform: rotate(45deg);
-}
-
-.snip1566:hover:after,
-.snip1566.hover:after {
-    transform: rotate(-45deg);
+.snip1566:hover:after, .snip1566.hover:after {
+    
 }
 
 /* Demo purposes only */

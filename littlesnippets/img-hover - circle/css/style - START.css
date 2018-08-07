@@ -6,12 +6,12 @@
     display: inline-block;
     margin: 20px;
     box-shadow: none !important;
-    
+    max-width: 190px;
+    width: 100%;
+    color: #bbb;
 }
 
-.snip1566 *,
-.snip1566:before,
-.snip1566:after {
+.snip1566 *, .snip1566:before, .snip1566:after {
     box-sizing: border-box;
     transition: all 0.3s linear;
 }
@@ -45,20 +45,11 @@
     
 }
 
-.snip1566:hover:before,
-.snip1566.hover:before,
-.snip1566:hover:after,
-.snip1566.hover:after {
+.snip1566:hover:before, .snip1566.hover:before {
     
 }
 
-.snip1566:hover:before,
-.snip1566.hover:before {
-    
-}
-
-.snip1566:hover:after,
-.snip1566.hover:after {
+.snip1566:hover:after, .snip1566.hover:after {
     
 }
 

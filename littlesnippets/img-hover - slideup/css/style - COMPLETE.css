@@ -4,14 +4,11 @@
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     margin: 8px;
-    
+    position: relative;
     background-color: #fff;
     color: #444;
     display: inline-block;
-    max-width: 315px;
-    min-width: 230px;
     overflow: hidden;
-    position: relative;
     text-align: center;
 }
 
@@ -24,7 +21,6 @@
     content: '';
     position: absolute;
     transition: all 0.5s linear;
-    
     background-color: #359ad8;
     height: 150%;
     bottom: -145%;
@@ -33,21 +29,20 @@
 }
 
 .snip1576 img {
-    vertical-align: top;
+    display: block;
     max-width: 100%;
     backface-visibility: hidden;
 }
 
 .snip1576 figcaption {
+	   line-height: 1.1em;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    line-height: 1.1em;
     z-index: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     transition-delay: 0s;
@@ -73,12 +68,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1;    
+    z-index: 1; 
 }
 
 .snip1576:hover > img,
 .snip1576.hover > img {
-    opacity: .1;    
+    opacity: .1;
 }
 
 .snip1576:hover:after,
@@ -93,7 +88,6 @@
 }
 
 /* Demo purposes only */
-
 body {
     background-color: #212121;
     text-align: center;

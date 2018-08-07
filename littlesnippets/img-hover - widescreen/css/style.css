@@ -20,14 +20,6 @@
     
 }
 
-.snip1585:before {
-    
-}
-
-.snip1585:after {
-    
-}
-
 .snip1585 img {
     
 }
@@ -55,10 +47,8 @@
     
 }
 
-.snip1585:hover:before,
-.snip1585.hover:before,
-.snip1585:hover:after,
-.snip1585.hover:after {
+.snip1585:hover:before, .snip1585.hover:before,
+.snip1585:hover:after, .snip1585.hover:after {
     
 }
 

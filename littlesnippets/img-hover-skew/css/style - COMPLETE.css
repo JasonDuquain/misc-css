@@ -5,28 +5,25 @@
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 10px 5px;
+    position: relative;
+    min-width: 230px;
+    max-width: 315px;
     background-color: #fff;
     color: #fff;
     display: inline-block;
-    max-width: 315px;
-    min-width: 230px;
     overflow: hidden;
-    position: relative;
     text-align: left;
-    transform: translateZ(0); /////
 }
 
-.snip1543 *,
-.snip1543 *:before,
-.snip1543 *:after {
+.snip1543 *, .snip1543 *:before, .snip1543 *:after {
     box-sizing: border-box;
     transition: all 0.45s ease;
 }
 
 .snip1543 img {
-    backface-visibility: hidden;
     max-width: 100%;
-    vertical-align: top;    
+    display: block;
+    backface-visibility: hidden;
 }
 
 .snip1543:before,
@@ -43,7 +40,7 @@
 }
 
 .snip1543:before {
-    transform: skew(30deg) translateX(-80%);
+    transform: skewX(30deg) translateX(-80%);
 }
 
 .snip1543:after {
@@ -69,8 +66,8 @@
     left: 0;
     right: 0;
     background-color: #b81212;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-    opacity: 0.5;
+    box-shadow: 0 0 20px rgba(0,0,0,.7);
+    opacity: .5;
     z-index: -1;
 }
 
@@ -101,13 +98,10 @@
     font-size: 0.9em;
 }
 
-.snip1543:hover h3,
-.snip1543.hover h3,
-.snip1543:hover p,
-.snip1543.hover p {
-    transform: translateY(0);
-    opacity: 0.9;
-    transition-delay: 0.2s;
+.snip1543:hover h3, .snip1543.hover h3,
+.snip1543:hover p, .snip1543.hover p {
+    opacity: .9;
+    transition-delay: 200ms;
 }
 
 .snip1543:hover:before,
@@ -124,13 +118,13 @@
 .snip1543:hover figcaption:before,
 .snip1543.hover figcaption:before {
     transform: skew(30deg) translateX(-40%);
-    transition-delay: 0.15s;
+    transition-delay: 150ms;
 }
 
 .snip1543:hover figcaption:after,
 .snip1543.hover figcaption:after {
     transform: skew(-30deg) translateX(-30%);
-    transition-delay: 0.1s;
+    transition-delay: 100ms;
 }
 
 /* Demo purposes only */
