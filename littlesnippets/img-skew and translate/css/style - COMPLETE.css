@@ -1,19 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 
 figure.snip1109 {
-    font-family: 'Raleway', Arial, sans-serif;
     position: relative;
+    font-family: 'Raleway', Arial, sans-serif;
     margin: 10px 1%;
     min-width: 220px;
     max-width: 310px;
-    max-height: 310px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    overflow: hidden;
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
     float: left;
     width: 100%;
-    background: #333;
     text-align: left;
+    overflow: hidden;
 }
 
 figure.snip1109 * {
@@ -22,14 +20,13 @@ figure.snip1109 * {
 }
 
 figure.snip1109 img {
-    position: relative;
+    position: relative; /* yes its needed */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    max-width: 70%;
     display: block;
     margin: 50px auto;
     z-index: 1;
+    max-width: 70%;
     border: 1px solid rgba(255,255,255,.1);
-    transform: translate(0,0);
 }
 
 figure.snip1109:before {
@@ -103,3 +100,4 @@ figure.snip1109:hover figcaption,
 figure.snip1109.hover figcaption {
     transform: translate(18px, 18px);
 }
+

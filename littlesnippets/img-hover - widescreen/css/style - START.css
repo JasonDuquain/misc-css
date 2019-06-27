@@ -4,8 +4,14 @@
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     margin: 8px;
-    
-    
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    max-width: 315px;
+    min-width: 230px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .snip1585 * {
@@ -13,11 +19,11 @@
     transition: all 0.45s ease;
 }
 
-.snip1585:before,
-.snip1585:after {
+.snip1585:before, .snip1585:after {
     content: '';
     transition: all 0.3s ease;
-    
+    background-color: rgba(0, 0, 0, 0.5);
+	
 }
 
 .snip1585 img {
@@ -42,8 +48,7 @@
     font-weight: 700;
 }
 
-.snip1585:hover > img,
-.snip1585.hover > img {
+.snip1585:hover > img, .snip1585.hover > img {
     
 }
 

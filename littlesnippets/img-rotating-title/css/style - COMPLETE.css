@@ -1,19 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 
 figure.snip1091 {
-	box-shadow: 0 0 .312em rgba(0, 0, 0, 0.85); /*was 5px*/
+	   box-shadow: 0 0 .312em rgba(0, 0, 0, 0.85); /*was 5px*/
     font-family: 'Raleway', Arial, sans-serif;
     position: relative;
     margin: .625em .312em; /*was 10px 5px*/
-	
     display: inline-block;
     min-width: 13.75em; /* was 220px*/
     max-width: 19.375em; /* was 310px */
     max-height: 19.375em; /* was 310px */
     width: 100%;
-    overflow: hidden;
     text-align: center;
     background: #000;
+    overflow: hidden;
 }
 
 figure.snip1091 * {

@@ -1,0 +1,71 @@
+
+@keyframes load { 
+
+    0% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.progress {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+}
+
+.progress > li {
+    font-family: Lato;
+    color: #93A2AC;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 2em;
+}
+
+.progress > li:before {
+    font-weight: 400;
+    position: absolute;
+    content: attr(data-name);
+    width: 100%;
+    bottom: -2rem;
+}
+
+/*
+.progress > li:after {
+    position: absolute;
+    content: attr(data-percent);
+    width: 100%;
+    top: 3.7rem;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+*/
+
+[class*=percent] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress svg {
+    width: 10rem;
+    height: 10rem;
+}
+
+.progress svg:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-90deg);
+}
+
+.progress svg:nth-child(2) path {
+    fill: none;
+    stroke-width: 25;
+    stroke-dasharray: 629;
+    stroke: rgba(255,255,255,.9);
+    animation: load 5s linear;
+}

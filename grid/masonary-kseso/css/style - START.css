@@ -58,13 +58,13 @@ figure {
 }
     
 figure::after {
-		
+	background: rgba(73,107, 123,.75);
+    color: #c6d9d3;
 }
     
 }
 
-figure,
-img {
+figure, img {
 	transition: .4s;
 }
 

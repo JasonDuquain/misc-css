@@ -1,0 +1,74 @@
+.image-carousel {
+    width: 640px;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+}
+
+.inner {
+    transition: left 250ms ease-out;
+    display: flex;
+    position: absolute;
+    left: 0;
+}
+
+.bubbles {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 5px;
+}
+
+.bubble {
+	transition: opacity 100ms linear;
+    cursor: pointer;
+    margin: 2.5px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    opacity: .45;
+}
+
+.bubble:hover {
+    opacity: .80;
+}
+
+.bubble.active {
+    opacity: 1; 
+    cursor: default;
+    pointer-events: none;
+}
+
+.next::after,
+.prev::after {
+	    box-sizing: border-box;
+    content: '>';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #fff;
+    font-size: 20px;
+    width: 1em;
+    height: 3em;
+    font-weight: bold;
+    font-family: sans-serif;
+    transform: translateY(-50%);
+    line-height: 3em;
+    padding: 0 .2em;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.next:hover::after,
+.prev:hover::after {
+    opacity: 1;
+}
+
+.prev::after {
+    content: '<';
+    left: 0;
+}

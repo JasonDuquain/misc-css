@@ -5,7 +5,7 @@
 .snip1579 {
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.85);
     font-family: 'Lato', Arial, sans-serif;
-	font-size: 16px;
+	   font-size: 16px;
     position: relative;
     margin: .5em; /* was 8px */
 	
@@ -17,7 +17,6 @@
     color: #fff;
     text-align: left;
     overflow: hidden;
-    
 }
 
 .snip1579 * {
@@ -27,7 +26,7 @@
 
 .snip1579 img {
     width: 100%;
-    vertical-align: top;
+    display: block;
 }
 
 .snip1579 figcaption {
@@ -38,7 +37,7 @@
     height: 4.687em; /* was 75px */
     padding: .937em; /* was 15px */
     background-color: rgba(0, 0, 0, 0.95);
-	overflow: hidden;
+	   overflow: hidden;
 }
 
 .snip1579 h3 {
@@ -68,7 +67,7 @@
 .snip1579:hover figcaption,
 .snip1579.hover figcaption {
     height: calc(85%);
-	background-color: rgba(0,0,0,.65);
+	   background-color: rgba(0,0,0,.65);
 }
 
 /* Demo purposes only */

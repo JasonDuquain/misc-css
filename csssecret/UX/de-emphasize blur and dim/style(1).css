@@ -1,0 +1,53 @@
+
+body {
+	   font: 150%/1.6 Baskerville, Palatino, serif;
+}
+
+main {
+	   transition: 600ms;
+    background: white;
+}
+
+main.de-emphasized {
+	
+}
+
+dialog {
+	   box-shadow: 0 .2em .5em rgba(0,0,0,.5),
+	               0 0 0 100vmax rgba(0,0,0,.2);
+    
+}
+
+dialog:not([open]) {
+    
+}
+
+/*
+
+main {
+	transition: .6s;
+	background: white;
+}
+
+main.de-emphasized {
+	filter: blur(3px);
+}
+
+dialog {
+	box-shadow: 0 .2em .5em rgba(0,0,0,.5),
+	            0 0 0 100vmax rgba(0,0,0,.2);
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 1;
+	width: 10em;
+	padding: 2em;
+	margin: -5em;
+	border: 1px solid silver;
+	border-radius: .5em;
+}
+
+dialog:not([open]) {
+	display: none;
+}
+
+*/

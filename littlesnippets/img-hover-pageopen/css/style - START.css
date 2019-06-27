@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+
+figure.snip0021 {
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 10px 1%;
+    position: relative;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    color: #fff;
+    float: left;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    overflow: hidden;
+}
+
+figure.snip0021 * {
+    box-sizing: border-box;
+}
+
+figure.snip0021 img {
+    transition: opacity 0.35s;
+    width: 100%;
+}
+
+figure.snip0021 figcaption {
+    
+}
+
+figure.snip0021 figcaption > div {
+    position: relative;
+}
+
+figure.snip0021 figcaption::before {
+    content: '';
+    transition: all 0.4s;
+    
+}
+
+figure.snip0021 h2,
+figure.snip0021 p {
+    transition: opacity 0.45s, transform 0.45s;
+    
+}
+
+figure.snip0021 h2 {
+    text-align: right;
+    display: inline-block;
+    word-spacing: -.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    
+}
+
+figure.snip0021 h2 span {
+    font-weight: 800;
+}
+
+figure.snip0021 p {
+    
+    
+}
+
+figure.snip0021:hover img,
+figure.snip0021.hover img {
+    
+}
+
+figure.snip0021:hover figcaption h2,
+figure.snip0021.hover figcaption h2,
+figure.snip0021:hover figcaption p,
+figure.snip0021.hover figcaption p {
+    
+}
+
+figure.snip0021:hover figcaption::before,
+figure.snip0021.hover figcaption::before {
+    
+}
+

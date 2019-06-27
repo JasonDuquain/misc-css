@@ -17,17 +17,15 @@ let four = document.querySelector('.four');
 let five = document.querySelector('.five');
 
 
-
-
-
-
-
-
-
-
-
-
-
+window.addEventListener('scroll', function(e) {
+    var scrolled = window.scrollY;
+    //var scrolled = document.documentElement.scrollTop also works
+    one.style.bottom = `-${scrolled * .2}px`;
+    two.style.bottom = `-${scrolled * .3}px`;
+    three.style.bottom = `-${scrolled * .4}px`;
+    four.style.bottom = `-${scrolled * .4}px`;
+    five.style.bottom = `-${scrolled * .5}px`;
+});
 
 
 

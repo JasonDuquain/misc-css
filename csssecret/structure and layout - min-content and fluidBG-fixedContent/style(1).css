@@ -1,0 +1,29 @@
+/**** fluid-fixed ****/
+body {
+    margin: 0;
+	   font: 100%/1.5 sans-serif;
+}
+
+header, section, footer {
+    	
+}
+
+footer {
+    background: #333;
+    color: #fff;
+}
+
+header {
+    background: orange;
+    color: #fff;
+}
+
+section + section {
+    background: #eee;	
+}
+
+/**** min-content *****/
+
+figure {
+    
+}

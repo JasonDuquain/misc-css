@@ -7,46 +7,6 @@ let slider = document.getElementById("slider");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* COMPLETE
 
 let divisor = document.getElementById("divisor");

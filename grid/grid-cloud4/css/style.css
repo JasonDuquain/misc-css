@@ -15,7 +15,7 @@ a {
 }
 
 .prose * + * {
-  
+	margin-top: 1rem;
 }
 
 .box {

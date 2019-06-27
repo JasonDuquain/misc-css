@@ -39,8 +39,7 @@ function handleInputChange (e) {
 function handleSlider (e) {
     let value = e.target.value;
     root.style.setProperty('--slider', value);
-    (value > 0) ? document.body.style.setProperty('background-color', 'var(--secondary-color)') : document.body.style.setProperty('background-color', 'var(--primary-color)');
-    document.querySelector('label').textContent = `rotated ${value} degrees`;
+    (value > 0) ? document.body.style.setProperty('background-color', 'var(--secondary-color)') : document.body.style.setProperty('background-color', 'var(--primary-color)'); 
 }
 
 

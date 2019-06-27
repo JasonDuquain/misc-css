@@ -11,8 +11,7 @@ a {
     color: #8E3339;
     text-decoration: none;
 }
-a:hover,
-a:focus {
+a:hover, a:focus {
     text-decoration: underline;
 }
 /* here's our wrapper */
@@ -29,7 +28,7 @@ a:focus {
     margin: 0;
     padding: 0.5em 0;
     color: #fff;
-    text-shadow: -.1em .1em 0 rgba(0,0,0,0.3);
+    text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
 }
 
 /* navbar styling */

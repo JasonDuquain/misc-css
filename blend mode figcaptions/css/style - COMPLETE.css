@@ -100,10 +100,6 @@ h2 {
     animation: move 20s forwards linear;
 }
 
-.teaser:hover {
-    animation-play-state: paused;
-}
-
 .teaser figure {
     overflow: hidden;
     margin: 0;
@@ -125,7 +121,6 @@ h2 {
     position: absolute;
     background-color: #fff;
     bottom: 0;
-	mix-blend-mode: screen
 }
 
 .teaser figcaption h3 {

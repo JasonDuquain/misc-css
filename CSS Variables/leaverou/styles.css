@@ -8,8 +8,6 @@
 }
 
 input[type="range"] {
-    appearance: none;
-    -webkit-appearance: none;
     
 }
 
@@ -17,8 +15,6 @@ input[type="range"] {
     width: 80%;
     border: 2px solid black;
     margin: 0 auto;
-    line-height: 1.8;
-    padding: 4em;
     
 }
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+</head>
+
+<body class="demo-1">
+    <div class="container">
+        <header class="codrops-header">
+            <h1>SVG Loader <span>with <a href="http://greensock.com/gsap">GSAP</a> by <a href="https://twitter.com/chrisgannon">Chris Gannon</a></span></h1>
+            <div class="codrops-links">
+                <a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/CreativeGooeyEffects/" title="Previous Demo"><span>Previous Demo</span></a>
+                <a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=23648" title="Back to the article"><span>Back to the Codrops article</span></a>
+            </div>
+            <nav class="codrops-demos">
+                <a class="current-demo" href="index.html">Jump Loader</a>
+                <span>More ideas:</span>
+                <a href="index2.html">Flip Box Loader</a>
+                <a href="index3.html">Creeper</a>
+                <a href="index4.html">Squash Box Loader</a>
+                <a href="index5.html">Veggie Loader</a>
+                <a href="index7.html">Goo Loader</a>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="svg-container" id="container">
+                <svg id="loader" width="100%" height="100%" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
+                    <path id="jump" fill="none" stroke="#383845" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M47.5,94.3c0-23.5,19.9-42.5,44.5-42.5s44.5,19,44.5,42.5" />
+                    <g stroke="#383845" stroke-width="1">
+                        <ellipse id="circleL" fill="none" stroke-miterlimit="10" cx="47.2" cy="95.6" rx="10.7" ry="2.7" />
+                        <ellipse id="circleR" fill="none" stroke-miterlimit="10" cx="136.2" cy="95.6" rx="10.7" ry="2.7" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/greensock/minified/TweenMax.min.js"></script>
+    <script src="js/greensock/minified/plugins/DrawSVGPlugin.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

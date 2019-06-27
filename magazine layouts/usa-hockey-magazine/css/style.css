@@ -3,59 +3,103 @@ body {
 }
 
 article {
-      
+    display: flex;
 }
 
 .hero {
-      
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/81080/pr-hoodie.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 52%;
+    height: 100vh;
+    clip-path: polygon(0 0, 91% 0, 76% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 91% 0, 76% 100%, 0 100%);
 }
 
 .content {
-      
+    width: 47%;
 }
-
 .content__header {
-          
+    width: 37%;
+    padding-right: 3%;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
 }
-
 .content__header h2 {
     font-family: sans-serif;
-  
+    text-transform: capitalize;
+    color: #969696;
+    margin-top: 0;
 }
-
 .content__header span {
     font-family: sans-serif;
 }
-
 .content__copy {
-      
+    width: 54%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-left: 1px solid #969696;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
 }
 
 h1 {
-      
+    font-family: "bee", sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 12vw;
+    margin: 10% auto 5% -30%;
+    padding-left: 8%;
+    z-index: 1;
+    line-height: 1;
+    position: relative;
+    align-self: flex-start;
+    width: 100%;
+    color: #000;
+    letter-spacing: 2px;
 }
-
 h1:after {
-          
+    content: '';
+    display: inline-block;
+    background-color: #FFF;
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    left: -7%;
+    right: 0;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    clip-path: polygon(16% 0%, 100% 0, 100% 100%, 8% 100%);
+    -webkit-clip-path: polygon(16% 0%, 100% 0, 100% 100%, 8% 100%);
 }
 
 p {
-      
+    margin-bottom: 0;
+    margin-top: 0;
+    text-indent: 1.5em;
+    font-size: 0.8rem;
 }
-
 p:first-of-type {
-      
+    text-indent: 0;
 }
-
 p:nth-of-type(1)::first-letter {
-      
+    float: left;
+    font-size: 9em;
+    margin: -0.2em 0.04em -0.2em 0;
+    font-family: "bee", sans-serif;
+    font-weight: bold;
 }
 
 h3 {
-  font-family: sans-serif;
-  
+    color: #009a49;
+    margin-bottom: 0.1rem;
+    font-family: sans-serif;
 }
-
 h3 + p {
-      
+    text-indent: 0;
 }

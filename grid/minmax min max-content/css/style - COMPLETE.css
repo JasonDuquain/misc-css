@@ -51,17 +51,16 @@ h2 {
 
 
 #cuadricula {
+  margin-top: 2em;
   display: grid;
   grid-template-columns:max-content min-content 1fr;
   grid-gap:1em;
-    margin-top: 2em;
 }
 
 .itemm {
   padding:1em;
   border: 1px solid #000;
   border-radius: 10px;
-  background-color: #3E989B;
   background-color: var(--color);
 }
 

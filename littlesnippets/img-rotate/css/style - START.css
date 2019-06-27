@@ -55,7 +55,8 @@ figure.snip1213 .read-more {
 }
 
 figure.snip1213 .read-more:hover {
-    
+    background-color: #fff;
+    color: #000;
 }
 
 figure.snip1213:hover img,

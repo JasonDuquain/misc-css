@@ -7,12 +7,8 @@ html {
   color: #444;
 }
 
-*, *::after, *::before {
-  box-sizing: inherit;
-}
-
 *, *:before, *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   outline: none;
 }
 
@@ -28,10 +24,6 @@ body {
   margin: 0 auto;
 }
 
-.codepen {
-	text-decoration: none;
-}
-
 header {
   
 }
@@ -40,6 +32,7 @@ header h1 {
   
 }
 
+/* this is not needed? */
 header .mountains {
   
 }
@@ -49,27 +42,27 @@ header .mountains > * {
 }
 
 header .mountains .one {
-  background-image: url("http://mentalsociety.com/wp-content/themes/twentyseventeen/assets/images/mountains-1.svg");
+  background-image: url('../img/mountains-1.svg');
   
 }
 
 header .mountains .two {
-  background-image: url("http://mentalsociety.com/wp-content/themes/twentyseventeen/assets/images/mountains-2.svg");
+  background-image: url('../img/mountains-2.svg');
   
 }
 
 header .mountains .three {
-  background-image: url("http://mentalsociety.com/wp-content/themes/twentyseventeen/assets/images/mountains-3.svg");
+  background-image: url('../img/mountains-3.svg');
   
 }
 
 header .mountains .four {
-  background-image: url("http://mentalsociety.com/wp-content/themes/twentyseventeen/assets/images/mountains-4.svg");
+  background-image: url('../img/mountains-4.svg');
   
 }
 
 header .mountains .five {
-  background-image: url("http://mentalsociety.com/wp-content/themes/twentyseventeen/assets/images/mountains-5.svg");
+  background-image: url('../img/mountains-5.svg');
   
 }
 

@@ -31,18 +31,19 @@ figure.snip0017 figcaption::before {
     
 }
 
-figure.snip0017 h2,
-figure.snip0017 p {
+figure.snip0017 h2, figure.snip0017 p {
     transition: opacity 0.35s, transform 0.35s;
     
 }
 
 figure.snip0017 h2 {
-    
+    font-weight: 300;
+    word-spacing: -.15em;
+    text-transform: uppercase;
 }
 
 figure.snip0017 h2 span {
-    
+    font-weight: 800;
 }
 
 figure.snip0017 p {

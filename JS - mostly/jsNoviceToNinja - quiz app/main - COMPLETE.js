@@ -18,7 +18,7 @@ const game = {
         this.gameOver();
     },
     ask() {
-        const question = `what is ${this.question.name}'s first name?`;
+        const question = `what is ${this.question.name}'s FULL name?`;
         const response = prompt(question);
         this.check(response);
     },
@@ -40,8 +40,6 @@ game.start(quiz);
 
 
 /* AFTER PAGE 300:
-
-// start on page 147, then 180, then 231 (change quiz from an arr of arrs to an arr of objs!!!), then 272, then 300, then 335, then 368, then 405, then 456, then 521, then 553, then 590
 
 const quiz = [
     { name: "Superman",realName: "Clark Kent" },
@@ -83,7 +81,7 @@ const game = {
         this.gameOver();
     },
     ask() {
-        const question = `what is ${this.question.name}'s first name?`;
+        const question = `what is ${this.question.name}'s FULL name?`;
         view.render(view.question, question);
         const response = prompt(question);
         this.check(response);

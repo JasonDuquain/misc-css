@@ -10,62 +10,62 @@ html {
 
 @media only screen and (min-width: 800px) {
     
-.wrap {
-	
-}	
-       
-figure:first-child {
-    
-}
-    
-/*
-figure:last-child {
-    grid-row-start: span 6;
-    grid-column-start: span 6;	
-}
-figure:nth-child(odd) {
-    grid-row-star: span 2;
-    grid-column-start: span 3;	
-}
-*/
-    
-/*figure:nth-child(even) {
-    grid-column-star: span 3;
-}....mistake?*/
-    
-figure:nth-child(2n+3) {
-    
-}
-    
-figure:nth-child(4n+5) {
-    
-}
-    
-figure:nth-child(6n+7) {
-    
-}
-    
-figure:nth-child(8n+9) {
-    
-}
-    
-img {
-	
-}
-    
-figure {
-    
-}
-    
-figure::after {
-		
-}
+    .wrap {
+
+    }	
+
+    figure:first-child {
+
+    }
+
+    /*
+    figure:last-child {
+        grid-row-start: span 6;
+        grid-column-start: span 6;	
+    }
+    figure:nth-child(odd) {
+        grid-row-star: span 2;
+        grid-column-start: span 3;	
+    }
+    */
+
+    /*figure:nth-child(even) {
+        grid-column-star: span 3;
+    }....mistake?*/
+
+    figure:nth-child(2n+3) {
+
+    }
+
+    figure:nth-child(4n+5) {
+
+    }
+
+    figure:nth-child(6n+7) {
+
+    }
+
+    figure:nth-child(8n+9) {
+
+    }
+
+    img {
+
+    }
+
+    figure {
+
+    }
+
+    figure::after {
+        background: rgba(73,107, 123,.75);
+        color: #c6d9d3;
+    }
     
 }
 
-figure,
-img {
-	transition: .4s;
+figure, img {
+    transition: .4s;
 }
 
 

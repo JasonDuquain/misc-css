@@ -5,7 +5,6 @@
     font-family: 'Roboto', sans-serif;
     margin: 8px;
     position: relative;
-	
     background-color: #000;
     color: #fff;
     display: inline-block;
@@ -13,6 +12,7 @@
     min-width: 230px;
     overflow: hidden;
     text-align: center;
+    
 }
 
 .snip1585 * {
@@ -20,8 +20,7 @@
     transition: all 0.45s ease;
 }
 
-.snip1585:before,
-.snip1585:after {
+.snip1585:before, .snip1585:after {
     content: '';
     transition: all 0.3s ease;
     background-color: rgba(0, 0, 0, 0.5);
@@ -33,21 +32,14 @@
     left: 0;
     right: 0;
     z-index: 1;
+    transform: scaleY(2);
     opacity: 0;
 }
 
 .snip1585 img {
     display: block;
     max-width: 100%;
-    backface-visibility: hidden;    
-}
-
-.snip1585:before {
-    transform: scaleY(2);
-}
-
-.snip1585:after {
-    transform: scaleY(2);
+    backface-visibility: hidden; 
 }
 
 .snip1585 figcaption {
@@ -79,15 +71,12 @@
     font-weight: 700;
 }
 
-.snip1585:hover > img,
-.snip1585.hover > img {
-    opacity: .7;    
+.snip1585:hover > img, .snip1585.hover > img {
+    opacity: .7;
 }
 
-.snip1585:hover:before,
-.snip1585.hover:before,
-.snip1585:hover:after,
-.snip1585.hover:after {
+.snip1585:hover:before, .snip1585.hover:before,
+.snip1585:hover:after, .snip1585.hover:after {
     transform: scale(1);
     opacity: 1;
 }

@@ -1,0 +1,53 @@
+
+@keyframes load { 
+
+    0% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.progress {
+    
+}
+
+.progress > li {
+    font-family: Lato;
+    color: #93A2AC;
+    
+}
+
+.progress > li:before {
+    font-weight: 400;
+    
+}
+
+/*
+.progress > li:after {
+    position: absolute;
+    content: attr(data-percent);
+    width: 100%;
+    top: 3.7rem;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+*/
+
+[class*=percent] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress svg {
+    
+}
+
+.progress svg:nth-child(2) {
+    
+}
+
+.progress svg:nth-child(2) path {
+    
+}

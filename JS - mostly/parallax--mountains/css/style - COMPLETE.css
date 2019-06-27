@@ -1,116 +1,94 @@
-
 html {
-	box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.5;
-  color: #444;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #444;
 }
 
 *, *::after, *::before {
-  box-sizing: inherit;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  outline: none;
+    box-sizing: inherit;
+    outline: none;
 }
 
 body {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: #f5f5f5;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
 }
 
 .container {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.codepen {
-  text-decoration: none;
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  width: 50px;
-  height: 50px;
-  background-color: black;
-  border-radius: 5px 0 0 0;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  color: white;
-  font-size: 24px;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 header {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
 }
 
 header h1 {
-  position: absolute;
-  bottom: -51px;
-  left: -4px;
-  color: white;
-  font-size: 48px;
-  font-weight: 100;
-  text-transform: uppercase;
-  z-index: 9;
+    position: absolute;
+    bottom: -51px;
+    left: -4px;
+    color: white;
+    font-size: 48px;
+    font-weight: 100;
+    text-transform: uppercase;
+    z-index: 9;
 }
 
+/* this is not needed? */
 header .mountains {
-  position: absolute;
-  display: block;
-  bottom: -5px;
-  width: 100%;
-  height: 100vh;
-  z-index: 0;
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
 }
 
 header .mountains > * {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: 105%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 105%;
 }
 
 header .mountains .one {
-  background-image: url("http://mentalsociety.com/wp-content/themes/twentyseventeen/assets/images/mountains-1.svg");
-  z-index: 0;
+    background-image: url('../img/mountains-1.svg');
+    z-index: 0;
 }
 
 header .mountains .two {
-  background-image: url("http://mentalsociety.com/wp-content/themes/twentyseventeen/assets/images/mountains-2.svg");
-  z-index: -1;
+    background-image: url('../img/mountains-2.svg');
+    z-index: -1;
 }
 
 header .mountains .three {
-  background-image: url("http://mentalsociety.com/wp-content/themes/twentyseventeen/assets/images/mountains-3.svg");
-  z-index: -2;
+    background-image: url('../img/mountains-3.svg');
+    z-index: -2;
 }
 
 header .mountains .four {
-  background-image: url("http://mentalsociety.com/wp-content/themes/twentyseventeen/assets/images/mountains-4.svg");
-  z-index: -3;
+    background-image: url('../img/mountains-4.svg');
+    z-index: -3;
 }
 
 header .mountains .five {
-  background-image: url("http://mentalsociety.com/wp-content/themes/twentyseventeen/assets/images/mountains-5.svg");
-  z-index: -4;
+    background-image: url('../img/mountains-5.svg');
+    z-index: -4;
 }
 
 section {
-  padding: 50px 0;
+    padding: 50px 0;
 }

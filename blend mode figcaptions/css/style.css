@@ -67,18 +67,14 @@ h2 {
 @keyframes move {
     0% {
     
-    }
-    100% {
+  }
+  100% {
     
-    }
+  }
 }
 
 .teaser {
   
-}
-
-.teaser:hover {
-    
 }
 
 .teaser figure {

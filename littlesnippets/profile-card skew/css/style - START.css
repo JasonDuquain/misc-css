@@ -2,11 +2,16 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
 figure.snip0067 {
+    position: relative;
     font-family: 'Raleway', Arial, sans-serif;
     margin: 10px 1%;
-    position: relative;
-    
-
+    float: left;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    overflow: hidden;
 }
 
 figure.snip0067 * {
@@ -35,7 +40,9 @@ figure.snip0067 figcaption {
 
 figure.snip0067 figcaption h2,
 figure.snip0067 figcaption p {
-	
+	margin: 0;
+    text-align: left;
+    padding: 5px 0 0;
 }
 
 figure.snip0067 figcaption h2 {
@@ -80,36 +87,16 @@ figure.snip0067 .position {
 
 }
 
-figure.snip0067.blue .icons i {
+figure.snip0067.blue .icons i, figure.snip0067.blue .position {
     background: #164666;
 }
 
-figure.snip0067.blue .position {
-    background: #20638f;
-}
-
-figure.snip0067.red .icons i {
+figure.snip0067.red .icons i, figure.snip0067.red .position {
     background: #6d2018;
 }
 
-figure.snip0067.red .position {
-    background: #962d22;
-}
-
-figure.snip0067.yellow .icons i {
-    background: #924d10;
-}
-
-figure.snip0067.yellow .position {
+figure.snip0067.yellow .icons i, figure.snip0067.yellow .position {
     background: #bf6516;
-}
-
-figure.snip0067.green .icons i {
-    background: #145b32;
-}
-
-figure.snip0067.green .position {
-    background: #1e8449;
 }
 
 figure.snip0067:hover figcaption,

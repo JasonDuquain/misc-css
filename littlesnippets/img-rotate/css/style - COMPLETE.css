@@ -80,7 +80,7 @@ figure.snip1213:hover figcaption,
 figure.snip1213.hover figcaption {
     transform: rotateY(0deg) translate(0, -50%);
     opacity: 1;
-    transition-delay: 0.2s;
+    transition-delay: 300ms;
 }
 
 /* Demo purposes only */

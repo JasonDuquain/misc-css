@@ -1,0 +1,9 @@
+ARTICLE: https://css-tricks.com/writing-smarter-animation-code/
+
+start at #Avoid the dreaded wall of code sect
+
+
+
+A Pen created at CodePen.io. You can find this one at https://codepen.io/GreenSock/pen/eRjbdN.
+
+ 

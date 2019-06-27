@@ -1,5 +1,7 @@
 
 window.addEventListener('load', () => {
+    let cars = document.querySelectorAll('#cars img');
+    let i = 1;
     
     
 });
@@ -11,12 +13,12 @@ window.addEventListener('load', () => {
 
 window.addEventListener('load', () => {
     let cars = document.querySelectorAll('#cars img');
+    let i = 1;
     
-    cars.forEach((car, idx) => {
-        setTimeout(() => car.classList.add('visible'), 700*(idx+1));
-        idx++;
-    })
-    
+    cars.forEach((car) => {
+        setTimeout(() => car.classList.add('visible'), 700*i);
+        i++;
+    });
 });
 
 */

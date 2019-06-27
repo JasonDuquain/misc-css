@@ -1,0 +1,40 @@
+
+
+/* general styles for the buttons */
+button {
+    font: bold 150%/1 sans-serif;
+	padding: .3em .5em;
+    border-radius: 50%;
+    background: #58a;
+    color: white;
+    cursor: pointer;
+}
+
+/* cannot use an outset box-shadow as it is drawn outside the border box */
+
+button.border {
+	box-shadow: 0 0 0 1px rgba(0,0,0,.3) inset;
+	border: 10px solid transparent;
+	background-clip: padding-box;
+}
+
+button + button {
+    margin-left: 3em;
+}
+
+/* remove border and take advantage of fact that pseudo-elements also capture mouse interaction for their parent element */
+button.before {
+	box-shadow: 0 .1em .2em -.05em rgba(0,0,0,.5);
+	position: relative;
+	border: 1px solid rgba(0,0,0,.3);
+}
+
+button.before:before {
+	content: '';
+	position: absolute;
+	top: -10px; 
+    right: -10px;
+	bottom: -10px; 
+    left: -10px;
+}
+

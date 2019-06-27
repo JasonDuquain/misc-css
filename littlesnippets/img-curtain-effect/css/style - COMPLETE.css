@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+
+.snip1334 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    background-color: #fff;
+    line-height: 1.4em;
+    transform: translateZ(0);
+}
+
+.snip1334 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease-out;
+}
+
+.snip1334 img {
+    transition: all 0.8s ease-out;
+    max-width: 100%;
+    display: block;
+}
+
+.snip1334:before {
+    transition: all 300ms ease-out 300ms;
+    position: absolute;
+    content: '';
+    background: #000;
+    z-index: 1;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 0 20px white;
+}
+
+.snip1334 figcaption {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.snip1334 h2 {
+    font-family: 'Julius Sans One', Arial, sans-serif;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+}
+
+.snip1334 p {
+    position: absolute;
+    bottom: 0;
+    padding-left: 60px !important;
+    font-size: .8em;
+    transform: translateY(100%);
+}
+
+.snip1334 h2, .snip1334 p {
+    margin: 0;
+    width: 100%;
+    padding: 25px;
+    opacity: 0;
+}
+
+.snip1334:hover img {
+    opacity: .2;
+}
+
+.snip1334:hover:before {
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 0px white;
+    transition-delay: 0s;
+}
+
+.snip1334:hover figcaption h2,
+.snip1334:hover figcaption p {
+    transition-delay: 300ms;
+}
+
+.snip1334:hover figcaption h2 {
+    opacity: .5;
+    transform: translateY(0);
+}
+
+.snip1334:hover figcaption p {
+    opacity: .7;
+    transform: translateY(0);
+}
+
+/* Demo purposes only */
+body {
+    background-color: #212121;
+}

@@ -1,7 +1,7 @@
 
 let planets = document.getElementById("planets");
 let numPlanets = document.querySelectorAll("#planets > img").length;
-let planetPhotos = Array.from(planets.children);
+let planetPhotos = planets.children;
 
 function createTimer(i) {
     
@@ -10,8 +10,6 @@ function createTimer(i) {
 function iterate(numPlanets) {
     
 }
-
-
 
 
 
@@ -21,18 +19,18 @@ function iterate(numPlanets) {
 
 let planets = document.getElementById("planets");
 let numPlanets = document.querySelectorAll("#planets > img").length;
-let planetPhotos = Array.from(planets.children);
+let planetPhotos = planets.children;
 
 function createTimer(i) {
     setTimeout(() => planetPhotos[i].className = "wax", 2000 + 600 * i);
 }
 
 function iterate(numPlanets) {
-    planetPhotos.forEach((el, idx) => {
-        createTimer(idx);
-    });
+    for (let i = 0; i < numPlanets; i++) {
+        createTimer(i);
+    }
 }
 
-iterate(planetPhotos.length);
+iterate(numPlanets);
 
 */

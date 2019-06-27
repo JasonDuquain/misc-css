@@ -1,10 +1,6 @@
-/*
-Demo for article: https://medium.com/@cwrightdesign/getting-to-know-css-grid-layout-818e43ca71a5
- 
- see section: Flexible grids without media queries
-*/
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
 * {
   box-sizing: border-box;
 }
@@ -44,7 +40,7 @@ body {
 
 end fallback styles */
 
-.grid {    
+.grid {
     
 }
 
@@ -58,7 +54,7 @@ end fallback styles */
 }
 
 .grid--auto-sizing {
-          
+    
 }
 
 .heading {

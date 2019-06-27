@@ -22,7 +22,6 @@
   position: relative;
   padding: 0.5em 0;
   color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 1px;
   text-decoration: none;
 }
 
@@ -38,17 +37,17 @@
   bottom: 0;
   display: block;
   height: 3px;
-  width: 0%;
+  width: 0;
 }
 
 .snip1135 a:after {
   content: attr(data-hover);
   left: 0;
   top: 0;
-  padding: 0.5em 0;
+  padding: inherit;
   color: #fff;
   white-space: nowrap;
-  max-width: 0%;
+  max-width: 0;
   overflow: hidden;
 }
 

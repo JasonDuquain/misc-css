@@ -1,0 +1,87 @@
+
+div {
+	margin-bottom: 2em;
+	line-height: 1.5;	
+}
+
+/**** one-sided shadow ****/
+div.one_shadow {
+	width: 1.6in;
+	height: 1in;
+	background: #fb3;
+	box-shadow: 0 5px 4px -4px black;
+}
+
+/**** two-sided shadow ****/
+div.two_shadow {
+	width: 1.6in;
+	height: 1in;
+	background: #fb3;
+	box-shadow: 5px 0 5px -5px black,
+	           -5px 0 5px -5px black;
+}
+
+/**** color tinting - with filter ****/
+img {
+    max-width: 640px;
+    transition: filter 1s;
+	   filter: sepia() saturate(4) hue-rotate(295deg);
+}
+
+img:hover,
+img:focus {
+    filter: none;	
+}
+
+
+/**** color tinting - with blend-mode ****/
+.tinted-image {
+	transition: .5s background-color;
+	width: 640px; 
+	height: 440px;
+	background-size: cover;
+	background-color: hsl(335, 100%, 50%);
+	background-blend-mode: luminosity;
+}
+
+.tinted-image:hover {
+	background-color: transparent;
+}
+
+
+div[class^='folded'] {
+	width: 12em;
+	background: #58a; /* Fallback */
+	padding: 2em;
+	color: white;
+}
+
+/**** folded corner - basic ****/
+div.folded {
+	background:
+		linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.4) 0) 100% 0 no-repeat,
+		linear-gradient(-135deg, transparent 1.5em, #58a 0);
+	background-size: 2em 2em, auto;
+}
+
+/**** folded corner - realistic ****/
+div.folded_real {
+	position: relative;
+	background: linear-gradient(-150deg, transparent 1.5em, #58a 0);
+	border-radius: .5em;
+}
+
+div.folded_real::before {
+	content: '';
+	position: absolute;
+	top: 0; 
+	right: 0;
+	width: 1.73em; 
+	height: 3em;
+	background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) 100% 0 no-repeat;
+	transform: translateY(-1.3em) rotate(-30deg);
+	transform-origin: bottom right;
+	border-bottom-left-radius: .5em;
+	box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
+}
+

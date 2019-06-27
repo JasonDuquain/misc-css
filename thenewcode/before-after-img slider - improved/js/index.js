@@ -9,9 +9,8 @@ inkbox.addEventListener("touchmove",trackLocation,false);
 function trackLocation(e) {
     var rect = fillerImage.getBoundingClientRect();
     
+    
 }
-    
-    
 
 /* COMPLETE
 

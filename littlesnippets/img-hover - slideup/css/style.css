@@ -14,10 +14,10 @@
 }
 
 .snip1576:after {
+    transition: all 0.5s linear;
     content: '';
     position: absolute;
-    transition: all 0.5s linear;
-    
+    background-color: #359ad8;
     
 }
 

@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+
+.snip1334 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    background-color: #fff;
+    line-height: 1.4em;
+    transform: translateZ(0);
+}
+
+.snip1334 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease-out;
+}
+
+.snip1334 img {
+    transition: all 0.8s ease-out;
+    max-width: 100%;
+    display: block;
+}
+
+.snip1334:before {
+    transition: all 300ms ease-out 300ms;
+    position: absolute;
+    content: '';
+    
+    
+}
+
+.snip1334 figcaption {
+    
+}
+
+.snip1334 h2 {
+    font-family: 'Julius Sans One', Arial, sans-serif;
+}
+
+.snip1334 p {
+    
+}
+
+.snip1334 h2, .snip1334 p {
+    
+}
+
+.snip1334:hover img {
+    
+}
+
+.snip1334:hover:before {
+    
+}
+
+.snip1334:hover figcaption h2,
+.snip1334:hover figcaption p {
+    
+}
+
+.snip1334:hover figcaption h2 {
+    
+}
+
+.snip1334:hover figcaption p {
+    
+}
+
+/* Demo purposes only */
+body {
+    background-color: #212121;
+}

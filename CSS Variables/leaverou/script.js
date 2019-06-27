@@ -3,8 +3,8 @@
 let root = document.documentElement;
 
 
-/***** SLIDER PROGRESS input.value = 0 - 100 ******/
 
+/***** SLIDER PROGRESS input.value = 0 - 100 ******/
 
 
 

@@ -3,7 +3,7 @@ body {
 }
 
 h3 {
-    
+   margin: 0;  
 }
 
 h3+p {
@@ -24,15 +24,16 @@ h3+p {
 }
 
 .feature {
-    
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/hero-demo1.jpg);
+    background-position: bottom left;
 }
 
 .photos {
-    
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/hero-demo2.jpg);  
 }
 
 .news {
-    
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/hero-demo3.jpg); 
 }
 
 .special {
@@ -43,8 +44,7 @@ h3+p {
      
 }
 
-.special h3,
-.amazing h3{
+.special h3, .amazing h3 {
     
 }
 

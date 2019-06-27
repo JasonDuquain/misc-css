@@ -57,8 +57,7 @@ h3+p {
     flex-direction: column;  
 }
 
-.special h3,
-.amazing h3{
+.special h3, .amazing h3 {
     margin-top: auto;
 }
 

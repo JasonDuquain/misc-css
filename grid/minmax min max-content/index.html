@@ -1,78 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>responsive without media queries</title>
-      <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>responsive without media queries</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <h1>To illustrate Ire Aderinokun's article <a href="https://bitsofco.de/how-the-minmax-function-works/">here</a></h1>
+    <h1>To illustrate Ire Aderinokun's article <a href="https://bitsofco.de/how-the-minmax-function-works/">here</a></h1>
 
-<h2>Length...</h2>
-<div class="grid length">
-  <div class="item demo">minmax(100px, 200px)</div>
-  <div class="item">1fr</div>
-  <div class="item">1fr</div>
-</div>
+    <h2>Length...</h2>
+    <div class="grid length">
+        <div class="item demo">minmax(100px, 200px)</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+    </div>
 
-<h2>Percentage...</h2>
-<div class="grid percentage">
-  <div class="item demo">minmax(100px, 50%)</div>
-  <div class="item">1fr</div>
-  <div class="item">1fr</div>
-</div>
+    <h2>Percentage...</h2>
+    <div class="grid percentage">
+        <div class="item demo">minmax(100px, 50%)</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+    </div>
 
-<h2>Flexible length...</h2>
-<div class="grid flexible-length">
-  <div class="item demo">minmax(100px, 1fr)</div>
-  <div class="item">1fr</div>
-  <div class="item">1fr</div>
-</div>
+    <h2>Flexible length...</h2>
+    <div class="grid flexible-length">
+        <div class="item demo">minmax(100px, 1fr)</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+    </div>
 
-<h2>Max-content...</h2>
-<div class="grid max-content">
-  <div class="item demo">minmax(max-content, max-content) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nobis iste quaerat, animi repellat ipsum aspernatur dolorem, inventore, natus consequuntur fugiat! Autem sequi libero saepe voluptatibus labore, dolore.</div>
-  <div class="item">1fr</div>
-  <div class="item">1fr</div>
-</div>
+    <h2>Max-content...</h2>
+    <div class="grid max-content">
+        <div class="item demo">minmax(max-content, max-content) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nobis iste quaerat, animi repellat ipsum aspernatur dolorem, inventore, natus consequuntur fugiat! Autem sequi libero saepe voluptatibus labore, dolore.</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+    </div>
 
-<h2>Min-content...</h2>
-<div class="grid min-content">
-  <div class="item demo">minmax(min-content, min-content) Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-  <div class="item">1fr</div>
-  <div class="item">1fr</div>
-</div>
+    <h2>Min-content...</h2>
+    <div class="grid min-content">
+        <div class="item demo">minmax(min-content, min-content) Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+    </div>
 
-<h2>Auto...</h2>
-<div class="grid auto">
-  <div class="item demo">minmax(auto, auto) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab unde, quisquam assumenda aliquam! Blanditiis eveniet repellendus, perspiciatis obcaecati saepe maxime pariatur reprehenderit. Illum ut, consectetur amet at beatae necessitatibus. Cupiditate!</div>
-  <div class="item">1fr</div>
-  <div class="item">1fr</div>
-</div>
+    <h2>Auto...</h2>
+    <div class="grid auto">
+        <div class="item demo">minmax(auto, auto) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab unde, quisquam assumenda aliquam! Blanditiis eveniet repellendus, perspiciatis obcaecati saepe maxime pariatur reprehenderit. Illum ut, consectetur amet at beatae necessitatibus. Cupiditate!</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+    </div>
 
-<h2>Responsive Design without Media Queries</h2>
-<div class="grid">
-  <div class="item">A minmax(200px, 1fr)</div>
-  <div class="item">B minmax(200px, 1fr)</div>
-  <div class="item">C minmax(200px, 1fr)</div>
-  <div class="item">D minmax(200px, 1fr)</div>
-  <div class="item">E minmax(200px, 1fr)</div>
-  <div class="item">F minmax(200px, 1fr)</div>
-  <div class="item">G minmax(200px, 1fr)</div>
-  <div class="item">H minmax(200px, 1fr)</div>
-  <div class="item">I minmax(200px, 1fr)</div>
-  <div class="item">J minmax(200px, 1fr)</div>
-</div>
+    <h2>Responsive Design without Media Queries</h2>
+    <div class="grid">
+        <div class="item">A minmax(200px, 1fr)</div>
+        <div class="item">B minmax(200px, 1fr)</div>
+        <div class="item">C minmax(200px, 1fr)</div>
+        <div class="item">D minmax(200px, 1fr)</div>
+        <div class="item">E minmax(200px, 1fr)</div>
+        <div class="item">F minmax(200px, 1fr)</div>
+        <div class="item">G minmax(200px, 1fr)</div>
+        <div class="item">H minmax(200px, 1fr)</div>
+        <div class="item">I minmax(200px, 1fr)</div>
+        <div class="item">J minmax(200px, 1fr)</div>
+    </div>
 
 
-<div id="cuadricula">
-    <div class="itemm" style="--color:#3E989B;"><p>grid-template-columns: <strong>max-content</strong> min-content 1fr;</p></div>
-    <div class="itemm" style="--color:#6DB465;"><p>grid-template-columns: max-content <strong>min-content</strong> 1fr;</p></div>
-    <div class="itemm" style="--color:#F2C14E;"><p>3</p></div>
-    <div class="itemm" style="--color:#F78154;"><p>4</p></div>
-    <div class="itemm" style="--color:#C87694;"><p>5</p></div>
-</div> 
-  
+    <div id="cuadricula">
+        <div class="itemm" style="--color:#3E989B;">
+            <p>grid-template-columns: <strong>max-content</strong> min-content 1fr;</p>
+        </div>
+        <div class="itemm" style="--color:#6DB465;">
+            <p>grid-template-columns: max-content <strong>min-content</strong> 1fr;</p>
+        </div>
+        <div class="itemm" style="--color:#F2C14E;">
+            <p>3</p>
+        </div>
+        <div class="itemm" style="--color:#F78154;">
+            <p>4</p>
+        </div>
+        <div class="itemm" style="--color:#C87694;">
+            <p>5</p>
+        </div>
+    </div>
+
 </body>
+
 </html>
