@@ -14,7 +14,7 @@
 }
 
 .snip1576:after {
-    transition: all 0.5s linear;
+    transition: all 400ms linear;
     content: '';
     position: absolute;
     background-color: #359ad8;
@@ -40,10 +40,6 @@
 .snip1576 h3 span {
     display: block;
     font-weight: 700;
-}
-
-.snip1576 a {
-    
 }
 
 .snip1576:hover > img,

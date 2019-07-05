@@ -1,20 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
 
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 1em;
+}
+
 .snip1334 {
     font-family: 'Raleway', Arial, sans-serif;
     position: relative;
-    float: left;
     overflow: hidden;
-    margin: 10px 1%;
-    min-width: 230px;
-    max-width: 315px;
-    width: 100%;
     color: #fff;
     text-align: left;
-    background-color: #fff;
     line-height: 1.4em;
-    transform: translateZ(0);
 }
 
 .snip1334 * {
@@ -38,7 +37,7 @@
     right: 50%;
     top: 0;
     bottom: 0;
-    box-shadow: 0 0 20px white;
+    box-shadow: 0 0 20px #fff;
 }
 
 .snip1334 figcaption {
@@ -72,10 +71,6 @@
     opacity: 0;
 }
 
-.snip1334:hover img {
-    opacity: .2;
-}
-
 .snip1334:hover:before {
     left: 0;
     right: 0;
@@ -89,12 +84,12 @@
 }
 
 .snip1334:hover figcaption h2 {
-    opacity: .5;
+    opacity: 1;
     transform: translateY(0);
 }
 
 .snip1334:hover figcaption p {
-    opacity: .7;
+    opacity: 1;
     transform: translateY(0);
 }
 

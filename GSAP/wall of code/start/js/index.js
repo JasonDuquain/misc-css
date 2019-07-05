@@ -85,8 +85,4 @@ tl.from(".panel1 .bg", 0.4, {
 //tl.timeScale(3).repeat(2);
 
 
-//make smaller for when demo is embedded
-TweenLite.set(".banner", {
-    scale: 0.8,
-    transformOrigin: "left top"
-});
+

@@ -1,4 +1,5 @@
 
+
 //Based on the Scroller function from @sallar
 let content = document.querySelector('header .content');
 let blur = document.querySelector('header .overlay'); // this element has the filter: blur(4px) and opacity: 0 applied
