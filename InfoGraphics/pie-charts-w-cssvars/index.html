@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pure CSS Pie Charts w/ CSS variables 😎</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- COMPLETE pie 
+
+<div class="pie">
+  <div class="pie__segment" style="--offset: 0; --value: 25; --bg: #db0a5b;"></div>
+  <div class="pie__segment" style="--offset: 25; --value: 10; --bg: #22a7f0;"></div>
+  <div class="pie__segment" style="--offset: 35; --value: 60; --bg: #2ecc71; --over50: 1;"></div>
+  <div class="pie__segment" style="--offset: 95; --value: 5; --bg: #4d05e8;"></div>
+</div>
+
+-->
+
+<div class="pie">
+  <div class="pie__segment"></div>
+  <div class="pie__segment"></div>
+  <div class="pie__segment"></div>
+  <div class="pie__segment"></div>
+</div>
+
+<div class="actions">
+  <label>Offset</label>
+  <label>Value</label>
+  <input type="number" min="0" max="360" step="1" value="0"/>
+  <input type="number" min="0" max="360" step="1" value="25"/>
+  <input type="number" min="0" max="360" step="1" value="25"/>
+  <input type="number" min="0" max="360" step="1" value="10"/>
+  <input type="number" min="0" max="360" step="1" value="35"/>
+  <input type="number" min="0" max="360" step="1" value="60"/>
+  <input type="number" min="0" max="360" step="1" value="95"/>
+  <input type="number" min="0" max="360" step="1" value="5"/>
+</div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

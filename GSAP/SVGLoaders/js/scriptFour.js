@@ -3,7 +3,6 @@ const boxLoader = document.getElementById('boxLoader'); //SVG
 
 
 
-
 /* COMPLETE
 
 

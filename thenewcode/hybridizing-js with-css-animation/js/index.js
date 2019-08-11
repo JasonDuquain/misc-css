@@ -11,6 +11,20 @@ function iterate(numPlanets) {
     
 }
 
+iterate(numPlanets)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -22,7 +36,7 @@ let numPlanets = document.querySelectorAll("#planets > img").length;
 let planetPhotos = planets.children;
 
 function createTimer(i) {
-    setTimeout(() => planetPhotos[i].className = "wax", 2000 + 600 * i);
+    setTimeout(() => planetPhotos[i].className = "wax", 600 * i);
 }
 
 function iterate(numPlanets) {
