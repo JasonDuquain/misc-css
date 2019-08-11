@@ -31,7 +31,7 @@ input {
   z-index: 99;
 }
 
-
+/* make sure to add overflow: hidden to the .pie as well as the .pie__segment..but final code doesnt have it on the pie__segment?? */
 .pie {
   border-radius: 100%;
   height: calc(var(--size, 200) * 1px);
@@ -44,10 +44,10 @@ input {
   --a: calc(var(--over50, 0) * -100%);
   --b: calc((1 + var(--over50, 0)) * 100%);
   --degrees: calc((var(--offset, 0) / 100) * 360);
+  clip-path: polygon(var(--a) var(--a), var(--b) var(--a), var(--b) var(--b), var(--a) var(--b));
   height: 100%;
   position: absolute;
-transform: translate(0, -50%) rotate(90deg) rotate(calc(var(--degrees) * 1deg));
-
+  transform: translate(0, -50%) rotate(90deg) rotate(calc(var(--degrees) * 1deg));
   transform-origin: 50% 100%;
   width: 100%;
   z-index: calc(1 + var(--over50));

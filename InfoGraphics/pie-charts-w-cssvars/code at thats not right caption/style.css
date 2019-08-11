@@ -1,0 +1,68 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    align-items: center;
+    background: #111;
+    color: #fafafa;
+    padding: 1rem;
+    
+  
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    min-width: 80px;
+}
+
+.actions {
+      
+}
+
+
+.pie {
+    position: relative;
+    height: calc(var(--size, 200) * 1px);
+    width: calc(var(--size, 200) * 1px);
+    background: #639;
+    border-radius: 100%;
+    
+    overflow: hidden;
+}
+
+.pie__segment {
+    --degrees: calc((var(--offset, 0) / 100) * 360);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transform: translate(0, -50%) rotate(90deg) rotate(calc(var(--degrees, 0) * 1deg));
+    transform-origin: 50% 100%;
+    
+}
+
+.pie__segment:after,
+.pie__segment:before {
+    background: var(--bg, #e74c3c); 
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.pie__segment:before {
+    --degrees: calc((var(--value, 45) / 100) * 360);
+    transform: translate(0, 100%) rotate(calc(var(--degrees, 45) * 1deg));
+    transform-origin: 50% 0;
+}
+
+.pie__segment:after {
+    opacity: var(--over50, 0); 
+}
+

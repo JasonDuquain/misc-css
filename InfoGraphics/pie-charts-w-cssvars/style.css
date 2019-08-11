@@ -26,7 +26,7 @@ input {
       
 }
 
-
+/* make sure to add overflow: hidden to the .pie as well as the .pie__segment..but final code doesnt have it on the pie__segment?? */
 .pie {
       
 }
