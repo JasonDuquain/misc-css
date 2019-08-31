@@ -9,7 +9,7 @@
 body {
   margin: 0;
   color: rgba(255,255,255,0.9);
-  //background: url('http://bit.ly/2FiPrRA') 0 100%/340px no-repeat, var(--primary-color, goldenrod);
+  /*background: url('http://bit.ly/2FiPrRA') 0 100%/340px no-repeat, var(--primary-color, goldenrod); */
   font-family: 'Shadows Into Light Two', cursive;
 }
 

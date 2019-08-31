@@ -8,7 +8,7 @@
 </head>
 <!--http://www.cssscript.com/animated-circular-progress-bar-using-svg-path-animation/-->
 <body>
-   
+   <!-- when neither height nor width is set on an <svg>: 100% width if it has a viewBox; 300px × 150px otherwise. so before CSS styles are applied the SVGs are going full widht since they have a viewbox but not a widht/height applied -->
     <ul class="progress">
         <li data-name="SVG Skill" data-percent="13%">
             <svg viewBox="-10 -10 220 220">

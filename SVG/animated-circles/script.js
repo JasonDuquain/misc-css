@@ -1,4 +1,6 @@
 
+
+
 let percent = document.querySelector('.percent');
 let num = 0;
 

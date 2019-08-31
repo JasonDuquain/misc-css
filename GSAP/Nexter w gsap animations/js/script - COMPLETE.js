@@ -104,7 +104,7 @@ tl.to('.header__logo', .3, {
 
 
 //tl.progress(.35) // start animation at 25% in
-tl.timeScale(.5); // run animation twice as fast
+tl.timeScale(.5); // run animation half as fast
 
 
 

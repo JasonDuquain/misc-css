@@ -44,10 +44,6 @@ body {
     display: block;
 }
 
-.profile-row .desc {
-    padding: 1em;  
-}
-
 .profile-row .dp .dp-arc-inner {
     position: absolute;
     width: 100%;

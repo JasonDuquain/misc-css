@@ -11,8 +11,7 @@ html {
   line-height: 1.5;
 }
 
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -97,7 +96,11 @@ h2 {
 .teaser {
     display: flex;
     margin: 0 0 3vw 0;
-    animation: move 20s forwards linear;
+    animation: move 20s infinite alternate linear;
+}
+
+.teaser:hover {
+    animation-play-state: paused;
 }
 
 .teaser figure {
@@ -121,6 +124,7 @@ h2 {
     position: absolute;
     background-color: #fff;
     bottom: 0;
+	mix-blend-mode: screen;
 }
 
 .teaser figcaption h3 {

@@ -7,6 +7,9 @@ const jump = document.getElementById('jump'); // BIG HALF CIRCLE
 
 
 
+
+
+
 /* COMPLETE
 
 const container = document.getElementById('container');

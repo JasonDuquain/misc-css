@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #262626;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+#demo, #destination {
+    width: 50px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-300%, -50%);
+}
+
+#destination {
+    transform: translate(200%, -50%);
+    z-index: -1;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    display: inline-block;
+    background-color: white;
+}
+
+.boxS {
+    background-color: #89c540;
+}
+
+.boxPlain {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.box span {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    padding-top: 12px;
+}
+

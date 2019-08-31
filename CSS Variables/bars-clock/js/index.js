@@ -6,7 +6,6 @@ var secondbar = document.getElementById('second')
 
 
 
-
 /* COMPLETE
 
 setInterval(() => {
