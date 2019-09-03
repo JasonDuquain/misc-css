@@ -10,7 +10,9 @@ const config = {
 let observer = new IntersectionObserver(function(entries, self) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log(`Image ${entry.target.src} is in the viewport!`);
+			
+            console.log(`Image ${entry.target.getAttribute('data-src')} is in the viewport!`);
+			
             preloadImage(entry.target);
             
             self.unobserve(entry.target);

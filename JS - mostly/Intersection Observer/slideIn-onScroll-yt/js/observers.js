@@ -6,10 +6,7 @@ const sectionOneOptions = {
   rootMargin: "-200px 0px 0px 0px"
 };
 
-const sectionOneObserver = new IntersectionObserver(function(
-  entries,
-  sectionOneObserver
-) {
+const sectionOneObserver = new IntersectionObserver((entries, sectionOneObserver) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
       header.classList.add("nav-scrolled");
@@ -17,8 +14,7 @@ const sectionOneObserver = new IntersectionObserver(function(
       header.classList.remove("nav-scrolled");
     }
   });
-},
-sectionOneOptions);
+}, sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
 /****** NAV CHANGE CODE end ******/
@@ -29,21 +25,23 @@ const sliders = document.querySelectorAll('.slide-in');
 
 
 
-
 /* COMPLETE
+const faders = document.querySelectorAll('.fade-in');
+const sliders = document.querySelectorAll('.slide-in');
+
 const appearOptions = {
     threshold: 0,
     rootMargin: "0px 0px -250px 0px"
 };
 
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             return;
-        } else {
-            entry.target.classList.add('appear');
-            appearOnScroll.unobserve(entry.target);
-        }
+        } 
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+        
     })
 }, appearOptions)
 
@@ -54,6 +52,7 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
     appearOnScroll.observe(slider);
 });
+
 
 */
 

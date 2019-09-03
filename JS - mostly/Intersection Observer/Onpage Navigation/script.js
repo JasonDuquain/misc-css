@@ -1,14 +1,16 @@
-
 // simple function to use for callback in the intersection observer
 
-
 // init the observer
+const options = {
+	
+}
 
 
-const observer = new IntersectionObserver(changeNav, options);
 
 // target the elements to be observed
 const sections = document.querySelectorAll('section');
+
+
 
 
 /* COMPLETE

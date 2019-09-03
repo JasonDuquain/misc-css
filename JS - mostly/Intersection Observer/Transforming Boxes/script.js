@@ -4,6 +4,13 @@ const boxes = document.querySelectorAll('.box');
 
 
 // create the observer
+const options = {
+    
+};
+
+
+
+
 
 
 
