@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+}
+
+section {
+  
+}
+
+.buffer {
+  
+}
+
+.sticky-content {
+	transition: 0.25s;
+}
+
+.sticky-content span {
+  
+}
+
+.sticky-content h2 {
+  
+}
+  
+.sticky-container {
+  
+}
+
+.sticky-container.active .sticky-content {
+  
+}
+
+.sticky-container.active .sticky-content span {
+  
+}

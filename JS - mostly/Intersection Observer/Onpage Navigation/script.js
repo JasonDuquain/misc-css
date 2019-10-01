@@ -1,10 +1,10 @@
 // simple function to use for callback in the intersection observer
 
+
 // init the observer
 const options = {
 	
 }
-
 
 
 // target the elements to be observed
@@ -40,6 +40,7 @@ const observer = new IntersectionObserver(changeNav, options);
 
 // target the elements to be observed
 const sections = document.querySelectorAll('section');
+
 sections.forEach((section) => {
 	observer.observe(section);
 });

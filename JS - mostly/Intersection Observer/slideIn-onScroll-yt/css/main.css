@@ -128,7 +128,6 @@ header {
   margin-left: 1.5em;
 }
 
-/***** Observer Code *****/
 .fade-in {
     opacity: 0;
     transition: opacity 250ms ease-in;
@@ -137,7 +136,6 @@ header {
 .fade-in.appear {
     opacity: 1;
 }
-
 
 .more-stuff-grid {
   background: #f4f4f4;
@@ -148,8 +146,6 @@ header {
   grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr);
 }
 
-
-/***** Observer Code *****/
 .from-left {
   grid-column: 2 / 3;
     transform: translateX(-50%);

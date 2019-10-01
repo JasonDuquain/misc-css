@@ -23,6 +23,10 @@ sectionOneObserver.observe(sectionOne);
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
 
+const appearOptions = {
+    
+};
+
 
 
 /* COMPLETE

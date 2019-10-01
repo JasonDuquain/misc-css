@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+}
+
+section {
+  margin: 20px;
+}
+
+.buffer {
+  height: 100vh;
+}
+
+.sticky-content {
+  position: relative;
+  transition: 0.25s;
+}
+
+.sticky-content span {
+  display: inline-block;
+  font-size: 20px;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.25s;
+  width: 0;
+}
+
+.sticky-content h2 {
+  display: inline-block;
+}
+  
+.sticky-container {
+  position: sticky;
+  top: 0;
+}
+
+.sticky-container.active .sticky-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+}
+
+.sticky-container.active .sticky-content span {
+  opacity: 1;
+  transition: 0.25s 0.5s;
+  width: 20px;
+}

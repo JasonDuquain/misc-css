@@ -19,7 +19,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2em 3em;
-  transition: all 250ms ease-in;
+      
+  transition: all 300ms ease-out;
   background: var(--background);
   color: var(--text);
 }
