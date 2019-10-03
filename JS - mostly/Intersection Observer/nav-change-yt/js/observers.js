@@ -10,6 +10,8 @@ const sectionOneOptions = {
 
 
 
+
+
 /* COMPLETE
 
 const header = document.querySelector('header');

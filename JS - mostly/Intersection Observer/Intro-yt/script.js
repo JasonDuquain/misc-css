@@ -10,6 +10,8 @@ const options = {
 
 
 
+
+
 /* COMPLETE
 
 const sectionOne = document.querySelector('.section1');

@@ -3,6 +3,7 @@ const boxes = document.querySelectorAll('.box');
 // callback function to do animations
 
 
+
 // create the observer
 const options = {
     
