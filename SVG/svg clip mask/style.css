@@ -1,7 +1,6 @@
 
-.item--clip .demo {
-  width: 200px;
-  height: 250px;
+.item--css-clip-path img {
+  clip-path: circle(100px at center);
 }
 
 .item--svg-clip-path-svg image,
@@ -9,78 +8,35 @@
   clip-path: url(#clipping);
 }
 
-
 .item--svg-mask-html img,
 .item--svg-mask-svg image {
   mask: url(#masking);
 }
 
-
+.item--css-background-clip .demo {
+  width: 200px;
+  height: 200px;
+  background: url(flower.jpg) no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 
 .item--svg-fill text {
   fill: url(#pattern);
 }
 
-.demo,
-#clipping,
-#masking text {
+.demo, #clipping, #masking text {
   font: bold italic 7em/1.5 Georgia;
 }
 
 /* Common 
 ------------------------------------------- */
-BODY {
+body {
   font: 12px/1.4 "Trebuchet MS", Arial, sans-serif;
 }
 
-code {
-  display: block;
-  position: relative;
-  margin-bottom: 1rem;
-  overflow: auto;
-  max-width: 90%;
-  padding: 35px 10px 7px;
-  border-radius: 5px;
-}
-.comment code {
-  display: inline-block;
-  margin: 0;
-  padding: 2px 5px;
-  vertical-align: middle;
-  background: #EEE;
-  color: #777;
-}
-code:before {
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 25px;
-  line-height: 25.2px;
-  padding-left: 10px;
-  position: absolute;
-  font-weight: bold;
-  font-style: italic;
-}
-.comment code:before {
-  content: none;
-}
-
-.code--css {
-  background: #f7edba;
-}
-.code--css:before {
-  content: "CSS";
-  background: #f2e18c;
-  color: #8a750f;
-}
-
-.code--svg {
-  background: #e6f4be;
-}
-.code--svg:before {
-  content: "SVG";
-  background: #d6ec93;
-  color: #678217;
+h3 {
+    font-size: 30px;
 }
 
 .svg-defs {
@@ -95,13 +51,6 @@ code:before {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 0;
-  conter-reset: mylist;
-}
-.wrapper:after {
-  content: '';
-  display: table;
-  width: 100%;
-  clear: both;
 }
 
 .item {
@@ -110,16 +59,8 @@ code:before {
   padding-bottom: 2em;
   padding-right: 3em;
   border-bottom: 1px solid #DDD;
-  counter-increment: mylist;
 }
-.item:before {
-  content: counter(mylist);
-  position: absolute;
-  right: 0;
-  top: 0;
-  font: 2rem/1 Georgia, serif;
-  color: #EEE;
-}
+
 .item:after {
   content: '';
   display: table;
@@ -131,6 +72,7 @@ code:before {
   float: left;
   margin-right: 30px;
 }
+
 .demo:before {
   content: '';
   display: block;
@@ -140,10 +82,11 @@ code:before {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(https://img-fotki.yandex.ru/get/5607/5091629.6b/0_612e6_b9039c0d_M.jpg) no-repeat;
+  background: url(flower.jpg) no-repeat;
   opacity: 0;
   transition: .7s;
 }
+
 .item:hover .demo:before {
   opacity: .4;
 }

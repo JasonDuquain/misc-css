@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Activity Tabs Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>Activity Tabs Demo</h1>
+    <ol>
+      <li>Make a runtime performance recording</a>.</li>
+      <li>Press <b>go</b>. The button is disabled and the page hangs.</li>
+      <li>Stop recording once the button becomes enabled again.</li>
+    </ol>
+    <p>See <a href="https://developers.google/com/web/tools/chrome-devtools/evaluate-performance/reference#activity" target="_blank">View activities</a> for context.</p>
+    <button>go</button>
+    <script>
+      var button = document.querySelector('button');
+      function wait(ms){
+         var start = new Date().getTime();
+         var end = start;
+         while(end < start + ms) {
+           end = new Date().getTime();
+        }
+      }
+      function a() {
+        wait(500);
+      }
+      function b() {
+        wait(500);
+      }
+      function c() {
+        wait(500);
+      }
+      button.addEventListener('click', () => {
+        button.disabled = true;
+        a();
+        b();
+        c();
+        button.disabled = false;
+      });
+    </script>
+  </body>
+</html>

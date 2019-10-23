@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <style>
+        body {
+            margin: 2em;
+        }
+
+    </style>
+    <title>Diagnosing forced synchronous layouts</title>
+</head>
+
+<body>
+
+    <div role="main" class="container">
+        <h1>Timeline demo</h1>
+
+        <p>This demo shows how you can use the Timeline to identify a kind of performance bottle-neck called 'forced synchronous layouts'.</p>
+
+        <h2>Make a recording</h2>
+
+        <p>First you'll make a recording of the animation.</p>
+        <ol>
+            <li>Click <strong>Start</strong> to start the animation.</li>
+            <li>Open the Timeline panel on this page, and go the Frames view.</li>
+            <li>Click the Record button in the Timeline.</li>
+            <li>After after a second or two (10-12 frames recorded) stop the recording and click <strong>Stop</strong> to stop the animation.</li>
+        </ol>
+
+        <style>
+            .mover {
+                background: url("particle.png");
+                height: 100px;
+                width: 100px;
+                position: absolute;
+            }
+
+            #toggle {
+                width: 70px;
+                height: 30px;
+                font-weight: bold;
+            }
+
+            #jank-container {
+                position: relative;
+            }
+        </style>
+
+        <button id="toggle">Start</button>
+
+        <div id="jank-container">
+            <!-- all the movers (circles) will be added in the init fn -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

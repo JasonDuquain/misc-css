@@ -57,7 +57,7 @@
                 if (pos < 0) pos = 0;
                 if (pos > maxHeight) pos = maxHeight;
 
-                m.style.top = pos + 'px';
+                m.style.top = `${pos}px`;
 
                 if (m.offsetTop === 0) {
                     m.classList.remove('up');
@@ -76,7 +76,7 @@
                 if (pos < 0) pos = 0;
                 if (pos > maxHeight) pos = maxHeight;
                 
-                m.style.top = pos + 'px';
+                m.style.top = `${pos}px`;
                 
                 if (pos === 0) {
                     m.classList.remove('up');
@@ -160,7 +160,6 @@
 
     /* DONT FORGET TO ADD THE LAST SEVERAL LINE OF CODE BELOW */
     document.body.removeChild(proto);
-    proto.classList.remove('proto');
     app.init();
     window.app = app;
     frame = window.requestAnimationFrame(app.update);

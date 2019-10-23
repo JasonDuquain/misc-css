@@ -51,33 +51,47 @@
                  patternUnits="userSpaceOnUse"
                  width="200" height="300" 
                  viewbox="0 0 200 300">
-          <image xlink:href="https://img-fotki.yandex.ru/get/5607/5091629.6b/0_612e6_b9039c0d_M.jpg" width="200" height="300" />
+          <image xlink:href="flower.jpg" width="200" height="300" />
         </pattern>
    </defs>
 </svg>
 
 <div class="wrapper">
-  <h1>CSS and SVG Masks</h1>
   
- <!-- ********* -->   
+  <!-- ********* -->  
+   
+  <div class="item item--css-clip-path">
+    <div class="demo">
+       <img src="flower.jpg" alt="" />
+    </div>  
+    <div class="text">
+      <h3>CSS clip-path</h3>
+    </div> 
+  </div>
+  
+ <!-- ********* -->  
+  
  <div class="item item--svg-clip-path-svg">
     <div class="demo">
       <svg width="200" height="300">
-        <image xlink:href="https://img-fotki.yandex.ru/get/5607/5091629.6b/0_612e6_b9039c0d_M.jpg" width="200" height="300" />
+        <image xlink:href="flower.jpg" width="200" height="300" />
       </svg>
     </div>  
     <div class="text">
       <h3>SVG clip-path for SVG elements</h3>
-      <a href="http://www.w3.org/TR/SVG11/masking.html#EstablishingANewClippingPath">Specification</a>
-      <br /><br />
-      <code class="code--svg"><pre>&lt;clipPath id="clipping">
-  &lt;polygon points="98.4999978 153.75..."/>
-&lt;/clipPath></pre></code>
-      <code class="code--css"><pre>.item {
-  clip-path: url(#clipping);
-  }</pre></code>
-      
     </div>  
+  </div>
+  
+  <!-- ********* -->  
+   
+  <div class="item item--svg-clip-path-html">
+    <div class="demo">
+       <img src="flower.jpg" alt="" />
+    </div>  
+    <div class="text">
+      <h3>SVG clip-path for HTML elements</h3>
+      <br />**NO SUPPORT IN SAFARI, IE OR OPERA**
+    </div> 
   </div>
  
  <!-- ********* -->   
@@ -85,39 +99,40 @@
   <div class="item item--svg-mask-svg">
     <div class="demo">
       <svg width="200" height="300">
-      <image xlink:href="https://img-fotki.yandex.ru/get/5607/5091629.6b/0_612e6_b9039c0d_M.jpg"
-      width="200" height="300"
-      /></svg>
+          <image xlink:href="flower.jpg" width="200" height="300"/>
+      </svg>
     </div>  
     <div class="text">
-       <h3>SVG mask for SVG elements</h3>
-      <a href="http://www.w3.org/TR/SVG11/masking.html#Masking">Specification</a>
-      <br /><br />
-      <code class="code--svg"><pre>&lt;mask id="masking" maskUnits="objectBoundingBox" 
-  maskContentUnits="objectBoundingBox">
-  &lt;rect y="0" width="1" height="1" fill="url(#gradient)" />
-  &lt;circle cx=".5" cy=".5" r=".4" fill="gray" />
-  &lt;circle cx=".5" cy=".5" r=".3" fill="white" />
-  ...
-&lt;/mask></pre></code>
-      <code class="code--css"><pre>.item {
-  mask: url(#masking);
-  }</pre></code>
-      
+       <h3>SVG mask for SVG elements</h3>   
     </div> 
   </div> 
+   
+   <!-- ********* --> 
+   
+  <div class="item item--css-background-clip">
+    <div class="demo">Text</div>  
+    <div class="text">
+       <h3>background-clip</h3>
+    </div> 
+    <br />**NO IE or Opera
+  </div>
+  
+ <!-- ********* --> 
+ 
+  <div class="item item--svg-fill">
+    <div class="demo">
+      <svg width="200" height="200">
+        <text x="0" y="1em">Text</text>
+      </svg>  
+    </div>  
+    <div class="text">
+       <h3>SVG fill</h3>   
+      <div class="comment">Not real mask, but looks like -webkit-background-clip: text; and has much better support.</div>   
+    </div> 
+  </div>
+    
     </div>
     </body>
 </html>
     
-<!--  
 
-https://www.html5rocks.com/en/tutorials/masking/adobe/#toc-masking
-http://habrahabr.ru/post/190246/
-https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-mask-image
-https://developer.mozilla.org/en-US/docs/Web/CSS/mask
-http://thenittygritty.co/css-masking
-http://stackoverflow.com/questions/18792402/css-webkit-mask-image
-https://developer.apple.com/library/safari/documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Masks/Masks.html
-http://www.xiper.net/manuals/css-extensions/webkit/properties/webkit-mask.html
--->
