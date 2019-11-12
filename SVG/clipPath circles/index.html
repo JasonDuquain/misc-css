@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CSS &amp; SVG Clipping Demo #4</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+    </head>
+    <body>
+        <style>
+            .svg-clipped {
+                -webkit-clip-path: url(#svgPath);
+                clip-path: url(#svgPath);
+            }
+        </style>
+        <img class="svg-clipped" src="flowers.jpg" alt="Cherry Blossoms.">
+        <svg height="0" width="0">
+            <defs>
+                <clipPath id="svgPath">
+                    <circle cx="50" cy="50" r="40"/>
+                    <circle cx="193.949" cy="235" r="74.576"/>
+                    <circle cx="426.576" cy="108.305" r="47.034"/>
+                    <circle cx="346.915" cy="255.763" r="43.644"/>
+                    <circle cx="255.39" cy="82.882" r="35.17"/>
+                    <circle cx="328.695" cy="157.034" r="25.424"/>
+                    <circle cx="594.797" cy="360.424" r="121.187"/>
+                    <circle cx="470.008" cy="223.771" r="31.992"/>
+                    <circle cx="299.525" cy="400.762" r="64.407"/>
+                    <circle cx="634.627" cy="183.305" r="92.373"/>
+                    <circle cx="136.746" cy="172.712" r="106.356"/>
+                    <circle cx="91.831" cy="416.779" r="36.017"/>
+                    <circle cx="125.305" cy="335" r="25.424"/>
+                    <circle cx="192.424" cy="421.271" r="20.509"/>
+                    <circle cx="184.847" cy="362.543" r="18.22"/>
+                    <circle cx="436.568" cy="385.602" r="72.635"/>
+                    <circle cx="345.644" cy="90.085" r="23.729"/>
+                    <circle cx="493.102" cy="158.729" r="19.492"/>
+                    <circle cx="424.517" cy="290.873" r="24.517"/>
+                    <circle cx="71.067" cy="348.56" r="49.152"/>
+                    <circle cx="737.221" cy="62.915" r="50.898"/>
+                    <circle cx="740" cy="430" r="50" />
+                </clipPath>
+            </defs>
+        </svg>
+    </body>
+</html>

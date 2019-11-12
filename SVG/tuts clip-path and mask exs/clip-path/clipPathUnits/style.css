@@ -1,0 +1,26 @@
+html {
+  background: #1F2933;
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  grid-gap: 10px;
+  padding: 1rem;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  text-align: center;
+}

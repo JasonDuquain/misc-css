@@ -5,32 +5,43 @@
 }
 
 body {
-    color: #555;
-    font-size: 0.95em;
-    background-color: #eee;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #555;
+  font-size: 0.95em;
+  background-color: #eee;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .container {
-    
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
 }
 
-.element {
-    
+.element { /* empty div */
+  width: 40%;
+  height: 600px;
+  float: left;
+  background: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/clip-path/cupcakes.jpg) no-repeat -100px 0/cover;
+  clip-path: ellipse(90% 70% at 0% 50%);
+  shape-outside: ellipse(90% 70% at 0% 50%);
+  shape-margin: 2em;
 }
 
-p, h1, h3 {
-	padding: 1em 0; 
+p,
+h1,
+h3 {
+  padding: 1em 0;
 }
 
 p {
-     
+  margin-right: 4em;
 }
 
 ul {
-	list-style: circle;
+  list-style: circle;
 }
 
 .clear {
-    
+  clear: both;
 }

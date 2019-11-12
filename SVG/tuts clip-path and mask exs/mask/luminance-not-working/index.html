@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <defs>
+            <mask id="SVGMask" mask-type="luminance" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+                <style>
+                #rect {
+                    -webkit-mask-image: url(#SVGMask);
+                    -webkit-mask-mode: luminance;
+					
+					mask-image: url(#SVGMask);
+                    mask-mode: luminance;
+                }
+                </style>
+                <radialGradient id="radialFill">
+                    <stop stop-color="white" offset="0"/>
+                    <stop stop-color="black" offset="1"/>
+                </radialGradient>
+                <circle fill="url(#radialFill)" cx="0.5" cy="0.5" r="0.5"/>
+            </mask>
+        </defs>
+        <rect id="rect" width="100" height="100" fill="green"/>
+    </svg>
+    
+</body>
+</html>
