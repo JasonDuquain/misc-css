@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="vara.min.js"></script>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            height: 100vh;
+            background-color: black;
+            overflow: hidden;
+            color: #fff;
+        }
+        
+        #container {
+            width: 80%;
+            margin: 20px auto;
+            min-height: 700px;
+            margin-top: 150px;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <div id="container"></div>
+    <a href="" class="hidden"></a>
+    
+    
+    <script>
+    
+    var fontSize = 72;
+        
+        /* not working
+		
+		if (window.screen.width > 700) {
+            fontSize = 32;
+        } else if (window.screen.width < 1200) {
+            fontSize = 57;
+        }*/
+        
+		
+		
+        /*
+		var vara = new Vara(
+            "#container",
+            "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+            [
+                {
+                    text : "Hi its me Jason",
+                    y: 150,
+                    fromCurrentPosition: { y: false},
+                    duration: 2000
+                },
+                {
+                    text : "from creative full stack",
+                    y: 150,
+                    fromCurrentPosition: { y: false},
+                    delay: 2000,
+                    duration: 2000
+                },
+                
+            ],
+            
+            {
+                strokeWidth: 2,
+                color: "#fff",
+                fontSize: 72,
+                textAlign: "center"
+            }
+            
+            
+            
+        );
+        
+        vara.ready(function() {
+            var erase = true;
+            vara.animationEnd(function(i, o) {
+                if (i === "no_erase") {
+                   erase = false; 
+                }
+                if (erase) {
+                    o.container.style.transition = "opacity 1s 1s";
+                    o.container.style.opacity = 0;
+                }
+            });
+            
+        })
+		*/
+    
+    
+    </script>
+    
+    
+</body>
+</html>
