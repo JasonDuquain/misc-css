@@ -5,17 +5,35 @@
     <meta charset="UTF-8">
     <title>A Pen by Geoff Graham</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <div class="typewriter">
-        <h1>The cat and the hat.</h1>
+        <h1>The cat and the hat hello dere.</h1>
     </div>
 
 
 
+
+<script>
+    
+    let text = document.querySelector('h1');
+    
+    let textLength = text.textContent.length;
+    
+    let computedStyles = window.getComputedStyle(text);
+    
+    console.log(computedStyles.getPropertyValue('animation-timing-function'));
+    
+    document.documentElement.style
+    .setProperty('--length', textLength);
+
+    
+    
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,31 @@
+
+#battery {
+    position: relative;
+    width: 150px;
+    height: 70px;
+    border: 7px solid black;
+}
+
+#battery::after {
+    content: "";
+    background: #000;
+    position: absolute;
+    left: 100%;
+    top: 5px;
+    width: 20px;
+    height: 60px;
+}
+
+#status {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #dbff87 0%,#bef40c 48%,#b7df2d 100%);
+}
+
+
+
+
+

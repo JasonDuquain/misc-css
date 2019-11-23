@@ -1,0 +1,88 @@
+html {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: rgba(255,255,255,.75);
+    font-family: tahoma;
+    background-image: url(milky-way-over-lake.jpg);
+    background-size: cover;
+    font-size: 25px;
+}
+
+
+.line-1 { 
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    padding-right: .25em;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.max-content {
+    width: max-content;
+}
+
+.col {
+    color: darkgoldenrod;
+}
+
+.anim-typewriter {
+    animation: typewriter 4000ms steps(30) 100ms normal both,
+               blinkTextCursor 900ms steps(30) infinite normal;
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blinkTextCursor {
+    from { border-right-color: rgba(255,255,255,.75); }
+    to { border-right-color: transparent};
+}
+
+
+/* COMPLETE 
+
+.line-1 { 
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    padding-right: .25em;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.max-content {
+    width: max-content;
+}
+
+.col {
+    color: darkgoldenrod;
+}
+
+.anim-typewriter {
+    animation: typewriter 4000ms steps(30) 100ms normal both,
+               blinkTextCursor 900ms steps(30) infinite normal;
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blinkTextCursor {
+    from { border-right-color: rgba(255,255,255,.75); }
+    to { border-right-color: transparent};
+}
+
+
+*/
+

@@ -26,15 +26,14 @@ const tbody = document.querySelector("tbody");
 /* UNOPTIMIZED: In this ex, we’re creating a total of 240K DOM nodes, populating a table with 20K rows of 6 cells, each containing a text node. This is incredibly expensive and will likely hang the browser for a noticeable period while executing, preventing the user from performing normal interactions */
 
 function makeTableUnOptimized() {
-    
     for (let i = 0; i < 60000; i++) {
-        let tr = document.createElement("tr");
+        let tr = document.createElement('tr');
         for (let t = 0; t < 6; t++) {
-            const td = document.createElement("td");
-            td.appendChild(document.createTextNode(i + "," + t));
-            tr.appendChild(td);
+            const td = document.createElement('td');
+            td.append(i + "," + t);
+            tr.append(td);
         }
-        tbody.appendChild(tr);
+        tbody.append(tr);
     }
     
 }
@@ -81,8 +80,7 @@ update the UI and make our web apps more responsive.
 
 The most perceptible change resulting from this technique, from the user’s perspective, is that a long browser hang is replaced with 4 (or however many we choose) visual updates of the page. Although the browser will attempt to execute the code segments as quickly as possible, it will also render the DOM changes after each step of the timer. In the original version of the code, it needed to wait for one large bulk update.
 
-Much of the time, these types of updates are imperceptible to the user, but it’s important to remember that they do occur. We should strive to ensure that any code we introduce into the page doesn’t perceptibly interrupt the normal operation of the browser. It’s often surprising just how useful this technique can be. By understanding how the event loop works, we can work around the restrictions of the single-threaded
-browser environment, while still providing a pleasant experience to the user. */
+Much of the time, these types of updates are imperceptible to the user, but it’s important to remember that they do occur. We should strive to ensure that any code we introduce into the page doesn’t perceptibly interrupt the normal operation of the browser. It’s often surprising just how useful this technique can be. By understanding how the event loop works, we can work around the restrictions of the single-threaded browser environment, while still providing a pleasant experience to the user. */
 
 function makeTableOptimized() {
     
@@ -99,11 +97,10 @@ function makeTableOptimized() {
             const tr = document.createElement("tr");
             for (let t = 0; t < 6; t++) {
                 const td = document.createElement("td");
-                td.appendChild(
-                    document.createTextNode((i + base) + "," + t + "," + iteration));
-                tr.appendChild(td);
+                td.appendChild(document.createTextNode((i + base) + "," + t + "," + iteration));
+                tr.append(td);
             }
-            table.appendChild(tr);
+            table.append(tr);
         }
         iteration++;
         (iteration < divideInto) ? setTimeout(generateRows, 0) : console.log('done');
