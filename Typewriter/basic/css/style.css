@@ -22,7 +22,7 @@ body {
     letter-spacing: .15em;
     animation: 
         typing 3500ms steps(var(--length), end),
-        blink-caret 1000ms step-end infinite; 
+        cursor 1000ms step-end infinite; 
 }
 
 @keyframes typing {
