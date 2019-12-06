@@ -19,25 +19,32 @@
     app.count = minimum;
     app.enableApp = true;
 
+    
+    app.init = function() {
+        
+    }
+    
+    app.update = function(timestamp) {
+        
+    } 
 
     
-
-
-
     document.querySelector('.stop').addEventListener('click', function (e) {
-
+        if (app.enableApp) {
+			
+		}
     });
 
     document.querySelector('.optimize').addEventListener('click', function (e) {
-
+        
     });
 
     add.addEventListener('click', function (e) {
-
+        
     });
 
     subtract.addEventListener('click', function () {
-
+        
     });
 
 
@@ -69,7 +76,7 @@
     window.addEventListener('resize', onResize);
     /**** DEBOUNCE CODE END ****/
 
-    /* DONT FORGET TO ADD THE LAST SEVERAL LINE OF CODE BELOW */
-
+    /* DONT FORGET TO ADD THE LAST SEVERAL LINE OF CODE BELOW!! */
+   
 
 })(window);

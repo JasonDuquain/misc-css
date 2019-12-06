@@ -1,5 +1,37 @@
 
 :root {
+
+}
+
+body {
+    background: #333;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+  
+}
+
+@keyframes typing {
+  from {  }
+  to {  }
+}
+
+@keyframes blink-caret {
+  from, to {  }
+  50% {  }
+}
+
+
+
+
+/* COMPLETE 
+
+:root {
     --length: 0;
 }
 
@@ -30,40 +62,7 @@ body {
   to { width: 100% }
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
-
-
-
-/* COMPLETE - no css vars or dynamic js
-body {
-  background: #333;
-  padding-top: 5em;
-  display: flex;
-  justify-content: center;
-}
-
-.typewriter h1 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; //Ensures the content is not revealed until the animation 
-  border-right: .15em solid orange; 
-  white-space: nowrap; // Keeps the content on a single line 
-  margin: 0 auto; // Gives that scrolling effect as the typing happens
-  letter-spacing: .15em; // Adjust as needed 
-  animation: 
-    typing 3500ms steps(20, end),
-    blink-caret 1000ms step-end infinite; 
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
+@keyframes cursor {
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
@@ -71,6 +70,10 @@ body {
 */
 
 /* START
+
+:root {
+
+}
 
 body {
     background: #333;

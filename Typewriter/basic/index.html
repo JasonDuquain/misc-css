@@ -24,12 +24,20 @@
     
     let textLength = text.textContent.length;
     
+    let computedStyles = getComputedStyle(text);
+    
+    document.documentElement.style.setProperty('--length', textLength)
+    
+    
+    
+    /*let textLength = text.textContent.length;
+    
     let computedStyles = window.getComputedStyle(text);
     
     console.log(computedStyles.getPropertyValue('animation-timing-function'));
     
     document.documentElement.style
-    .setProperty('--length', textLength);
+    .setProperty('--length', textLength);*/
 
     
     

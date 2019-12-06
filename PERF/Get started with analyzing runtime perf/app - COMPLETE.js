@@ -69,8 +69,8 @@
                 }
             
             } else {
-                /* i think var pos = parseInt(m.style.top); is good enough */
-                var pos = parseInt(m.style.top.slice(0, m.style.top.indexOf('px')));
+                pos = parseInt(m.style.top); // good enough 
+                //var pos = parseInt(m.style.top.slice(0, m.style.top.indexOf('px')));
                 m.classList.contains('down') ? pos += distance : pos -= distance;
                 
                 if (pos < 0) pos = 0;

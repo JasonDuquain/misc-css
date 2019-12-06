@@ -36,7 +36,6 @@ function update(timestamp) {
 function toggleAnim(e) {
     if (isAnimating) {
         window.cancelAnimationFrame(raf);
-        clearTimeout(stt);
         isAnimating = false;
         e.currentTarget.innerHTML = 'Start';
     } else {

@@ -8,6 +8,22 @@ let letter = '';
 
 (function type() {
     
+	if (count === texts.length) {
+        clearTimeout(clearIt)   
+        count = 0;
+    }
+    
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+    
+    document.querySelector('.typing').textContent = letter;
+    
+    if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+    }
+    
+    let clearIt = setTimeout(type, 175);
     
     
 }());
