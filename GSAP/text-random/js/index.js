@@ -1,4 +1,5 @@
 
+
 let text = document.querySelector('.split')
 
 let split = new SplitText(text);
@@ -8,7 +9,7 @@ function random(min, max) {
 }
 
 split.chars.forEach((el, idx) => {
-    TweenMax.from(el, 2.5, {
+    gsap.from(el, 19.5, {
         opacity: 0,
         x: random(-500,500),
         y: random(-500,500),
@@ -16,20 +17,20 @@ split.chars.forEach((el, idx) => {
         scale: 8.1,
         delay: idx * .02,
         yoyo: true,
-        repeat: -1,
+        repeat: 2,
         repeatDelay: 4 
     });
 });
 
 
+window.addEventListener('load', (e) => {
+    gsap.set(".box", {autoAlpha:1})
+})
 
 
 
 
-
-
-/* COMPLETE
-
+/* COMPLETE - OLD
 let text = document.querySelector('.split')
 
 let split = new SplitText(text);
@@ -52,9 +53,9 @@ split.chars.forEach((el, idx) => {
     })
 })
 
-
-
 */
+
+
 
 
 

@@ -3,13 +3,13 @@ const boxLoader = document.getElementById('boxLoader'); //SVG
 
 
 
-/* COMPLETE
 
+/* COMPLETE
 
 const container = document.getElementById('container');
 const boxLoader = document.getElementById('boxLoader'); //SVG
 
-TweenMax.set([boxLoader, container], {
+gsap.set([boxLoader, container], {
     position: 'absolute',
     top: '50%',
     left: '50%',
@@ -17,29 +17,34 @@ TweenMax.set([boxLoader, container], {
     yPercent: -50
 })
 
-let tl = new TimelineMax({ repeat: -1 });
+let tl = gsap.timeline({ repeat: -1 });
 
 tl.set(boxLoader, {
     transformOrigin: '0% 100%'
 })
-.to(boxLoader, 1, {
+.to(boxLoader, {
     rotation: -90,
-    ease: Power4.easeInOut
+    ease: Power4.easeInOut,
+    duration: 1
 })
-.to(boxLoader, 0.2, {
+.to(boxLoader, {
     scaleX: 0.3,
-    ease: Power1.easeIn
+    ease: Power1.easeIn,
+    duration: .2
 }, '-=0.9')
-.to(boxLoader, 1, {
+.to(boxLoader, {
     left: '+=50',
-    ease: Linear.easeNone
+    ease: Linear.easeNone,
+    duration: 1
 }, '-=1')
-.to(boxLoader, 0.2, {
+.to(boxLoader, {
     scaleX: 1,
-    ease: Power1.easeIn
+    ease: Power1.easeIn,
+    duration: 0.2
 }, '-=0.2')
 
 tl.timeScale(1.3);
+
 
 
 

@@ -51,23 +51,6 @@
     bottom: 0;
 }
 
-.snip1244 h3, .snip1244 p {
-    line-height: 1.5em;
-    padding: 0 30px;
-}
-
-.snip1244 h3 {
-    margin: 0 0 5px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.snip1244 p {
-    font-size: 0.8em;
-    font-weight: 500;
-    margin: 0 0 15px;
-}
-
 .snip1244:before, .snip1244:after,
 .snip1244 figcaption:before,
 .snip1244 figcaption:after {
@@ -110,6 +93,40 @@
     width: 100%;
 	opacity: .1;
 }
+
+.snip1244 h3, .snip1244 p {
+    line-height: 1.5em;
+    padding: 0 30px;
+}
+
+.snip1244 h3 {
+    margin: 0 0 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.snip1244 p {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+
+/* around the world 
+
+.snip1244:hover figcaption:before {
+    transition-delay: 400ms;
+}
+
+.snip1244:hover:after {
+    transition-delay: 800ms;
+}
+
+.snip1244:hover figcaption:after {
+    transition-delay: 1200ms;
+}
+
+*/
+
 
 /* Demo purposes only */
 body {
