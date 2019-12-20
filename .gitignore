@@ -7,13 +7,7 @@
 *.swo
 *.swp
 *.vi
-*.jpg
-*.jpeg
-*.jpg
-*.png
-*.mp4
-img/
-images/
+
 license.txt
 *~
 *.sass-cache

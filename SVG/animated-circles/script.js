@@ -1,6 +1,4 @@
 
-
-
 let percent = document.querySelector('.percent');
 let num = 0;
 
@@ -20,10 +18,11 @@ let percentFour = document.querySelector('.percent-four');
 let numFour = 0;
 
 
-
+/*
 setTimeout(() => {
     clearInterval(clearIt); 
     clearInterval(clearItTwo); 
     clearInterval(clearItThree); 
     clearInterval(clearItFour); 
 }, 5000);
+*/
