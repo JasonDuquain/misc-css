@@ -2,8 +2,9 @@ var hourbar = document.getElementById('hour')
 var minutebar = document.getElementById('minute')
 var secondbar = document.getElementById('second')
 
-
-
+setInterval(() => {
+    
+}, 1000);
 
 
 /* COMPLETE

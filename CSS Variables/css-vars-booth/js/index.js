@@ -9,12 +9,34 @@ range.addEventListener('input', handleSlider);
 inputs.forEach((el) => el.addEventListener('input', handleInputChange));
 
 function handleInputChange (e) {
-    
+   
 }
 
 function handleSlider (e) {
-     
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* COMPLETE

@@ -43,7 +43,7 @@ for (let el of document.querySelectorAll('.scrolling')) {
         let scroll = el.scrollTop / maxScroll;
         console.log(scroll);
         el.style.setProperty('--scroll', scroll);
-        el.previousElementSibling.textContent = `${(scroll * 100).toFixed(0)}% read`;
+        el.previousElementSibling.textContent = ((scroll * 100) >= 100) ? '100% read' : `${(scroll * 100).toFixed(0)}% read`;
     });
 }
 
