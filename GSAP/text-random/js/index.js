@@ -9,7 +9,7 @@ function random(min, max) {
 }
 
 split.chars.forEach((el, idx) => {
-    gsap.from(el, 19.5, {
+    gsap.from(el, 2.5, {
         opacity: 0,
         x: random(-500,500),
         y: random(-500,500),
