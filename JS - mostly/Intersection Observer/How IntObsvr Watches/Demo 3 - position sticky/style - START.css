@@ -14,7 +14,7 @@ html, body {
 }
 
 section {
-  
+  margin: 20px;
 }
 
 .buffer {
@@ -22,10 +22,12 @@ section {
 }
 
 .sticky-content {
-    transition: 0.25s;  
+	transition: 0.25s;
 }
 
 .sticky-content span {
+  display: inline-block;
+  font-size: 20px;
   
 }
 
@@ -42,5 +44,5 @@ section {
 }
 
 .sticky-container.active .sticky-content span {
-  
+  transition: .25s .5s;
 }

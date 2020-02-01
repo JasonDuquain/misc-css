@@ -1,16 +1,5 @@
 const boxes = document.querySelectorAll('.box');
 
-// callback function to do animations
-
-
-
-// create the observer
-const options = {
-    
-};
-
-
-
 
 
 
@@ -20,7 +9,6 @@ const options = {
 
 const boxes = document.querySelectorAll('.box');
 
-// callback function to do animations
 const scrollImations = (entries, observer) => {
 	entries.forEach((entry) => {
 		// only do animation if the element is fully on screen
@@ -30,7 +18,6 @@ const scrollImations = (entries, observer) => {
 	});
 }
 
-// create the observer
 const options = {
 	threshold: 1.0,
 };

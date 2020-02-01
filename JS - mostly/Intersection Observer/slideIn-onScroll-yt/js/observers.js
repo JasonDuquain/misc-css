@@ -20,13 +20,10 @@ sectionOneObserver.observe(sectionOne);
 /****** NAV CHANGE CODE end ******/
 
 
-
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
 
-const appearOptions = {
-    
-};
+
 
 
 

@@ -3,12 +3,6 @@ const header = document.querySelector('header');
 const headerHeight = header.getBoundingClientRect().height;
 const sectionOne = document.querySelector('.home-intro');
 
-const sectionOneOptions = {
-    
-};
-
-
-
 
 
 

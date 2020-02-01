@@ -31,7 +31,7 @@ function makeTableUnOptimized() {
     
 }
 
-/* OPTIMIZED: You may have been to a family reunion where a garrulous uncle won’t stop talking and insists on telling the same stories over and over again. If no one else gets a chance to break in and get a word in edgewise, the conversation’s not going to be pleasant. Likewise, code that hogs all the processing time results in an outcome that’s less than desirable; producing an unresponsive user intf is never good. But situations will almost certainly arise that require us to process a significant amount of data, situations such as manipulating a couple of thousand DOM elements, for ex.
+/* OPTIMIZED: You may have been to a family reunion where a garrulous uncle won’t stop talking and insists on telling the same stories over and over again. If no one else gets a chance to break in and get a word in edgewise, the conversation’s not going to be pleasant. Likewise, code that hogs all the processing time results in an outcome that’s less than desirable; producing an unresponsive UI is never good. But situations will almost certainly arise that require us to process a significant amount of data, situations such as manipulating a couple of thousand DOM elements, for ex.
 
 On these occasions, timers can come to the rescue and become especially useful.
 Because timers are capable of effectively suspending the execution of a piece of

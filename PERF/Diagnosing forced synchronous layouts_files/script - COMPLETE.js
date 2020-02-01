@@ -16,6 +16,8 @@ function init() {
 
 // animation loop
 /* // [START forcedsync] */
+/* The update() function is the callback handler for requestAnimationFrame(). The handler computes each image's left property based off of the image's offsetTop value. This forces the browser to perform a new layout immediately to make sure that it provides the correct value. Forcing a layout during every animation frame is the cause of the janky animations on the page.
+*/
 function update(timestamp) {
 
     var movers = document.querySelectorAll('.mover');

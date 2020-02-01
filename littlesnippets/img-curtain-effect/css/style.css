@@ -2,7 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
 
 body {
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 1em;
 }
 
 .snip1334 {
@@ -11,7 +13,6 @@ body {
     overflow: hidden;
     color: #fff;
     text-align: left;
-    background-color: #fff;
     line-height: 1.4em;
 }
 
@@ -30,41 +31,66 @@ body {
     transition: all 300ms ease-out 300ms;
     position: absolute;
     content: '';
-    
-    
+    background: #000;
+    z-index: 1;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 0 20px #fff;
 }
 
 .snip1334 figcaption {
-    
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 .snip1334 h2 {
     font-family: 'Julius Sans One', Arial, sans-serif;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
 }
 
 .snip1334 p {
-    
+    position: absolute;
+    bottom: 0;
+    padding-left: 60px !important;
+    font-size: .8em;
+    transform: translateY(100%);
 }
 
 .snip1334 h2, .snip1334 p {
-    
+    margin: 0;
+    width: 100%;
+    padding: 25px;
+    opacity: 0;
 }
 
 .snip1334:hover:before {
-    
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 0px white;
+    transition-delay: 0s;
 }
 
 .snip1334:hover figcaption h2,
 .snip1334:hover figcaption p {
-    
+    transition-delay: 300ms;
 }
 
 .snip1334:hover figcaption h2 {
-    
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .snip1334:hover figcaption p {
-    
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Demo purposes only */
