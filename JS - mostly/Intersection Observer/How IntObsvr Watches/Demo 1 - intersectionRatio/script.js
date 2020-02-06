@@ -2,19 +2,20 @@ const root = document.querySelector('#root');
 const target = document.querySelector('#target');
 const output = document.querySelector('#output pre');
 
-const io_options = {
+const options = {
     
 }
 
-function io_callback(entries) {
+function callback(entries) {
    
 }
 
 function clickHandler(e) {
-    
+   
 }
 
 document.querySelectorAll('#buttons button').forEach(btn => btn.addEventListener('click', clickHandler));
+
 
 
 
@@ -26,15 +27,13 @@ const root = document.querySelector('#root');
 const target = document.querySelector('#target');
 const output = document.querySelector('#output pre');
 
-const io_options = {
+const options = {
   root: root,
   rootMargin: '0px',
   threshold: [...Array(100).keys()].map(x => x / 100)
 };
 
-let io_observer;
-
-function io_callback (entries) {
+function callback (entries) {
   output.innerText = entries[0].intersectionRatio;
 }
 
@@ -44,7 +43,7 @@ function clickHandler (e) {
 
 document.querySelectorAll('#buttons button').forEach(btn => btn.addEventListener('click', clickHandler));
 
-io_observer = new IntersectionObserver(io_callback, io_options);
-io_observer.observe(target);
+const observer = new IntersectionObserver(callback, options);
+observer.observe(target);
 
 */

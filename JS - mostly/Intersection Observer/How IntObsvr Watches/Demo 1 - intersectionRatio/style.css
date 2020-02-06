@@ -27,7 +27,7 @@ body {
 
 #target {
   background-color: rebeccapurple;
-  background-image: radial-gradient(ellipse at center, #ffffff 0%,#ffffff 14%,#663399 15%,#663399 34%,#ffffff 35%,#ffffff 50%,#663399 51%,#663399 99%);
+  background-image: radial-gradient(ellipse at center, #fff 0%,#fff 14%,#663399 15%,#663399 34%,#fff 35%,#fff 50%,#663399 51%,#663399 99%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 300px 300px;

@@ -7,9 +7,13 @@ const options = {
     threshold: 0
 };
 
-const observer = new IntersectionObserver(callback, options);
 
 
+
+
+function callback(entries, observer) {
+    
+}
 
 
 

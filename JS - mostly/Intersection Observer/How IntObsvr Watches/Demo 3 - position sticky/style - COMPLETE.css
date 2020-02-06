@@ -22,16 +22,16 @@ section {
 }
 
 .sticky-content {
-  position: relative;
-  transition: 0.25s;
+	transition: 0.25s;
+    position: relative;
 }
 
 .sticky-content span {
+	transition: 0.25s;
   display: inline-block;
   font-size: 20px;
   opacity: 0;
   overflow: hidden;
-  transition: 0.25s;
   width: 0;
 }
 
@@ -51,7 +51,7 @@ section {
 }
 
 .sticky-container.active .sticky-content span {
-  opacity: 1;
   transition: 0.25s 0.5s;
+  opacity: 1;
   width: 20px;
 }

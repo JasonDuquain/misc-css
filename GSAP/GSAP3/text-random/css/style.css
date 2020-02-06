@@ -8,8 +8,7 @@ body {
 }
 
 .box {
-    /*visibility: hidden; */
-    
+    visibility: hidden; 
     
     max-width: 70vw;
     padding: 30px;

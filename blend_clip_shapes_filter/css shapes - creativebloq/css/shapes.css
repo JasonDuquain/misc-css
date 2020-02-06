@@ -1,0 +1,85 @@
+
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+}
+
+#shape_contain {
+	box-sizing: border-box;
+	
+}
+
+#circle {
+	
+}
+
+#tri1 {
+    
+}
+
+#tri2 {
+    
+}
+
+#tri3 {
+    
+}
+
+.strip {
+	
+}
+
+#strip1 {
+	
+}
+
+#strip2 {
+	
+}
+
+#strip3 {
+	
+}
+
+#leftside {
+	
+}
+
+#rightside {
+	
+}
+
+#topLeft {
+	
+}
+
+#topLeft span {
+	font-size: 1.8em;
+}
+
+#topRight {
+	
+}
+
+#headline {
+	font-family: 'Arvo', serif;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

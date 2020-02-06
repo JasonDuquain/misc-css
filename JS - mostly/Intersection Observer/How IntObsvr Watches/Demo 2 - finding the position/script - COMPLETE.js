@@ -4,15 +4,13 @@ const target = document.querySelector('#target');
 const targetSize = document.querySelector('#targetSize');
 const output = document.querySelector('#output pre');
 
-const io_options = {
+const options = {
   root: root,
   rootMargin: '0px',
   threshold: [...Array(100).keys()].map(x => x / 100)
 };
 
-let io_observer;
-
-function io_callback (entries) {
+function callback (entries) {
   const ratio = entries[0].intersectionRatio;
   const boundingRect = entries[0].boundingClientRect;
   const intersectionRect = entries[0].intersectionRect;
@@ -38,5 +36,5 @@ targetSize.addEventListener('click', function () {
   target.classList.toggle('small');
 });
 
-io_observer = new IntersectionObserver(io_callback, io_options);
-io_observer.observe(target);
+let observer = new IntersectionObserver(callback, options);
+observer.observe(target);

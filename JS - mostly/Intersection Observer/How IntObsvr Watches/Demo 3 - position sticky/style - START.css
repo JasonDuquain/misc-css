@@ -26,6 +26,7 @@ section {
 }
 
 .sticky-content span {
+	transition: 0.25s;
   display: inline-block;
   font-size: 20px;
   
