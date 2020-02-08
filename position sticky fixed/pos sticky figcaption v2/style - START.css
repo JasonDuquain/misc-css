@@ -1,0 +1,60 @@
+article {
+    max-width: 500px;
+    margin: 2rem auto;
+    font: 1.5rem/1.5 system-ui;
+}
+
+.before-figure,
+.after-figure {
+    background-color: #FFF;
+    position: relative;
+    z-index: 5;
+}
+
+.before-figure {
+    margin-bottom: 0px;
+    padding-bottom: 2rem;
+}
+
+.after-figure {
+    margin-top: 0px;
+    padding-top: 2rem;
+}
+
+.figure-wrapper {
+     
+}
+
+figure {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0px;    
+}
+
+figure img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 0px;
+}
+
+figure img.top {
+    
+}
+
+figure figcaption {
+    color: #009688;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 1;
+    padding: 0.25rem 1rem 0.25rem 0.25rem;
+    
+}
+
+figure figcaption strong {
+    display: block;
+}
+
+figure .img-wrapper {
+    
+}

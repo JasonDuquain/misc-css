@@ -20,11 +20,11 @@ body, html {
 }
 
 #circle {
+	background: rgba(136, 239, 231, 0.3);
+	position: absolute;
 	width: 80vh;
 	height: 80vh;
 	border-radius: 50%;
-	background: rgba(136, 239, 231, 0.3);
-	position: absolute;
 	top: 7vh;
 	left: 50%;
 	transform: translate3d(-50%, 0, 0);
@@ -32,7 +32,6 @@ body, html {
 }
 
 #tri1 {
-    clip-path: polygon(0 0, 100% 0, 0 50%);
     width: 100vh;
     height: 88vh;
     background: url(../images/girl3.jpg) no-repeat center center/cover;
@@ -42,10 +41,10 @@ body, html {
     transform: translate3d(-50%, 0, 0);
     filter: hue-rotate(310deg) contrast(140%);
     opacity: 0.8;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
 
 #tri2 {
-    clip-path: polygon(50% 0, 0% 100%, 9% 100%, 50% 17%, 50% 17%, 85% 91%, 13% 91%, 0 100%, 100% 100%, 50% 0);
     width: 80vh;
     height: 70vh;
     background: url(../images/clouds.jpg) no-repeat center center/cover;
@@ -55,44 +54,45 @@ body, html {
     transform: translate3d(-50%, 0, 0);
     filter: hue-rotate(90deg) contrast(140%);
     opacity: 0.7;
-}
-
-#tri3 {
     clip-path: polygon(50% 0, 0% 100%, 9% 100%, 
 	50% 17%, 50% 17%, 85% 91%, 13% 91%, 0 100%, 
 	100% 100%, 50% 0);
+}
+
+#tri3 {
+	background: rgba(0, 113, 110, 0.2);
 	width: 80vh;
 	height: 70vh;
-	background: rgba(0, 113, 110, 0.2);
 	position: absolute;
 	top: 20vh;
 	left: 50%;
 	transform: translate3d(-50%, 0, 0);
+	clip-path: polygon(50% 0, 0% 100%, 9% 100%, 
+	50% 17%, 50% 17%, 85% 91%, 13% 91%, 0 100%, 
+	100% 100%, 50% 0);
 }
 
 .strip {
 	position: absolute;
 	background: linear-gradient(0deg, rgba(164, 0, 217, 0) 0%, rgba(164, 0, 217, 0.3) 35%, rgba(255, 67, 134, 0.3) 65%, rgba(255, 67, 134, 0) 100%);
+	left: 50%;
 }
 
 #strip1 {
 	width: 20vh;
 	height: 120vh;
-	left: 50%;
 	transform: translate3d(-175%, -15%, 0) rotateZ(30deg);
 }
 
 #strip2 {
 	width: 5vh;
 	height: 90vh;
-	left: 50%;
 	transform: translate3d(60vh, -15%, 0) rotateZ(30deg);
 }
 
 #strip3 {
 	width: 5vh;
 	height: 90vh;
-	left: 50%;
 	transform: translate3d(-70vh, 25%, 0) rotateZ(30deg);
 }
 

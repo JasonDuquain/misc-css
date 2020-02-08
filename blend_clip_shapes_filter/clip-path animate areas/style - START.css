@@ -16,7 +16,9 @@ img {
 }
 
 #container {
-    
+	position: relative;
+	transition: 1000ms;
+	
 }
 
 #container:hover {
@@ -74,4 +76,31 @@ img {
         
     }
 }
+
+@keyframes ellipse {
+    0% {
+        
+    }
+
+    20% {
+        
+    }
+
+    40% {
+         
+    }
+
+    60% {
+         
+    }
+
+    80% {
+        
+    }
+
+    100% {
+         
+    }
+}
+
 

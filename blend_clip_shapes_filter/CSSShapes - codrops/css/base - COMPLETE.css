@@ -17,16 +17,6 @@ body {
 	font-family: sans-serif;
 }
 
-a {
-	color: #2c42ea;
-	text-decoration: none;
-}
-
-a:hover,
-a:focus {
-	color: #FD987D;
-}
-
 .title {
 	margin: 10vh 0 0 0;
 }
@@ -41,27 +31,27 @@ a:focus {
 
 .circle {
 	background: linear-gradient(to top right, #FDB171, #FD987D);
-    float: left;
     height: 200px;
     width: 200px;
+    float: left;
     shape-outside: circle();
     clip-path: circle();
 }
 
 .ellipse {
 	background: linear-gradient(to top right, #F17BB7, #AD84E3);
+    width: 150px;
+    height: 300px;
     float: left;
     shape-outside: ellipse(75px 150px);
     clip-path: ellipse();
-    width: 150px;
-    height: 300px;
 }
 
 .polygon {
 	background: linear-gradient(to top right, #86F7CC, #67D7F5);
-    float: left;
     height: 300px;
     width: 300px;
+    float: left;
     shape-outside: polygon(0 0, 0 300px, 200px 300px);
     clip-path: polygon(0 0, 0 300px, 200px 300px);
 }
@@ -92,6 +82,8 @@ a:focus {
     margin-top: 20px;
     margin-right: 20px;
     shape-outside: polygon(5px 14px, 233px 20px, 246px 133px, 189px 167px, 308px 304px, 0px 306px) content-box;
+	
+	/* clip-path not needed?? */
     clip-path: polygon(5px 14px, 233px 20px, 246px 133px, 189px 167px, 308px 304px, 0px 306px);
 }
 
@@ -100,17 +92,17 @@ a:focus {
 }
 
 .star {
-    float: left;
     width: 350px;
     height: 350px;
+    float: left;
     shape-outside: url('../img/star.png');
 }
 
 .gradient {
-	float: left;
+	background: linear-gradient(to bottom right, #86F7CC 20%, transparent 80%);
 	height: 300px;
 	width: 100%;
-	background: linear-gradient(to bottom right, #86F7CC 20%, transparent 80%);
+	float: left;
 	shape-outside: linear-gradient(to bottom right, #86F7CC 20%, transparent 80%);
 	shape-image-threshold: .5;
 }

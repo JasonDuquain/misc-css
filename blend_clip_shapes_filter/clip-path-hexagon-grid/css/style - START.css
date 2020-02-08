@@ -66,11 +66,23 @@ h2 {
 }
 
 h2::before, h2::after {
-    content: "";   
+    content: "";
+    display: inline-block;
+    margin: 0 0.5em;
+    width: .75em;
+    height: .03em;
+    background: turquoise;
+    vertical-align: middle; 
 }
 
 .desc {
-    font-family: 'ATC Overlook';    
+    font-family: 'ATC Overlook';
+    margin: 1em 0 0;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.5;
+    color: turquoise; 
 }
 
 .grid--item:hover .img:before,
