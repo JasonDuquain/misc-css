@@ -1,0 +1,81 @@
+body *{
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+img{
+   max-height: 200px;
+}
+
+div[description]{
+     
+}
+
+.sidescroller{
+    
+}
+
+div[item]{
+    
+}
+
+div[description] span{
+  font-size: 14px;
+  display: inline-block;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+/* COMPLETE
+
+body *{
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+img{
+  max-height: 200px;
+}
+
+div[description]{
+  max-width: 40px;
+  height: 200px;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0; // become sticky once touching left edge
+}
+
+.sidescroller{
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background: #000;
+}
+
+div[item]{
+  display: flex;
+}
+
+div[description] span{
+  font-size: 14px;
+  display: inline-block;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  transform: rotate(-90deg) translateX(-200px);
+  transform-origin: left top 0;
+  padding-top: 11px;
+}
+
+
+*/
+
+
+
