@@ -1,0 +1,54 @@
+article {
+    background-image: linear-gradient(to bottom,
+            transparent 50px,
+            #fdef67 50px,
+            #fdef67 calc(100% - 50px),
+            transparent 0);
+    margin: auto auto 50px auto;
+}
+
+.category, .title, .footer {
+    
+}
+
+.category {
+    font: 41px/57px "Titan One";
+    color: #f83d23;
+    
+}
+
+.title {
+    font: 50px/60px "Crimson Text";
+    color: #fdef67;
+    text-shadow: 2px 2px 0 #f83d23;
+    background-color: dodgerblue;
+    
+    
+}
+
+.footer {
+    background-color: #f83d23;
+    color: white;
+    text-shadow: 1px 1px black;
+    
+}
+
+body {
+    font-family: "Crimson Text";
+}
+
+p {
+    margin: 10px;
+}
+
+.emptyBlocks {
+    background-color: #ccc;
+    height: 200px;
+    margin: 40px auto;
+}
+
+article, .emptyBlocks {
+    width: 80vw;
+    max-width: 420px;
+}
+
