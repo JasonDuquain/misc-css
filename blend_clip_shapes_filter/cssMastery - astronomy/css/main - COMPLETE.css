@@ -315,7 +315,6 @@ p + p {
     animation-delay: 1s;
 }
 
-
 /**
 * 1. Change the shadow color on hover, to create the glow. */
 .nav-section li:hover {
@@ -323,9 +322,7 @@ p + p {
 }
 
 /**
-* 1. Add a null transform to prevent rendering bugs in Blink/WebKit. This still
-freaks out in Safari, but only intermittently.
-*/
+* 1. Add a null transform to prevent rendering bugs in Blink/WebKit. This still freaks out in Safari, but only intermittently. */
 .nav-section a {
     text-decoration: none;
     background-color: #1A4298;

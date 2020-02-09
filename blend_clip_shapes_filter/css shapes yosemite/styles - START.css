@@ -11,7 +11,10 @@ html, body {
 }
 
 html:before {
-    
+    background: 
+        url(images/tree.png) bottom right no-repeat,
+        linear-gradient(to bottom, rgba(121,154,156,1) 0%, rgba(82,97,121,1) 100%);
+		
 }
 
 main {
@@ -76,7 +79,7 @@ main:before {
 }
 
 .shape--y1 {
-    
+    /* height of y.png and half the width */
     
     /* see the shape */
     /* background-color: red;
@@ -84,7 +87,7 @@ main:before {
 }
 
 .shape--y2 {
-    
+    /* height of y.png and half the width */
     
     /* see the shape */
     
@@ -93,24 +96,19 @@ main:before {
     
 }
 
-@media (min-width: 1500px) {
-    
+@media (min-width: 1500px) {  
     html {
         font-size: 135%;
     }
-
 }
 
 @media (max-width: 1200px) {
-
     .content h1 {
         padding-top: 0;
     }
-
 }
 
 @media (max-width: 1000px) {
-
     html:before {
         
     }
@@ -155,11 +153,9 @@ main:before {
     .shape--bear {
         margin-left: -2em;
     }
-
 }
 
 @media (max-width: 600px) {
-
     main:before {
         
         
@@ -172,6 +168,5 @@ main:before {
         margin-top: 0;
         padding-top: 0;
     }
-
 }
 

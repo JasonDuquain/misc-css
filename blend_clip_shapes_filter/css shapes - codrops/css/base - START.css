@@ -1,7 +1,9 @@
-*,
-*::after,
-*::before {
+:root {
 	box-sizing: border-box;
+}
+
+*, *::after, *::before {
+	box-sizing: inherit;
 }
 
 body {
@@ -40,7 +42,6 @@ body {
 .polygon {
 	background: linear-gradient(to top right, #86F7CC, #67D7F5);
 }
-
 
 .left {
 	background: linear-gradient(to top right, #67D7F5, #86F7CC);

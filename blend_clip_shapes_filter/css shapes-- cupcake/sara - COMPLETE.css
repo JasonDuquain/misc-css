@@ -28,9 +28,7 @@ body {
   shape-margin: 2em;
 }
 
-p,
-h1,
-h3 {
+p, h1, h3 {
   padding: 1em 0;
 }
 

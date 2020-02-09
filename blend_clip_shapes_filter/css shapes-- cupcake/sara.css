@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    color: #555;
+    font-size: 0.95em;
+    background-color: #eee;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+    
+}
+
+.element {
+    background: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/clip-path/cupcakes.jpg) no-repeat -100px 0/cover;
+    
+}
+
+p, h1, h3 {
+  padding: 1em 0;
+}
+
+p {
+  margin-right: 4em;
+}
+
+ul {
+  list-style: circle;
+}
+
+.clear {
+  clear: both;
+}

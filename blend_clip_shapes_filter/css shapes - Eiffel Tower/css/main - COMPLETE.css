@@ -27,11 +27,10 @@ html, body{
 }
 
 .shaped /* empty div */{
+    background: black url(../images/eiffel.jpg) center top/cover no-repeat;
     height: 100vh;
     width: 40vw;
     float: right;
-    background: black url(../images/eiffel.jpg) center top no-repeat;
-    background-size: cover;
     shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
     shape-margin: 20px;

@@ -25,13 +25,15 @@ html, body{
 }
 
 .shaped /* empty div */{
-	/*-webkit-shape-outside: url(mask.png) top left; */
+	background: black url(../images/eiffel.jpg) center top no-repeat;
 	
 }
 
 .content{
     font-family: 'Nunito', sans-serif;
 	font-size: 15px;
+    padding: 30px;
+    color: #000;
 }
 
 .content h1{
