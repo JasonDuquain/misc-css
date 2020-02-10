@@ -31,7 +31,7 @@ h1 small {
 }
 
 .box-content {
-  background: white; /* this keeps the hello there box from being seen */
+  background: rgba(255,255,255,.8); /* this keeps the hello there box from being seen */
   padding: 2em;
 }
 

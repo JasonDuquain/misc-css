@@ -63,9 +63,3 @@ p {
 body  {font-family: 'crimson text';}
 
 h3  {text-align: center;}
-
-@media (max-width: 420px)  { p  {font-size: 11pt;}}
-@media (max-width: 375px)  { p  {font-size: 9pt;}}
-@supports not ((-webkit-text-orientation: upright) or (text-orientation: upright))  {
-	.title  {letter-spacing: 5px;}
-}

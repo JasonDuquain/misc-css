@@ -6,7 +6,7 @@
 .chevron::before {
     position: absolute;
     content: "";
-    background: linear-gradient(to right, hsl(12, 78%, 52%) 0%, hsl(12, 78%, 52%) 50%, hsl(18, 88%, 55%) 50%, hsl(18, 88%, 55%); 100%);
+    background: linear-gradient(to right, hsl(12, 78%, 52%) 0%, hsl(12, 78%, 52%) 50%, hsl(18, 88%, 55%) 50%, hsl(18, 88%, 55%) 100%);
     
 }
 

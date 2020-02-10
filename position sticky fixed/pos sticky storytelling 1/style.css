@@ -1,0 +1,56 @@
+section {
+  position: relative;
+}
+
+body {
+  background-color: ghostwhite;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+article p {
+  font-family: Georgia;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  min-height: 90vh;
+  margin: 0;
+}
+
+article p:not(:last-of-type) {
+  margin: 0 0 1rem;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+  text-transform: uppercase;
+  border: 1px solid red;
+}
+
+@media screen and (min-width: 35rem) {
+  figure {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}

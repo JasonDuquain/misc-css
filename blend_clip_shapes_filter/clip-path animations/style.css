@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  background-color: #1d1e22;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+}
+
+#app.title {
+	color: #FFF;
+}
+	
+.boxes {
+  align-items: center;
+  background-color: #C5C5C5;
+  border: 3px solid #FFF;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  width: 300px;
+}  
+
+.boxes::before {
+    background-color: darken(#C5C5C5, 10%);
+    content: '';
+    display: block;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+	
+.box {
+    align-items: center;
+    background-color: #307B21;
+    color: #fff;
+    display: flex;
+    font-family: 'Luckiest Guy';
+    font-size: 60px;
+    height: 200px;
+    justify-content: center;
+    position: absolute;
+    width: 200px;
+    
+}
+
+.box2 {
+		background-color: #4371AD;
+    opacity: 0;
+}
+
+@supports(clip-path: circle(0)) {
+  .boxes::after {
+    display: none;
+  }
+}
+
+
+/********* level 1 *********/
+
+.fade-enter,
+.fade-leave-to { opacity: 0; }
+.fade-enter-active,
+.fade-leave-active { transition: 500ms; position: absolute; }
+
+.circle-enter-active { animation: 1s circle reverse; }
+.circle-leave-active { animation: 1s circle; }
+@keyframes circle {
+  0% { clip-path: circle(75%); }
+  100% { clip-path: circle(0%); }
+}
+
+.ellipse-enter-active { animation: 1s ellipse reverse; }
+.ellipse-leave-active { animation: 1s ellipse; }
+@keyframes ellipse {
+  0% { clip-path: ellipse(80% 80%); }
+  100% { clip-path: ellipse(0% 20%); }
+}
+
+.inset-enter-active { animation: 1s inset reverse; }
+.inset-leave-active { animation: 1s inset; }
+@keyframes inset {
+	0% { clip-path: inset(0% round 0%); }
+	100% { clip-path: inset(50% round 50%); }
+}
+
+.polygon-enter-active { animation: 1s polygon reverse; }
+.polygon-leave-active { animation: 1s polygon; }
+@keyframes polygon {
+  0% { clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%); }
+  100% { clip-path:  polygon(50% 50%, 50% 25%, 50% 50%, 75% 50%, 50% 50%, 50% 75%, 50% 50%, 25% 50%); }
+}
+
+
+/********* level 2 *********/
+/* The circle and ellipse shapes provide an easy way to animate movement through the position of the shape. The inset and polygon shapes can be animated in a way to give the appearance of position-based movement. */
+
+.down-enter-active { animation: 1s down-enter; }
+.down-leave-active { animation: 1s down-leave; }
+@keyframes down-enter {
+  0% { clip-path: inset(0 0 100% 0); }
+  100% { clip-path: inset(0); }
+}
+@keyframes down-leave {
+  0% { clip-path: inset(0); }
+  100% { clip-path: inset(100% 0 0 0); }
+}
+
+.box-wipe-enter-active { animation: 1s box-wipe-enter; }
+.box-wipe-leave-active { animation: 1s box-wipe-leave; }
+@keyframes box-wipe-enter {
+  0% { clip-path: inset(25% 100% 25% -50%); }
+  50% { clip-path: inset(25% 0% 25% 50%); }
+  100% { clip-path: inset(0); }
+}
+
+@keyframes box-wipe-leave {
+  0% { clip-path: inset(0); }
+  50% { clip-path: inset(25% 50% 25% 0%); }
+  100% { clip-path: inset(25% -50% 25% 100%); }
+}
+
+.rotate-enter-active { animation: 1s rotate reverse; }
+.rotate-leave-active { animation: 1s rotate; }
+@keyframes rotate {
+  0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+  25% { clip-path: polygon(87.5% 12.5%, 87.5% 87.5%, 12.5% 87.5%, 12.5% 12.5%);  }
+  50% { clip-path: polygon(75% 75%, 25% 75%, 25% 25%, 75% 25%); }
+  75% { clip-path: polygon(37.5% 62.5%, 37.5% 37.5%, 62.5% 37.5%, 62.5% 62.5%); }
+  100% { clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%); }
+}
+
+.spotlight-enter-active { animation: 2s spotlight reverse; }
+.spotlight-leave-active { animation: 2s spotlight; }
+@keyframes spotlight {
+  0% { clip-path: circle(100% at 50% 50%); }
+  25% { clip-path: circle(20% at 50% 50%); }
+  50% { clip-path: circle(20% at 12% 84%); }
+  75% { clip-path: circle(20% at 93% 51%); }
+  100% { clip-path: circle(20% at -30% 20%); }
+}
+
+
+/********* level 3 *********/
+
+.chevron-enter-active { animation: 1s chevron-enter; }
+.chevron-leave-active { animation: 1s chevron-leave; }
+@keyframes chevron-enter {
+  0% { clip-path: polygon(-25% 0%, 0% 50%, -25% 100%, -100% 100%, -75% 50%, -100% 0%); }
+  75% { clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); }
+  100% { clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%, 0% 0%); }
+}
+@keyframes chevron-leave {
+  0% { clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%, 0% 0%); }
+  25% { clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); }
+  100% { clip-path: polygon(175% 0%, 200% 50%, 175% 100%, 100% 100%, 125% 50%, 100% 0%) }
+}
+
+.spiral-enter-active { animation: 1s spiral reverse; }
+.spiral-leave-active { animation: 1s spiral; }
+@keyframes spiral {  
+  0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  14.25% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 75%, 50% 75%, 50% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  28.5% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 50%, 50% 50%, 50% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  42.75% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 25% 25%, 25% 50%, 25% 50%, 25% 50%, 25% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  57% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  71.25% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 75% 100%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  85.5% { clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 0% 25%); }
+  100% {clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%); }
+}
+
+.slots-enter-active { animation: 1s slots reverse; }
+.slots-leave-active { animation: 1s slots; }
+@keyframes slots {
+  0% {
+    clip-path: polygon(0% 0%, 14% 0%, 14% 0%, 28% 0%, 28% 0%, 42% 0%, 42% 0%, 56% 0%, 56% 0%, 70% 0%, 70% 0%, 84% 0%, 84% 0%, 100% 0, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0% 0%, 14% 0%, 14% 100%, 28% 100%, 28% 0%, 42% 0%, 42% 100%, 56% 100%, 56% 0%, 70% 0%, 70% 100%, 84% 100%, 84% 0%, 100% 0, 100% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(0% 100%, 14% 100%, 14% 100%, 28% 100%, 28% 100%, 42% 100%, 42% 100%, 56% 100%, 56% 100%, 70% 100%, 70% 100%, 84% 100%, 84% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+}
+
+.shutters-enter-active { animation: 1s shutters reverse; }
+.shutters-leave-active { animation: 1s shutters; }
+@keyframes shutters {
+  0% {
+    clip-path: polygon(0% 0%, 20% 0%, 20% 100%, 20% 100%, 20% 0%, 40% 0%, 40% 100%, 40% 100%, 40% 0%, 60% 0%, 60% 100%, 60% 100%, 60% 0%, 80% 0%, 80% 100%, 80% 100%, 80% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(20% 0%, 20% 0%, 20% 100%, 40% 100%, 40% 0%, 40% 0%, 40% 100%, 60% 100%, 60% 0%, 60% 0%, 60% 100%, 80% 100%, 80% 0%, 80% 0%, 80% 100%, 100% 100%, 100% 0%, 100% 0%, 100% 100%, 20% 100%);
+  }
+}
+
+.star-enter-active { animation: 1s star reverse; }
+.star-leave-active { animation: 1s star; }
+@keyframes star {
+  0% {
+    clip-path: polygon(0% 0%, 50% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
+  }
+  50% {
+    clip-path: polygon(0% 0%, 50% 100%, 100% 0%, 0% 50%, 100% 100%, 50% 0%, 0% 100%, 100% 50%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 50% 100%, 50% 50%, 0% 50%, 50% 50%, 50% 0%, 50% 50%, 100% 50%);
+  }
+}
