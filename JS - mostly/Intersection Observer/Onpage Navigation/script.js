@@ -6,20 +6,12 @@ const options = {
 }
 
 const changeNav = (entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            document.querySelector('.active').classList.remove('active');
-            var id = entry.target.getAttribute('id');
-            var newLink = document.querySelector(`[href="#${id}"]`).classList.add('active');
-        }
-    })
+    
 }
 
 const observer = new IntersectionObserver(changeNav, options);
 
-sections.forEach((section) => {
-	observer.observe(section);
-});
+sections.forEach((section) => observer.observe(section));
 
 
 /* COMPLETE
@@ -42,9 +34,7 @@ const changeNav = (entries, observer) => {
 
 const observer = new IntersectionObserver(changeNav, options);
 
-sections.forEach((section) => {
-	observer.observe(section);
-});
+sections.forEach((section) => observer.observe(section));
 
 
 */

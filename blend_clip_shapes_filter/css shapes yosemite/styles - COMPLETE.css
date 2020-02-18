@@ -27,13 +27,13 @@ main {
 }
 
 main:before {
+    background: url(images/y.png) 0 0/cover;
     position: absolute;
     content: "";
     width: 44em;
     height: 43.6875em;
     top: 0;
-    left: calc(62% - 21.9375em); /* 62% - 351px (half the width of the image (44em)) */
-    background: url(images/y.png) 0 0/cover;
+    left: calc(62% - 21.9375em); /* 62% (left value of the blue/green bg) - 351px (half the width of the image (44em)) */
 }
 
 .content {
@@ -86,10 +86,10 @@ main:before {
 }
 
 .shape--bear {
+    background: url(images/bear.png) 0 0/cover;
     width: 14.0625em;
     height: 17.9375em;
     margin: 0 1em 1em -6.75em;
-    background: url(images/bear.png) 0 0/cover;
     float: left;
     shape-outside: polygon(-37.6% 9.25%, -8.25% 11.2%, 12.8% 5.3%, 34.6% 10.25%, 37.6% 24.75%, 57.9% 34.3%, 69.15% 46.55%, 90.25% 51.5%, 87.95% 59.4%, 72.2% 71.95%, 39.1% 73.25%, -4.5% 80.85%, -81.2% 98.35%, -81.2% 0%, -55.65% -0.65%);
     shape-margin: 0.6em;

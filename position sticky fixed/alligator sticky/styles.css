@@ -33,5 +33,7 @@
     position: -webkit-sticky;
     position: sticky;
     bottom: 1rem;
+    
+    /* if this didnt have flex-end it would nvr become sticky */
     align-self: flex-end;
 }

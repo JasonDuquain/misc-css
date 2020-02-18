@@ -4,19 +4,19 @@ body *{
 }
 
 img{
-   max-height: 200px;
+  max-height: 200px;
 }
 
 div[description]{
-     
+  
 }
 
 .sidescroller{
-    
+  
 }
 
 div[item]{
-    
+  
 }
 
 div[description] span{

@@ -35,7 +35,9 @@ p + p {
 }
 
 .section {
-  
+    background-color: #ddd;
+    padding-top: 4em;
+    padding-bottom: 4em;      
 }
 
 .section:after {
@@ -49,7 +51,18 @@ p + p {
 
 /** 1. SVG file containing JPEG image + a radial gradient mask, then a linear gradient background. */
 .page-header {
-  
+    background-color: #000;
+    background-image: url(../img/earth.svg),
+    linear-gradient(to bottom, #000, #102133); /* [1] */
+    background-repeat: no-repeat;
+    background-size: 100% auto, cover;
+    background-position: 50% bottom;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 12em;
 }
 
 /** Masked header title.
@@ -108,7 +121,7 @@ p + p {
 }
 
 .stacked:nth-of-type(even) .section-text {
-  
+    overflow: hidden;
 }
 
 .section-universe {
@@ -159,16 +172,13 @@ p + p {
   
 }
 
-.fig-sun {
-    max-width: 40%; 
-}
-
 /* The img of the Sun uses both masking and filters to go from a black-and-white
 * image to a colorized version with xparency. See full-example.html for the 
 * SVG mask version.
 * 1. Add a list of filters to colorize the img.
 * 2. Mask away the bg using a radial gradient. */
 .fig-sun {
+	max-width: 40%; 
     filter: contrast(0.34) brightness(1.6) sepia(1) hue-rotate(10deg); /* [1] */
     -webkit-mask-image: radial-gradient(circle closest-side at 50%, #000, #000 90%, rgba(0,0,0,0) 93%); /* [2] */     
 }
@@ -178,7 +188,8 @@ p + p {
 }
 
 .section-text p {
-  
+  line-height: 1.5;
+    max-width: 40em;
 }
 
 /* ==== Navigation ==== */
@@ -186,7 +197,9 @@ p + p {
 /*1. Add a transform to the parent section, to counter a bug in Blink
 where the filter on child items freaks out.*/
 .nav-section {
-  
+    background-color: #16284F;
+    color: #fff;
+    transform: translate(0,0); 
 }
 
 .nav-section ul {

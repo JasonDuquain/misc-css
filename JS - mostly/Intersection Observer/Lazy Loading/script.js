@@ -2,7 +2,16 @@ const images = document.querySelectorAll('[data-src]');
 
 let loaded = 0;
 
+const config = {
+    rootMargin: '0px 0px 50px 0px',
+    threshold: 0
+}
 
+
+
+function preloadImage(img) {
+    
+}
 
 function _updateMonitoring() {
     const container = document.getElementById('isIntersecting');

@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+.site {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(123, 131, 126, 0.9) 0%, rgba(54, 75, 73, 0.9) 100%), #364b49;
+    
+}
+
+.site__header,
+.site__nav-list {
+    
+}
+
+.site__header {
+    
+}
+
+.site__header > * {
+    
+}
+
+.site__nav-list {
+    list-style-type: none;
+}
+
+.site__nav {
+    
+}
+
+.site__nav-link {
+    text-decoration: none;
+}
+
+.site__nav-list li:last-child .site__nav-link {
+    
+}
+
+.block {
+    
+}
+
+.main {
+    
+}
+
+.container {
+    
+}
+
+.heading {
+    
+}
+
+@media screen and (min-width: 40rem) {
+    .heading {
+        
+    }
+}
+
+mark {
+    
+}
+
+img {
+    
+}
+
+.grid-container {
+    
+}
+
+.grid {
+    
+}
+
+.grid__item--bg {
+    
+}
+
+.grid__item--portrait-half {
+    
+}
+
+.grid__item--portrait-neck {
+    
+}
+
+.grid__item--portrait-left {
+    
+}
+
+.grid__item--portrait-eye {
+    
+}
+
+.grid__item--portrait-shirt {
+    
+}
+
+.grid__item--portrait-bg-1 {
+    
+}
+
+.grid__item--portrait-bg-2 {
+    
+}
+
+.grid__item--portrait-bg-3 {
+    
+}
+
+.grid__item--portrait-bg-4 {
+    
+}

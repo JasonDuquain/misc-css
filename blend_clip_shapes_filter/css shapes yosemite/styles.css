@@ -22,7 +22,7 @@ main {
 }
 
 main:before {
-    
+    background: url(images/y.png) 0 0/cover;
 }
 
 .content {
@@ -71,7 +71,7 @@ main:before {
 }
 
 .shape--bear {
-    
+    background: url(images/bear.png) 0 0/cover;
 
     /* see the shape */
     /* background-color: red;

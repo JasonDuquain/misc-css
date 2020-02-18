@@ -192,10 +192,6 @@ p + p {
   mix-blend-mode: screen; /* [5] */
 }
 
-.fig-sun {
-    max-width: 40%; 
-}
-
 /**
 * The image of the Sun uses both masking and filters to go from a black-and-white
 * image to a colorized version with transparency. See full-example.html for the 
@@ -204,6 +200,7 @@ p + p {
 * 2. Mask away the background using a radial gradient.
 */
 .fig-sun {
+    max-width: 40%; 
     filter: contrast(0.34) brightness(1.6) sepia(1) hue-rotate(10deg); /* [1] */
     -webkit-mask-image: radial-gradient(circle closest-side at 50%, #000, #000 90%, rgba(0,0,0,0) 93%); /* [2] */     
 }

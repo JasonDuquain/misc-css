@@ -84,7 +84,7 @@ body {
     margin-right: 20px;
     shape-outside: polygon(5px 14px, 233px 20px, 246px 133px, 189px 167px, 308px 304px, 0px 306px) content-box;
 	
-	/* clip-path not needed?? */
+	/* clip-path not needed? */
     clip-path: polygon(5px 14px, 233px 20px, 246px 133px, 189px 167px, 308px 304px, 0px 306px);
 }
 
@@ -96,6 +96,8 @@ body {
     width: 350px;
     height: 350px;
     float: left;
+	
+	/* clip-path not needed */
     shape-outside: url('../img/star.png');
 }
 

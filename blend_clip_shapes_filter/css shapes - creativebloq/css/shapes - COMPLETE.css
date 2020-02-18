@@ -102,6 +102,15 @@ body, html {
 	top: 70%;
 	transform-origin: 10% 0%;
 	transform: rotate(-90deg);
+	
+	/* alternate 
+	position: absolute;
+	left: 20px;
+	top: 50%;
+    writing-mode: vertical-lr;
+	text-orientation: upright;
+	-webkit-text-orientation: upright;
+	*/
 }
 
 #rightside {
@@ -110,6 +119,15 @@ body, html {
 	top: 70%;
 	transform-origin: 90% 0%;
 	transform: rotate(90deg);
+	
+	/* alternate 
+	position: absolute;
+	right: 20px;
+	top: 50%;
+    writing-mode: vertical-lr;
+	text-orientation: upright;
+	-webkit-text-orientation: upright;
+	*/
 }
 
 #topLeft {
@@ -139,11 +157,11 @@ body, html {
 }
 
 #headline {
+	font-family: 'Arvo', serif;
 	position: absolute;
 	width: 100%;
 	z-index: 200;
 	padding-top: 65vh;
-	font-family: 'Arvo', serif;
 	text-align: center;
 	color: rgba(233, 173, 255, 0.8);
 	font-size: 8vw;

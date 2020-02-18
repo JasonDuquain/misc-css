@@ -1,8 +1,8 @@
 article {
     background-image: linear-gradient(to bottom,
             transparent 50px,
-            #fdef67 50px,
-            #fdef67 calc(100% - 50px),
+            hsla(54, 97%, 70%,.8) 50px,
+            hsla(54, 97%, 70%,.8) calc(100% - 50px),
             transparent 0);
     margin: auto auto 50px auto;
 }

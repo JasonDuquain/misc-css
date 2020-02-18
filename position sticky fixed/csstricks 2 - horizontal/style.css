@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Titan+One|Crimson+Text');
 
 article  {
-	background-image: linear-gradient(to right, transparent 50px, #fdef67 50px, #fdef67 calc(100% - 50px), transparent 0);
+	background-image: linear-gradient(to right, transparent 50px, rgba(253, 239, 103,.8) 50px, rgba(253, 239, 103,.8) calc(100% - 50px), transparent 0);
 }
 
 .title,.image  {

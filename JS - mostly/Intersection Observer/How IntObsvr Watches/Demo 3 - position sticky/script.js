@@ -1,13 +1,10 @@
 
 const stickyContainers = document.querySelectorAll('.sticky-container');
-
 const options = {
 	root: document.body,
     rootMargin: '0px 0px -100% 0px',
     threshold: 0
 };
-
-
 
 
 
@@ -21,7 +18,6 @@ function callback(entries, observer) {
 /* COMPLETE
 
 const stickyContainers = document.querySelectorAll('.sticky-container');
-
 const options = {
 	root: document.body,
     rootMargin: '0px 0px -100% 0px',
@@ -29,7 +25,6 @@ const options = {
 };
 
 const observer = new IntersectionObserver(callback, options);
-
 stickyContainers.forEach(el => observer.observe(el));
 
 function callback(entries, observer) {

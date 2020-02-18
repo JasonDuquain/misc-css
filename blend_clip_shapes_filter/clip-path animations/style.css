@@ -22,13 +22,13 @@ body {
 	justify-content: center;
 }
 
-#app.title {
+.title {
 	color: #FFF;
 }
 	
 .boxes {
   align-items: center;
-  background-color: #C5C5C5;
+  background-color: hsl(0, 0%, 77%);
   border: 3px solid #FFF;
   display: flex;
   height: 300px;
@@ -37,7 +37,7 @@ body {
 }  
 
 .boxes::before {
-    background-color: darken(#C5C5C5, 10%);
+    background-color: hsl(0, 0%, 50%);
     content: '';
     display: block;
     height: 200px;
@@ -57,10 +57,12 @@ body {
     position: absolute;
     width: 200px;
     
+    
+    
 }
 
 .box2 {
-		background-color: #4371AD;
+	background-color: #4371AD;
     opacity: 0;
 }
 
@@ -168,7 +170,7 @@ body {
 @keyframes chevron-leave {
   0% { clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%, 0% 0%); }
   25% { clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); }
-  100% { clip-path: polygon(175% 0%, 200% 50%, 175% 100%, 100% 100%, 125% 50%, 100% 0%) }
+  100% { clip-path: polygon(175% 0%, 200% 50%, 175% 100%, 100% 100%, 125% 50%, 100% 0%); }
 }
 
 .spiral-enter-active { animation: 1s spiral reverse; }

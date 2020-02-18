@@ -5,7 +5,7 @@ article {
 }
 
 .before-figure, .after-figure {
-  background-color: white;
+  background-color: rgba(0,0,0,.1);
   position: relative;
   z-index: 5;
 }
