@@ -132,8 +132,7 @@ main:before {
         margin-top: 0;
     }
 
-    .content--primary,
-    .content--secondary {
+    .content--primary, .content--secondary {
         
     }
 
@@ -145,8 +144,7 @@ main:before {
         
     }
 
-    .shape--y1,
-    .shape--y2 {
+    .shape--y1, .shape--y2 {
         
     }
 

@@ -5,7 +5,9 @@
 
 /* With our example, the align-items: flex-start rule on the flex container is important because otherwise flex items default to a value of stretch where the elements would take the whole height of the container, cancelling the sticky effect. */
 .container {
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
 
     border: 2px dashed rgba(114, 186, 94, 0.35);
     height: 400px;
@@ -16,20 +18,21 @@
 
 /* It’s important that you set a point for the element to become sticky using either of the top, bottom, left or right properties, depending on which direction the user will scroll. Notice how sticky-positioned elements are only sticky within their parent element.*/
 .pirate, .police, .doctor {
-    
+    position: -webkit-sticky;
+    position: sticky;
 }
 
 .pirate {
-    
+    top: 4rem;
 }
 
 .police {
-    
+    top: 0;
 }
 
 .doctor {
-    
+    bottom: 1rem;
     
     /* if this didnt have flex-end it would nvr become sticky */
-   
+    align-self: flex-end;
 }

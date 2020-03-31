@@ -32,7 +32,8 @@ body, html {
 
 .strip {
     position: absolute;
-	background: linear-gradient(0deg, rgba(164, 0, 217, 0) 0%, rgba(164, 0, 217, 0.3) 35%, rgba(255, 67, 134, 0.3) 65%, rgba(255, 67, 134, 0) 100%);	
+	background: linear-gradient(0deg, rgba(164, 0, 217, 0) 0%, rgba(164, 0, 217, 0.3) 35%, rgba(255, 67, 134, 0.3) 65%, rgba(255, 67, 134, 0) 100%);
+    left: 50%;	
 }
 
 #strip1 {

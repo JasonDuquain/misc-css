@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 13 Minutes to the Moon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://codepen.io/GreenSock/pen/JGaKdQ.css'>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="moon">
+        <svg class="moon__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 611 611">
+            <defs>
+                <clipPath id="clip-path" class="moon__svg-rects" >
+                    <rect id="top" width="611" height="72" />
+                    <rect y="77" width="611" height="72" />
+                    <rect y="154" width="611" height="72" />
+                    <rect y="231" width="611" height="72" />
+                    <rect y="308" width="611" height="72" />
+                    <rect y="385" width="611" height="72" />
+                    <rect y="462" width="611" height="72" />
+                    <rect y="539" width="611" height="72" />
+                </clipPath>
+            </defs>
+            <g clip-path="url(#clip-path)">
+                <image class="moon__img" width="1024" height="1024" transform="translate(-271 -188) scale(0.98)" xlink:href="moon-01-adjusted-02.jpg" />
+            </g>
+            <g class="moon__txt-bg" fill="#D5CEC6" transform="translate(-1 0)">
+                <rect y="229" width="612" height="76" />
+                <rect y="306" width="612" height="76" />
+                <rect y="383" width="612" height="76" />
+                <rect y="460" width="612" height="76" />
+                <rect y="537" width="612" height="76" />
+            </g>
+            <clipPath id="moon_txt-mask" class="moon__txt" transform="translate(-2 0)">
+                <text x="0" y="303">
+                    <tspan>13</tspan>
+                </text>
+                <text x="0" y="380">
+                    <tspan>MINUTES</tspan>
+                </text>
+                <text x="1" y="457">
+                    <tspan>TO</tspan>
+                </text>
+                <text x="1" y="534">
+                    <tspan>THE</tspan>
+                </text>
+                <text x="0" y="611">
+                    <tspan>MOON</tspan>
+                </text>
+            </clipPath>
+            <g clip-path="url(#moon_txt-mask)">
+                <image class="moon__img" width="1024" height="1024" transform="translate(-271 -188) scale(0.98)" xlink:href="moon-01-adjusted-02.jpg" />
+                <rect class="moon__txt-overlay" width="611" height="611"></rect>
+            </g>
+        </svg>
+    </div>
+    <div class="container__base"></div>
+</div>
+
+<script src="gsap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "MonumentExtended-Ultrabold";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/MonumentExtended-Ultrabold.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/MonumentExtended-Ultrabold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+.container {
+  
+  
+  /* make sure visibility is set to hidden but disable it to see everything in its start state */
+  //visibility: hidden;
+}
+
+.container__base {
+  background: hsl(32, 15%, 81%);  
+}
+
+.moon {
+  
+}
+
+.moon__svg {
+  
+}
+
+.moon__txt {
+  font-family: "MonumentExtended-Ultrabold", sans-serif;
+  
+}
+
+.moon__txt-overlay {
+  
+}

@@ -5,7 +5,10 @@ article  {
 }
 
 .title,.image  {
-	
+	position: sticky;
+	position: -webkit-sticky;
+	z-index: -1;
+	width: 50px;
 }
 
 .title  {
@@ -14,23 +17,35 @@ article  {
 	text-indent: 4px;
 	text-shadow: 2px 2px 0 #fdef67;
 	color: #f83d23;
-    
-    /* -x- right margin = .image's width (50px), to stay hidden when scrolled + 2px (for Chrome)*/
 	
+	
+	/* -x- right margin = .image's width (50px), to stay hidden when scrolled + 2px (for Chrome)*/
+	left: 20px;
+	height: 100%;
+	margin-right: 52px;
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	-webkit-text-orientation: upright;
 }
 
 .image  {
-	
+	left: 150px;
+	height: auto;
+	margin-bottom: 5px;
+	filter: drop-shadow(2px 2px dodgerblue);
 }
 
 p {
-	
+	width: calc(100% - 120px);
 	/* -x- width = 100%[article width] - ( 100px[total width of .title and .image] +  20px[for aesthetics]) */
-	
+	margin: 20px -50px auto -50px;
+	vertical-align: top;
+	white-space: initial;
 }
 
 .wrapper  {
-	width: 90vw; max-width: 420px;
+	width: 90vw; 
+	max-width: 420px;
 	height: 400px;
 	margin: auto;
 	overflow-x: scroll;

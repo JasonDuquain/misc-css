@@ -11,15 +11,15 @@ html, body {
 }
 
 html:before {
+	background: 
+        url(images/tree.png) bottom right no-repeat,
+        linear-gradient(to bottom, rgba(121,154,156,1) 0%, rgba(82,97,121,1) 100%);
     position: fixed;
     content: "";
     top: 0;
     right: 0;
     bottom: 0;
     left: 62%;
-    background: 
-        url(images/tree.png) bottom right no-repeat,
-        linear-gradient(to bottom, rgba(121,154,156,1) 0%, rgba(82,97,121,1) 100%);
 }
 
 main {
@@ -172,8 +172,7 @@ main:before {
         margin-top: 0;
     }
 
-    .content--primary,
-    .content--secondary {
+    .content--primary, .content--secondary {
         padding-left: 2em;
         padding-right: 2em;
         position: static;
@@ -189,8 +188,7 @@ main:before {
         padding-top: 2.5em;
     }
 
-    .shape--y1,
-    .shape--y2 {
+    .shape--y1, .shape--y2 {
         display: none;
     }
 
