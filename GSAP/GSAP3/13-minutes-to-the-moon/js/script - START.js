@@ -1,9 +1,6 @@
 console.clear();
 
-select = e => document.querySelector(e);
-selectAll = e => document.querySelectorAll(e);
-
-const container = select('.container');
+const container = document.querySelector('.container');
 let wArray = [161, 614, 189, 278, 404],
     tl;
 
@@ -34,7 +31,15 @@ function init() {
 }
 
 function resize() {
-	
+  let vw = window.innerWidth;
+  let vh = window.innerHeight;
+  let wh = container.offsetWidth;
+  let scaleFactor = 1;
+  
+  if (vw / vh >= 1) { scaleFactor = vh / wh }
+  else { scaleFactor = vw / wh }
+  if (scaleFactor < 1) { gsap.set(container, { scale: scaleFactor }); }
+  else { gsap.set(container, { scale: 1 }); }
 }
 
 window.onresize = resize;
@@ -42,5 +47,4 @@ window.onresize = resize;
 window.onload = () => {
 	init();
     resize();
-    
 };

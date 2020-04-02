@@ -3,6 +3,7 @@ const rootSize = document.querySelector('#rootSize');
 const target = document.querySelector('#target');
 const targetSize = document.querySelector('#targetSize');
 const output = document.querySelector('#output pre');
+const hay = document.querySelector('#hay')
 
 const options = {
   root: root,
@@ -15,10 +16,12 @@ function callback (entries) {
 }
 
 rootSize.addEventListener('click', function () {
-  
+  root.classList.toggle('large')
 });
 
 targetSize.addEventListener('click', function () {
-  
+  root.classList.toggle('small')
 });
 
+let observer = new IntersectionObserver(callback, options);
+observer.observe(target);

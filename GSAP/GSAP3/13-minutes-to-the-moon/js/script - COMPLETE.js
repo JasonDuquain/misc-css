@@ -7,7 +7,7 @@ let wArray = [161, 614, 189, 278, 404],
 function animate() {
   tl = gsap.timeline({
     delay: 0.5,
-    repeat: -1,
+    repeat: 3,
     defaults: { ease: 'expo.inOut', duration: 2 }
   });
   tl.from('.container__base', {
@@ -20,7 +20,6 @@ function animate() {
     stagger: 0.07,
     duration: 3,
     ease: 'expo'
-    
   }, "-=1.0")
   .to('.moon__txt-bg rect', {
     stagger: 0.14,
@@ -41,7 +40,7 @@ function animate() {
 }
 
 function init() {
-   gsap.set(container, { autoAlpha: 1 });
+  gsap.set(container, { autoAlpha: 1 });
   gsap.set('.moon__txt-bg rect', {
     width: function(i) {
       return wArray[i]
@@ -52,24 +51,15 @@ function init() {
 }
 
 function resize() {
-	let vw = window.innerWidth;
+  let vw = window.innerWidth;
   let vh = window.innerHeight;
-	let wh = container.offsetWidth;
-	let scaleFactor = 1;
-    
-    if(vw/vh >= 1) {
-        scaleFactor = vh/wh
-    }
-    else {
-        scaleFactor = vw/wh
-    }
-    
-	 if(scaleFactor<1) {
-		gsap.set(container, { scale: scaleFactor });
-	  }
-	  else {
-        gsap.set(container, { scale: 1 });
-    }
+  let wh = container.offsetWidth;
+  let scaleFactor = 1;
+  
+  if (vw / vh >= 1) { scaleFactor = vh / wh }
+  else { scaleFactor = vw / wh }
+  if (scaleFactor < 1) { gsap.set(container, { scale: scaleFactor }); }
+  else { gsap.set(container, { scale: 1 }); }
 }
 
 window.onresize = resize;

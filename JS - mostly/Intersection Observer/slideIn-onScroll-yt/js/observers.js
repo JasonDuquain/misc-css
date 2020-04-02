@@ -23,6 +23,11 @@ sectionOneObserver.observe(sectionOne);
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
 
+const appearOptions = {
+  
+};
+
+const appearOnScroll = new IntersectionObserver()
 
 
 
@@ -48,13 +53,9 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
     })
 }, appearOptions)
 
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-});
+faders.forEach(fader => appearOnScroll.observe(fader));
 
-sliders.forEach(slider => {
-    appearOnScroll.observe(slider);
-});
+sliders.forEach(slider => appearOnScroll.observe(slider));
 
 
 */

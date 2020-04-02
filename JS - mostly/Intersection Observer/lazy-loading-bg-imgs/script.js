@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const lazyBgs = document.querySelectorAll(".lazy-background");
     
     if ("IntersectionObserver" in window) {
-        
-        
-        
-        
+      
+      
+      
+      
     } else {
         // fallback code
     }

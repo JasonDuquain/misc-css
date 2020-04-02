@@ -1,5 +1,11 @@
 const boxes = document.querySelectorAll('.box');
 
+const scrollImations = (entries, observer) => {
+  
+}
+
+const options = { threshold: 1.0 }
+
 
 
 

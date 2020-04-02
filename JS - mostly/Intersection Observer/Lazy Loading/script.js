@@ -7,10 +7,12 @@ const config = {
     threshold: 0
 }
 
+let observer = new IntersectionObserver();
+
 
 
 function preloadImage(img) {
-    
+  
 }
 
 function _updateMonitoring() {

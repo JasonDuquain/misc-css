@@ -1,8 +1,9 @@
 const root = document.querySelector('#root');
 const target = document.querySelector('#target');
+
 const output = document.querySelector('#output pre');
 const options = {
-    
+  
 }
 
 function callback(entries) {
@@ -14,6 +15,8 @@ function clickHandler(e) {
 }
 
 document.querySelectorAll('#buttons button').forEach(btn => btn.addEventListener('click', clickHandler));
+
+
 
 
 

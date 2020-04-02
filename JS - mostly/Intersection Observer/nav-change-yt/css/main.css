@@ -90,8 +90,7 @@ header {
   border-color: var(--text);
 }
 
-.nav-scrolled {
-    
+.nav-scrolled { 
   position: fixed;
   top: 0;
   left: 0;
