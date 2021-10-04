@@ -1,0 +1,91 @@
+/* https://ishadeed.com/article/css-aspect-ratio/ */
+
+.card {
+	max-width: 260px;
+	margin: 2rem auto 0;
+}
+
+.card__thumb {
+	position: relative;
+	--ratio: 4/3;
+	aspect-ratio: var(--ratio);
+	transition: 0.4s ease-out;
+}
+.card__thumb img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.card__content {
+	padding: 1rem;
+	background-color: #e6e6e6;
+}
+.card__content h3 {
+	font-weight: bold;
+	font-size: 1.125rem;
+	margin-bottom: 0.25rem;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+form {
+	margin-top: 2rem;
+}
+
+fieldset {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	text-align: center;
+}
+
+legend {
+	margin-bottom: 1rem;
+}
+
+input:checked + label {
+	color: #fff;
+	background-color: #1b84c2;
+	box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+input + label {
+	display: inline-block;
+	min-width: 50px;
+	text-align: center;
+	padding: 6px 20px;
+	color: #696969;
+	border: 1px solid #d0d0d0;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+.sr-only {
+	clip: rect(0 0 0 0);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+body {
+	font-family: "system-ui";
+	line-height: 1.4;
+	padding: 1rem;
+	background-color: #f7f7f7;
+}
+
+* {
+	box-sizing: border-box;
+}
