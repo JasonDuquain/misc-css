@@ -1,156 +1,22 @@
-/*** CSS GRID ALTERNATIVE BELOW ORIGINAL STYLES ***/
-
-@import url(https://fonts.googleapis.com/css?family=Arapey:400italic);
-
-body {
-    background: #dedede;
-    -webkit-font-smoothing: antialiased;
-    min-width: 1200px;  
-}
-
-.grid {
-    padding: 60px;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.grid--item {
-    transition: all 0.5s;
-    position: relative;
-    margin-top: -90px;
-    margin-right: 5px;
-    margin-left: 5px;
-    width: calc(33.33% - 10px);
-    float: left;
-    overflow: hidden;
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-}
-
-.grid--item:before {
-    content: "";
-    display: block;
-    padding-top: 112.5%;
-}
-
-.grid--item:nth-child(1), .grid--item:nth-child(2) {
-    margin-top: 0;
-}
-
-.grid--item:nth-child(7n - 1), .grid--item:nth-child(1) {
-    margin-left: 185px;  
-}
-
-.img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-position: center center;
-    background-size: cover;
-    overflow: hidden; 
-}
-
-.img:before, .img:after {
-    content: '';
-    transition: opacity 0.5s;  
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-}
-
-.img:before {
-    background: rgba(128, 0, 128, 0.25);  
-}
-
-.img:after {
-    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5), transparent);  
-}
-
-.container {
-    transition: all 500ms;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.9);
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    will-change: transform;
-    backface-visibility: hidden;
-    opacity: 0;
-}
-
-h1,
-h2 {
-    font-family: 'Arapey';
-    font-style: italic;
-    font-weight: 400;  
-}
-
-h1 {
-    margin-top: 90px;
-    text-align: center;
-    font-size: 56px;
-    color: #242424; 
-}
-
-h2 {
-    font-size: 32px;  
-}
-
-h2::before, h2::after {
-    content: "";
-    display: inline-block;
-    margin: 0 0.5em;
-    width: .75em;
-    height: .03em;
-    background: turquoise;
-    vertical-align: middle;
-}
-
-.desc {
-    font-family: 'ATC Overlook';
-    margin: 1em 0 0;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 1.5;
-    color: turquoise;
-}
-
-.grid--item:hover .img:before,
-.grid--item:hover .img:after,
-.grid--item:hover .container {
-    opacity: 1;
-}
-
-.grid--item:hover .container {
-    transform: translate(-50%, -50%) scale(1);  
-}
-
-
-
-/*
+/** uses css grid and is responsive  **/
 
 @import url(https://fonts.googleapis.com/css?family=Arapey:400italic);
 
 body {
 	background: #dedede;
     -webkit-font-smoothing: antialiased;
-    min-width: 1200px;
+   max-width: 1200px; 
+   margin: 0 auto;
 }
 
 .grid {
-    padding: 60px;
-    margin: 0 auto;
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 15px;
+  padding: 0px;
+  margin: 0 auto;
+  
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 16px;
+  
 }
 
 .grid--item:nth-of-type(1) {
@@ -160,35 +26,35 @@ body {
 .grid--item:nth-of-type(2) {
     grid-column: 4 / 6
 }
-
+/**  389 X 389 margin is 25.7% of width **/ 
 .grid--item:nth-of-type(3) {
     grid-column: 1 / 3; 
-    margin-top: -90px;
-    margin-bottom: 90px;
+    margin-top: -8vw;
+    margin-bottom: 8vw;
 }
 
 .grid--item:nth-of-type(4) {
     grid-column: 3 / 5;
-    margin-top: -90px;
-    margin-bottom: 90px;
+    margin-top: -8vw;
+    margin-bottom: 8vw;
 }
 
 .grid--item:nth-of-type(5) {
     grid-column: 5 / 7;
-    margin-top: -90px;
-    margin-bottom: 90px;
+    margin-top: -8vw;
+    margin-bottom: 8vw;
 }
 
 .grid--item:nth-of-type(6) {
     grid-column: 2 / 4; 
-    margin-top: -180px;
-    margin-bottom: 180px;
+    margin-top: -16vw;
+    margin-bottom: 16vw;
 }
 
 .grid--item:nth-of-type(7) {
     grid-column: 4 / 6;
-    margin-top: -180px;
-    margin-bottom: 180px;
+    margin-top: -16vw;
+    margin-bottom: 16vw;
 }
 
 .grid--item {
@@ -196,15 +62,14 @@ body {
     position: relative;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
-
 .grid--item:before {
     content: "";  
     display: block;
-    padding-top: 112.5%;
+    padding-top: 100%;
 }
 
 div.img {
-    position: absolute;
+  position: absolute;
     top: 0;
     right: 0;
     left: 0;
@@ -222,7 +87,7 @@ div.img::before, .img::after {
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0;
+    opacity: 0;	
 }
 
 div.img::before {
@@ -245,10 +110,10 @@ div.img::after {
     will-change: transform;
     backface-visibility: hidden;
     opacity: 0;
+    padding: 0 5px; /* override container style in the helpers.css file (the css reset) */
 }
 
-h1,
-h2 {
+h1, h2 {
     font-family: 'Arapey';
     font-style: italic;
     font-weight: 400;  
@@ -257,12 +122,12 @@ h2 {
 h1 {
     margin-top: 90px;
     text-align: center;
-    font-size: 56px;
+    font-size: 6vw;
     color: #242424;  
 }
 
 h2 {
-	font-size: 32px; 
+	font-size: 3vw; 
 }
 
 h2::before, h2::after {
@@ -272,29 +137,26 @@ h2::before, h2::after {
     width: .75em;
     height: .03em;
     background: turquoise;
-    vertical-align: middle;  
+    vertical-align: middle; 
 }
 
 .desc {
+  font-size: 1.5vw;
     font-family: 'ATC Overlook';
     margin: 1em 0 0;
     letter-spacing: .1em;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1.5;
-    color: turquoise;    
+    color: turquoise; 
 }
 
 .grid--item:hover .img:before,
 .grid--item:hover .img:after,
 .grid--item:hover .container {
-    opacity: 1;
+  opacity: 1;
 }
 
 .grid--item:hover .container {
-    transform: translate(-50%, -50%) scale(1);  
+  transform: translate(-50%, -50%) scale(1);  
 }
-
-
-*/
-

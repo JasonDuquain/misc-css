@@ -7,18 +7,20 @@
 }
 
 .progress {
-    
+  
 }
 
 .progress > li {
     font-family: Lato;
     color: #93A2AC;
     
+  
 }
 
 .progress > li:before {
     font-weight: 400;
     
+  
 }
 
 /*
@@ -41,7 +43,7 @@
 }
 
 .progress svg {
-    
+   
 }
 
 .progress svg:nth-child(2) {

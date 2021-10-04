@@ -14,6 +14,16 @@
                 -webkit-clip-path: url(#svgPath);
                 clip-path: url(#svgPath);
             }
+          
+          #svgPath {
+            /* doesnt work here or on circles */
+            transform-origin: center center;
+          }
+          
+          #svgPath circle {
+            transform: scale(3);
+            
+          }
             
         </style>
         <img class="svg-clipped" src="flowers.jpg" alt="Cherry Blossoms.">
@@ -45,5 +55,48 @@
                 </clipPath>
             </defs>
         </svg>
+        
+        <input type="button" value="big" class="hay" />
+         <input type="button" value="small" />
+        
+        <script>
+          
+          var circles = document.querySelectorAll('circle');
+          
+          
+
+      
+      function circle(delta){
+    if (!delta){
+        return false;
+    }
+    else {
+        
+            changeBy = 10;
+        if (delta == 'big'){
+            circles[0].setAttribute('r',parseInt(circles[0].getAttribute('r'),10) + changeBy);
+            circles[1].setAttribute('r',parseInt(circles[1].getAttribute('r'),10) + changeBy);
+        }
+        else if (delta == 'small'){
+            circles[0].setAttribute('r',parseInt(circles[0].getAttribute('r'),10) - changeBy);
+            circles[1].setAttribute('r',parseInt(circles[1].getAttribute('r'),10) - changeBy);
+        }
+    }
+}
+
+let input = document.querySelector('.hay');
+ input.addEventListener('click', (e) => {
+   circles.forEach((el, idx) => {
+     circle('big');
+   })
+ })         
+          
+          
+      
+      
+      
+      </script>
+        
+        
     </body>
 </html>

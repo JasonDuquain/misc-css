@@ -19,7 +19,6 @@
     app.count = minimum;
     app.enableApp = true;
 
-    
     app.init = function() {
         
     }

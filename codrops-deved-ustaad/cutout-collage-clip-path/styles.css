@@ -24,27 +24,31 @@ html {
 }
 
 .site__header > * {
-    
+    padding-bottom: .625rem;
 }
 
 .site__nav-list {
     list-style-type: none;
+    
 }
 
 .site__nav {
-    
+    padding-bottom: 0;
 }
 
 .site__nav-link {
     text-decoration: none;
+    display: block;
+    color: #FFF;
+    padding-bottom: .625rem;
 }
 
 .site__nav-list li:last-child .site__nav-link {
-    
+    padding-bottom: 0;
 }
 
 .block {
-    
+    display: block;
 }
 
 .main {
@@ -56,12 +60,13 @@ html {
 }
 
 .heading {
-    
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 40rem) {
     .heading {
-        
+         
     }
 }
 

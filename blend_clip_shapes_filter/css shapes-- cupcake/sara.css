@@ -12,12 +12,11 @@ body {
 }
 
 .container {
-    
+  
 }
 
 .element {
-    background: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/clip-path/cupcakes.jpg) no-repeat -100px 0/cover;
-    
+  background: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/clip-path/cupcakes.jpg) no-repeat -100px 0/cover;
 }
 
 p, h1, h3 {

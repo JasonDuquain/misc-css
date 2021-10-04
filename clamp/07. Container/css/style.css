@@ -1,0 +1,24 @@
+.wrapper {
+	background: #ccc;
+	max-width: min(80%, 780px);
+
+	/* ALTERNATIVE TO min
+	max-width: 780px;
+	width: 80%;
+	*/
+	height: 350px;
+	margin: 1rem auto;
+}
+
+body {
+	font-family: "Arial";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	/* doesnt work */
+	background: hsla(214, max((10vw + 20%), 84%), 61%, 1);
+}
+
+* {
+	box-sizing: border-box;
+}

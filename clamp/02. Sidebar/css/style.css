@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  min-height: 100vh; 
+}
+  
+aside {
+  background: #ccc;
+  flex-basis: max(30vw, 150px);
+}
+
+main {
+  background: #eee;
+  flex-grow: 1;
+}
+
+body {
+font-family: "Arial";
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+box-sizing: border-box;
+}
+
+strong {
+font-weight: bold;
+}
+
+
+

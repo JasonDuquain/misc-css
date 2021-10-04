@@ -1,0 +1,32 @@
+.wrapper {
+    max-width: 700px;
+    margin: 1rem auto;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+    text-align: center;
+  }
+  
+  .wrapper h2 {
+    font-size: clamp(16px, (1rem + 5vw), 50px);
+    font-weight: bold;
+  }
+  
+  body {
+    font-family: "Arial";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+
+
+

@@ -1,0 +1,40 @@
+.wrapper {
+    margin: 1rem auto;
+    text-align: center;
+  }
+  
+  .wrapper h2 {
+    position: relative;
+    font-size: max(16px, min(10vw, 30px));
+    font-weight: bold;
+    margin-bottom: max(3vw, 4px);
+  }
+  
+  .wrapper h2:before {
+    content: attr(data-test);
+    display: block;
+    opacity: 0.05;
+    font-size: max(13vw, 50px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -2vw;
+  }
+  
+  body {
+    font-family: "Arial";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+
+
+
