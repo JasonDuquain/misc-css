@@ -6,7 +6,6 @@ article  {
 
 .title,.image  {
 	position: sticky;
-	position: -webkit-sticky;
 	z-index: -1;
 	width: 50px;
 }

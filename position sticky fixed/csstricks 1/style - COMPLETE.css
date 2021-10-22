@@ -8,7 +8,6 @@ article {
 }
 
 .category, .title, .footer {
-    position: -webkit-sticky;
     position: sticky;
     height: 50px;
 }

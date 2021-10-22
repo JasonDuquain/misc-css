@@ -16,12 +16,6 @@ section {
     border: 1px solid red;
 }
 
-@media screen and (min-width: 35rem) {
-  section {
-    flex-direction: row;
-  }
-}
-
 section > * {
   flex: 1;
 }
@@ -37,14 +31,20 @@ article p {
 }
 
 @media screen and (min-width: 35rem) {
+  section {
+    flex-direction: row;
+  }
+
+  article p:not(:last-of-type) {
+    min-height: 90vh;
+  }
+
   article p {
     margin: 0;
   }
-}
 
-@media screen and (min-width: 35rem) {
-  article p:not(:last-of-type) {
-    min-height: 90vh;
+  figure {
+    position: sticky;
   }
 }
 
@@ -58,11 +58,4 @@ figure {
   width: 100%;
   justify-content: center;
   top: 3rem;
-}
-
-@media screen and (min-width: 35rem) {
-  figure {
-    position: -webkit-sticky;
-    position: sticky;
-  }
 }

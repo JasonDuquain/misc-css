@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - GSAP Flip Plugin Demo</title>
+  <link href='//fonts.googleapis.com/css?family=Signika+Negative:300,400' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+<h1>GSAP Flip Plugin Demo</h1>
+
+<section class="width-height">
+	<div class="left">
+		<h2>Width/Height (default)</h2>
+		<div class="container1">
+			<div class="box">
+				<h2>Card Title</h2>
+				<p>Animates the width and height of the element, along with x and y.. If 'scale: true' then it scales with a transform</p>
+			</div>
+		</div>
+		<button class="button btn--wh">FLIP w/h</button>
+		<button class="button btn--scale">FLIP scale</button>
+	</div>
+	<div class="right">
+		<div class="container2"></div>
+	</div>
+</section>
+
+<section class="swap-elements">
+	<div class="left">
+		<h2>Swap Elements</h2>
+		<div class="container1">
+			<img class="box" src="https://placehold.co/300x300">
+		</div>
+		<button class="btn--swap">FLIP</button>
+	</div>
+	<div class="right">
+		<div class="container2"></div>
+	</div>
+</section>
+
+<script src="gsap.min.js"></script>
+<script src="Flip.min.js"></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>

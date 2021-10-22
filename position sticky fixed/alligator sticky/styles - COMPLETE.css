@@ -17,7 +17,7 @@
 /* use the -webkit-sticky vendor prefix for it to work in Safari */
 
 /* It’s important that you set a point for the element to become sticky using either of the top, bottom, left or right properties, depending on which direction the user will scroll. Notice how sticky-positioned elements are only sticky within their parent element.*/
-.pirate, .police, .doctor {
+.item {
     position: -webkit-sticky;
     position: sticky;
 }
