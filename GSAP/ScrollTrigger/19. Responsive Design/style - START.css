@@ -54,7 +54,7 @@ body {
 }
 
 .cols-2:nth-of-type(odd) {
-  flex-direction:row-reverse;
+  
 }
 
 .photo { 
@@ -81,7 +81,7 @@ body {
   background-image:url(https://images.pexels.com/photos/545968/pexels-photo-545968.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .cols-2 {
     flex-direction: column;
   }
@@ -111,4 +111,4 @@ body {
   .photo {
     min-height: 40vh;
   }
-}
+} */
