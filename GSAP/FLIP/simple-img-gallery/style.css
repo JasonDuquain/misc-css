@@ -1,0 +1,84 @@
+.cases-block {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 58px;
+  margin: 114px auto 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.grid {
+  position: relatve;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 36px;
+}
+
+img {
+  z-index: -1;
+}
+
+.grid > div {
+  height: 212px;
+}
+
+.grid > div:nth-child(1) {
+  grid-column: span 2 / auto;
+}
+
+.grid > div:nth-child(2) {
+  grid-row: span 2 / auto;
+}
+
+.grid > div:nth-child(1),
+.grid > div:nth-child(3) {
+  grid-row: span 4 / auto;
+}
+
+.grid > div:nth-child(4) {
+  grid-row: span 3 / auto;
+}
+.grid > div:nth-child(8) {
+  grid-column: span 4 / auto;
+}
+
+.grid > div:nth-child(1),
+.grid > div:nth-child(3),
+.grid > div:nth-child(4) {
+  height: 460px;
+}
+
+.grid > div:nth-child(8) {
+  text-align: right;
+  height: auto;
+}
+
+.grid > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  height: 212px;
+  z-index: 1;
+  position: relative;
+}
+
+.grid > div:nth-child(1) img,
+.grid > div:nth-child(3) img,
+.grid > div:nth-child(4) img {
+  height: 460px;
+}
+
+.grid > div img.full-size {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: 2;
+}
