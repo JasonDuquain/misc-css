@@ -16,11 +16,6 @@ gsap.to(".panel:not(:last-child)", {
 //give each panel a descending Zindex
 gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});
 
-/* START
-
-gsap.registerPlugin(ScrollTrigger);
-
-*/
 
 /* COMPLETE
 
@@ -41,5 +36,12 @@ gsap.to(".panel:not(:last-child)", {
 
 //give each panel a descending Zindex
 gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});
+
+*/
+
+
+/* START
+
+gsap.registerPlugin(ScrollTrigger);
 
 */

@@ -1,17 +1,6 @@
+
 gsap.defaults({ease:"none"})
 
-let tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".carWrapper",
-    start: "bottom 100%",
-    end: "bottom 0%",
-    scrub: 0.5,
-    markers: true
-  }
-})
-.to("#car", { duration: 1, y: "-=180" })
-.to("#road", { duration: 1, y: "+=180" }, 0)
-.to("#trees", { duration: 1, y: "+=250" }, 0)
 
 /* START
 

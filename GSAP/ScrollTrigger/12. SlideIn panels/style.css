@@ -10,5 +10,13 @@
 }
 
 .panel.description {
-  position: relative;
+  position: relative; 
 }
+
+/* in external css:
+.panel {
+    width: 100%;
+    height: 100%;
+    ...
+}
+*/

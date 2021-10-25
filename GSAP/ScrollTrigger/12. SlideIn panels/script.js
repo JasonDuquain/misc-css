@@ -2,30 +2,19 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.defaults({ease: "none", duration: 2});
 
 const tl = gsap.timeline();
-tl.from(".orange", { xPercent: -100 })
-.from(".purple", { xPercent: 100 })
-.from(".green", { yPercent: -100 })
+tl.from(".orange", {xPercent: -100})
+  .from(".purple", {xPercent: 100})
+  .from(".green", {yPercent: -100});
 
-ScrollTrigger.create({
-  animation: tl,
-  trigger: "#container",
-  start: "top top",
-  end: "+=4000",
-  scrub: true,
-  pin: true,
-  anticipatePin: true,
-  markers: true
-})
-
-
-/* START
-
-gsap.registerPlugin(ScrollTrigger);
-gsap.defaults({ease: "none", duration: 2});
-
-const tl = gsap.timeline();
-
-*/
+  ScrollTrigger.create({
+    animation: tl,
+    trigger: "#container",
+    start: "top top",
+    end: "+=4000", 
+    scrub: true,
+    pin: true,
+    anticipatePin: 1
+  });
 
 /* COMPLETE
 
@@ -48,5 +37,15 @@ ScrollTrigger.create({
   pin: true,
   anticipatePin: 1
 });
+
+*/
+
+
+/* START
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.defaults({ease: "none", duration: 2});
+
+const tl = gsap.timeline();
 
 */

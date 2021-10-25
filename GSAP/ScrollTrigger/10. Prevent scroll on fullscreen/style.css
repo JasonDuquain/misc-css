@@ -1,4 +1,4 @@
-/* make sure .moreContent does not have display: none at start */
+/* make sure .moreContent (at bottom) does not have display: none at start */
 * {
   position: relative;
   box-sizing: border-box;
