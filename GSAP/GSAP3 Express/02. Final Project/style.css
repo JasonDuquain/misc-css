@@ -6,6 +6,7 @@ body {
   align-items: center;
   height: 100vh;
 }
+
 #demo {
   /**make sure this is disabled at the start - only enable it on the last vid (remove FOUC) **/
   /* visibility: hidden; */

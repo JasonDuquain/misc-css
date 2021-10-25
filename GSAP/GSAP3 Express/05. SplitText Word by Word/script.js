@@ -1,3 +1,4 @@
+gsap.registerPlugin(GSDevTools, SplitText)
 let split
 let animation = gsap.timeline({})
 

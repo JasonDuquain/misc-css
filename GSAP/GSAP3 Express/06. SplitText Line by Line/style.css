@@ -13,6 +13,7 @@ body {
 	overflow:hidden;
 	align-items:center;
 }
+
 .wrapper {
 	height:100%;
 	display:flex;
@@ -22,13 +23,13 @@ body {
 	perspective: 400px;
 }
 
-
 p {
 	font-size:36px;
 }
 
 button {
-	position:fixed; top:10px;
+	position:fixed; 
+	top:10px;
 }
 
 body {
