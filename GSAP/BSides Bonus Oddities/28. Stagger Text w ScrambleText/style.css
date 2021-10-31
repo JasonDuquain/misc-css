@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+html, body {
+	width:100%;
+	height:90%;
+	font-family: 'Inconsolata', monospaced;
+	margin:0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+	background-color: rgba(0,0,0,.85);
+}
+
+li {
+	list-style-type:none;
+	font-size:28px;
+	line-height:50px;
+	font-weight:300;
+	margin:0;
+	color:#ddd;
+
+	/* remove the opacity declaration at the start */
+	
+}
+
+.old {
+	color:#ccc;
+	padding:10px;
+	background:#555;
+}
+
+.new {
+	color:#c3c315;
+	padding:10px;
+	background:black;
+}
+
+
