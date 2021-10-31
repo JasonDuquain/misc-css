@@ -1,0 +1,15 @@
+body {
+
+  display: flex;
+  height: 100vh;
+
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 96vmin;
+  height: 96vmin;
+}

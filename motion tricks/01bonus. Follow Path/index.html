@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Follow path then tween to new path</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<svg id="demo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <title>Follow two paths</title>
+  <rect width="1200" height="600"/>
+ 
+  <path id="path1" d="M169.2,107c-.71,70.36,47.26,138.58,113.71,161.71s146.42-.56,189.55-56.15c17.44-22.48,29-49,45.37-72.22s40-44.08,68.32-46.44c24.27-2,47.89,10,66,26.36s31.74,36.83,46.67,56.07c25.95,33.43,56.77,64,94.37,83.42s82.7,26.77,122.9,13.54,73.74-49.21,77.86-91.33" fill="none" stroke="#fff" stroke-linecap="round" linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+  <path id="path2" d="M160.52,479.74a70.54,70.54,0,0,1,83.91-79.19c45.77,9.34,78.19,62.37,124.72,58.27,39.37-3.46,71.46-48.28,109.55-37.71,22.69,6.3,38.91,31.48,62.44,30.69,23.3-.77,38.64-26.85,61.55-31.12,34.13-6.35,65.44,37.84,97.88,25.48,17-6.48,26.89-27,44.85-29.91,22.79-3.65,38.16,22.45,58.9,32.57,19.76,9.64,43.55,3.9,63.57-5.19s39-21.46,60.63-25.34,47.7,4,55.65,24.49" linejoin="round" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+  <circle id="target" cx="25" cy="25" r="25" fill="#29abe2"/>
+</svg>
+
+<script src="gsap.min.js"></script>
+<script src="DrawSVGPlugin.min.js"></script>
+<script src="MotionPathPlugin.min.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
