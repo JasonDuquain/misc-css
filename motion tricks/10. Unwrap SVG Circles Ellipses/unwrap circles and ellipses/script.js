@@ -4,19 +4,17 @@ const mainEase = "sine.inOut";
 const master = gsap.timeline({ repeat: -1, yoyo: true, repeatDelay: 1 });
 const svgns = "http://www.w3.org/2000/svg";
 const demo = document.querySelector("svg");
-const strokeWidth = 4;
+const strokeWidth = 6;
 const strokeColor = "#5cceee";
-let paths = gsap.utils.toArray("path");
 
-console.log(paths)
-
-function unroll(target) {
-  let xPos = MotionPathPlugin.getRawPath(target)[0][0];
-  let yPos = MotionPathPlugin.getRawPath(target)[0][1];
-  let length = DrawSVGPlugin.getLength(target);
+function unwrap(target1, target2) {
+  let start = MotionPathPlugin.getRawPath(target1)[0];
+  let xPos = start[0];
+  let yPos = start[1]
+  let length = DrawSVGPlugin.getLength(target1);
   let lineTarget = document.createElementNS(svgns, "line");
   demo.appendChild(lineTarget);
-  gsap.set([lineTarget, target], {
+  gsap.set([lineTarget, target1, target2], {
     stroke: strokeColor,
     strokeWidth: strokeWidth
   });
@@ -28,13 +26,14 @@ function unroll(target) {
     attr: { x1: xPos, x2: xPos, y1: yPos, y2: yPos }
   });
 
-  tl.to(target, { drawSVG: 0, x: length }, 0);
-  tl.to(lineTarget, { attr: { x2: "+=" + length } }, 0);
+  tl.to(target2, { drawSVG: 0, x: length }, 0);
+  tl.to(target1, { drawSVG: 0, x: -length }, 0);
+  tl.to(lineTarget, { attr: { x1: "-=" + length, x2: "+=" + length } }, 0);
 
   return tl;
 }
 
-paths.forEach((obj, i) => {
-  master.add(unroll(obj), i*0.1);
-  // master.addPause(0.6)
-});
+
+master.add(unwrap("#circleLeft", "#circleRight"), 0);
+master.add(unwrap("#ovalLeft", "#ovalRight"), 0);
+master.add(unwrap("#eggLeft", "#eggRight"), 0);

@@ -6,6 +6,7 @@ const targets = document.querySelector("#targets");
 // 820... 6 * 20 = 120... 50 * 2 = 100... 100 * 7 = 700... 700 + 120 = 820
 const svgWidth = radius * 2 * circles + (circles - 1) * spacing;
 
+
 /* COMPLETE
 
 const svg = document.querySelector("svg");

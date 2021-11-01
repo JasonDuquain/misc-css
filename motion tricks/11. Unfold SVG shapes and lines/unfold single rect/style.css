@@ -2,6 +2,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
   height: 100vh;
+  background: #000;
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
@@ -11,11 +12,5 @@ body {
 svg {
   width: 90vw;
   height: auto;
-}
-
-text {
-  font-size: 24px;
-  fill: white;
-  text-anchor: middle;
-  dominant-baseline: middle;
+  overflow: visible;
 }
