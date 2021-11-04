@@ -1,5 +1,6 @@
 gsap.registerPlugin(Flip);
 
+let scale = false;
 // width / height or scale section
 const widthHeight = document.querySelector(".width-height");
 widthHeight.querySelector(".btn--wh").addEventListener("click", () => {

@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #ccc;
+  padding: 10px 24px;
+  font-family: "Signika Negative", sans-serif, Arial;
+  font-weight: 300;
+  overflow: hidden; /* otherwise, if the scrollbar disappears as a result of the tween, the viewport actually gets resized, meaning the measurements are different! */
+}
+
+.target {
+  background-color: rgba(85, 102, 205, 1);
+  width: 250px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  font-size: 30px;
+}
+
+.container {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 40%;
+  border: 2px solid red;
+  font-size: 30px;
+  text-align: center;
+  padding: 15px;
+  pointer-events: none;
+}
+.child1, .child2 {
+  font-size: 30px;
+  background-color: rgba(160, 50, 30, 0.5);
+  padding-top: 6%;
+  padding-bottom: 6%;
+  text-align: center;
+  margin: 15px 0;
+  line-height: 100%;
+}
+
+h1 {
+  color: white;
+  font-weight: 400;
+}
+
+.button {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}

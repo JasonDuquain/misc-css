@@ -1,0 +1,62 @@
+body, html{
+	width:95%;
+}
+
+* {
+	position:relative;
+}
+body {
+	margin-top:50px;
+	font-family:Kanit, Arial, sans-serif;
+}
+.progress {
+	width:100%;
+	height:10px;
+	background:grey;
+}
+
+.nav {
+	margin:10px;
+	padding:10px;
+}
+
+button {
+	margin:20px;
+	padding:15px;
+}
+
+.bar {
+	width:100%;
+	height:100%;
+	background:red;
+}
+
+.circles {
+	width:100%;
+	height:20px;
+	display:flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.circle {
+	width:1px;
+	height:20px;
+	background:black;
+	position:relative;
+}
+
+.circle div {
+	content:"";
+	width:30px;
+	height:30px;
+	position:absolute;
+	bottom:20px;
+	transform:translateX(-50%);
+	background:#39f; /*blue*/
+	border-radius:50%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:white;
+}

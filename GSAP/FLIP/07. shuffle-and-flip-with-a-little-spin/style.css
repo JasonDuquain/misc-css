@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body { text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.container1, .container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid #2342AB;
+  margin: 5px;
+  width: 90vw;
+  min-height: 96px;
+  position: relative;
+}
+.container1::before, .container2::before {
+  content: "container1";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #888;
+  font-size: 1.5em;
+}
+
+.container2::before {
+  content: "container2";
+}
+
+.container1 div, .container2 div {
+  width: 130px;
+  height: 80px;
+  margin: 6px 4px;
+  opacity: 0.8;
+  line-height: 80px;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+}
+
+.purple {
+  background-color: rgb(125, 70, 150)
+}
+
+.invisible {
+  display: none;
+}
+button {
+  font-size: 20px;
+  font-weight: 400;
+}
+.flipping {
+  border: 4px solid white;
+}

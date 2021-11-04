@@ -1,0 +1,208 @@
+/* make sure visibility: hidden is removed from .wrapper at the start */
+.card {
+	margin:20px;
+	perspective: 600px;
+}
+
+.faces {
+	width:180px;
+	height:220px;
+	transform-style: preserve-3d;
+}
+
+.face {
+	border: 8px solid white;
+	width:100%;
+	height:100%;
+	border-radius:20px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:absolute;
+   backface-visibility: hidden; 
+}
+
+.face > * {
+	backface-visibility: hidden; 
+}
+
+.front {
+	background:pink;
+	
+	transform:translateZ(1px);
+}
+
+.back {
+	background: repeating-linear-gradient(70deg, #606dbc, #606dbc 10px, #465298 10px, #456298 20px);
+	transform: rotateY(180deg);
+	color: white;
+}
+
+.loser {
+	
+}
+
+.loser .front {
+	background-color: black;
+}
+
+.loser img {
+	filter: saturate(0);
+}
+
+body, html {
+	width:100%;
+	height:100%;
+	font-family:Arial, sans-serif;
+	overflow:hidden;
+	margin:0;
+	font-size:20px;
+	background:#1d1d1d;
+}
+* {
+	position:relative;
+	box-sizing:border-box;
+}
+.wrapper {
+  visibility: hidden;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:90%;
+}
+
+/* START - part 1
+.card {
+	margin:20px;
+}
+
+.faces {
+	width:180px;
+	height:220px;
+}
+
+.face {
+	width:100%;
+	height:100%;
+	border-radius:20px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.face > * {
+	
+}
+
+.front {
+	background:pink;
+}
+
+.back {
+	background: lightblue;
+}
+
+.loser {
+	
+}
+
+.loser .front {
+	
+}
+
+.loser img {
+	
+}
+
+body, html {
+	width:100%;
+	height:100%;
+	font-family:Arial, sans-serif;
+	overflow:hidden;
+	margin:0;
+	font-size:20px;
+	background:#1d1d1d;
+}
+* {
+	position:relative;
+	box-sizing:border-box;
+}
+.wrapper {
+
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:90%;
+}
+*/
+
+
+/* COMPLETE - all parts
+.card {
+	margin:20px;
+	perspective: 600px;
+}
+
+.faces {
+	width:180px;
+	height:220px;
+	transform-style: preserve-3d;
+}
+
+.face {
+	border: 8px solid white;
+	width:100%;
+	height:100%;
+	border-radius:20px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:absolute;
+   backface-visibility: hidden; 
+}
+
+.face > * {
+	backface-visibility: hidden; 
+}
+
+.front {
+	background:pink;
+	
+	transform:translateZ(1px);
+}
+
+.back {
+	background: repeating-linear-gradient(70deg, #606dbc, #606dbc 10px, #465298 10px, #456298 20px);
+	transform: rotateY(180deg);
+}
+
+.loser .front {
+	background: black;
+}
+
+.loser img {
+	filter: saturate(0);
+}
+
+body, html {
+	width:100%;
+	height:100%;
+	font-family:Arial, sans-serif;
+	overflow:hidden;
+	margin:0;
+	font-size:20px;
+	background:#1d1d1d;
+}
+* {
+	position:relative;
+	box-sizing:border-box;
+}
+.wrapper {
+	visibility: hidden;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:90%;
+}
+
+*/

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Switch row/column - nested: true</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://codepen.io/GreenSock/pen/JGaKdQ.css'><link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="buttons-container">
+  <button id="column-btn"> switch column order</button>
+  <button id="row-btn">switch row order</button>
+</div>
+
+<div id="outer-container" class="flex-container">
+  <div id="inner-container1" class="inner-container flex-container column">
+    <p class="item item1">The Flip plugin lets you seamlessly transition between two states even if there are sweeping changes to the structure of the DOM like re-parenting of elements which would normally cause them to jump to a new position/size. Maybe it's a thumbnail image that should transition to fill the screen, or a grid of elements that get filtered and the remaining elements smoothly move to their new positions rather than suddenly jumping there. It makes complex UI transitions remarkably straightforward.</p>
+    <p class="item item2">All you need to do is get the initial state using Flip.getState(targets), make whatever changes you'd like to the DOM or styling, and then call Flip.from(state). GSAP will handle the rest!</p>
+  </div>
+
+  <div id="inner-container2" class="inner-container flex-container column">
+    <p class="item item3">"FLIP" is an animation technique that stands for "First", "Last", "Invert", "Play" and was coined by Paul Lewis.</p>
+    <p class="item item4">Now go "flip out" and have some fun with the new plugin.</p>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+<script src='https://assets.codepen.io/16327/Flip.min.js?v=12'></script><script  src="./script.js"></script>
+
+</body>
+</html>
