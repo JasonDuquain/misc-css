@@ -1,48 +1,40 @@
+
 const allCheckbox = document.querySelector('#all');
 const filters = gsap.utils.toArray('.filter');
 const items = gsap.utils.toArray('.item');
 
 function updateFilters() {
-    const state = Flip.getState(items);
+	const state = Flip.getState(items);
+	
+	const classes = filters.filter(checkbox => checkbox.checked).map(checkbox => "." + checkbox.id);
+	console.log(classes);
 
-    const classes = filters.filter(checkbox => checkbox.checked).map(checkbox => "." + checkbox.id);
-    console.log(classes);
+	const matches = classes.length ? gsap.utils.toArray(classes.join(",")) : classes;
+	console.log(matches);
 
-    const matches = classes.length ? gsap.utils.toArray(classes.join(",")) : classes;
-    console.log(matches);
+	// adjust the display property of each item ("none" for filtered ones, "inline-flex" for matching ones)
+	items.forEach(item => item.style.display = matches.indexOf(item) === -1 ? "none" : "inline-flex");
 
-    // adjust the display property of each item ("none" for filtered ones, "inline-flex" for matching ones)
-    items.forEach(item => item.style.display = matches.indexOf(item) === -1 ? "none" : "inline-flex");
+	Flip.from(state, { // animate from the previous state
+		duration: 0.7,
+		scale: true,
+		ease: "power1.inOut",
+		stagger: 0.08,
+		absolute: true,
+		onEnter: elements => gsap.fromTo(elements, { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 1 }),
+		onLeave: elements => gsap.to(elements, { opacity: 0, scale: 0, duration: 1 })
+	});
 
-    // animate from the previous state
-    Flip.from(state, {
-        duration: 0.5,
-        scale: true,
-        ease: "power1.inOut",
-        stagger: 0.08,
-        absolute: true,
-        onEnter: elements => gsap.fromTo(elements, {
-            opacity: 0,
-            scale: 0
-        }, {
-            opacity: 1,
-            scale: 1,
-            duration: .75
-        }),
-        onLeave: elements => gsap.to(elements, { opacity: 0, scale: 0, duration: 1 })
-    })
-
-    // Update the all checkbox:
-    allCheckbox.checked = matches.length === items.length;
+	// Update the "all" checkbox:
+	allCheckbox.checked = matches.length === items.length;
 }
 
 filters.forEach(btn => btn.addEventListener('click', updateFilters));
 
 allCheckbox.addEventListener('click', () => {
-    filters.forEach(checkbox => checkbox.checked = allCheckbox.checked);
-    updateFilters(); 
+	filters.forEach(checkbox => checkbox.checked = allCheckbox.checked);
+	updateFilters(); 
 });
-
 
 /* COMPLETE
 

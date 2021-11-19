@@ -1,8 +1,8 @@
 gsap.registerPlugin(Flip);
 
-const outerContainer = document.querySelector("#outer-container"),
-      containers = gsap.utils.toArray(".flex-container"),
-      movingContent = gsap.utils.toArray(".inner-container, .inner-container p");
+const outerContainer = document.querySelector("#outer-container");
+const containers = gsap.utils.toArray(".flex-container");
+const movingContent = gsap.utils.toArray(".inner-container, .inner-container p");
 
 function switchLayout(newLayout) {
   const state = Flip.getState(movingContent);
@@ -12,7 +12,7 @@ function switchLayout(newLayout) {
   containers.forEach(container => container.classList.toggle("reverse"));
   
   Flip.from(state, { 
-    absolute: true, // flips to position: absolute during the animation to work around flexbox challenges
+    absolute: true,
     nested: true,
     duration: 1,
     ease: "power1.inOut"
