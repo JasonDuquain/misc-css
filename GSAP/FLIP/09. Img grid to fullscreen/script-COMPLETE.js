@@ -9,6 +9,7 @@ document.body.appendChild(imageOverlay);
 // Handle the grid clicks
 gsap.utils.toArray('article').forEach(article => {
   const img = article.querySelector("img");
+  // the match returns an arr with the exact match and any capturing grp(s). So for the 1st img it returns: ["https://picsum.photos/id/237", "237"]
   const newSRC = img.src.match(/https:\/\/picsum.photos\/id\/([0-9]+)/)[0] + `/${innerWidth}/${imageHeight}`;
 
   article.addEventListener('click', () => {
@@ -33,7 +34,8 @@ gsap.utils.toArray('article').forEach(article => {
       // Setup unzoom
       addUnzoom();
     }, { once: true });
-    imageOverlay.src = newSRC;
+	
+    imageOverlay.src = newSRC; // this is the 1st thing that happens in the click handler and it will cause the load evt above to fire
   });
 });
 

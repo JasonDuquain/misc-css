@@ -3,6 +3,16 @@ gsap.registerPlugin(Flip);
 const group = document.querySelector(".group");
 
 document.querySelector(".button").addEventListener("click", () => {
+  
+});
+
+/* COMPLETE
+
+gsap.registerPlugin(Flip);
+
+const group = document.querySelector(".group");
+
+document.querySelector(".button").addEventListener("click", () => {
   const state = Flip.getState(".group, .box");
 
   group.classList.toggle("reorder");
@@ -14,5 +24,18 @@ document.querySelector(".button").addEventListener("click", () => {
     ease: "power1.inOut"
   });
 
+});
+
+*/
+
+/* START
+
+gsap.registerPlugin(Flip);
+
+const group = document.querySelector(".group");
+
+document.querySelector(".button").addEventListener("click", () => {
 
 });
+
+*/

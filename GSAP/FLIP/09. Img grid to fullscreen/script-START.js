@@ -21,7 +21,8 @@ gsap.utils.toArray('article').forEach(article => {
 
 // Update our variables on resize
 function handleResize() {
-  
+  heightDiff = (imageHeight - innerHeight) / 2;
+  midY = innerHeight / 2;
 }
 window.addEventListener("resize", handleResize);
 handleResize();

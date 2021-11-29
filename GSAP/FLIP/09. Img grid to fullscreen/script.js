@@ -9,26 +9,13 @@ document.body.appendChild(imageOverlay);
 // Handle the grid clicks
 gsap.utils.toArray('article').forEach(article => {
   const img = article.querySelector("img");
-  const newSRC = img.getAttribute("src").match(/https:\/\/picsum.photos\/id\/([0-9]+)/)[0] + `/${innerWidth}/${imageHeight}`;
+  
 
   article.addEventListener('click', () => {
     imageOverlay.addEventListener('load', function() {
-      lastImg = img;
-
-      gsap.set(imageOverlay, { clearProps: true });
-      gsap.set(imageOverlay, { display: 'block', yPercent: -50 });
-
-      const state = Flip.getState(imageOverlay);
-
-      Flip.fit(imageOverlay, lastImg, { scale: true });
-
-      Flip.to(state, { scale: true, duration: 1 });
-
-      addUnzoom()
-
+      
     }, { once: true });
-
-    imageOverlay.setAttribute("src", newSRC);
+    
   });
 });
 
@@ -43,14 +30,7 @@ handleResize();
 // The unzoom functionality
 function addUnzoom() {
   imageOverlay.addEventListener("click", () => {
-    const state = Flip.getState(imageOverlay);
-
-    Flip.fit(imageOverlay, lastImg, {scale: true});
     
-    Flip.from(state, {
-      scale: true,
-      onComplete: () => gsap.set(imageOverlay, { display: "none" })
-    });
     
   }, { once: true });
 }
