@@ -1,6 +1,6 @@
 gsap.registerPlugin(GSDevTools, SplitText)
 let split;
-let animation = gsap.timeline({repeat:10, yoyo:true, repeatDelay:0.3})
+let animation = gsap.timeline({ repeat: 2, yoyo: true, repeatDelay: 0.3 })
 
 function init() {
 	gsap.set(".wrapper", { autoAlpha: 1 })
@@ -13,7 +13,7 @@ window.addEventListener("load", init)
 
 gsap.registerPlugin(GSDevTools, SplitText)
 let split;
-let animation = gsap.timeline({repeat:2, yoyo:true, repeatDelay:0.3})
+let animation = gsap.timeline({ repeat: 2, yoyo: true, repeatDelay: 0.3 })
 
 function init() {
 	gsap.set(".wrapper", {autoAlpha:1})
@@ -30,10 +30,10 @@ window.addEventListener("load", init)
 
 gsap.registerPlugin(GSDevTools, SplitText)
 let split;
-let animation = gsap.timeline({repeat:10, yoyo:true, repeatDelay:0.3})
+let animation = gsap.timeline({ repeat: 2, yoyo: true, repeatDelay: 0.3 })
 
 function init() {
-	gsap.set(".wrapper", {autoAlpha:1})
+	gsap.set(".wrapper", { autoAlpha :1 })
 	
 }
 

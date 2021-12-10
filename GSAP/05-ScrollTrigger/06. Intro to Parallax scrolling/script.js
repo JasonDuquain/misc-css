@@ -1,4 +1,3 @@
-
 gsap.defaults({ ease: 'none', duration: 1 })
 
 let tl = gsap.timeline({

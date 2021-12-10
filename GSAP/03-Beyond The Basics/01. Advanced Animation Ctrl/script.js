@@ -6,57 +6,38 @@ let progressSlider = document.querySelector("#progressSlider");
 let time = document.querySelector("#time");
 let pause = document.querySelector("#pause");
 
-let animation = gsap.to('#herman', {
-  duration: 6,
-  ease: "none",
-  motionPath: {
-    path: '#motionpath',
-    align: '#herman'
-  },
-  onUpdate: animationUpdate,
-  onComplete: () => pause.innerHTML = 'play'
-});
+let animation;
 
 function animationUpdate() {
-  progressSlider.value = animation.progress();
-  time.innerHTML = this.progress().toFixed(2);
+  
 }
 
 progressSlider.addEventListener("input", function () {
-  animation.progress(this.value).pause();
+  
 });
 
 progressSlider.addEventListener("change", function () {
-  pause.innerHTML = 'play';
+  
 });
 
 pause.addEventListener('click', (e) => {
-  animation.paused(!animation.paused());
-  if (animation.progress() === 1) {
-    animation.restart();
-  }
-  pause.innerHTML = animation.paused() ? 'play' : 'pause';
-
+  
 });
 
 home.addEventListener('click', () => {
-  animation.pause()
-  gsap.to(animation, { progress: 0, duration: 1 })
+  
 });
 
 candy.addEventListener('click', () => {
-  animation.pause()
-  gsap.to(animation, { progress: 0.5, duration: 1 })
+  
 });
 
 dogpark.addEventListener('click', () => {
-  animation.pause()
-  gsap.to(animation, { progress: 0.9, duration: 1 })
+  
 });
 
 school.addEventListener('click', () => {
-  animation.pause()
-  gsap.to(animation, { progress: 1, duration: 1 })
+  
 });
 
 
@@ -138,6 +119,8 @@ let school = document.querySelector("#school");
 let progressSlider = document.querySelector("#progressSlider");
 let time = document.querySelector("#time");
 let pause = document.querySelector("#pause");
+
+let animation;
 
 function animationUpdate() {
   

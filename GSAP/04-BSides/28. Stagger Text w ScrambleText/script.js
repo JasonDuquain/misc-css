@@ -3,7 +3,6 @@ const items = gsap.utils.toArray("li")
 
 items.forEach((element, index) => {
 	
-
 })
 
 GSDevTools.create({ animation: mainTl });
@@ -41,7 +40,6 @@ const items = gsap.utils.toArray("li")
 
 items.forEach((element, index) => {
 	
-
 })
 
 GSDevTools.create({ animation: mainTl });

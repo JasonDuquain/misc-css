@@ -2,9 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.defaults({ease: "none", duration: 2});
 
 const tl = gsap.timeline();
-tl.from(".orange", {xPercent: -100})
-tl.from(".purple", {xPercent: 100})
-tl.from(".green", {yPercent: -100})
+
 
 
 /* COMPLETE

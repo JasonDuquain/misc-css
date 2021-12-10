@@ -1,3 +1,5 @@
+/* CODING STARTS AT 5:35 */
+
 // gsap.set("body", { scale: 0.3, transformOrigin: "left top" })
 
 const sections = gsap.utils.toArray(".cols-2")
@@ -15,12 +17,10 @@ sections.forEach((element, index) => {
 
 ScrollTrigger.matchMedia({
 	
-	// desktop
 	"(min-width: 601px)": function() {
 		
   }, 
   
-	// mobile
 	"(max-width: 600px)": function() {
 
   }
@@ -36,7 +36,6 @@ ScrollTrigger.saveStyles(".item");
 
 ScrollTrigger.matchMedia({
 	
-	// desktop
 	"(min-width: 601px)": function() {
 		sections.forEach((element, index) => {
       let items = element.querySelectorAll(".item")
@@ -62,7 +61,6 @@ ScrollTrigger.matchMedia({
     });
   }, 
   
-	// mobile
 	"(max-width: 600px)": function() {
     gsap.utils.toArray(".item").forEach((element, index) => {
      

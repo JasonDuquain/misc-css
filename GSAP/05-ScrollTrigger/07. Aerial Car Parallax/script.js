@@ -1,6 +1,9 @@
 
 gsap.defaults({ease:"none"})
 
+let tl = gsap.timeline({
+	
+})
 
 
 /* START

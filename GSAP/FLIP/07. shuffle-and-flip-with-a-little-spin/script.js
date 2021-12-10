@@ -6,6 +6,9 @@ const container2 = document.querySelector(".container2");
 const boxes = gsap.utils.toArray(".orange, .purple");
 
 document.querySelector("button").addEventListener("click", () => {
+  const state = Flip.getState(".orange, .purple"); 
+
+  const newContainer = boxes[0].parentNode === container1 ? container2 : container1;
   
 });
 

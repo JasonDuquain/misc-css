@@ -17,10 +17,10 @@ GSDevTools.create({animation:animation});
 
 /* COMPLETE
 gsap.registerEffect({
-	name:"clip",
-	defaults:{ duration:1, ease:"power1.in", direction:"full" },
-	extendTimeline:true,
-	effect:function(targets, config){
+	name: "clip",
+	defaults: { duration:1, ease:"power1.in", direction:"full" },
+	extendTimeline: true,
+	effect: function(targets, config){
 		let direction = {
 			top:"polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
 			bottom:"polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
@@ -32,10 +32,10 @@ gsap.registerEffect({
 			center:"polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)"
 		}
 		
-		//check first run -- GSAP can only animate to a clipPath setting if a clipPath already exists
+		//check first run - GSAP can only animate to a clipPath setting if a clipPath already exists
 		console.log(window.getComputedStyle(targets[0]).clipPath)
 
-		if(window.getComputedStyle(targets[0]).clipPath !="none"){
+		if (window.getComputedStyle(targets[0]).clipPath !="none") {
 			console.log("has a clipPath")
 		} else {
 			//first run
@@ -55,11 +55,11 @@ let animation = gsap.timeline()
 	.clip(target, {direction:"right"})
 	.clip(target) // was "full" but that is the default so no need to put it here
 	.clip(target, {direction:"left"})
-	.clip(target) // was "full" but that is the default so no need to put it here
+	.clip(target) // ...
 	.clip(target, {direction:"center"})
-	.clip(target) // was "full" but that is the default so no need to put it here
+	.clip(target) // ...
    .clip(target, {direction:"midX"})
-	.clip(target) // was "full" but that is the default so no need to put it here
+	.clip(target) // ...
 	.clip(target, {direction:"midY"})
 
 GSDevTools.create({animation:animation});

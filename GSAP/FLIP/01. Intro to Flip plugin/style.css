@@ -21,11 +21,17 @@ body {
   border-top: 2rem solid #C4C7C8;
   background-color: #fff;
   box-shadow: 0 0 5vw 0 rgba(0, 0, 0, 0.2);
-  border-radius: 0.5rem; 
+  border-radius: 0.5rem;
+  position: relative;
+  height: 70vh;
+  width: 65vh;
+  overflow: hidden;
 }
 
-body, section {
-  
+body, section { /* <section id="flip> */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #flip {
@@ -36,6 +42,7 @@ button {
   font-size: 21px;
   font-weight: 400;
   cursor: pointer;
+  border-radius: 1vmin;
   padding: 8px 16px;
   margin: 24px;
 }
@@ -50,6 +57,14 @@ a {
   background-color: black;
   text-align: center;
   color: #88ce02;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 16vmin;
+  width: 16vmin;
+  line-height: 16vmin;
+  font-size: 4.5vmin;
+  border-radius: 1vmin;
 }
 
 .newContainer {
@@ -57,6 +72,12 @@ a {
   color: white;
   padding: 1vmin;
   font-size: 3vmin;
+  width: 36vmin;
+  height: 36vmin;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(15vmin, -12vmin) scale(1.5) rotate(-30deg);
 }
 
 @media (max-width: 700px) {

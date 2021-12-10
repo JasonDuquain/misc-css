@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --circle-pct: 15%;
+    --circle-x-pct: calc(100% - var(--circle-pct))
+}
+
 body {
     width: 100%;
     height: 90vh;
@@ -72,30 +77,29 @@ img {
 
 @keyframes circle {
     0% {
-        clip-path: circle(15% at 85% 15%);    
+        clip-path: circle(var(--circle-pct) at var(--circle-x-pct) var(--circle-pct));
     }
 
     20% {
-        clip-path: circle(15% at 85% 85%);    
+        clip-path: circle(var(--circle-pct) at var(--circle-x-pct) var(--circle-x-pct));  
     }
 
     40% {
-        clip-path: circle(15% at 15% 85%);    
+        clip-path: circle(var(--circle-pct) at var(--circle-pct) var(--circle-x-pct));
     }
 
     60% {
-        clip-path: circle(15% at 15% 15%);    
+       clip-path: circle(var(--circle-pct) at var(--circle-pct) var(--circle-pct)); 
     }
 
     80% {
-        clip-path: circle(15%);    
+        clip-path: circle(var(--circle-pct));  
     }
 
     100% {
-        clip-path: circle(100%);    
+        clip-path: circle(100%);   
     }
 }
-
 @keyframes ellipse {
     0% {
         clip-path: ellipse(10% 15% at 85% 15%);    

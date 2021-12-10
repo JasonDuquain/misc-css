@@ -12,6 +12,7 @@ const main = gsap.timeline()
 GSDevTools.create({animation:main})
 
 
+
 /* COMPLETE
 
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin, GSDevTools);

@@ -10,7 +10,27 @@ body {
 
 .line {
   stroke: black
-}  
+}
+
+
+
+
+/* START
+
+body {
+	height: 400vh;
+  background: grey;
+  color: white;
+}
+
+.ball01 {
+  
+}
+
+.line {
+  stroke: black
+}
+
 
 /* COMPLETE
 

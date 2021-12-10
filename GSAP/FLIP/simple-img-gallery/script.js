@@ -15,9 +15,7 @@ gsap.registerPlugin(Flip);
 const thumbnails = gsap.utils.toArray(".thumbnail");
 
 thumbnails.forEach((thumbnail) => {
-  thumbnail.addEventListener("click", (e) => {
-    
-  });
+  
 });
 
 /* COMPLETE

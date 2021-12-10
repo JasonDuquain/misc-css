@@ -6,7 +6,6 @@ const movingContent = gsap.utils.toArray(".inner-container, .inner-container p")
 
 function switchLayout(newLayout) {
   
-
 };
 
 document.getElementById("column-btn").addEventListener("click", () => switchLayout("column"));

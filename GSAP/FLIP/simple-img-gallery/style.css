@@ -82,3 +82,7 @@ img {
   object-fit: cover;
   z-index: 2;
 }
+
+.isFlipping {
+  border: 3px solid red;
+}

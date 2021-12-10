@@ -1,67 +1,38 @@
 const inputs = document.querySelectorAll('.color-box > input');
-const root = document.documentElement;
 const range = document.querySelector('.booth-slider');
 
-//as slider range's value changes, do something 
 range.addEventListener('input', handleSlider);
 
-//as the value in the input changes, do something.
 inputs.forEach((el) => el.addEventListener('input', handleInputChange));
 
-function handleInputChange (e) {
-   
+function handleInputChange(e) {
+	
 }
 
-function handleSlider (e) {
-    
+function handleSlider(e) {
+	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* COMPLETE
 
 const inputs = document.querySelectorAll('.color-box > input');
-const root = document.documentElement;
 const range = document.querySelector('.booth-slider');
 
-//as slider range's value changes, do something 
 range.addEventListener('input', handleSlider);
 
-//as the value in the input changes, do something.
 inputs.forEach((el) => el.addEventListener('input', handleInputChange));
 
 function handleInputChange (e) {
-    let value = e.target.value;
-    let inputId = e.target.parentElement.getAttribute('id');
-    let inputBg = `--bg-${inputId}`;
-    root.style.setProperty(inputBg, value);
+  let inputId = e.target.parentElement.getAttribute("id");
+  let inputBg = `--bg-${inputId}`;
+  document.documentElement.style.setProperty(inputBg, e.target.value); 
 }
 
 function handleSlider (e) {
-    let value = e.target.value;
-    root.style.setProperty('--slider', value);
-    (value > 0) ? document.body.style.setProperty('background-color', 'var(--secondary-color)') : document.body.style.setProperty('background-color', 'var(--primary-color)'); 
+    document.documentElement.style.setProperty('--slider', e.target.value);
+    (e.target.value > 0) ? 
+    document.body.style.setProperty('background-color', 'var(--secondary-color)') : 
+    document.body.style.setProperty('background-color', 'var(--primary-color)'); 
 }
 
 

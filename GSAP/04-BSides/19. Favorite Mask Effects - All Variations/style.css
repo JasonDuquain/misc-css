@@ -28,7 +28,8 @@ body {
 }
 
 .logo, .tagline {
-	border:1px solid white;
+	overflow: hidden;
+	/* border:1px solid white; */
 }
 
 h1, h2 {

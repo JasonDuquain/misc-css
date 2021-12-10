@@ -1,3 +1,4 @@
+
 const allCheckbox = document.querySelector('#all');
 const filters = gsap.utils.toArray('.filter');
 const items = gsap.utils.toArray('.item');
@@ -20,7 +21,6 @@ function updateFilters() {
 allCheckbox.addEventListener('click', () => {
     
 });
-
 
 /* COMPLETE
 
@@ -60,7 +60,6 @@ allCheckbox.addEventListener('click', () => {
 });
 
 */
-
 
 /* START
 

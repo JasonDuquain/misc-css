@@ -1,3 +1,4 @@
+
 const tl = gsap.timeline()
 const img = document.querySelector("img")
 const headings = document.querySelector("h2")

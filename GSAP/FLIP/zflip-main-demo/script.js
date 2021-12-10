@@ -1,28 +1,46 @@
 gsap.registerPlugin(Flip);
 
-let layouts = ["final", "plain", "columns", "grid"],
-		container = document.querySelector(".container"),
-		curLayout = 0; // index of the current layout
+let layouts = ["final", "plain", "columns", "grid"];
+let container = document.querySelector(".container");
+let curLayout = 0; // index of the current layout
 
 function nextState() {
   
 }
 
 
+
+
+
+
+/* START
+
+gsap.registerPlugin(Flip);
+
+let layouts = ["final", "plain", "columns", "grid"];
+let container = document.querySelector(".container");
+let curLayout = 0; // index of the current layout
+
+function nextState() {
+  
+}
+
+*/
+
 /* COMPLETE
 
 gsap.registerPlugin(Flip);
 
-let layouts = ["final", "plain", "columns", "grid"],
-		container = document.querySelector(".container"),
-		curLayout = 0; // index of the current layout
+let layouts = ["final", "plain", "columns", "grid"];
+let container = document.querySelector(".container");
+let curLayout = 0; // index of the current layout
 
 function nextState() {
   const state = Flip.getState(".letter, .for, .gsap", {props: "color,backgroundColor", simple: true}); // capture current state
   
-  container.classList.remove(layouts[curLayout]); // remove old class
-  curLayout = (curLayout + 1) % layouts.length;   // increment (loop back to the start if at the end)
-  container.classList.add(layouts[curLayout]);    // add the new class
+  container.classList.remove(layouts[curLayout]); 
+  curLayout = (curLayout + 1) % layouts.length;  // increment (loop back to the start if at the end)
+  container.classList.add(layouts[curLayout]);  
 
   Flip.from(state, { // animate from the previous state
     absolute: true,
@@ -46,16 +64,3 @@ gsap.delayedCall(1, nextState);
 
 */
 
-/* START
-
-gsap.registerPlugin(Flip);
-
-let layouts = ["final", "plain", "columns", "grid"],
-		container = document.querySelector(".container"),
-		curLayout = 0; // index of the current layout
-
-function nextState() {
-  
-}
-
-*/

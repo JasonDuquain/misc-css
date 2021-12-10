@@ -15,10 +15,8 @@ let tl = gsap.timeline({scrollTrigger: {
   end: 'bottom 50%',
   markers: true,
   scrub: 1,
-  pin: true,
-  pinSpacing: true
+  pin: true
 }})
-
 .to("svg", {duration:duration, x:endX, ease:ease})
 .to("#wheel1, #wheel2", {duration:duration, rotation:rotation, transformOrigin:"50% 50%", ease:ease}, 0)
 

@@ -14,7 +14,7 @@ div.barclock{
     overflow: hidden;
 }
 
-div.barclock:after{
+div.barclock::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -24,17 +24,17 @@ div.barclock:after{
     z-index: -1;
 }
 
-div#hour:after{
+div#hour::after {
     background: #00b9f1;
     transform: translateX(calc(var(--hourpct) * 100%));
 }
 
-div#minute:after{
+div#minute::after {
     background: #f9c00c;
     transform: translateX(calc(var(--minutepct) * 100%));
 }
 
-div#second:after{
+div#second::after {
     background: #75D701;
     transform: translateX(calc(var(--secondpct) * 100%)); 
 }

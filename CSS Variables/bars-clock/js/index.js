@@ -3,11 +3,20 @@ var minutebar = document.getElementById('minute')
 var secondbar = document.getElementById('second')
 
 setInterval(() => {
+    var today = new Date();
+    var curhour = today.getHours();
+    var curminute = today.getMinutes();
+    var cursecond = today.getSeconds();
+    console.log(curhour, curminute, cursecond, curhour / 24, curminute / 60);
     
 }, 1000);
 
 
 /* COMPLETE
+
+var hourbar = document.getElementById('hour')
+var minutebar = document.getElementById('minute')
+var secondbar = document.getElementById('second')
 
 setInterval(() => {
     var today = new Date();

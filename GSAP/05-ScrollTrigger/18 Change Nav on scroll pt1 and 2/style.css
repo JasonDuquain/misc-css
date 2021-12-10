@@ -31,7 +31,7 @@ body {
 	display:flex;
 	align-items:center;
 	flex-wrap:wrap;
-	/* height:100px; */
+	height:100px;
 }
 
 a {
@@ -39,6 +39,6 @@ a {
 	text-decoration:none;
 	color:black;
 	display:inline-block;
-	/* font-size:clamp(14px, 3vw, 30px); */
-	font-size: 1.7em;
+	font-size:clamp(14px, 3vw, 30px);
+	/* font-size: 1.7em; */
 }

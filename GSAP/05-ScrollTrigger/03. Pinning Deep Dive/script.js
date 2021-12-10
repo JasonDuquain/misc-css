@@ -17,8 +17,7 @@ gsap.to('.box', {
      trigger: ".box",
      start: "top 300px",
      end: "+=300",
-     markers: true,
-    pin: true
+     markers: true
    }
 })
 

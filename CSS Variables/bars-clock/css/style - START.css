@@ -4,7 +4,7 @@
     --secondpct: 0;    
 }
 
-div.barclock{
+div.barclock {
     font-weight: bold;
     border: 1px solid gray;
     text-transform: uppercase;
@@ -14,18 +14,18 @@ div.barclock{
     overflow: hidden;
 }
 
-div.barclock:after{
+div.barclock::after {
     content: '';
 }
 
-div#hour:after{
+div#hour::after {
     background: #00b9f1;
 }
 
-div#minute:after{
+div#minute::after {
     background: #f9c00c;
 }
 
-div#second:after{
+div#second::after {
     background: #75D701;
 }

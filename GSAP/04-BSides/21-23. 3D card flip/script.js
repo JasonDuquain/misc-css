@@ -9,6 +9,7 @@ GSDevTools.create({animation:animation})
 
 
 
+
 /* START - part 1
 // make sure to update this to ".faces" at 8:40 mark of video1
 let animation = gsap.to(".face", {rotationY:180, duration:2, ease:"power1.inOut"})
@@ -18,6 +19,7 @@ let animation = gsap.to(".face", {rotationY:180, duration:2, ease:"power1.inOut"
 //let parentCard = document.querySelector(".card");
 
 GSDevTools.create({animation:animation})
+
 */
 
 /* COMPLETE - all parts

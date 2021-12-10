@@ -13,6 +13,18 @@ let activeItem; // keeps track of which item is open (details)
 
 
 function showDetails(item) {
+
+
+  let onLoad = () => {
+
+  }
+
+  const data = item.dataset;
+	detailImage.addEventListener("load", onLoad);
+	detailImage.src = item.querySelector('img').src;
+	detailTitle.innerText = data.title;
+	detailSecondary.innerText = data.secondary;
+	detailDescription.innerText = data.text;
 	
 }
 

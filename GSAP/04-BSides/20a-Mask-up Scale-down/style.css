@@ -12,16 +12,13 @@ body {
 	justify-content:center;
 }
 
-.ad {
+.add {
 	display:flex;
 	align-items:center;
 	justify-content:center;
 	width:600px;
 	height:600px;
 	background:papayawhip;
-	/* shrink for video */
-	/* transform-origin:0 0;
-	transform:scale(0.7); */
 }
 
 .mask {
@@ -36,3 +33,4 @@ body {
 	width:550px;
 	height:550px;
 }
+

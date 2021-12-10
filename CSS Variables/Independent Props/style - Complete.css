@@ -1,0 +1,95 @@
+main {
+  --clip-play-state: running;
+  --color-play-state: running;
+  --which-shape-animation: reveal-shape;
+  --hue: 43;
+  
+  animation: var(--which-shape-animation) 1500ms 500ms infinite alternate ease-in-out both,
+    hue-adjust 3000ms 0ms infinite alternate ease-in-out;
+  animation-play-state: var(--clip-play-state), var(--color-play-state);
+  background: cyan;
+  background: radial-gradient(hsl(var(--hue), 62%, 52%), hsl(var(--hue), 92%, 42%));
+  width: 70vmin;
+  height: 70vmin;
+}
+
+@keyframes reveal-shape {
+  0% { clip-path: circle(0) }
+  100% { clip-path: circle(35vmin) }
+}
+
+@keyframes hue-adjust {
+  20% { filter: hue-rotate(50deg) }
+  40% { filter: hue-rotate(150deg) }
+  60% { filter: hue-rotate(200deg) }
+  80% { filter: hue-rotate(240deg) }
+  100% { filter: hue-rotate(320deg) }
+}
+
+@keyframes reveal-transform {
+  0% { 
+    transform: scale(0);
+  }
+}
+
+body, main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  height: 100vh;
+  color: hsl(23, 12%, 12%);
+  background: currentColor; 
+  overflow: hidden;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 12vmin;
+}
+
+body > p {
+  position: absolute;
+  color: #fcfdff;
+  bottom: 50%;
+  right: 50%;
+  z-index: -1;
+  transform: translate(50%,50%);
+}
+
+body > p:nth-of-type(1) {
+  transform: translate(50%,-50%);
+}
+
+body > p:nth-of-type(3) {
+  transform: translate(50%,150%);
+}
+
+form {
+  color: hsla(0,0%,100%,.7);
+  font-size: .8rem;
+  position: absolute;
+  bottom: .5rem;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+form div {
+  padding: .25rem 1rem;
+}
+
+label {
+  font-size: .8rem;
+  color: hsla(0,0%,100%,.7);
+  background: transparent;
+  border-radius: .3rem;
+  padding: .25rem;
+  width: 5rem;
+}
+
+label:hover, label:active {
+  background: hsla(0,0%,100%,.1);
+}

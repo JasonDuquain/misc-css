@@ -10,6 +10,9 @@ function init() {
 
 window.addEventListener('load', init);
 
+
+window.addEventListener('load', init);
+
 /*START
 
 gsap.registerPlugin(SplitText, GSDevTools)
