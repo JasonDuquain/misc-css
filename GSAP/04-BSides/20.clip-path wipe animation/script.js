@@ -1,9 +1,8 @@
-/* at 13:25 just watch and then he shows it at 14:45 but its hard to follow as he scrolls so just update it based on the COMPLETED code */
-
 let animation = gsap.timeline()
 
 
 GSDevTools.create({animation:animation});
+
 
 /* START
 

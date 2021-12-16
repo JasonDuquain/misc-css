@@ -1,0 +1,52 @@
+/* https://www.smashingmagazine.com/2018/09/css-shapes/ */
+
+body {
+  font: 1.2em/1.3 Helvetica, arial, sans-serif;
+}
+
+.content {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+/* .shape {
+  float: left;
+  shape-outside: url(tear.png);
+  shape-margin: 20px;
+} */
+
+
+/* .content::before {
+  content: "";
+  float: left;
+  width: 300px;
+  height: 300px;
+  shape-outside: url(tear.png);
+  shape-margin: 20px;
+} */
+
+
+/* .content::before {
+  content: "";
+  display: block;
+  width: 80%;
+  float: left;
+  height: 300px;
+  background: linear-gradient(150deg, rgba(0,212,255,1) 30%, rgba(9,9,121,0) 50%);
+  shape-outside: linear-gradient(150deg, rgba(0,212,255,1) 30%, rgba(9,9,121,0) 50%);
+  shape-image-threshold: .8;
+} */
+
+/* 
+.content::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  padding: 20px;
+  border: 10px solid #FC466B;
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  float: left;
+  
+}
+ */

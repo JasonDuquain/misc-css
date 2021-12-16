@@ -5,6 +5,7 @@ html {
 }
 
 body {
+	font-family: "Luna";
     color: #fff;
     margin: 0;
     padding: 0;
@@ -13,9 +14,7 @@ body {
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    font-family: "Luna";
 }
-
 
 header {
     box-sizing: border-box;

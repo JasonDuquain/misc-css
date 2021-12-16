@@ -24,7 +24,7 @@ ul {
 
 /* disable at start of vid */
 ul > * {
-  /* grid-area: 1 / 1; */
+  grid-area: 1 / 1;
 }
 
 li{

@@ -1,0 +1,55 @@
+.empty {
+  shape-outside: ellipse(100px 200px at 50% 70%);
+  width: 300px;
+  height: 600px;
+  float: left;
+  opacity: 0.2;
+}
+
+.box {
+  font-size: 1.2rem;
+  margin-top: 200px;
+  width: 230px;
+  height: 120px;
+  float: left;
+  shape-outside: content-box;
+}
+
+.box p {
+  text-align: center;
+  padding: 0.75rem;
+}
+
+img {
+  width: 100%;
+  float: right;
+  shape-outside: url(http://res.cloudinary.com/jduquain/image/upload/v1595182474/democrat.png);
+}
+
+section {
+  width: 90%;
+    max-width: 700px;
+    border: 1px solid #4D4E53;
+    border-radius: 2px;
+    padding: 10px 14px 10px 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.boxie {
+  text-align: justify;
+}
+
+.shape-left {   
+  margin: 0 20px 20px 0;
+  border-bottom-right-radius: 100%;
+  float: left;
+  shape-outside: margin-box;
+}
+
+.shape-right {   
+  margin: 0 20px 20px;
+  border-bottom-left-radius: 100%;
+  float: right;
+  shape-outside: margin-box;
+}
