@@ -1,0 +1,33 @@
+/* https://www.youtube.com/watch?v=pduKYraJul8&ab_channel=FrontendTips */
+
+body {
+  margin: 0;
+}
+section {
+  height: 300px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+section div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.parallax--one {
+  background-image: url(img/bmw1.jpg);
+}
+
+.parallax--two {
+  background-image: url(img/bmw2.jpg);
+}
+
+section[class^="parallax--"] {
+  height: 400px;
+  background-size: 120%;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}

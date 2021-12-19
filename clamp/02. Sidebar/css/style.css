@@ -5,6 +5,7 @@
   
 aside {
   background: #ccc;
+  
   flex-basis: max(30vw, 150px);
 }
 

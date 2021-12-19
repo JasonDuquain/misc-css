@@ -64,6 +64,7 @@ header .mountains > * {
     background-size: 105%;
 }
 
+/* black mtns on bottom */
 header .mountains .one {
     background-image: url('../img/mountains-1.svg');
     z-index: 0;
@@ -84,6 +85,7 @@ header .mountains .four {
     z-index: -3;
 }
 
+/* very light green mtns on top */
 header .mountains .five {
     background-image: url('../img/mountains-5.svg');
     z-index: -4;

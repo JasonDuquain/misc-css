@@ -1,0 +1,51 @@
+/* https://www.youtube.com/watch?v=kXJhqmORSXE&list=RDCMUC0abAX9cuVB0klLobCewq-g&start_radio=1&ab_channel=FrontendTips */
+
+section {
+  
+}
+
+section:not(.parallax) {
+  
+}
+
+section.parallax:nth-child(2) {
+  background-image: url('img/bmw1.jpg');
+}
+
+section.parallax:nth-child(4) {
+  background-image: url('img/bmw2.jpg');
+}
+
+section.parallax {
+  
+}
+
+/* COMPLETE
+
+section {
+  height: 400px;
+  position: relative;
+}
+
+section:not(.parallax) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 min(10vw, 20%);
+}
+
+section.parallax:nth-child(2) {
+  background-image: url('img/bmw1.jpg');
+}
+
+section.parallax:nth-child(4) {
+  background-image: url('img/bmw2.jpg');
+}
+
+section.parallax {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+*/

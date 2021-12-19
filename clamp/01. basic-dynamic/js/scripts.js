@@ -3,6 +3,12 @@ let widthEl = document.querySelector(".w-actual");
 let el = document.querySelector('.element');
 
 
+window.addEventListener("resize", () => {
+  
+})
+
+
+
 
 
 

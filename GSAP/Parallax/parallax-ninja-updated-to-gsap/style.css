@@ -48,8 +48,9 @@ p {
   line-height: 150%;
 }
 
+/* doesnt look like its needed */
 #hero, .layer {
-  min-height: 800px;
+  /* min-height: 800px; */
 }
 
 .layer-bg {

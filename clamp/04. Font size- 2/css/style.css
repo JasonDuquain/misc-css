@@ -5,20 +5,28 @@
   
   .wrapper h2 {
     position: relative;
-    font-size: max(16px, min(10vw, 30px));
     font-weight: bold;
     margin-bottom: max(3vw, 4px);
+
+    font-size: max(16px, min(10vw, 30px));
+
+    /* to keep it from getting to big this might be better */
+    /* font-size: clamp(14px, 4vw, 36px); */
   }
   
   .wrapper h2:before {
     content: attr(data-test);
     display: block;
     opacity: 0.05;
-    font-size: max(13vw, 50px);
     position: absolute;
     left: 0;
     right: 0;
     top: -2vw;
+    
+    font-size: max(13vw, 50px);
+
+    /* to keep it from getting to big this might be better */
+    /* font-size: clamp(50px, 13vw, 120px); */
   }
   
   body {

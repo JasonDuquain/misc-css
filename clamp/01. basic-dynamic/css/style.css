@@ -14,13 +14,14 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: clamp(200px, 50%, 600px);
 	padding: 1.5rem 1rem;
 	color: #fff;
 	background: #468eef;
 	border-radius: 5px;
 	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .13);
 	margin: 0 auto;
+	
+	width: clamp(200px, 50%, 600px);
 }
 
 .v-width {
