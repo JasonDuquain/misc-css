@@ -1,5 +1,5 @@
 body {
-  font: 20px/1.6 sans-serif;
+  font: clamp(14px, 3vw, 20px)/1.6 sans-serif;
 }
 
 .banner {
@@ -33,9 +33,9 @@ body {
 
 .skiing {
   position: absolute;
-  right: 40px;
+  right: clamp(20px, 4vw, 40px);
   bottom: 20px;
-  max-width: 150px;
+  max-width: clamp(100px, 23%, 150px);
 }
 
 .content {
@@ -52,15 +52,4 @@ body {
 
 .content p + p {
   margin-top: 25px;
-}
-
-@media screen and (max-width: 500px) {
-  body {
-    font-size: 14px;
-  }
-
-  .skiing {
-    right: 20px;
-    max-width: 100px;
-  }
 }

@@ -1,10 +1,10 @@
-body{
+body {
     background: navy url(img/deepsea.jpg) top center no-repeat fixed;
     background-size: cover;
     height: 2000px;
 }
 
-#bubbles1, #bubbles2, #fish{
+#bubbles1, #bubbles2, #fish {
     width: 100%;
     height: 100%;
     top: 0;
@@ -14,20 +14,18 @@ body{
     background: url(img/bubbles1.png) 5% 50% no-repeat;
 }
 
-#bubbles2{
+#bubbles2 {
     background: url(img/bubbles3.png) 95% 90% no-repeat;
 }
 
-#fish{
+#fish {
     left: -100%;
     background: url(img/fish.png) right 90% no-repeat;
 }
 
 
-/* ## CSS media queries. Smaller versions of bg images for small screen devices #### ***was max-device-width **/
-
-
-@media screen and (max-width: 860px){ 
+/* Smaller versions of bg images for small screen devices  **/
+@media screen and (max-width: 860px) { 
 
     body{
         background-image: url(img/deepsea_small.jpg);

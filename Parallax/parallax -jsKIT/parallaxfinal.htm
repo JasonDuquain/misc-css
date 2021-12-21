@@ -10,67 +10,7 @@
     <div id="bubbles2"></div>
     <div id="fish"></div>
 
-<script>
-
-    var bubble1 = document.getElementById('bubbles1')
-    var bubble2 = document.getElementById('bubbles2')
-    var fish = document.getElementById('fish')
-    
-    var scrollHeight = document.body.scrollHeight; // height of entire doc
-    var windowHeight = window.innerHeight; // height of browser window
-    
-    function parallaxBubbles() {
-        var scrollTop = window.pageYOffset; // get # of pixels doc has scrolled vertically
-        var scrollAmount = (scrollTop / (scrollHeight - windowHeight)) * 100; // get amount scrolled (in %)
-        //console.log(scrollAmount);
-        bubble1.style.top = bubble2.style.top = `-${scrollTop * .2}px`; // move bubble1 at 20% of scroll speed 
-        bubble2.style.top = `-${scrollTop * .5}px`; // move bubble1 at 50% of scroll speed   
-        //console.log(bubble1.style.top, bubble2.style.top);
-        fish.style.left = `${-100 + scrollAmount}%`;
-    }
-    
-    window.addEventListener('scroll', function() {
-        requestAnimationFrame(parallaxBubbles); // call parallaxbubbles() on next available screen repaint
-    });
-    
-    window.addEventListener('resize', function() {
-        var scrollAmount = (scrollTop / (scrollHeight - windowHeight)) * 100 ; // get amount scrolled (in %)
-        fish.style.left = `${-100 + scrollAmount}%`; // set position of fish in percentage (starts at -100%)
-    });
-    
-
-</script>
+<script src="script.js"></script>
 </body>
 </html>
 
-<!--<script>
-
-    window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || function(f) {setTimeout(f, 1000/60)}
-
-    var bubble1 = document.getElementById('bubbles1')
-    var bubble2 = document.getElementById('bubbles2')
-    var fish = document.getElementById('fish')
-    
-    var scrollHeight = document.body.scrollHeight; // height of entire doc
-    var windowHeight = window.innerHeight; // height of browser window
-    
-    function parallaxBubbles() {
-        var scrollTop = window.pageYOffset; // get # of pixels doc has scrolled vertically
-        var scrollAmount = (scrollTop / (scrollHeight - windowHeight)) * 100; // get amount scrolled (in %)
-        //console.log(scrollAmount);
-        bubble1.style.top = bubble2.style.top = `-${scrollTop * .2}px`; // move bubble1 at 20% of scroll speed 
-        bubble2.style.top = `-${scrollTop * .5}px`; // move bubble1 at 50% of scroll speed   
-        //console.log(bubble1.style.top, bubble2.style.top);
-        fish.style.left = `${-100 + scrollAmount}%`;
-    }
-    
-    window.addEventListener('scroll', function() {
-        requestAnimationFrame(parallaxBubbles); // call parallaxbubbles() on next available screen repaint
-    });
-    
-    window.addEventListener('resize', function() {
-        var scrollAmount = (scrollTop / (scrollHeight - windowHeight)) * 100 ; // get amount scrolled (in %)
-        fish.style.left = `${-100 + scrollAmount}%`; // set position of fish in percentage (starts at -100%)
-    });
-
-</script>-->

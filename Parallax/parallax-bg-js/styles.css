@@ -27,7 +27,7 @@ section div {
 
 section[class^="parallax--"] {
   height: 400px;
-  background-size: 120%;
+  background-size: 140%;
   background-position: center 0;
   background-repeat: no-repeat;
 }

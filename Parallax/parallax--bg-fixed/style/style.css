@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section.module h2 {
+    font-size: clamp(30px, 5vw, 46px);
+    margin-bottom: 40px;
+}
+
+section.module p {
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+section.module.content {
+    padding: 40px 0;
+}
+
+section.module.parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax h1 {
+    font-size: clamp(50px, 10vw, 160px);
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 600px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax-1 {
+    background-image: url("../img/gCanyon.jpg");
+}
+
+section.module.parallax-2 {
+    background-image: url("../img/rMountains.jpg");
+}
+
+section.module.parallax-3 {
+    background-image: url("../img/niagra.jpg");
+}
+
+
+

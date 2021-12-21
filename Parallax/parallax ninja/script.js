@@ -1,9 +1,9 @@
-// Tutorial: https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27
+// https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27
 
 
 window.addEventListener('scroll', (event) => {
   let depth, movement, translate3d;
-  let topDistance = this.scrollY;
+  let topDistance = this.pageYOffset || this.scrollY;
   let layers = document.querySelectorAll("[data-type='parallax']");
 
   for (let i = 0; i < layers.length; i++) {
@@ -16,7 +16,7 @@ window.addEventListener('scroll', (event) => {
 
 window.addEventListener('scroll', (event) => {
   let depth, movement, translate3d;
-  let topDistance = this.scrollY;
+  let topDistance = this.pageYOffset || this.scrollY;
   let layers = document.querySelectorAll("[data-type='parallax']");
 
   for (let i = 0; i < layers.length; i++) {

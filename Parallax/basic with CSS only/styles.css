@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: "Luna";
-    color: #fff;
+    color: red;
     margin: 0;
     padding: 0;
     
@@ -18,17 +18,13 @@ header {
 }
 
 header h1 {
-    
-}
-
-header, header::before {
-    
+      
 }
 
 header::before {
     position: absolute;
     content: "";
-    
+	background: url('https://unsplash.it/800/450?image=1011') no-repeat 50% 50% / cover;
 }
 
 header * {
