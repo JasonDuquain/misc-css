@@ -1,8 +1,7 @@
 /* https://www.youtube.com/watch?v=kXJhqmORSXE&list=RDCMUC0abAX9cuVB0klLobCewq-g&start_radio=1&ab_channel=FrontendTips */
 
 section {
-  height: 400px;
-  position: relative;
+  
 }
 
 section:not(.parallax) {

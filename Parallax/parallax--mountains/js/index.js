@@ -2,10 +2,10 @@
 let mountains = document.querySelectorAll(".mountains span");
 
 window.addEventListener('scroll', function(e) {
-   
+   let scrolled = window.pageYOffset || this.window.scrollY;
 
 	 mountains.forEach(mountain => {
-		  
+		
 	 })
   
 });
@@ -21,9 +21,8 @@ window.addEventListener('scroll', function(e) {
 
 		mountains.forEach(mountain => {
 			let speed = mountain.dataset.speed;
-			
-			mountain.style.bottom = `-${scrolled.toFixed(0) * speed}px`; 
-			//mountain.style.transform = `translateY(${scrolled.toFixed(0) * speed}px)`; also works
+			 
+			mountain.style.transform = `translateY(${scrolled.toFixed(0) * speed}px)`;
 		})
   
 });

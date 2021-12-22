@@ -1,36 +1,38 @@
 
 gsap.utils.toArray("section").forEach((section, i) => {
-  section.bg = section.querySelector(".bg"); 
+  let bg = section.querySelector("div.bg"); 
+  
+});
 
-  section.bg.style.backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
+/* COMPLETE
 
-  // Do the parallax effect on each section
+gsap.utils.toArray("section").forEach((section, i) => {
+  let bg = section.querySelector("div.bg"); 
+  bg.style.backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
+
   if (i) {
-    section.bg.style.backgroundPosition = `50% ${-innerHeight / 2}px`;
-
-    gsap.to(section.bg, {
+    bg.style.backgroundPosition = `50% ${-innerHeight / 2}px`;
+    gsap.to(bg, {
       backgroundPosition: `50% ${innerHeight / 2}px`,
       ease: "none",
       scrollTrigger: {
         trigger: section,
         scrub: true
       }
-    });
-  } 
-  
-  // the first image should be positioned against the top. Use px on the animating part to work with GSAP. 
-  else {
-    section.bg.style.backgroundPosition = "50% 0px"; 
-
-    gsap.to(section.bg, {
+    })
+  } else {
+    bg.style.backgroundPosition = "50% 0px";
+    gsap.to(bg, {
       backgroundPosition: `50% ${innerHeight / 2}px`,
       ease: "none",
       scrollTrigger: {
         trigger: section,
-        start: "top top", 
+        start: "top top",
         end: "bottom top",
         scrub: true
       }
-    });
+    })
   }
 });
+
+*/
