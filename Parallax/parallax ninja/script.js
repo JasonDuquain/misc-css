@@ -2,9 +2,9 @@
 
 
 window.addEventListener('scroll', (event) => {
-  let depth, movement, translate3d;
+  let depth;
   let topDistance = this.pageYOffset || this.scrollY;
-  let layers = document.querySelectorAll("[data-type='parallax']");
+  let layers = document.querySelectorAll("div[data-type='parallax']");
 
   for (let i = 0; i < layers.length; i++) {
     
@@ -15,14 +15,13 @@ window.addEventListener('scroll', (event) => {
 /* COMPLETE
 
 window.addEventListener('scroll', (event) => {
-  let depth, movement, translate3d;
+  let depth;
   let topDistance = this.pageYOffset || this.scrollY;
-  let layers = document.querySelectorAll("[data-type='parallax']");
+  let layers = document.querySelectorAll("div[data-type='parallax']");
 
   for (let i = 0; i < layers.length; i++) {
     depth = layers[i].getAttribute('data-depth');
-    movement = -(topDistance * depth);
-    layers[i].style.transform = `translate3d(0, ${movement}px, 0)`;
+    layers[i].style.transform = `translate3d(0, -${topDistance * depth}px, 0)`;
   }
 });
 

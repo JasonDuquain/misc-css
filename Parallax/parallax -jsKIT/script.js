@@ -5,7 +5,7 @@ var fish = document.getElementById('fish')
 var bodyHeight = Math.max(document.body.scrollHeight, document.body.clientHeight); 
 var windowHeight = window.innerHeight;
 
-function parallaxBubbles() {
+function parallax() {
     var scrollTop = window.pageYOffset || window.scrollY; 
 
     // using toFixed to avoid px values such as 24.954285124...remember that toFixed() returns a string!..so use Number() or parseInt()
@@ -13,16 +13,16 @@ function parallaxBubbles() {
 
     //console.log(scrollAmount);
 
-    bubble1.style.top = bubble2.style.top = `-${scrollTop * .2}px`; // move bubble1 at 20% of scroll speed 
-    bubble2.style.top = `-${scrollTop * .5}px`; // move bubble1 at 50% of scroll speed
+    //move bubble1 at 20% of scroll speed 
+    bubble1.style.transform = `translateY(-${scrollTop * .2}px)`;
+    // move bubble1 at 50% of scroll speed
+    bubble2.style.transform = `translateY(-${scrollTop * .5}px)`;
 
-    //console.log(bubble1.style.top, bubble2.style.top);
-
-    fish.style.left = `${-100 + scrollAmount}%`;
+    fish.style.transform = `translateX(${-100 + scrollAmount}%)`;
 }
 
 window.addEventListener('scroll', function() {
-    requestAnimationFrame(parallaxBubbles); // call parallaxbubbles() on next available screen repaint
+    requestAnimationFrame(parallax); // call parallax() on next available screen repaint
 });
 
 window.addEventListener('resize', function() {
@@ -40,7 +40,7 @@ var fish = document.getElementById('fish')
 var bodyHeight = Math.max(document.body.scrollHeight, document.body.clientHeight); 
 var windowHeight = window.innerHeight;
 
-function parallaxBubbles() {
+function parallax() {
     var scrollTop = window.pageYOffset || window.scrollY; 
 
     // using toFixed to avoid px values such as 24.954285124...remember that toFixed() returns a string!..so use Number() or parseInt()
@@ -48,16 +48,16 @@ function parallaxBubbles() {
 
     //console.log(scrollAmount);
 
-    bubble1.style.top = bubble2.style.top = `-${scrollTop * .2}px`; // move bubble1 at 20% of scroll speed 
-    bubble2.style.top = `-${scrollTop * .5}px`; // move bubble1 at 50% of scroll speed
+    //move bubble1 at 20% of scroll speed 
+    bubble1.style.transform = `translateY(-${scrollTop * .2}px)`;
+    // move bubble1 at 50% of scroll speed
+    bubble2.style.transform = `translateY(-${scrollTop * .5}px)`;
 
-    //console.log(bubble1.style.top, bubble2.style.top);
-    
-    fish.style.left = `${-100 + scrollAmount}%`;
+    fish.style.transform = `translateX(${-100 + scrollAmount}%)`;
 }
 
 window.addEventListener('scroll', function() {
-    requestAnimationFrame(parallaxBubbles); // call parallaxbubbles() on next available screen repaint
+    requestAnimationFrame(parallax); // call parallax() on next available screen repaint
 });
 
 window.addEventListener('resize', function() {

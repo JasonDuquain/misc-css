@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>CSS parallax demo by Keith Clark</title>
+<link rel="stylesheet" href="styles.css" />
+<meta name="description" content="Demonstration of grouping content in pure CSS parallax scrolling website">
+</head>
+
+<body>
+  <div class="debug">
+    <label><input type="checkbox"> Debug</label>
+  </div>
+
+  <div class="parallax">
+    <div id="group1" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">Base Layer-grp1</div>
+      </div>
+    </div>
+    <div id="group2" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">Base Layer-grp2</div>
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <div class="title">BG Layer-grp2</div>
+      </div>
+    </div>
+    <div id="group3" class="parallax__group">
+      <div class="parallax__layer parallax__layer--fore">
+        <div class="title">FG Layer-grp3</div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">Base Layer-grp3</div>
+      </div>
+    </div>
+    <div id="group4" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">Base Layer-grp4</div>
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <div class="title">BG Layer-grp4</div>
+      </div>
+      <div class="parallax__layer parallax__layer--deep">
+        <div class="title">Deep BG Layer-grp4</div>
+      </div>
+    </div>
+    <div id="group5" class="parallax__group">
+      <div class="parallax__layer parallax__layer--fore">
+        <div class="title">FG Layer-grp5</div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">Base Layer-grp5</div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+    var debugInput = document.querySelector("input");
+    function updateDebugState() {
+        document.body.classList.toggle('debug-on', debugInput.checked);
+    }
+    debugInput.addEventListener("click", updateDebugState);
+    updateDebugState();
+  </script>
+
+</body>
+</html>

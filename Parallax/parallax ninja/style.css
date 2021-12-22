@@ -26,10 +26,6 @@ body {
   height: 800px;
 }
 
-#hero, .layer {
-  min-height: 800px;
-}
-
 .layer-bg {
   background-image: url("img/brown-grey_bg.jpg");
 }
@@ -48,12 +44,12 @@ body {
   background-position: right bottom;
 }
 
-.layer-4 {
-  background-image: url("img/black-bottom-hills.png");
-}
-
 .layer-overlay {
   background-image: url("img/gray_overlay.png");
+}
+
+.layer-4 {
+  background-image: url("img/black-bottom-hills.png");
 }
 
 .first-section {

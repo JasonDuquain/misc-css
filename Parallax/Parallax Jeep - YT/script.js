@@ -6,6 +6,7 @@ window.onload = function() {
     let w = this.outerWidth;
     let h = document.getElementsByClassName('paralax')[0].clientWidth;
     let h_b = document.getElementsByClassName('container')[0].clientWidth;
+    
     let p = s/h*100;
     let p_b = s/h_b*100;
     let opas = 1-1/100*p_b;

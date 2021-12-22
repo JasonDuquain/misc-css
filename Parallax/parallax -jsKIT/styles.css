@@ -19,7 +19,7 @@ body {
 }
 
 #fish {
-    left: -100%;
+    left: -10%;
     background: url(img/fish.png) right 90% no-repeat;
 }
 
