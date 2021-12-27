@@ -6,46 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .gingerbread .body {
-      fill: #cd803d;
-    }
+    .gingerbread .body { fill: #cd803d; }
 
-    .gingerbread .eye {
-      fill: white;
-    }
+    .gingerbread .eye { fill: white; }
 
-    .gingerbread .mouth {
-      fill: none;
-      stroke: white;
-      stroke-width: 2px;
-    }
+    .gingerbread .mouth { fill: none; stroke: white; }
 
-    .gingerbread .limb {
-      stroke: #cd803d;
-      stroke-width: 35px;
-      stroke-linecap: round;
-    }
+    .gingerbread .limb { stroke: #cd803d;  }
   </style>
 </head>
 <body>
-  <svg class="gingerbread" width="200" height="200" viewBox="-100 -100 200 200">
-    <circle class="body" cx="0" cy="-50" r="30" />
-  
-    <circle class="eye" cx="-12" cy="-55" r="3" />
-    <circle class="eye" cx="12" cy="-55" r="3" />
-    <rect class="mouth" x="-10" y="-40" width="20" height="5" rx="2" />
-  
-    <line class="limb" x1="-40" y1="-10" x2="40" y2="-10" />
-    <line class="limb" x1="-25" y1="50" x2="0" y2="-15" />
-    <line class="limb" x1="25" y1="50" x2="0" y2="-15" />
-  
-    <circle class="button" cx="0" cy="-10" r="5" />
-    <circle class="button" cx="0" cy="10" r="5" />
+  <svg class="gingerbread" width="200" height="200" viewBox="0 0 200 200" style="border: 1px solid black">
+    
   </svg>
 </body>
 </html>
 
-<!--
+<!-- SVG origin NOT changed - .gingerbread .limb { stroke: #cd803d; stroke-width: 35px; stroke-linecap: round; }
+
+<svg class="gingerbread" width="200" height="200" viewBox="0 0 200 200" style="border: 1px solid black">
+    <circle class="body" cx="100" cy="50" r="30" />
+  
+    <circle class="eye" cx="88" cy="45" r="3" id="eye"/>
+    <use href="#eye" transform="translate(24)" />
+    <rect class="mouth" x="90" y="60" width="20" height="5" rx="2" />
+  
+    <line class="limb" x1="60" y1="90" x2="140" y2="90" />
+    <line class="limb" x1="75" y1="150" x2="100" y2="85" />
+    <line class="limb" x1="125" y1="150" x2="100" y2="85" />
+  
+    <circle class="button" cx="100" cy="90" r="5" id="button"/>
+    <use href="#button" transform="translate(0, 20)" />
+  </svg>
+
+-->
+
+
+<!-- SVG origin changed - .gingerbread .limb { stroke: #cd803d; stroke-width: 35px; stroke-linecap: round; }
 
 <svg class="gingerbread" width="200" height="200" viewBox="-100 -100 200 200">
     <circle class="body" cx="0" cy="-50" r="30" />
