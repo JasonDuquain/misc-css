@@ -19,16 +19,14 @@ body {
     font-size: 18px;
     font-weight: 300;
     color: #212121;
-    perspective: 4px; /* The depth */
-    overflow-x: hidden;
-    overflow-y: scroll;
+    
 }
 
 header {
     width: 100%;
     min-height: 100vh;
     position: relative;
-    transform-style: preserve-3d;
+    
 }
 
 header::before {
@@ -40,7 +38,7 @@ header::before {
     bottom: 0;
     background: url('bg.jpg') 0 0/cover;
     z-index: 0;
-    transform: translateZ(-4px) scale(2);
+    
 }
 
 header div {
@@ -49,7 +47,7 @@ header div {
     top: 50%;
     padding: 0 30px;
     font-family: 'Roboto Condensed', sans-serif;
-    transform: translateZ(-2px) scale(1.5);
+    
 }
 
 header h1 {
@@ -67,7 +65,7 @@ section {
     width: 100%;
     background: white;
     position: relative;
-    z-index: 2;
+    
 }
 
 .container {

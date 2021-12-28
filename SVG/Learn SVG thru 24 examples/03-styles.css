@@ -1,0 +1,29 @@
+.gingerbread .body {
+	fill: #cd803d;
+}
+
+.gingerbread .eye {
+	fill: white;
+}
+
+.gingerbread .mouth {
+	fill: none;
+	stroke: white;
+}
+
+.gingerbread .limb {
+	stroke: #cd803d;
+  
+}
+
+/* COMPLETE
+
+.gingerbread .body { fill: #cd803d; }
+
+.gingerbread .eye { fill: white; }
+
+.gingerbread .mouth { fill: none; stroke: white; }
+
+.gingerbread .limb { stroke: #cd803d; stroke-width: 35px; stroke-linecap: round; }
+
+*/

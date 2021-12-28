@@ -32,28 +32,3 @@ window.addEventListener('resize', function() {
     var scrollAmount = (window.scrollY / (bodyHeight - windowHeight)) * 100 ; 
     fish.style.transform = `translateX(${scrollAmount}%)`;
 });
-
-
-
-/* START
-
-var bubble1 = document.getElementById('bubbles1')
-var bubble2 = document.getElementById('bubbles2')
-var fish = document.getElementById('fish')
-
-
-function parallaxBubbles() {
-    
-}
-
-window.addEventListener('scroll', function() {
-    
-});
-
-window.addEventListener('resize', function() {
-    var scrollAmount = (window.scrollY / (bodyHeight - windowHeight)) * 100 ; 
-    fish.style.transform = `translateX(${scrollAmount}%)`;
-});
-
-
-*/
