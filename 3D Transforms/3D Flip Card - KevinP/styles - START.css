@@ -1,0 +1,76 @@
+/* https://www.youtube.com/watch?v=FeJEEE3zc4U&list=PLxfpekvOWcjiD8OM2hsKX-UUNkqZKl6x4&index=25&ab_channel=KevinPowell - start at 5:00 */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --clr: #b7c9e5;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.card {
+  
+}
+
+.card__content {
+  
+}
+
+.card:hover .card__content {
+  
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  
+}
+
+.card__front {
+  
+}
+
+.card__front::before {
+  content: '';
+  position: absolute;
+  
+}
+
+.card__title {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: .75rem;
+  font-weight: var(--fw-bold);
+}
+
+.card__body {
+  font-weight: var(fw-normal);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.card__back {
+  
+}
+
+

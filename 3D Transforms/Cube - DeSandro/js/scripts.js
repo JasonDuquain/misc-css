@@ -20,7 +20,7 @@ var currentClass = '';
 
 function changeSide() {
   var checkedRadio = radioGroup.querySelector(':checked');
-  var showClass = 'show-' + checkedRadio.value;
+  var showClass = `show-${checkedRadio.value}`;
   if ( currentClass ) {
     cube.classList.remove( currentClass );
   }

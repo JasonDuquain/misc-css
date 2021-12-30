@@ -3,20 +3,20 @@
 body { font-family: sans-serif; }
 
 .scene {
-  width: 200px;
-  height: 200px;
   border: 1px solid #CCC;
   margin: 80px;
+  width: 200px;
+  height: 200px;
   perspective: 400px;
 }
 
 .cube {
+  transition: transform 1s;
   width: 200px;
   height: 200px;
   position: relative;
   transform-style: preserve-3d;
   transform: translateZ(-100px);
-  transition: transform 1s;
 }
 
 /* these classes will be toggled with JS to rotate the cube */

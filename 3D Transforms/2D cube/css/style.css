@@ -6,48 +6,44 @@ body {
 
 .spin {
   cursor: pointer;
-	
+
 }
 
 .spin:hover {
-	animation: spin 4s linear infinite;
+  animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
   0% {
-    transform: rotateY(0deg); 
+    transform: rotateY(0deg);
   }
   100% {
-		transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 
 .cube {
-	
+
 }
 
 .side {
-	text-align: center;
-	
+  text-align: center;
 }
 
 .top {
   background: #33cc54;
-	
 }
 
 .left {
   background: #2db34a;
-	
 }
 
 .right {
   background: #26973e;
-	
 }
   
 
-/* STARTY
+/* START
 
 body {
 	color: #fff;

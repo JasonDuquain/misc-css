@@ -1,0 +1,110 @@
+/* https://www.youtube.com/watch?v=FeJEEE3zc4U&list=PLxfpekvOWcjiD8OM2hsKX-UUNkqZKl6x4&index=25&ab_channel=KevinPowell - start at 5:29 */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --clr: #b7c9e5;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.card {
+  width: 400px;
+  /* maybe put some perspective here */
+}
+
+.card__content {
+  transition: transform 3000ms;
+  text-align: center;
+  padding: 15em 5em;
+  position: relative;
+  transform-style: preserve-3d;
+  background: pink;
+}
+
+.card:hover .card__content {
+  transform: rotateY(180deg);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+
+.card__front {
+  background-color: var(--clr);
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/fair.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid black;
+  transform: var(--level-one);
+}
+
+.card__title {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  transform: var(--level-three);
+  order: 2;
+}
+
+.card__subtitle {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: .75rem;
+  font-weight: var(--fw-bold);
+  transform: var(--level-two);
+  opacity: .7;
+}
+
+.card__body {
+  transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.card__back {
+  color: var(--clr);
+  transform: rotateY(180deg);
+  background-color: #333;
+}
+
+
+
+
+
