@@ -28,7 +28,7 @@ body {
 }
 
 .card__content {
-  
+  transition: transform 3000ms;
 }
 
 .card:hover .card__content {
@@ -72,6 +72,9 @@ body {
 .card__back {
   
 }
+
+
+
 
 
 

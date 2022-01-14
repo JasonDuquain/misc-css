@@ -44,10 +44,7 @@ body {
 .card__front,
 .card__back {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   padding: 5em 3em;
   backface-visibility: hidden;
   transform-style: preserve-3d;
@@ -66,11 +63,7 @@ body {
 .card__front::before {
   content: '';
   position: absolute;
-  --spacer: 1em;
-  top: var(--spacer);
-  bottom: var(--spacer);
-  left: var(--spacer);
-  right: var(--spacer);
+  inset: 1em;
   border: 3px solid black;
   transform: var(--level-one);
 }

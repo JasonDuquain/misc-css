@@ -28,11 +28,11 @@ body {
   }
   
   .side {
+	text-align: center;
 	width: 95px;
     height: 95px;
     line-height: 95px;
-    position: absolute;
-    text-align: center;
+    position: absolute; 
   }
   
   .top {

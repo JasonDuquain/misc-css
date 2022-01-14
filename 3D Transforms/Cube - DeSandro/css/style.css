@@ -5,7 +5,6 @@ body { font-family: sans-serif; }
 .scene {
   border: 1px solid #CCC;
   margin: 80px;
-  
 }
 
 .cube {
@@ -13,24 +12,23 @@ body { font-family: sans-serif; }
   
 }
 
-.cube.show-front  { transform: translateZ(-100px) rotateY(   0deg); }
-.cube.show-right  { transform: translateZ(-100px) rotateY( -90deg); }
-.cube.show-back   { transform: translateZ(-100px) rotateY(-180deg); }
-.cube.show-left   { transform: translateZ(-100px) rotateY(  90deg); }
-.cube.show-top    { transform: translateZ(-100px) rotateX( -90deg); }
-.cube.show-bottom { transform: translateZ(-100px) rotateX(  90deg); }
+.cube.show-front  {  }
+.cube.show-right  {  }
+.cube.show-back   {  }
+.cube.show-left   {  }
+.cube.show-top    {  }
+.cube.show-bottom {  }
 
 .cube__face {
+  
   border: 2px solid black;
   font-size: 40px;
   font-weight: bold;
   color: white;
   text-align: center;
   line-height: 200px;
-  
 }
 
-/* these classes will be toggled with JS */
 .cube__face--front  { background: hsla(  0, 100%, 50%, 0.7); }
 .cube__face--right  { background: hsla( 60, 100%, 50%, 0.7); }
 .cube__face--back   { background: hsla(120, 100%, 50%, 0.7); }
@@ -72,6 +70,7 @@ body { font-family: sans-serif; }
 .cube.show-bottom {  }
 
 .cube__face {
+
   border: 2px solid black;
   font-size: 40px;
   font-weight: bold;

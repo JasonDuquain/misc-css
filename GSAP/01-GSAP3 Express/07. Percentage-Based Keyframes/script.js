@@ -1,3 +1,4 @@
+/* for part 2: At 3:10 on just watch dont try the demos */
 
 const tl = gsap.timeline()
 tl.to(".slime", {
@@ -6,6 +7,7 @@ tl.to(".slime", {
 
 play.addEventListener("click", ()=> tl.restart())
 GSDevTools.create({ animation:tl });
+
 
 
 /* START

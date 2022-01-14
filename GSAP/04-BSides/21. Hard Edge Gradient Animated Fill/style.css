@@ -1,0 +1,61 @@
+/* Start lesson at 6:30 - but look at demo of site at beginning to see how it is used on the actual site */
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=PT+Sans+Narrow:wght@700&display=swap");
+
+body {
+  font-family: sans-serif;
+  background: #000;
+  margin: 50px;
+  color: #eee;
+  --left: white;
+  --right: #444;
+}
+
+ul {
+  min-width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ccc;
+  font-family: Oswald;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 4px;
+  font-size: clamp(36px, 12vw, 80px);
+  margin: 0;
+  list-style: none;
+}
+
+/* CSS Start
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=PT+Sans+Narrow:wght@700&display=swap");
+
+body {
+  font-family: sans-serif;
+  background: #000;
+  margin: 50px;
+  color: #eee;
+  --left: white;
+  --right: #444;
+}
+
+ul {
+  min-width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ccc;
+  font-family: Oswald;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 4px;
+  font-size: clamp(36px, 12vw, 80px);
+  margin: 0;
+  list-style: none;
+}
+
+*/

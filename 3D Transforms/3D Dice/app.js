@@ -3,8 +3,7 @@ function rollDice() {
 }
 
 function toggleClasses(die) {
-  die.classList.toggle("odd-roll");
-  die.classList.toggle("even-roll");
+  
 }
 
 function getRandomNumber(min, max) {
@@ -12,6 +11,7 @@ function getRandomNumber(min, max) {
 }
 
 document.getElementById("roll-button").addEventListener("click", rollDice);
+
 
 /* COMPLETE
 
