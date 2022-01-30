@@ -1,6 +1,5 @@
 gsap.registerPlugin(Flip);
 
-
 //gsap.to(".container", {scaleY: 0.8, rotation: 25});
 //gsap.to(".target", {scale: 1.2, rotation: -18, x: 60, y: 60});
 

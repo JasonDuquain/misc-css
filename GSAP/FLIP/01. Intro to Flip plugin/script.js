@@ -6,6 +6,7 @@ const newContainer = document.querySelector(".newContainer");
 
 document.querySelector("button").addEventListener('click', () => {
   
+  
 });
 
 /* COMPLETE
@@ -19,7 +20,7 @@ const newContainer = document.querySelector(".newContainer");
 document.querySelector("button").addEventListener('click', () => {
   const state = Flip.getState(box);
   
-  (box.parentNode === originalContainer ? newContainer : originalContainer).appendChild(box);
+  (box.parentNode === originalContainer ? newContainer : originalContainer).append(box);
   
   Flip.from(state, {duration: 1, ease: "power1.inOut", scale: true});
 });

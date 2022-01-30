@@ -1,3 +1,4 @@
+
 const bar = document.querySelector(".bar")
 const tl = gsap.timeline({defaults:{duration:1}})
 
@@ -12,6 +13,7 @@ tl.to(bar, {scaleX:"+=0.2"})
   
   .to(bar, {scaleX:"+=0.2"})
 
+
 function animate(index) {
 	
 }
@@ -20,6 +22,7 @@ next.addEventListener("click", ()=> tl.play())
 prev.addEventListener("click", ()=> tl.reverse())
 
 GSDevTools.create({animation:tl})
+
 
 /* START
 
@@ -36,6 +39,7 @@ tl.to(bar, {scaleX:"+=0.2"})
   .to(bar, {scaleX:"+=0.2"})
   
   .to(bar, {scaleX:"+=0.2"})
+
 
 function animate(index) {
 	

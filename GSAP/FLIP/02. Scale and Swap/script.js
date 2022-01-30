@@ -10,7 +10,7 @@ widthHeight.querySelector(".btn--wh").addEventListener("click", () => {
   const state = Flip.getState(box);
   
   const parent = box.parentElement === container1 ? container2 : container1;
-  parent.appendChild(box);
+  parent.append(box);
   
   Flip.from(state, { duration: 1 });
 });
@@ -22,7 +22,7 @@ widthHeight.querySelector(".btn--scale").addEventListener("click", () => {
   const state = Flip.getState(box);
   
   const parent = box.parentElement === container1 ? container2 : container1;
-  parent.appendChild(box);
+  parent.append(box);
   
   Flip.from(state, { duration: 1, scale: true });
 });
@@ -50,6 +50,6 @@ swap.querySelector(".btn--swap").addEventListener("click", () => {
     targets: enterEl,
 		duration: 1,
     fade: true, // to crossfade the elements. 
-    onComplete: () => leaveEl.parentNode.removeChild(leaveEl)
+    onComplete: () => leaveEl.remove()
 	});
 });
