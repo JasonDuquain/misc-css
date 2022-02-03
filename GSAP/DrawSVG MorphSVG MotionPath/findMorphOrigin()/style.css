@@ -1,0 +1,48 @@
+body{
+  background: #222;
+  text-align: center;
+  font-family: "Signika Negative", sans-serif; 
+  font-size: 20px;
+  font-weight: 300;
+}
+
+svg {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.dolphin {
+  visibility: hidden;
+}
+
+.bird {
+  fill: #765e98;
+}
+
+text {
+  fill: white;
+  font-size: 20px;
+}
+
+#instructions {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right:0;
+  text-align: center;
+}
+p {
+  color: #ccc;
+  padding: 20px;
+  max-width: 800px;
+  margin-bottom: 0;
+  text-align: left;
+  display: inline-block;
+}
+code {
+  color: white;
+  font-family: courier, monospace;
+}
