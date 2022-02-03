@@ -14,6 +14,7 @@ body {
   height: 0;
   position: relative;
 }
+
 .svg-padded-box svg {
   position: absolute;
   top: 0;

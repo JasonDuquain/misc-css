@@ -1,5 +1,5 @@
 gsap.registerPlugin(MorphSVGPlugin, Draggable);
-gsap.defaults({overwrite: "auto"});
+gsap.defaults({ overwrite: "auto" });
 
 MorphSVGPlugin.convertToPath(".bird");
 
@@ -7,17 +7,18 @@ MorphSVGPlugin.convertToPath(".bird");
 //   duration: 2, 
 //   morphSVG:{
 //     shape: ".dolphin", 
-//     //origin: "42% 57%,38% 19%",
+//     origin: "42% 57%,38% 19%",
 //     type: "rotational"
 //   }, 
 //   ease: "power1.inOut",
 //   repeat: -1,
 //   repeatDelay: 1,
 //   yoyo: true,
-//   delay: 3
+//   delay: 1
 // });
 
 findMorphOrigin(".bird", ".dolphin", {showLines:true});
+
 
 
 /*
@@ -28,14 +29,14 @@ you release it, you'll see the animation updated accordingly. If you drag it whe
 is in its "end" state, it'll update the end origin. Drag in its "start" state and it'll
 update the start origin.
 
-Example:
-findMorphOrigin(".start", ".end", {showLines:true});
+Ex: findMorphOrigin(".start", ".end", {showLines:true});
 
 Optionally pass in a vars object as the 3rd parameter with things like:
 {showLines:true, scale:1.5, lineColor:"white", lineOpacity:0.5, lineWidth:1, origin:"40% 20%"}
 
-Draggable is required (you can load it from the CDN at https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/utils/Draggable.min.js)
+Draggable is required
 */
+
 function findMorphOrigin(target1, target2, vars) {
 	vars = vars || {};
 	gsap.killTweensOf(target1, false, {morphSVG:true});

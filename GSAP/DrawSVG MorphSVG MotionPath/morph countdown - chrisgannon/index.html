@@ -2,12 +2,11 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Morphing Countdown</title>
+  <title>Morphing Countdown</title>
   <link href='https://fonts.googleapis.com/css?family=Syncopate:400,700' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css">
-
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
 <div class="container">
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In  -->
 <svg version="1.1"
@@ -22,8 +21,12 @@
 	c0,21.3-3.9,36.7-11.8,46.1c-7.9,9.4-18.2,14.1-30.8,14.1c-9.1,0-16.5-2.4-22.1-7.3C267.3,329.1,263.7,321.9,262.1,312.2z
 	 M312.7,263.4c0-7.2-1.7-12.8-5-16.8c-3.3-4-7.1-6-11.5-6c-4.1,0-7.6,1.6-10.3,4.9c-2.7,3.3-4.1,8.6-4.1,16c0,7.5,1.5,13,4.5,16.6
 	c3,3.5,6.7,5.3,11.1,5.3c4.3,0,7.9-1.7,10.8-5.1C311.2,275,312.7,270,312.7,263.4z"/>
+	
+	<!-- The number 1 moved to the left -->
 <path id="tenOne" fill="#D3EAE3" d="M273.5,339.2h-22.3V255c-8.2,7.6-17.8,13.3-28.8,16.9v-20.3c5.8-1.9,12.2-5.5,19-10.8
 	c6.8-5.3,11.5-11.5,14.1-18.6h18.1V339.2z"/>
+
+	<!-- The number 0 moved to the left -->
 <path id="tenZero" fill="#D3EAE3" d="M344.7,222.2c11.3,0,20.1,4,26.5,12.1c7.6,9.5,11.4,25.4,11.4,47.4c0,22-3.8,37.9-11.4,47.5
 	c-6.3,7.9-15.1,11.9-26.4,11.9c-11.3,0-20.5-4.4-27.4-13.1c-6.9-8.7-10.4-24.3-10.4-46.6c0-21.9,3.8-37.7,11.4-47.4
 	C324.6,226.2,333.4,222.2,344.7,222.2z M344.7,240.7c-2.7,0-5.1,0.9-7.2,2.6c-2.1,1.7-3.8,4.8-4.9,9.3c-1.5,5.8-2.3,15.5-2.3,29.2
@@ -72,9 +75,10 @@
 </svg>
 
 </div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js'></script><script  src="./script.js"></script>
+
+	<script src='gsap.js'></script>
+	<script src='MorphSVGPlugin.js'></script>
+	<script src="./script.js"></script>
 
 </body>
 </html>

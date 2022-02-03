@@ -1,12 +1,12 @@
 var button = document.getElementById("toggle");
 
-var morph = new TimelineMax({paused:true});
-morph.to("#brain", 0.6, { morphSVG: "#cognitive", ease:Power1.easeOut });
+var morph = gsap.timeline({paused:true});
+morph.to("#brain", 1, { morphSVG: "#cognitive", ease:Power1.easeOut });
 
 window.addEventListener('scroll', function() {
   if (morph.progress() === 0) {
     morph.play();
-  }
+  } 
 });
 
 
