@@ -13,3 +13,8 @@ svg {
   width: 96vmin;
   height: 96vmin;
 }
+
+#motionPaths path {
+  stroke: red;
+  stroke-width: 2;
+}

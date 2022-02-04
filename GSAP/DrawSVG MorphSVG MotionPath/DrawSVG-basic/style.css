@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+  color: #ccc;
+  text-align: center;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+}
+
+#template, #path {
+  fill: none;
+}
+#template {
+  stroke-width: 5px;
+  stroke: #444;
+}
+#path {
+  stroke: #88CE02;
+  stroke-width: 20px;
+  /* visibility: hidden; */
+}
+#code, #value {
+  font-size: 40px;
+  font-family: monospace;
+}
+#code {
+  color: #777;
+  margin: 20px;
+  position: relative;
+  visibility:hidden;
+}
+#current {
+  display: inline-block;
+  color: white;
+}
+#description {
+  max-width: 530px;
+  color: #777;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  display: inline-block;
+  text-align: left;
+}

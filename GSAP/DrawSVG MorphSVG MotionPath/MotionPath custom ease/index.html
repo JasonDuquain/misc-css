@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Motion Study Intro 3</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<svg id="animation" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style>
+      .cls-1{fill:#023266;}
+      .cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;}
+      .cls-2,.cls-4{stroke:#fff;}
+      .cls-2{stroke-width:2px;}
+      .cls-3{stroke:#ef92f7;}
+      .cls-3,.cls-4{stroke-width:4px;}
+      .cls-4{fill:#f6c;stroke-miterlimit:10;}
+      .cls-5{fill:#fc0;}.cls-6{fill:#69f;}
+    </style>
+  </defs>
+  <path id="bg" class="cls-1" d="M1280 720.5V.5H0v720z" transform="translate(0 -0.5)"/>
+  <g id="titlePathGroup">
+    <!-- Main curved path -->
+    <path id="visiblePath" class="cls-2" d="M61.3 240.25q82.8-.85 208.35-30.8 30.45-7.24 102-26 62.1-16.24 94.2-23.3 48.4-10.69 81.45-13.4 38.7-3.1 63.9 3.95 27.75 7.76 41.5 28.5 14.74 22.16 14.3 60.35-.64 68.25 9.45 113.4 11.7 52.4 40 85.75 30.94 36.35 84.85 54.2 56.89 18.86 143.6 18.6 87.45 0 144.15-15.55t89.85-48.5q32-31.9 45.85-84.45 12.79-48.56 12.15-123.45" transform="translate(0 -0.5)"/>
+
+    <!-- Same Main curved path but goes higher at the end --has an opacity of 0 -->
+    <path id="motionGuide" class="cls-3" d="M61.3 240.25q82.8-.85 208.35-30.8 30.45-7.24 102-26 62.1-16.24 94.2-23.3 48.4-10.69 81.45-13.4 38.7-3.1 63.9 3.95 27.75 7.76 41.5 28.5 14.74 22.16 14.3 60.35-.64 68.25 9.45 113.4 11.7 52.4 40 85.75 30.94 36.35 84.85 54.2 56.89 18.86 143.6 18.6 87.45 0 144.15-15.55t89.85-48.5q32-31.9 45.85-84.45c8.53-32.37 12.15-123.45 12.15-123.45v-125" transform="translate(0 -0.5)"/>
+
+    <!-- main pink ball -->
+    <g id="ballGroup">
+      <circle id="ball" class="cls-4" cx="61.51" cy="239.54" r="17.53"/>
+    </g>
+
+    <!-- Each path is a letter in the word "motion" -->
+    <g id="motion">
+      <path id="m1" class="cls-5" d="M111.72 318.06v82.55h-13v-103h14.08l34.88 71.52 34.88-71.52h14.08v103h-13v-82.55l-31.44 64.63h-8.8z" transform="translate(0 -0.5)"/>
+      <path id="m2" class="cls-5" d="M293.73 389.41q-11.61 12.81-35.92 12.8t-35.92-12.8q-11.61-12.8-11.6-40.31t11.6-40.33Q233.49 296 257.81 296t35.92 12.79q11.59 12.81 11.6 40.33t-11.6 40.29zm-5.2-64.88q-3.69-9.19-11.2-13.28t-19.52-4.08q-12 0-19.52 4.08t-11.2 13.28q-3.69 9.21-3.68 24.57t3.68 24.55q3.67 9.21 11.2 13.28t19.52 4.07q12 0 19.52-4.08t11.2-13.28q3.68-9.19 3.68-24.55t-3.68-24.56z" transform="translate(0 -0.5)"/>
+      <path id="m3" class="cls-5" d="M356.68 400.61h-13.12V308h-34.24v-10.43h81.6V308h-34.24z" transform="translate(0 -0.5)"/>
+      <path id="m4" class="cls-5" d="M406.92 297.57H420v103h-13.08z" transform="translate(0 -0.5)"/>
+      <path id="m5" class="cls-5" d="M522.68 389.41q-11.59 12.81-35.92 12.8t-35.92-12.8q-11.59-12.8-11.6-40.31t11.6-40.33Q462.44 296 486.76 296t35.92 12.79q11.6 12.81 11.6 40.33t-11.6 40.29zm-5.2-64.88q-3.68-9.19-11.2-13.28t-19.52-4.08q-12 0-19.52 4.08T456 324.53q-3.68 9.21-3.68 24.57t3.68 24.55q3.68 9.21 11.2 13.28t19.56 4.07q12 0 19.52-4.08t11.2-13.28q3.67-9.19 3.68-24.55t-3.68-24.56z" transform="translate(0 -0.5)"/>
+      <path id="m6" class="cls-5" d="M566.6 400.61h-13.12v-103h11.84L624 380.45v-82.88h13.12v103h-12L566.6 317.9z" transform="translate(0 -0.5)"/>
+    </g>
+
+    <!-- Each path is a letter in the word "study" -->
+    <g id="study">
+      <path id="s1" class="cls-6" d="M796.82 394.85q-10 7.36-29.52 7.36-19.2 0-31-4.8v-11.68a84.52 84.52 0 0029.88 5.27q14.24 0 20.88-3.84t6.64-13.44q0-5.91-2.8-9.52t-8.8-6.08a123.38 123.38 0 00-17.52-5.2q-17-4.15-23.84-10.72t-6.88-17.92q0-13.44 9.68-20.88t28.56-7.4a105 105 0 0116.08 1.2 74.79 74.79 0 0112.4 2.8v11.52a78.35 78.35 0 00-26.4-4.32q-13.6 0-20.4 4T747 324.29a13.78 13.78 0 002.4 8.48q2.4 3.21 8.08 5.52a125.84 125.84 0 0016.88 5q18.07 4.32 25.28 11.6t7.2 18.8q-.02 13.81-10.02 21.16z" transform="translate(0 -0.5)"/>
+      <path id="s2" class="cls-6" d="M863 400.61h-13.14V308h-34.24v-10.4h81.6V308H863z" transform="translate(0 -0.5)"/>
+      <path id="s3" class="cls-6" d="M978.1 384q7.75-7 7.76-21v-65.43H999v65.28q0 19.2-11.12 29.28t-32.08 10.08q-21.12 0-32.24-10.08t-11.12-29.28v-65.28h13.12V363q0 13.92 7.84 21t22.4 7q14.55 0 22.3-7z" transform="translate(0 -0.5)"/>
+      <path id="s4" class="cls-6" d="M1093.86 388.45q-10.24 12.17-33 12.16h-40.32v-103h40.32q22.56 0 32.88 12.24t10.32 39.92q.04 26.52-10.2 38.68zm-6.08-64.08q-3.21-9-10.16-12.72T1058.5 308h-24.8v82.4h24.8q11.52 0 18.48-3.36t10.48-12.16q3.51-8.79 3.52-25.12t-3.2-25.39z" transform="translate(0 -0.5)"/>
+      <path id="s5" class="cls-6" d="M1144.9 362.21l-36.8-64.64h13.6l29.76 53.43 29.76-53.44h13.6L1158 362.21v38.4h-13.1z" transform="translate(0 -0.5)"/>
+    </g>
+  </g>
+</svg>
+
+  <script src='gsap.min.js'></script>
+  <script src='MotionPathHelper.min.js'></script>
+  <script src='MotionPathPlugin.min.js'></script>
+  <script src='CustomEase.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+</html>
