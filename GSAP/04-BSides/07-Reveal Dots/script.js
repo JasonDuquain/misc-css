@@ -7,7 +7,7 @@ let tracers;
 
 //make a bunch of dots called tracer and place them in the demo element
 function createTracers() {
-	for(let i = 0; i < numDots; i++){
+	for (let i = 0; i < numDots; i++) {
 		let tracer = document.createElement("div")
 		tracer.setAttribute("class", "dot tracer")
 		gsap.set(tracer, {scale:0.3})
@@ -48,7 +48,7 @@ let tracers;
 
 //make a bunch of dots called tracer and place them in the demo element
 function createTracers() {
-	for(let i = 0; i < numDots; i++){
+	for (let i = 0; i < numDots; i++) {
 		let tracer = document.createElement("div")
 		tracer.setAttribute("class", "dot tracer")
 		gsap.set(tracer, {scale:0.3})

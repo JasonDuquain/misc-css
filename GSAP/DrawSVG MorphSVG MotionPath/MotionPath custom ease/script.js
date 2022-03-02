@@ -21,7 +21,6 @@ function buildBurst() {
 		dot.setAttribute('fill', "white")
 		gsap.set(dotGroup, {rotation:(360/5) * i, transformOrigin:"50% 50%"})
 		dots.push(dot)
-		
 	}
 	ballGroup.appendChild(ball)
 }
@@ -51,7 +50,7 @@ CustomEase.create("myEase", easePath)
 
 // all 5 balls are laid out right in the middle of the pink ball
 function buildBurst() {
-	for(var i = 0; i < 5; i++){
+	for (var i = 0; i < 5; i++) {
 		let dotGroup = document.createElementNS(svgNS, "g");
 		let dot = document.createElementNS(svgNS, "circle");
 		dotGroup.appendChild(dot)
@@ -61,8 +60,7 @@ function buildBurst() {
   		dot.setAttribute('r', 4);
 		dot.setAttribute('fill', "white")
 		gsap.set(dotGroup, {rotation:(360/5) * i, transformOrigin:"50% 50%"})
-		dots.push(dot)
-		
+		dots.push(dot)	
 	}
 	ballGroup.appendChild(ball)
 }
