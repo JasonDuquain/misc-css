@@ -26,10 +26,10 @@ body {
 	bottom:10px;
 	right:10px;
 	border:none;
-	padding: 18px;
 	border-radius:12px;
 	background-color:#43A047;
 	color:white;
+	padding: 18px;
 	font-size: 20px;
 
 	/* remove scale and will-change at demo start */

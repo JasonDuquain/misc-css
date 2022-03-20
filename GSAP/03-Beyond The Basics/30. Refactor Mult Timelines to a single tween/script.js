@@ -1,4 +1,5 @@
 
+
 const tl1 = gsap.timeline({repeat: -1})
 tl1.to(".circle1", {y: -100, duration:1, ease: "none"})
 tl1.to(".circle1", {y: 100, duration:2, ease: "none"})
@@ -27,6 +28,8 @@ tl5.to(".circle5", {y: 0, duration:1, ease: "none"})
 document.body.addEventListener("click", () =>
 	gsap.globalTimeline.paused(!gsap.globalTimeline.paused())
 )
+
+
 
 /* START
 

@@ -10,7 +10,7 @@ cta.addEventListener("mouseenter", function() {
 })
 
 cta.addEventListener("mouseleave", function() {
-	scaleTween.restart()
+	scaleTween.reverse()
 })
 
 
@@ -27,7 +27,7 @@ cta.addEventListener("mouseenter", function() {
 })
 
 cta.addEventListener("mouseleave", function() {
-	scaleTween.restart()
+	scaleTween.reverse()
 })
 
 */
