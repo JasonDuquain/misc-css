@@ -1,0 +1,61 @@
+@font-face {
+ font-family: "wild";
+ src: url("https://assets.codepen.io/756881/WILD+WORLD+%281%29.woff")
+  format("woff");
+}
+
+body {
+ background-color: white;
+ color: black;
+ overscroll-behavior: none;
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
+ font-family: termina, sans-serif;
+}
+
+#wrapper {
+ overflow: hidden;
+ position: fixed;
+ height: 100%;
+ width: 100%;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+}
+
+#content {
+ overflow: visible;
+ width: 100%;
+}
+
+.title {
+ height: 200px;
+}
+
+h1 {
+ position: absolute;
+ width: 100%;
+ left: 0;
+ right: 0;
+ text-align: center;
+ font-size: 8vw;
+}
+
+h1:nth-child(1) {
+ color: #1dffff;
+}
+
+h1:nth-child(2) {
+ color: #fe0604;
+ mix-blend-mode: color;
+}
+
+.spacer:nth-of-type(1) {
+ height: 40vh;
+}
+
+.spacer:nth-of-type(2) {
+ height: 80vh;
+}
