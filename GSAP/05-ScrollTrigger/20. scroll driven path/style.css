@@ -15,6 +15,7 @@ body {
 
 
 
+
 /* START
 
 body {
@@ -31,6 +32,7 @@ body {
   stroke: black
 }
 
+*/
 
 /* COMPLETE
 
@@ -71,20 +73,3 @@ text {
 */
 
 
-/* START
-
-body {
-	height: 400vh;
-  background: grey;
-  color: white;
-}
-
-.ball01 {
-  
-}
-
-.line {
-  stroke: black
-}
-
-*/
