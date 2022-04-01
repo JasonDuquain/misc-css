@@ -1,5 +1,5 @@
 * {
-  position: relative;
+  position: relative; /* !!!!!! */
   box-sizing: border-box;
 }
 
@@ -10,23 +10,6 @@ body {
 
 svg {
   overflow: visible !important;
-}
-
-.parallax-section {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  top: 0;
-  padding: 0 1rem;
-  transform-origin: center top;
-}
-
-.parallax-image {
-  height: 200vh;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  will-change: transform;
 }
 
 .logo-section {
@@ -40,6 +23,26 @@ svg {
   width: 60%;
 }
 
+.scroll-letter {
+  fill: #fff;
+}
+
+.smoother-letter, #mouse-wheel {
+  fill: #88ce02;
+}
+
+.by-greensock-letter {
+  fill: #fff;
+  opacity: 0.6;
+}
+
+#mouse-outline {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 13px;
+}
+
 .grid-section {
   width: 100%;
   overflow: visible;
@@ -47,7 +50,6 @@ svg {
 }
 
 .grid-layout {
-  display: flex;
   display: grid;
   height: 100%;
   width: 100%;
@@ -58,13 +60,6 @@ svg {
 
 .column {
   height: 100%;
-}
-
-.panel {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .column-content {
@@ -84,13 +79,30 @@ svg {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+}
+
+/* wraps ocean-wave.jpg */
+.parallax-section {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  padding: 0 1rem;
+  transform-origin: center top;
+}
+
+/* ocean-wave.jpg */
+.parallax-image {
+  height: 200vh;
+  width: 100%;
+  object-fit: cover;
+  will-change: transform;
 }
 
 .pin-section {
   height: 100vh;
-  overflow: hidden;
+  overflow: hidden; /* cannot see pin-box:second-child and pin-box:third child */
   display: grid;
   grid-row-gap: 1rem;
   grid-template-rows: 1fr 1fr;
@@ -115,8 +127,7 @@ svg {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .spacer {
@@ -124,25 +135,4 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.scroll-letter {
-  fill: #fff;
-}
-
-.smoother-letter,
-#mouse-wheel {
-  fill: #88ce02;
-}
-
-.by-greensock-letter {
-  fill: #fff;
-  opacity: 0.6;
-}
-
-#mouse-outline {
-  fill: none;
-  stroke: #fff;
-  stroke-miterlimit: 10;
-  stroke-width: 13px;
 }

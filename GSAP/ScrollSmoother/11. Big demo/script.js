@@ -1,6 +1,15 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
-// create the smooth scroller FIRST!
+
+
+
+
+
+
+/* COMPLETE
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
+
 const smoother = ScrollSmoother.create({
  wrapper: "#wrapper",
  content: "#content",
@@ -23,3 +32,6 @@ let chars = mySplitText.chars;
 chars.forEach((char, i) => {
  smoother.effects(char, { speed: 1, lag: (i + 1) * 0.1 });
 });
+
+
+*/
