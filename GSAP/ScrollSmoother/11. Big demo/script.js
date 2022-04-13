@@ -4,8 +4,6 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 
 
-
-
 /* COMPLETE
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);

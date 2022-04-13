@@ -17,12 +17,12 @@ function init() {
   var PI2 = Math.PI * 2;
   var geometry = new THREE.Geometry();
   var material = new THREE.SpriteMaterial({
-    color: 0xffffff,
-    // program: function ( context ) {
-    //   context.beginPath();
-    //   context.arc( 0, 0, 0.4, 0, PI2, true );
-    //   context.fill();
-    // }
+    color: 'rgb(255,255,255)',
+		// size: 0.25,
+		map: new THREE.TextureLoader().load('./particle.jpg'),
+		transparent: false,
+		blending: THREE.AdditiveBlending,
+		depthWrite: false
   });
   
 

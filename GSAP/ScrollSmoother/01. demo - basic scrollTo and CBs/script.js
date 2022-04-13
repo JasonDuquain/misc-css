@@ -34,7 +34,7 @@ let smoother = ScrollSmoother.create({
   effects: true // look for data-speed and data-lag attributes on elements and animate accordingly
 });
 
-// pin box-c when it reaches the center of the viewport, for 300px
+// PIN box-c when it reaches the center of the viewport, for 300px
 ScrollTrigger.create({
   trigger: ".box-c",
   pin: true,
