@@ -23,6 +23,7 @@ let pinContent2 = document.querySelector(".pin-content-2")
 let pinTl = null;
 
 
+
 /* START
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);

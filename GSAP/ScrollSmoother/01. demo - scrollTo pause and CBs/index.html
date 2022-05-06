@@ -7,18 +7,31 @@
 </head>
 
 <body>
+
+  <div class="modal">
+    <div class="modal__inner">
+      <h2>This is a modal</h2>
+      <p>Smooth scrolling is now paused</p>
+      <code>smoother.paused(true)</code>
+    </div>
+  </div>
+  
+  <button class="modalButton">Toggle Modal</button>
+
 <div id="smooth-wrapper">
   <div id="smooth-content">
     <header class="header">
       <h1 class="title">ScrollSmoother</h1>
       <button class="button">Jump to C</button>
     </header>
-    <div class="box box-a" data-speed=".8">a</div>
-    <div class="box box-b" data-speed="1.5">b</div>
-    <div class="box box-c" data-speed="3">c</div>
+    <div class="box box-a">a</div>
+    <div class="box box-b">b</div>
+    <div class="box box-c">c</div>
     <div class="line"></div>
   </div>
+  
 </div>
+
 
 
   <script src='gsap.min.js'></script>

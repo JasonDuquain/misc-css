@@ -27,10 +27,7 @@ body {
 .text {
   position: fixed;
   top: 50vh;
-  font-family: termina, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 8vw;
+  font: 900 8vw termina, sans-serif;
   text-align: center;
   width: 100%;
   transform: translateY(-100%);
@@ -66,10 +63,8 @@ body {
   grid-template-columns: repeat(20, 2%);
   grid-template-rows: repeat(30, 3%);
   justify-content: center;
-  justify-items: center;
-  align-items: center;
+  place-items: center;
   z-index: 1;
-  object-fit: cover;
 }
 
 .content__slide-item {

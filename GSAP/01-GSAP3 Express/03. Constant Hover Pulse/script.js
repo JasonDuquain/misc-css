@@ -1,8 +1,10 @@
-
-const cta = document.querySelector(".cta")
+const cta = document.querySelector(".cta");
 
 //create a repeating scale tween
-const scaleTween = gsap.to(cta, { scale: 2, paused: true});
+const scaleTween = gsap.to(cta, { 
+	scale: 2, 
+	paused: true
+});
 
 
 cta.addEventListener("mouseenter", function() {
@@ -16,10 +18,13 @@ cta.addEventListener("mouseleave", function() {
 
 /* START
 
-const cta = document.querySelector(".cta")
+const cta = document.querySelector(".cta");
 
 //create a repeating scale tween
-const scaleTween = gsap.to(cta, { scale: 2, paused: true});
+const scaleTween = gsap.to(cta, { 
+	scale: 2, 
+	paused: true
+});
 
 
 cta.addEventListener("mouseenter", function() {

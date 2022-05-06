@@ -1,6 +1,15 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
+const smoother = ScrollSmoother.create({
+  wrapper: "#wrapper",
+  content: "#content",
+  
+})
 
+gsap.set(".heading", {
+  
+});
+ 
 
 
 

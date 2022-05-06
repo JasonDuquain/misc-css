@@ -1,3 +1,4 @@
+
 let circlesHolder = document.querySelector(".circlesHolder");
 let circle = document.createElement("div");
 circle.setAttribute("class", "circle");

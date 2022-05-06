@@ -105,8 +105,8 @@ var smoother = ScrollSmoother.create({
 	content: "#content",
 	smooth: 1,
 	onUpdate: self => {
-    progress = a * self.offset(self.wrapper(), 0) + b
-      camera.position.z = 1000 - progress * 1500;
+    progress = a * self.offset(self.wrapper(), 0) + b;
+    camera.position.z = 1000 - progress * 1500;
     camera.position.y = Math.sin(progress * 4) * 100;
   }
 });

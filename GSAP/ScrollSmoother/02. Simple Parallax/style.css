@@ -27,12 +27,14 @@ body {
   width: 100vw;
   margin: 0 auto;
 }
+
 .image-grid .image_cont {
   position: relative;
   overflow: hidden;
   height: 80vh;
   max-height: 500px;
 }
+
 .image-grid img {
   position: absolute;
   width: 100%;
@@ -40,29 +42,35 @@ body {
   object-fit: cover;
   bottom: 0;
 }
+
 .image-grid .image_cont:nth-child(1) {
   grid-column: 1/-1;
   grid-row: 1;
   height: 95vh;
 }
+
 .image-grid .image_cont:nth-child(2) {
   grid-column: 2/span 8;
   grid-row: 2;
   height: 60vh;
 }
+
 .image-grid .image_cont:nth-child(3) {
   grid-column: 4/span 8;
   grid-row: 3;
   height: 60vh;
 }
+
 .image-grid .image_cont:nth-child(3) img {
   object-position: right;
 }
+
 .image-grid .image_cont:nth-child(4) {
   grid-column: 1/-1;
   grid-row: 4;
   height: 60vh;
 }
+
 .image-grid .image_cont:nth-child(5) {
   grid-column: 4/span 8;
   grid-row: 5;
@@ -73,6 +81,7 @@ body {
   grid-row: 6;
   height: 80vh;
 }
+
 @media screen and (min-width: 1000px) {
   .image-grid .image_cont {
     max-height: unset;
@@ -102,6 +111,7 @@ body {
   margin: 0 auto;
   z-index: -1;
 }
+
 .overlay div {
   opacity: 0.2;
   border-left: 0.5px white solid;

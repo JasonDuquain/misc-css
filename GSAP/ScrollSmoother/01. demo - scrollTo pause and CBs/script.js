@@ -7,22 +7,19 @@ let smoother = ScrollSmoother.create({
   effects: true
 });
 
-gsap.to(".box-c", {
-  rotate: 360,
-  scrollTrigger: {
-    trigger: ".box-c",
-    start: "center center",
-    markers: true
-  }
-})
 
-document.querySelector("button").addEventListener("click", e => {
-  gsap.to(smoother, {
-    scrollTop: smoother.offset(".box-c", "center center"),
-    duration: 2,
-    ease: "back.out"
-  })
+document.querySelector(".button").addEventListener("click", e => {
+  
+  
 });
+
+let modalButton = document.querySelector('.modalButton')
+let modal = document.querySelector('.modal')
+let isOpen
+
+modalButton.addEventListener('click', (e) => {
+  
+})
 
 
 /* COMPLETE
@@ -53,5 +50,20 @@ document.querySelector("button").addEventListener("click", e => {
   // 	duration: 1
   // });
 });
+
+let modalButton = document.querySelector('.modalButton')
+let modal = document.querySelector('.modal')
+let isOpen
+
+modalButton.addEventListener('click', (e) => {
+  console.log(0)
+  isOpen = !isOpen
+  gsap.to(modal, {
+    autoAlpha: isOpen ? 1 : 0,
+  })
+  
+  smoother.paused(isOpen)
+})
+
 
 */

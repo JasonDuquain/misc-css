@@ -1,70 +1,84 @@
-
 let circlesHolder = document.querySelector(".circlesHolder")
 let btn = document.querySelector(".btn")
-function createCircles() {
+
+function createCircles(total) {
 	for (var i = 0; i < 12; i++){
 		let circle = document.createElement("div")
 		let circleWrapper = document.createElement("div")
 		circle.setAttribute("class", "circle")
 		circlesHolder.append(circleWrapper)
 		circleWrapper.append(circle)
-		gsap.set(circleWrapper, { rotation:i * 30 })
-		gsap.set(circle, { x:60 })	
+			
 	}
 }
 
-createCircles()
+createCircles(12)
 
-const tl = gsap.timeline({paused: true})
+const tl = gsap.timeline({ paused: true })
 let exitTime = 0
 
-tl.from(".circle", {
-  x:30, 
-  duration:0.4,
-	stagger:{ each:0.05, ease:"power1" }
-})
 
-exitTime = tl.duration()
-
-tl.addPause()
-tl.to(".circle", {
-	x:80,
-	scale:2, 
-	opacity:0,
-	duration:0.3,
-	stagger:{ each: 0.08, from: "end" }
-})
-tl.to(".circlesHolder", {
-  rotation: 360, 
-  duration: tl.recent().duration(), 
-  ease:"power1.in"
-}, "<")
 
 btn.addEventListener("mouseenter", () => {
-  (tl.time() < exitTime) ? tl.play() : tl.restart();
+  
 })
 
 btn.addEventListener("mouseleave", () => {
-  (tl.time() < exitTime) ? tl.reverse() : tl.play();
+  
 })
+
+
+/* START
+
+let circlesHolder = document.querySelector(".circlesHolder")
+let btn = document.querySelector(".btn")
+
+function createCircles(total) {
+	for (var i = 0; i < 12; i++){
+		let circle = document.createElement("div")
+		let circleWrapper = document.createElement("div")
+		circle.setAttribute("class", "circle")
+		circlesHolder.append(circleWrapper)
+		circleWrapper.append(circle)
+			
+	}
+}
+
+createCircles(12)
+
+const tl = gsap.timeline({ paused: true })
+let exitTime = 0
+
+
+
+btn.addEventListener("mouseenter", () => {
+  
+})
+
+btn.addEventListener("mouseleave", () => {
+  
+})
+
+*/
+
 
 /* COMPLETE
 
 let circlesHolder = document.querySelector(".circlesHolder")
 let btn = document.querySelector(".btn")
-function createCircles() {
-	for (var i = 0; i < 12; i++){
+function createCircles(total) {
+	for (var i = 0; i < total; i++){
 		let circle = document.createElement("div")
 		let circleWrapper = document.createElement("div")
 		circle.setAttribute("class", "circle")
 		circlesHolder.append(circleWrapper)
 		circleWrapper.append(circle)
-		gsap.set(circleWrapper, { rotation:i * 30 })
+		gsap.set(circleWrapper, { rotation: i * (360 / total) })
 		gsap.set(circle, { x:60 })	
 	}
 }
 
-createCircles()
+createCircles(10)
 
 const tl = gsap.timeline({ paused: true })
 let exitTime = 0

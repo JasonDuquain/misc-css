@@ -11,6 +11,7 @@ let paths = gsap.utils.toArray("#logo-scroll path, #logo-smoother path, #logo-mo
 let finalTl = null;
 
 
+
 /* START
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);

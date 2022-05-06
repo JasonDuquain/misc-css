@@ -70,11 +70,7 @@ p {
   padding: 0 0.5rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
+h1, h2, h3, h4, p {
   margin: 0;
 }
 
@@ -135,9 +131,7 @@ h1 .eyebrow {
   z-index: -10;
 }
 
-.intro,
-h2,
-h3 {
+.intro, h2, h3 {
   font-size: var(--step-1);
   font-weight: 500;
 }
@@ -176,6 +170,7 @@ h3 {
   padding-top: 40vh;
   z-index: -1;
 }
+
 .image-grid .image_cont {
   position: relative;
   aspect-ratio: 1/1;
@@ -188,14 +183,17 @@ h3 {
   height: 150%;
   object-fit: cover;
 }
+
 .image-grid .image_cont:nth-child(1) {
   grid-column: 1;
   grid-row: 1;
 }
+
 .image-grid .image_cont:nth-child(2) {
   grid-column: 3;
   grid-row: 2;
 }
+
 .image-grid .image_cont:nth-child(3) {
   grid-column: 2;
   grid-row: 3;
@@ -211,11 +209,13 @@ h3 {
   align-items: center;
   justify-items: center;
 }
+
 .parallax-images .image_cont {
   position: relative;
   height: 80vh;
   overflow: hidden;
 }
+
 .parallax-images img {
   position: absolute;
   bottom: 0;
@@ -224,15 +224,18 @@ h3 {
   width: 100%;
   object-fit: cover;
 }
+
 .parallax-images .parallax-text {
   grid-column: 2;
   grid-row: 1;
 }
+
 .parallax-images .image_cont:nth-child(2) {
   grid-column: 1/span 1;
   grid-row: 1;
   width: 100%;
 }
+
 .parallax-images .image_cont:nth-child(3) {
   grid-column: 2/span 1;
   grid-row: 2;
@@ -255,6 +258,7 @@ h3 {
   flex-wrap: wrap;
   column-gap: 4rem;
 }
+
 .bars .bars-text {
   flex: 1 1 300px;
   display: flex;
@@ -262,6 +266,7 @@ h3 {
   align-items: flex-start;
   justify-content: center;
 }
+
 .bars .bars-cont {
   flex: 1 1 500px;
   display: flex;
@@ -269,6 +274,7 @@ h3 {
   height: 60vh;
   align-items: flex-end;
 }
+
 .bars .bar {
   border-radius: 10px;
   margin: 2vw;
@@ -291,14 +297,17 @@ h3 {
   flex-wrap: wrap;
   column-gap: 4rem;
 }
+
 .staggered h3 {
   font-family: "wild_worldbold";
   font-size: clamp(16px, 6vw, 80px);
   letter-spacing: 0.03em;
 }
+
 .staggered_text {
   flex: 1 1 300px;
 }
+
 .staggered_demo {
   flex: 1 1 500px;
   display: flex;
@@ -313,6 +322,7 @@ h3 {
   max-height: 500px;
   overflow: hidden;
 }
+
 .parallax-slab img {
   position: absolute;
   bottom: 0;

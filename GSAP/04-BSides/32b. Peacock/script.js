@@ -5,9 +5,6 @@ const peacock = document.querySelector(".peacock");
 
 
 
-// GSDevTools.create({ animation: tl })
-
-
 /* copy/paste code
 
 zIndex: (index, target, targets) => {

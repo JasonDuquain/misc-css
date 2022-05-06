@@ -2,9 +2,10 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const smoother = ScrollSmoother.create({
   wrapper: "#wrapper",
-  content: "#content"
+  content: "#content",
+  smooth: 2,
+  effects: true
 });
-
 
 
 

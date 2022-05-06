@@ -47,7 +47,7 @@ body {
 }
 
 .hero .anim-swipe {
-  width: 100%;
+  width: 100%; /* overrides width: 700% above */
   background-color: #111111;
 }
 

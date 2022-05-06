@@ -13,9 +13,7 @@ headings.forEach((heading, i) => {
   
 });
 
-
 /* COMPLETE
-
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const smoother = ScrollSmoother.create({

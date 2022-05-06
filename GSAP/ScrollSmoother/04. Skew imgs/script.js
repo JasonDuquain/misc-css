@@ -1,7 +1,11 @@
-let skewSetter = null;
-let clamp = null;
+/* https://greensock.com/docs/v3/GSAP/gsap.quickTo() */
+
+//let skewSetter = gsap.quickTo("img", "skewY");
+//let clamp = gsap.utils.clamp(-20, 20);
 
 ScrollSmoother.create({
+	wrapper: "#wrapper",
+	content: "#content",
 	
 });
 

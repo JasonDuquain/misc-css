@@ -21,14 +21,14 @@ body {
 }
 
 .cta {
-	cursor:pointer;
-	position:absolute;
-	bottom:10px;
-	right:10px;
-	border:none;
-	border-radius:12px;
-	background-color:#43A047;
-	color:white;
+	cursor: pointer;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	border: none;
+	border-radius: 12px;
+	background-color: #43A047;
+	color: white;
 	padding: 18px;
 	font-size: 20px;
 
