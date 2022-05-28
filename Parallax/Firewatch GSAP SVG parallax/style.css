@@ -1,0 +1,78 @@
+html {
+  --c0: #feebe2;
+  --c1: #ffe2a6;
+  --c2: #ffb06d;
+  --c3: #ff9d60;
+  --c4: #ff8f4c;
+  --c5: #fc813a;
+  --c6: #f04f30;
+  --c7: #d2353a;
+  --c8: #8b1036;
+  --c9: #620a38;
+  --c10: #2f1121;
+}
+
+body {
+  background: var(--c10);
+  color: #fff;
+  min-height: 200vh;
+}
+
+.landscape {
+  
+}
+
+.landscape__layer {
+  
+}
+
+.landscape__image {
+  
+}
+
+.landscape__image svg {
+  
+}
+
+
+
+/* START
+
+html {
+  --c0: #feebe2;
+  --c1: #ffe2a6;
+  --c2: #ffb06d;
+  --c3: #ff9d60;
+  --c4: #ff8f4c;
+  --c5: #fc813a;
+  --c6: #f04f30;
+  --c7: #d2353a;
+  --c8: #8b1036;
+  --c9: #620a38;
+  --c10: #2f1121;
+}
+
+body {
+  background: var(--c10);
+  color: #fff;
+  min-height: 200vh;
+}
+
+.landscape {
+  
+}
+
+.landscape__layer {
+  
+}
+
+.landscape__image {
+  
+}
+
+.landscape__image svg {
+  
+}
+
+
+*/
