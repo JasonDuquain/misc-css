@@ -13,7 +13,8 @@
 
 .gingerbread .limb {
 	stroke: #cd803d;
-   
+  stroke-width: 35px;
+	stroke-linecap: round; 
 }
 
 /* COMPLETE
