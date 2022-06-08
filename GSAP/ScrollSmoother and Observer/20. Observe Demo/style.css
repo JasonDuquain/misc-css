@@ -1,0 +1,50 @@
+body {
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.description {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+ font-size: clamp(2rem, 4vw, 3rem);
+ font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-size: 21px;
+}
+
+a {
+  color: inherit;
+}
+
+.description > * {
+  text-align: center;
+}
+
+svg {
+  width: 300px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: visible
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}

@@ -111,7 +111,7 @@ h2 {
 	background:#F2F2F2;
 }
 
-.adBlock {
+.addBlock {
 	display:flex;
 	flex-direction:row;
 	align-items:space-evenly;
@@ -123,7 +123,7 @@ h2 {
 	color:#595959;
 }
 
-.ad {
+.add {
 	width:30vw;
 	height:16vw;
 	min-width:150px;

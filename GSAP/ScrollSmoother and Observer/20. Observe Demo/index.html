@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>observe demo</title>
+  <link href='//fonts.googleapis.com/css?family=Signika+Negative:300,400,600' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='https://codepen.io/GreenSock/pen/ZEGdQLM/7ba936b34824fefdccfe2c6d9f0b740b.css'>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<section class="description">
+   <h1><a href="https://greensock.com/docs/v3/Plugins/Observer"><code>Observer</code></a></h1>
+  <p>Observer is a really handy way to detect a user's intended scroll direction. Scroll or swipe in different directions to spin the compass.</p>
+</section>  
+
+<svg viewBox="0 0 284 284">
+        <path d="M141.48 268.08c-68.91 0-125.62-56.7-125.62-125.62 0-68.91 56.7-125.62 125.62-125.62 68.91 0 125.62 56.7 125.62 125.62v.01c-.08 68.88-56.74 125.54-125.62 125.61Z" fill="none" stroke="#fff" opacity="1" stroke-width="10"/>
+  
+  <g id="velocity" opacity="0.5">
+        <path d="M141.48 268.08c-68.91 0-125.62-56.7-125.62-125.62 0-68.91 56.7-125.62 125.62-125.62 68.91 0 125.62 56.7 125.62 125.62v.01c-.08 68.88-56.74 125.54-125.62 125.61Z" fill="none" stroke="#fff" opacity="0" stroke-width="3"/>
+      <path d="M211.45 70.68 70.68 211.44l1.33 1.33L212.78 72.01l-1.33-1.33Z" fill="#fff"/>
+  <path d="m72.02 70.69-1.33 1.33 140.76 140.76 1.33-1.33L72.02 70.7Z" fill="#fff"/>
+  </g>
+
+  <g id="arrow" fill-rule="nonzero">
+    <path d="M141.48 268.08c-68.91 0-125.62-56.7-125.62-125.62 0-68.91 56.7-125.62 125.62-125.62 68.91 0 125.62 56.7 125.62 125.62v.01c-.08 68.88-56.74 125.54-125.62 125.61Z" fill="#0b0e1e" opacity="0"/>
+    <path d="M142.18 122.89V40.83l-14.61 82.06h14.61Z" fill="#60ad30"/>
+    <path d="M142.18 122.89V40.83l14.6 82.06h-14.6Z" fill="#8abe23"/>
+    <path d="M140.75 169.9h-.01a28.3 28.3 0 0 1-28.17-28.17 28.3 28.3 0 0 1 28.17-28.17 28.3 28.3 0 0 1 28.17 28.17v.01a28.3 28.3 0 0 1-28.16 28.16Z" fill="#60ad30"/>
+    <path d="M140.75 156.78c-8.23 0-15-6.77-15-15s6.77-15 15-15 15 6.77 15 15a15.12 15.12 0 0 1-15 15Z" fill="#8abe23"/>
+  </g>
+</svg>
+
+  <script src='gsap.min.js'></script>
+  <script src='Observer.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+</html>

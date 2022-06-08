@@ -5,6 +5,10 @@ body {
 	font-family:sans-serif;
 }
 
+:root {
+	/* scroll-behavior: smooth; */
+}
+
 header {
 	height:35vh;
 	background:#07598C;

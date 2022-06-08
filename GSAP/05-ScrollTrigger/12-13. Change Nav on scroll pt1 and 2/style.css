@@ -1,7 +1,10 @@
+/* At start make sure .nav has 'height: 100px' at start and a has 'font-size:clamp(14px, 3vw, 30px);' */
+
 * {
 	position:relative;
 	box-sizing:border-box;
 }
+
 body {
 	margin:0;
 	padding:0;

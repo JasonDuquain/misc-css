@@ -1,5 +1,3 @@
-/* start coding at 7:44 - at 8:28 the rest of the code is visible */
-
 function init() {
   gsap.set(".circle", {xPercent:-50, yPercent:-50})
 
@@ -18,7 +16,7 @@ function init() {
 	let fullWidth = radius * 2;
 	let percentIncrease = fullWidth / 100;
   
-  //START HERE AT 7:44
+  //// START HERE AT 7:44 (let tl = gsap.timeline()...)
   
   
   //GSDevTools.create({animation: tl})
@@ -128,7 +126,7 @@ function init() {
 	let fullWidth = radius * 2;
 	let percentIncrease = fullWidth / 100;
   
-  //START HERE AT 7:44
+  //// START HERE AT 7:44 (let tl = gsap.timeline()...)
   
   
   //GSDevTools.create({animation: tl})

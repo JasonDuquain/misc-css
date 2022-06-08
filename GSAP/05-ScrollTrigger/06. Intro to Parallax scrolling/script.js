@@ -8,7 +8,6 @@ let tl = gsap.timeline({
     markers: true
   }
 })
-
 .from('.background', { y: 50 })
 .from('.middleground', { y: 50 }, 0)
 .from('.foreground', { y: 50 }, 0)
@@ -24,7 +23,6 @@ let tl = gsap.timeline({scrollTrigger:{
 	toggleActions:"restart none none reverse",
 	markers:true
 }})
-
 .from(".background", {y:50})
 .from(".middleground", {y:150}, 0)
 .from(".foreground", {y:250}, 0)
@@ -43,7 +41,6 @@ let tl = gsap.timeline({
     markers: true
   }
 })
-
 .from('.background', { y: 50 })
 .from('.middleground', { y: 50 }, 0)
 .from('.foreground', { y: 50 }, 0)

@@ -1,5 +1,5 @@
 const sectionColors = ["dodgerblue", "salmon", "green",   "purple",    "maroon"]
-const navColors =     ["#00BFFF",    "#FFA07A", "#90EE90", "#EE82EE", "#FF6347"]
+const navColors = ["#00BFFF",    "#FFA07A", "#90EE90", "#EE82EE", "#FF6347"]
 
 gsap.set(".fullscreen", { backgroundColor: gsap.utils.wrap(sectionColors) })
 
@@ -18,7 +18,7 @@ ScrollTrigger.addEventListener("refreshInit", function() {
 /* COMPLETE
 
 const sectionColors = ["dodgerblue", "salmon", "green",   "purple",    "maroon"]
-const navColors =     ["#00BFFF",    "#FFA07A", "#90EE90", "#EE82EE", "#FF6347"]
+const navColors = ["#00BFFF", "#FFA07A", "#90EE90", "#EE82EE", "#FF6347"]
 
 gsap.set(".fullscreen", {backgroundColor:gsap.utils.wrap(sectionColors)})
 
@@ -50,7 +50,7 @@ ScrollTrigger.addEventListener("refreshInit", function() {
 /* START 
 
 const sectionColors = ["dodgerblue", "salmon", "green",   "purple",    "maroon"]
-const navColors =     ["#00BFFF",    "#FFA07A", "#90EE90", "#EE82EE", "#FF6347"]
+const navColors = ["#00BFFF",    "#FFA07A", "#90EE90", "#EE82EE", "#FF6347"]
 
 gsap.set(".fullscreen", { backgroundColor: gsap.utils.wrap(sectionColors) })
 
