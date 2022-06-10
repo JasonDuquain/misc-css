@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>scrollTrigger.observe() - swipe gallery</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<section class="slide">
+ <div class="slide__outer">
+  <div class="slide__inner">
+   <div class="slide__content">
+    <div class="slide__container">
+     <h2 class="slide__heading">SCROLL</h2>
+     <figure class="slide__img-cont">
+      <img class="slide__img" src='img/couch.jpg' alt=''>
+     </figure>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="slide">
+ <div class="slide__outer">
+  <div class="slide__inner">
+   <div class="slide__content">
+    <div class="slide__container">
+     <h2 class="slide__heading">SWIPE</h2>
+     <figure class="slide__img-cont">
+      <img class="slide__img" src='img/cactus.jpg' alt=''>
+     </figure>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="slide">
+ <div class="slide__outer">
+  <div class="slide__inner">
+   <div class="slide__content">
+    <div class="slide__container">
+     <h2 class="slide__heading">SCROLL</h2>
+     <figure class="slide__img-cont">
+      <img class="slide__img" src='img/hangar.jpg' alt=''>
+     </figure>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="slide">
+ <div class="slide__outer">
+  <div class="slide__inner">
+   <div class="slide__content">
+    <div class="slide__container">
+     <h2 class="slide__heading">SWIPE</h2>
+     <figure class="slide__img-cont">
+      <img class="slide__img" src='img/plant.jpg' alt=''>
+     </figure>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="overlay">
+ <div class="overlay__content">
+  <p class="overlay__count">0<span class="count">1</span></p>
+  <figure class="overlay__img-cont">
+   <img class="image" src="img/table.jpg" />
+   <img class="image" src="img/mirror.jpg" />
+   <img class="image" src="img/girl.jpg" />
+   <img class="image" src="img/girl-mirror.jpg" />
+  </figure>
+ </div>
+</section>
+
+  <script src='gsap.min.js'></script>
+  <script src='ScrollTrigger.min.js'></script>
+  <script src='TextPlugin.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+</html>
