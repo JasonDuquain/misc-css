@@ -1,0 +1,13 @@
+body {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  height: 100vh;
+}
+.container {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  width: 600%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
