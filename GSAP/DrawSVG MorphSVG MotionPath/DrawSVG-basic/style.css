@@ -1,3 +1,10 @@
+path {
+  visibility: hidden;
+  stroke: red;
+  stroke-width: 1px;
+  fill: none;
+}
+
 body {
   background-color: black;
   color: #ccc;

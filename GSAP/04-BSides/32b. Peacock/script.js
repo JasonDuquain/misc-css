@@ -1,8 +1,31 @@
 
 const peacock = document.querySelector(".peacock");
 
+gsap.set(".feather", {
+	rotation: gsap.utils.distribute({
+		base: -90,
+		amount: 180
+	}),
+	transformOrigin: "50% 100%",
+	zIndex: (index, target, targets) => {
+		let half = Math.floor(targets.length / 2);
+		if (index < half) {
+			return targets.length - index;
+		} else if (index === half) {
+			return 200;
+		}
+	}
+})
 
-
+const tl = gsap.timeline()
+.from(".feather", {
+	rotation: 0,
+	duration: 2
+})
+.from(".feathers", {
+	scale: 0.3,
+	transformOrigin: "50% 100%"
+}, 0)
 
 
 /* copy/paste code

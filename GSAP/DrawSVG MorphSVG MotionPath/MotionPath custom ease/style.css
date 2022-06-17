@@ -25,5 +25,12 @@ svg {
 }
 
 #motionGuide {
-	opacity:0;
+	opacity: 0;
 }
+
+/* if using drawSVG */
+/* #motion path, #study path {
+  stroke-width: 3;
+  stroke: red;
+  fill: none;
+} */

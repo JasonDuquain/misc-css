@@ -35,9 +35,7 @@ body {
   opacity: 0;
 }
 
-.logo img {
-  width: 100px;
-}
+.logo img { width: 100px; }
 
 .words {
   display: grid;
@@ -80,6 +78,7 @@ h2 {
 
 /* make sure it does not have display: none until its added at 17:30 */
 .moreContent {
+  
   padding: 50px;
   color: black;
   background: white;

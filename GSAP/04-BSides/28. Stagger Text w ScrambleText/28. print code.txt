@@ -1,0 +1,47 @@
+
+<div class="wrapper">
+	<ul>
+		<li>Name: Herman Krute</li>
+		<li>Alias: Pancake King</li>
+		<li>Height: 6'1"</li>
+		<li>Weight: 245lbs</li>
+		<li>DOB: January 12, 1978</li>
+		<li>Last Seen: Berlin, Germany</li>	
+	</ul>
+</div>
+
+
+li {
+	list-style-type: none; font-size: 28px;
+	line-height: 50px; font-weight: 300;
+	margin: 0; color: #ddd;
+	opacity: 0;
+
+.old {
+	color: #ccc; padding: 10px;
+	background: #555;
+}
+
+.new {
+	color: #c3c315; padding: 10px;
+	background: black;
+}
+
+
+const mainTl = gsap.timeline({id:"stats"});
+const items = gsap.utils.toArray("li")
+
+items.forEach((element, index) => {
+  let text = element.innerText;
+  element.innerText = "";
+  let tl = gsap.timeline()
+  .set("li", { opacity: 1 })
+  .to(element, {
+    scrambleText: {
+      text: text,
+      oldClass: "old",
+      newClass: "new"
+    }
+  })
+  mainTl.add(tl, index * 0.2)
+})

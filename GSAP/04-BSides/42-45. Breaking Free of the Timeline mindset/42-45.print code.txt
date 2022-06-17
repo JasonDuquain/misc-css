@@ -1,0 +1,119 @@
+
+<div class="wrapper">
+	<div class="slides">
+		<div class="slide slide1">
+			<img src="beach-gallery-surf.jpg" />
+			<div class="number">1</div>
+		</div>
+		....3 more "slide slide#" divs with differnt imgs
+	</div>
+	<div class="progress">
+		<div class="bar"></div>
+	</div>
+	<div class="dotNav">
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+	</div>
+	<div class="nav">
+		<button id="prev_btn">prev</button>
+		<button id="next_btn">next</button>
+		<label>
+			Autoplay
+			<input id="autoPlay_btn" type="checkbox" />
+			<i></i>
+		</label>
+	</div>
+</div>
+
+
+gsap.set(".wrapper", {
+	autoAlpha : 1, transformOrigin: "center top", scale: 0.65
+});
+
+const next_btn = document.querySelector("#next_btn")
+const prev_btn = document.querySelector("#prev_btn")
+const autoPlay_btn = document.querySelector("#autoPlay_btn")
+let autoPlay = false;
+
+const slides = gsap.utils.toArray(".slide");
+const numSlides = slides.length;
+let slideIndex = 0;
+let currentSlide;
+let animatingOut = false;
+
+function hideSlide() {
+	if (!animatingOut) {
+		gsap.to(currentSlide, { opacity: 0, onComplete: showSlide })
+		gsap.to(currentSlide.querySelector(".number"), { scale: 0 })
+		animatingOut = true;
+	}
+}
+
+function showSlide() {
+	animatingOut = false;
+	currentSlide = slides[slideIndex];
+	gsap.to(currentSlide, { opacity: 1 })
+	gsap.fromTo(currentSlide.querySelector(".number"), {
+		scale: 0 
+	}, { 
+		scale: 1,
+		onComplete: () => {
+			if (autoPlay) {
+				timer.restart()
+			}
+		} 
+	})
+}
+
+showSlide()
+
+next_btn.addEventListener("click", () => {
+	if (autoPlay) stopAutoPlay()
+	nextSlide()
+});
+
+prev_btn.addEventListener("click", () => {
+	slideIndex > 0) ? slideIndex-- : slideIndex = slides.length - 1;
+	if (autoPlay) stopAutoPlay()
+	hideSlide()
+});
+
+function nextSlide() {
+	(slideIndex < numSlides - 1) ? slideIndex++ : slideIndex = 0
+	hideSlide()
+}
+
+autoPlay_btn.addEventListener("change", event => {
+	if (event.currentTarget.checked) {
+		nextSlide()
+		autoPlay = true
+	} else {
+		timer.pause(0);
+		autoPlay = false;
+	}
+});
+
+function stopAutoPlay() {
+	autoPlay_btn.checked = false;
+	autoPlay_btn.dispatchEvent(new Event("change"))
+}
+
+const timer = gsap.from(".bar", {
+	scaleX: 0,
+	transformOrigin: "0% 50%",
+	duration: 3,
+	onComplete: () => nextSlide()
+}).pause()
+
+const dots = gsap.utils.toArray(".dot");
+
+dots.forEach(function(dot, index) {
+	dot.addEventListener("click", function() {
+		slideIndex = index;
+		if (autoPlay) stopAutoPlay()
+		hideSlide()
+	});
+});
+

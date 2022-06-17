@@ -1,11 +1,10 @@
 
 
-
 const tl = gsap.timeline()
 
 
 
-// GSDevTools.create({ animation: tl })
+GSDevTools.create({ animation: tl })
 
 
 /* START

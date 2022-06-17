@@ -1,0 +1,67 @@
+
+<div class="main">
+	<h1>Slime Conveyor Belt</h1>
+	<div class="demo">
+		<div class="conveyor"></div>
+		<div class="slime"></div>
+		..... 5 more "slime" divs
+	</div>
+	<div class="buttonNav">
+		<button id="play">play</button>	 
+	</div>
+</div>
+
+
+.main {
+	width: 100%; display: flex;
+	justify-content: center; flex-direction: column;
+	align-items: center;
+}
+
+.demo {
+	visibility: hidden; width: 400px;
+	height: 250px; background:#1d1d1d;
+}
+
+.slime {
+	width: 80px; height: 50px;
+	background-image: url("slime.svg"); background-size: cover;
+	position: absolute; transform: translateY(250px);
+}
+
+.conveyor {
+	width:400px; height:20px;
+	border-radius:10px; background:#4aa5ff;
+	top:150px; left:125px;
+	position:absolute;
+}
+
+.buttonNav { padding:20px; }
+
+button {
+	margin-right:10px; padding:10px;
+}
+
+
+gsap.set(".demo", {autoAlpha: 1});
+const slimes = gsap.utils.toArray(".slime");
+const mainTL = gsap.timeline()
+
+slimes.forEach((slime, index) => {
+  const tl = gsap.timeline()
+  
+  /* in CSS slime has transform: translateY(250px);  */
+  tl.to(slime, { y: 25, duration: 0.5 })
+  .to(slime, { y: 100, ease: "power41", duration: 0.3 })
+  .to(slime, { 
+    scaleY: 0.6, 
+    transformOrigin: "center bottom", 
+    duration: 0.15,
+    repeat: 1,
+    yoyo: true
+  })
+  .to(slime, { rotation: 360, duration: 0.9, ease: "power2" }, 0.1)
+  .to(slime, { x: 400, ease: "none", duration: 3 }, 0)
+
+  mainTL.add(tl, index * 0.75)
+})

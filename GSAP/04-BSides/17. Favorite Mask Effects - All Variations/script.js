@@ -3,8 +3,12 @@ gsap.registerPlugin(SplitText, GSDevTools)
 function init() {
 	gsap.set(".wrapper", {autoAlpha:1})
 	
+	let taglineSplit = new SplitText("h2", { type: "chars, words" })
 
-	//GSDevTools.create({animation:animation})
+	let animation = gsap.timeline()
+
+	
+	GSDevTools.create({animation:animation})
 }
 
 

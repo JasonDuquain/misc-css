@@ -1,0 +1,50 @@
+
+<h1>
+	<div data-char=".">C</div>
+	<div data-char="R">A</div>
+	<div data-char="E">S</div>
+	<div data-char=".">A</div>
+	<div data-char="T">S</div>
+	<div data-char=".">I</div>
+	<div data-char="V">R</div>
+	<div data-char=".">E</div>
+</h1>
+
+
+:root {
+  --heading-size: 20vw;
+}
+
+h1 {
+	visibility: hidden; padding: 0;
+	font-size: var(--heading-size); line-height: 0.75;
+	display: flex; overflow: hidden;
+	padding-bottom: 0.5vw;
+}
+
+h1 div {
+	display: inline-block; letter-spacing: -0.3vw;
+}
+
+h1 div::before {
+	position: absolute; top: 0;
+	left: 0; content: attr(data-char);
+	transform: translateY(-103%);
+}
+
+
+gsap.set("h1 div", { yPercent: -103 })
+gsap.set("h1", { autoAlpha: 1 })
+const tl = gsap.timeline()
+tl.to("h1 div", { 
+  yPercent: 0,
+  duration: 1,
+  ease: "expo.inOut",
+  stagger: 0.05 
+ })
+ .to("h1 div:not([data-char='.'])", {
+    yPercent: 103,
+    duration: 1,
+    ease: "expo.inOut",
+    stagger: 0.1
+ })

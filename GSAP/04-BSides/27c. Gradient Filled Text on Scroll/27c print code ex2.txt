@@ -1,0 +1,54 @@
+
+<h2>Scroll Down</h2>
+<section>
+  <h1>GSAP 3 Express</h1>
+  <p>The ultimate beginn...ly.</p>
+</section>
+////// repeat 4 more sections
+<div style="height:40vh"></div>
+
+
+body {
+  font-family: sans-serif; background: #000;
+  margin: 50px; color: #eee;
+  padding-top: 60vh;
+}
+
+p {
+  font-size: 24px; width: 50vw;
+  line-height: 34px;
+}
+
+h1 {
+  margin-bottom: 20px; margin-top: 60px;
+  font-size: clamp(50px, 8vw, 80px);
+  background-image: linear-gradient(45deg, #000 -200%, #eee -100%, #000 0%);
+  background-position: "100px 100px"; -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+let sections = gsap.utils.toArray("section");
+
+sections.forEach(function (element, index) {
+  let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: element,
+        start: "top 50%",
+        end: "+=150px",
+        scrub: true,
+        markers: true
+      }
+    })
+    .to(element.querySelector("h1"), {
+      backgroundImage: "linear-gradient(45deg, #000 -100%, #eee 50%, #000 100%)",
+      duration: 1,
+      ease: "none"
+    })
+    .from(element.querySelectorAll("p"), {
+        duration: 1,
+        opacity: 0,
+        y: 50,
+        stagger: 0.2
+    }, 0.3);
+});

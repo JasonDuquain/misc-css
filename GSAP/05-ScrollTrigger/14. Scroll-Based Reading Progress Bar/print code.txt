@@ -1,0 +1,100 @@
+
+///////////////////////////// HTML
+<header class="centered">SomeSite.com</header>
+<main>
+<p>Vel curae; arcu ....</p>
+<p>Natoque urna luctus.....</p>
+<p>Luctus iaculis ha....</p>
+<p>Justo scrit. Cons.....</p>
+ 
+<div class="progressSpaceReserve">
+	<div class="progressHolder fixed">
+		<h4>Reading Progress</h4>
+		<div class="progressBarBG">
+			<div class="progressBar"></div>
+		</div>
+	</div>
+</div>
+		
+</main>
+
+<section class="comments">
+  <h2>Comments</h2>
+	<div class="comment">First!</div>
+	<div class="comment">This is great</div>
+	....... 4 more
+</section>
+<section class="ads">
+	<h2>Bunch of Ads</h2>
+	<div class="addBlock">
+		<div class="add"></div>
+		<div class="add"></div>
+		...... 4 more	
+	</div>
+</section>
+<footer class="centered">
+	<h2>Footer<h2>
+</footer> 
+
+
+////////////////////////// CSS (some)
+header {
+	height:25vw; background:#07598C;
+	color:white; font-size:10vw;
+	font-weight:800;
+}
+
+.progressSpaceReserve {
+	width:100%; height:60px;
+	background:grey;
+}
+
+.progressHolder {
+	border-top:1px solid #ccc; background:white;
+	width:100%; height:60px;
+	bottom:0; position:absolute;
+	z-index:1000; display:flex;
+	align-items:center; justify-content:space-evenly;
+	flex-direction:column;
+}
+
+.progressBarBG {
+	width:400px; height:10px;
+	background:#ccc;
+}
+
+.progressBar {
+	width:400px; height:10px;
+	background:red; transform:scaleX(0);
+	transform-origin:0 0;
+}
+
+.fixed { position:fixed; }
+
+
+////////////////////////// JS
+const progressHolder = document.querySelector(".progressHolder")
+const progressBar = document.querySelector(".progressBar")
+
+let tween = gsap.to(progressBar, {
+	scale: 1,
+	ease: "none",
+	paused: true
+})
+
+ScrollTrigger.create({
+	trigger: "body",
+	start: "top top",
+	endTrigger: "main",
+	end: "bottom bottom",
+	markers: true,
+	once: true,
+	onLeave: () => {
+		progressHolder.classList.remove("fixed")
+	},
+	onUpdate: self => {
+		if (self.progress > tween.progress()) {
+			tween.progress(self.progress)
+		}
+	}
+})

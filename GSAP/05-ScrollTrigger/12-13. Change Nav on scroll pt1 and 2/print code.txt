@@ -1,0 +1,66 @@
+/////////////////////////// HTML
+<div class="fullscreen">DODGER BLUE</div>
+	<div class="fullscreen">SALMON</div>
+	<div class="fullscreen">GREEN</div>
+	<div class="fullscreen">PURPLE</div>
+	<div class="fullscreen">MAROON</div>
+	<div class="nav">
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Blog</a>
+		<a href="#">Shop</a>
+		<a href="#">Contact Us</a>
+    </div>
+		
+////////////////////////////// CSS
+.fullscreen {
+	width:100vw; height:100vh;
+	padding:5vw; display:flex;
+	justify-content:center; align-items:center;
+	font-size:8vw; color:white;
+}
+
+.nav {
+	position:fixed; top:0;
+	width:100vw; padding:20px;
+	background:#00BFFF; display:flex;
+	align-items:center; flex-wrap:wrap;
+}
+
+a {
+	margin-right:20px; text-decoration:none;
+	color:black; display:inline-block;
+	/* font-size:clamp(14px, 3vw, 30px); */
+	font-size: 1.7em;
+}
+
+/////////////////////////////// JS
+const sectionColors = ["dodgerblue", "salmon", "green", "purple", "maroon"]
+const navColors = ["#00BFFF", "#FFA07A", "#90EE90", "#EE82EE", "#FF6347"]
+const sections = document.querySelectorAll(".fullscreen");
+let navHeight = document.querySelector(".nav").offsetHeight;
+gsap.set(".fullscreen", { backgroundColor: gsap.utils.wrap(sectionColors) })
+
+sections.forEach(function(section, index) {
+  ScrollTrigger.create({
+    trigger: section,
+	
+    /* by using fn based values, they update whenever scrolltrigger refreshes (in this ex it refreshes on resize) */
+    start: () => "top " + navHeight,
+    end: () => "bottom " + navHeight,
+    
+    animation: gsap.to(".nav", {
+      backgroundColor: navColors[index],
+      immediateRender: false
+    }),
+    toggleActions: "restart none none reverse",
+
+    /* instead of toggleActions and immediateRender, you can do this instead: */
+    // onEnter: () => gsap.to(".nav", {backgroundColor: navColors[index]}),
+    // onenterBack: () => gsap.to(".nav", {backgroundColor: navColors[index]})
+  })
+})
+
+ScrollTrigger.addEventListener("refreshInit", function() {
+  navHeight = document.querySelector(".nav").offsetHeight;
+});

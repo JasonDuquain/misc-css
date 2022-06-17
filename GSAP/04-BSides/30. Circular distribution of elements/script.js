@@ -1,4 +1,3 @@
-
 let circlesHolder = document.querySelector(".circlesHolder");
 let circle = document.createElement("div");
 circle.setAttribute("class", "circle");
@@ -12,6 +11,8 @@ function createCircles(numCircles) {
 }
 
 createCircles(10);
+
+
 
 
 /* START

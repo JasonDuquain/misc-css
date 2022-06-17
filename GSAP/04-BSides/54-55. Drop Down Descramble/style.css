@@ -18,21 +18,26 @@ body {
 }
 
 h1 {
+	visibility: hidden;
 	padding: 0;
 	font-size: var(--heading-size);
 	line-height: 0.75;
   border: 1px solid red;
 	display: flex;
+	overflow: hidden;
 }
 
-h1 div{
+h1 div {
 	display: inline-block;
+	letter-spacing: -0.3vw;
 }
 
 h1 div::before {
 	position: absolute;
 	top: 0;
 	left: 0;
+	content: attr(data-char);
+	transform: translateY(-103%);
 }
 
 /* START

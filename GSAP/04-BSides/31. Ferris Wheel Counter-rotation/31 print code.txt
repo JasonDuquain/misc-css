@@ -1,0 +1,56 @@
+
+<div class="circlesHolder"></div>
+
+
+.circlesHolder {
+  width: 400px; height: 400px;
+  border-radius: 50%; border: 4px solid #999;
+  opacity: 0;
+}
+
+.circle {
+  text-align: center; line-height: 50px;
+  width: 80px; height: 78px;
+  position: absolute; background-image: url("ferris-basket.webp");
+}
+
+.circleParent {
+  width: 100px; height: 2px;  
+  background:#999; position: absolute;
+}
+
+
+let circlesHolder = document.querySelector(".circlesHolder")
+
+function createCircles(numCircles, radius) {
+	for (var i = 0; i < numCircles; i++) {
+		let rotation = i * (360 / numCircles)
+		let circle = document.createElement("div")
+		let circleParent = document.createElement("div")
+		circle.setAttribute("class", "circle")
+		circleParent.setAttribute("class", "circleParent")
+		gsap.set(circle, {
+			x: radius - 40,
+			rotation: -rotation,
+			y: -4,
+			transformOrigin: "40px 8px"
+		})
+		gsap.set(circleParent, {
+			transformOrigin: "left center",
+			rotation: rotation,
+			width: radius,
+			height: 4,
+			left: "50%",
+			top: "50%"
+		})
+		circlesHolder.append(circleParent)
+		circleParent.append(circle)
+	}	
+}
+	
+createCircles(12, 200);
+gsap.to(circlesHolder, { opacity: 1 })
+		
+let animation = gsap.timeline()
+animation.to(circlesHolder, {rotation: 360, duration: 8, ease: "none"})
+.to(".circle", { rotation: "-=360", duration: 8, ease: "none" }, 0)

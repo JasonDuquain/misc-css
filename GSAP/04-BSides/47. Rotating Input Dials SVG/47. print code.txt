@@ -1,0 +1,43 @@
+
+<h2>rotation: <span></span></h2>
+<div class="dials">
+  <div class="dial left">
+  <h3>SVG as &lt;img&gt;</h3>
+	<img id="myImage" src="circle-arrow-pink.svg" />
+  </div>
+  <div class="dial">
+	<h3>SVG Group &lt;g&gt;</h3>
+	<svg id="mySVG" xmlns="..." x="0px" y="0px" viewBox="0 0 300 300">
+	  <style type="text/css">
+		.st0 { fill: #34FF33; }
+
+		.st1 {
+			   fill: none; stroke: #0066CC;
+			   stroke-width: 2; stroke-linecap: round;
+			   stroke-linejoin: round;
+			 }
+	  </style>
+	  <g id="dial">
+		<circle id="hitArea" class="st0" cx="150.4" cy="149.7" r="148" />
+		<g id="arrow" transform="matrix( 1, 0, 0, 1, 0,0) ">
+		  <g>
+			<path class="st1" d="M204.1,105.4l42.3,44.6l-42.3,44.6 M244.7,150H55.2" />
+		  </g>
+		</g>
+		  <circle id="stroke" class="st1" cx="150" cy="150" r="148" />
+	  </g>
+		</svg>
+	</div>
+</div>
+
+
+
+const output = document.querySelector("h2 span");
+
+gsap.set("#dial", { transformOrigin: "50% 50%" })
+Draggable.create("#myImage, #dial", {
+	type: "rotation",
+	onDrag: function() {
+		output.textContent = gsap.utils.wrap(0, 360, this.rotation)
+	}
+})

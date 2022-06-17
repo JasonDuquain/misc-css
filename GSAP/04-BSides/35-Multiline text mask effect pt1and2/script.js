@@ -1,5 +1,4 @@
-/* start pt1 at 5:30 --- start pt2 at 1:00 */
-
+/* start pt1 at 5:30 --- start pt2 at 1:05 */
 
 gsap.registerPlugin(GSDevTools, SplitText)
 
@@ -21,6 +20,7 @@ window.addEventListener('resize', function() {
 })
 
 window.addEventListener("load", init);
+
 
 
 /* START
@@ -80,7 +80,7 @@ let delay = 250;
 
 window.addEventListener('resize', function() {
 	gsap.set(".fullScreen", { autoAlpha: 0 })
-	this.clearTimeout(timeout);
+	clearTimeout(timeout);
 	timeout = setTimeout(init, delay)
 })
 

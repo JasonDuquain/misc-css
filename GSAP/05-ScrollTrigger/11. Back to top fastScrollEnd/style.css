@@ -15,10 +15,11 @@ body {
 }
 
 .active .message {
-	background: blue;
+	visibility: visible;
 }
 
 .message {
+	visibility: hidden;
   height: 80px;
   position: fixed;
   bottom: 0;

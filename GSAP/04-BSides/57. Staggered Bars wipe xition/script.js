@@ -1,3 +1,4 @@
+
 let t = gsap.to(".bar", {
 	xPercent: -100,
 	ease: "none",  

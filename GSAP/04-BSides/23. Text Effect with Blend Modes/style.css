@@ -25,12 +25,9 @@ h1 {
   will-change: transform;
   position: absolute;
   margin: 0;
-  font-size: 20vw; 
+  font-size: 300vw; 
   text-transform: uppercase;
   font-family: Montserrat, sans-serif;
-}
-
-.dark h1 {
   color: #fff;
 }
 
@@ -39,11 +36,12 @@ h1 {
 }
 
 .blendImage {
-   
+  transform: scale(2);
+  mix-blend-mode: darken;
 }
 
 .bg {
-  
+  transform: scale(2);
 }
 
 .effect {

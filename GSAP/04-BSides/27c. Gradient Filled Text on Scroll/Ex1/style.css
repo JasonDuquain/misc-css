@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  background: #000;
+  margin: 50px;
+  color: #eee;
+}
+
+p {
+  width: 80%;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p:last-of-type {
+  margin-bottom: 100vh;
+}
+
+h1:nth-of-type(1) {
+  margin-top: 300px;
+}
+
+h1 {
+  font-size: clamp(50px, 8vw, 80px);
+  background-image: linear-gradient(#f60 -200%, #ff0 -100%, #f60 0%);
+  background-position: "100px 100px";
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,84 @@
+
+<div class="circles">
+	<div class="circle"></div>
+	<div class="circle"><div>1</div></div>
+	<div class="circle"><div>2</div></div>
+	<div class="circle"><div>3</div></div>
+	<div class="circle"><div>4</div></div>
+	<div class="circle"><div>5</div></div>
+</div>
+<div class="progress">
+	<div class="bar"></div>
+</div>
+<div class="nav">
+	<button id="prev">prev</button>
+	<button id="next">next</button>
+</div>
+
+
+.progress {
+	width: 100%; height: 10px;
+	background: grey;
+}
+
+.nav { margin: 10px; padding: 10px; }
+
+button {
+	margin: 20px; padding: 15px;
+}
+
+.bar {
+	width: 100%; height: 100%;
+	background: red;
+}
+
+.circles {
+	width: 100%; height: 20px;
+	display: flex; justify-content: space-between;
+	flex-direction: row;
+}
+
+.circle {
+	width: 1px; height: 20px;
+	background: black; position: relative;
+}
+
+.circle div {
+	content: ""; width: 30px;
+	height: 30px; position: absolute;
+	bottom: 20px; transform: translateX(-50%);
+	background: #39f; /*blue*/ border-radius: 50%;
+	display: flex; align-items: center;
+	justify-content: center; color: white;
+}
+
+
+const bar = document.querySelector(".bar")
+const tl = gsap.timeline({defaults:{duration:1}})
+
+gsap.set(bar, {scaleX:0, transformOrigin:"left top"})
+tl.to(bar, {scaleX:"+=0.2"})
+  .addPause("+=0", animate, [1])
+  .to(bar, {scaleX:"+=0.2"})
+  .addPause("+=0", animate, [2])
+  .to(bar, {scaleX:"+=0.2"})
+  .addPause("+=0", animate, [3])
+  .to(bar, {scaleX:"+=0.2"})
+  .addPause("+=0", animate, [4])
+  .to(bar, {scaleX:"+=0.2"})
+  .addPause("+=0", animate, [5])
+
+function animate(index) {
+	gsap.to(`.circle:nth-child(${index + 1}) div`, {
+    background: "#f09",
+    scale: 1.5,
+    repeat: 1,
+    yoyo: true,
+    duration: 0.2
+  })
+}
+
+next.addEventListener("click", ()=> tl.play())
+prev.addEventListener("click", ()=> tl.reverse())
+
+

@@ -1,0 +1,49 @@
+
+<div class="bug pink"></div>
+<h3>click anywhere to pause() / resume()</h3>
+
+
+.bug {
+	position:absolute; width:80px;
+	height:80px; background:#f6c;
+	border-radius:50%; 
+}
+
+
+gsap.defaults({ease:"none"});
+
+let pxPerSecond = 100
+
+function moveMe(target) {
+
+	let curPos = {
+		x: gsap.getProperty(target, "x"),
+		y: gsap.getProperty(target, "y"),
+	}
+
+	let newPos = {
+		x: gsap.utils.random(0, 600),
+		y: gsap.utils.random(0, 300),
+	}
+
+	let deltaX = curPos.x - newPos.x; // side A distance
+	let deltaY = curPos.y - newPos.y; // side B distance
+	let distance = Math.hypot(deltaX, deltaY);
+
+	let duration = distance / pxPerSecond
+	
+	gsap.to(target, { 
+		x: newPos.x,
+		y: newPos.y,
+		duration: duration,
+		onComplete: moveMe,
+		onCompleteParams: [target]
+	}) 
+	
+}
+
+moveMe(".bug")
+
+document.addEventListener("click", () => gsap.globalTimeline.paused(!gsap.globalTimeline.paused()))
+
+

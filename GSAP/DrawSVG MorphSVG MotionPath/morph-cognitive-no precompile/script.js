@@ -1,7 +1,23 @@
 var button = document.getElementById("toggle");
 
 var morph = gsap.timeline({paused:true});
-morph.to("#brain", 1, { morphSVG: "#cognitive", ease:Power1.easeOut });
+morph.to("#brain", { 
+  morphSVG: "#cognitive", 
+  ease: "Power1.easeOut",
+  duration: 3,
+  onComplete: () => {
+    gsap.to("#brain", {
+      fillOpacity: 0
+    })
+  },
+  onReverseComplete: () => {
+    gsap.to("#brain", {
+      fillOpacity: 1,
+      duration: 5
+    })
+  },
+})
+
 
 window.addEventListener('scroll', function() {
   if (morph.progress() === 0) {
